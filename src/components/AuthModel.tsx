@@ -1,0 +1,320 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-floating-promises */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
+import { Fragment, useState, useEffect } from "react";
+import { signIn } from "next-auth/react";
+import Link from "next/link";
+import Image from "next/image";
+import PropTypes from "prop-types";
+import * as Yup from "yup";
+import { toast } from "react-hot-toast";
+import { AiFillGithub } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
+import { Dialog, Transition } from "@headlessui/react";
+import Formik from "formik";
+
+const SignInSchema = Yup.object().shape({
+  email: Yup.string()
+    .trim()
+    .email("Invalid email")
+    .required("This field is required"),
+});
+
+const Confirm = ({ show = false, email = "" }) => (
+  <Transition appear show={show} as={Fragment}>
+    <div className="fixed inset-0 z-50">
+      <Transition.Child
+        as={Fragment}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <div className="fixed inset-0 bg-white" />
+      </Transition.Child>
+
+      <Transition.Child
+        as={Fragment}
+        enter="ease-out duration-300"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        <div className="flex h-full items-center justify-center p-8">
+          <div className="transform overflow-hidden transition-all">
+            <h3 className="text-center text-lg font-medium leading-6">
+              <div className="flex flex-col items-center justify-center space-y-4">
+                {/* <MailOpenIcon className="w-12 h-12 shrink-0 text-pink-500" /> */}
+              </div>
+              <p className="mt-2 text-2xl font-semibold">Confirm your email</p>
+            </h3>
+
+            <p className="mt-4 text-center text-lg">
+              We emailed a magic link to <strong>{email ?? ""}</strong>.
+              <br />
+              Check your inbox and click the link in the email to login or sign
+              up.
+            </p>
+          </div>
+        </div>
+      </Transition.Child>
+    </div>
+  </Transition>
+);
+
+const AuthModal = ({ show = false, onClose = () => null }) => {
+  const [disabled, setDisabled] = useState(false);
+  const [showConfirm, setConfirm] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
+
+  const signInWithEmail = async ({ email }) => {
+    let toastId;
+    try {
+      toastId = toast.loading("Loading...");
+      setDisabled(true);
+      // Perform sign in
+      const { error } = await signIn("email", {
+        redirect: false,
+        callbackUrl: window.location.href,
+        email,
+      });
+      // Something went wrong
+      if (error) {
+        throw new Error(error);
+      }
+      setConfirm(true);
+      toast.dismiss(toastId);
+    } catch (err) {
+      toast.error("Unable to sign in", { id: toastId });
+    } finally {
+      setDisabled(false);
+    }
+  };
+
+  const signInWithGoogle = () => {
+    toast.loading("Redirecting...");
+    setDisabled(true);
+    // Perform sign in
+    signIn("google", {
+      callbackUrl: window.location.href,
+    });
+  };
+  const signInWithGitHub = () => {
+    toast.loading("Redirecting...");
+    setDisabled(true);
+    // Perform sign in
+    signIn("github", {
+      callbackUrl: window.location.href,
+    });
+  };
+
+  const closeModal = () => {
+    if (typeof onClose === "function") {
+      onClose();
+    }
+  };
+
+  // Reset modal
+  useEffect(() => {
+    if (!show) {
+      // Wait for 200ms for aniamtion to finish
+      setTimeout(() => {
+        setDisabled(false);
+        setConfirm(false);
+        setShowSignIn(false);
+      }, 200);
+    }
+  }, [show]);
+
+  // Remove pending toasts if any
+  useEffect(() => {
+    toast.dismiss();
+  }, []);
+
+  return (
+    <Transition appear show={show} as={Fragment}>
+      <Dialog
+        as="div"
+        className="fixed inset-0 z-50 overflow-y-auto"
+        onClose={closeModal}
+      >
+        <Dialog.Overlay className="fixed inset-0 bg-black opacity-75" />
+
+        <div className="min-h-screen text-center">
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Overlay className="fixed inset-0" />
+          </Transition.Child>
+
+          {/* This element is to trick the browser into centering the modal contents. */}
+          <span
+            className="inline-block h-screen align-middle"
+            aria-hidden="true"
+          >
+            &#8203;
+          </span>
+
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            <div className="relative my-8 inline-block w-full max-w-md transform overflow-hidden bg-gray-900 text-left align-middle shadow-xl transition-all sm:rounded-md">
+              {/* Close icon */}
+              <button
+                onClick={closeModal}
+                className="absolute top-2 right-2 shrink-0 rounded-md p-1 transition hover:bg-gray-100 focus:outline-none"
+              >
+                {/* <XIcon className="w-5 h-5" /> */}
+              </button>
+
+              <div className="py-12">
+                <div className="px-4 sm:px-12">
+                  <div className="flex justify-center">
+                    <Link href="/">
+                      <span className="text-xl font-semibold tracking-wide">
+                        <Image
+                          // className="block lg:hidden h-8 w-auto"
+                          src="/logo.png"
+                          alt="Sota models"
+                          width="200"
+                          height="50"
+                        />
+                      </span>
+                    </Link>
+                  </div>
+
+                  <Dialog.Title
+                    as="h3"
+                    className="mt-6 text-center text-lg font-bold text-white sm:text-2xl"
+                  >
+                    {showSignIn ? "Welcome back!" : "Create your account"}
+                  </Dialog.Title>
+
+                  {!showSignIn ? (
+                    <Dialog.Description className="mt-2 text-center text-base text-gray-500">
+                      {/* Please create an account to list your homes and bookmark
+                      your favorite ones. */}
+                    </Dialog.Description>
+                  ) : null}
+
+                  <div className="mt-10">
+                    {/* Sign with Google */}
+                    <button
+                      disabled={disabled}
+                      onClick={() => signInWithGoogle()}
+                      className="mx-auto flex h-[46px] w-full items-center justify-center space-x-2 rounded-md border bg-gray-50 p-2 text-gray-500 transition-colors hover:border-gray-400 hover:bg-gray-700 hover:text-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-400 focus:ring-opacity-25 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-gray-200 disabled:hover:bg-transparent disabled:hover:text-gray-500"
+                    >
+                      <FcGoogle />
+                      <span>
+                        Sign
+                        {/* {showSignIn ? "in" : "up"}  */}
+                        Continue with Google
+                      </span>
+                    </button>
+
+                    {/* Sign with email */}
+                    {/* <Formik
+                      initialValues={{ email: "" }}
+                      validationSchema={SignInSchema}
+                      validateOnBlur={false}
+                      onSubmit={signInWithEmail}
+                    >
+                      {({ isSubmitting, isValid, values, resetForm }) => (
+                        <Form className="mt-4">
+                          <Input
+                            name="email"
+                            type="email"
+                            placeholder="elon@spacex.com"
+                            disabled={disabled}
+                            spellCheck={false}
+                          />
+
+                          <button
+                            type="submit"
+                            disabled={disabled || !isValid}
+                            className="mt-6 w-full rounded-md bg-pink-600 py-2 px-8 text-white transition hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-pink-600 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-pink-600"
+                          >
+                            {isSubmitting
+                              ? "Loading..."
+                              : `Sign ${showSignIn ? "in" : "up"}`}
+                          </button>
+
+                          <p className="mt-2 text-center text-sm text-gray-500">
+                            {showSignIn ? (
+                              <>
+                                Don&apos;t have an account yet?{" "}
+                                <button
+                                  type="button"
+                                  disabled={disabled}
+                                  onClick={() => {
+                                    setShowSignIn(false);
+                                    // resetForm();
+                                  }}
+                                  className="font-semibold text-pink-500 underline underline-offset-1 hover:text-pink-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:text-pink-500"
+                                >
+                                  Sign up
+                                </button>
+                                .
+                              </>
+                            ) : (
+                              <>
+                                Already have an account?{" "}
+                                <button
+                                  type="button"
+                                  disabled={disabled}
+                                  onClick={() => {
+                                    setShowSignIn(true);
+                                    // resetForm();
+                                  }}
+                                  className="font-semibold text-pink-500 underline underline-offset-1 hover:text-pink-600 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:text-pink-500"
+                                >
+                                  Log in
+                                </button>
+                                .
+                              </>
+                            )}
+                          </p>
+
+                          <Confirm
+                            show={showConfirm}
+                            email={values?.email ?? ""}
+                          />
+                        </Form>
+                      )}
+                    </Formik> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Transition.Child>
+        </div>
+      </Dialog>
+    </Transition>
+  );
+};
+
+AuthModal.propTypes = {
+  show: PropTypes.bool,
+  onClose: PropTypes.func,
+};
+
+export default AuthModal;

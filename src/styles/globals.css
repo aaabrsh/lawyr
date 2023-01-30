@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.usecasecards,
+.getstartedbtn {
+  background-color: rgb(13, 148, 136) !important;
+  background-image: radial-gradient(
+      at 6% 12%,
+      rgb(107, 33, 168) 0,
+      transparent 100%
+    ),
+    radial-gradient(at 90% 41%, rgb(41, 37, 36) 0, transparent 61%),
+    radial-gradient(at 38% 77%, rgb(220, 38, 38) 0, transparent 95%),
+    radial-gradient(at 47% 16%, rgb(239, 68, 68) 0, transparent 76%),
+    radial-gradient(at 29% 47%, rgb(159, 18, 57) 0, transparent 35%),
+    radial-gradient(at 26% 56%, rgb(254, 215, 170) 0, transparent 8%);
+}
