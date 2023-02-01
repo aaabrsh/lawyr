@@ -26,6 +26,12 @@ export default function Sidebar({ active, setActive }: any) {
   const controlTitleText = useAnimation();
   const data = [
     {
+      name: "Dashboard",
+      icon: AiFillCode,
+      link: "/dashboard",
+      items: [],
+    },
+    {
       name: "Chat",
       icon: AiFillCode,
       link: "/chat",
