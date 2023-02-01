@@ -17,7 +17,7 @@ export async function checkout({ lineItems }, selected) {
   await stripe.redirectToCheckout({
     mode: "payment",
     lineItems,
-    successUrl: `http://localhost:3000/dashboard/models/${selected}?session_id={CHECKOUT_SESSION_ID}`,
+    successUrl: `http://localhost:3000/dashboard/download?${selected}?session_id={CHECKOUT_SESSION_ID}`,
     cancelUrl: window.location.origin,
   });
 }
