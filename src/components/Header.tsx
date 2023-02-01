@@ -33,19 +33,22 @@ export default function Header() {
   const user = session?.user;
   const isLoadingUser = status === "loading";
   const [showModal, setShowModal] = useState(false);
+  //   const { addsearchText, removeSearchText } = useStore();
   const [isSearchVisible, setIsSearchVisible] = useState(false);
+
+  let [inputText, setInputText] = useState("");
   const inputHandler = (e) => {
     //convert input text to lower case
-    // const lowerCase = e.target.value.toLowerCase();
-    // setInputText(lowerCase);
-    // console.log(inputText);
-    // // const useStore = create((set) => ({
-    // //   searchText: inputText,
-    // // }));
-    // addsearchText(inputText);
-    // if ((inputText = "")) {
-    //   removeSearchText();
-    // }
+    const lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+    console.log(inputText);
+    // const useStore = create((set) => ({
+    //   searchText: inputText,
+    // }));
+    addsearchText(inputText);
+    if ((inputText = "")) {
+      removeSearchText();
+    }
   };
 
   const handleClear = (e) => {
@@ -171,6 +174,20 @@ export default function Header() {
                   </div>
 
                   <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    {/* search icon */}
+                    <div
+                      id="search-toggle"
+                      className="search-icon mt-2 cursor-pointer pl-6"
+                      onClick={toggleSearch}
+                    >
+                      <svg
+                        className="text-grey-darkest pointer-events-none inline h-4 w-4 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+                      </svg>
+                    </div>
                     <Menu as="div" className="relative ml-3">
                       <div className=" mt-10 flex flex-col gap-2 md:mt-0 md:flex-row">
                         {isLoadingUser ? (
@@ -336,6 +353,7 @@ export default function Header() {
           />
         </div>
       </div>
+
       <AuthModal show={showModal} onClose={closeModal} />
     </>
   );
