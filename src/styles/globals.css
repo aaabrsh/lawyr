@@ -16,3 +16,23 @@
     radial-gradient(at 29% 47%, rgb(159, 18, 57) 0, transparent 35%),
     radial-gradient(at 26% 56%, rgb(254, 215, 170) 0, transparent 8%);
 }
+
+.pagination{
+  @apply py-2 border border-gray-800/50 flex justify-center
+}
+ 
+.page-item{
+  @apply rounded-[50%] w-10 h-10 mx-2 bg-gray-900/50
+}
+
+.page-link{
+  @apply w-full h-full flex justify-center items-center hover:border-2 hover:rounded-[50%] hover:border-white
+}
+
+.break-link{
+  @apply w-full h-full flex justify-center items-center
+}
+
+.active{
+  @apply bg-gray-50/80 text-blue-700
+}

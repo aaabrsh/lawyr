@@ -28,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
+    "react-paginate": "^8.1.4",
     "yup": "^0.32.11",
     "zod": "^3.20.2"
   },

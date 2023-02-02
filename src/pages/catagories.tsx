@@ -7,12 +7,19 @@ import Sidebar from "../components/Dashboard/Sidebar";
 import { useSession, getSession } from "next-auth/react";
 import Header from "../components/Header";
 import Link from "next/link";
+import { promises as fs } from "fs";
+import path from "path";
+import ReactPaginate from "react-paginate";
 
 // import axios from "axios";
-export default function Welcome() {
+export default function Welcome({ products }) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
+  const [displayedProducts, setDisplayedProducts] = useState([]);
+  const [itemsPerPage, setItemsPerPage] = useState(8);
+  const [pageCount, setPageCount] = useState(products.length / itemsPerPage);
+  const [itemOffset, setItemOffset] = useState(0);
   const { data: session } = useSession();
   const user = session?.user?.email;
   function closeModal() {
@@ -34,7 +41,16 @@ export default function Welcome() {
   //   };
   useEffect(() => {
     // getFiles();
-  }, []);
+
+    const endOffset = itemOffset + itemsPerPage;
+    setDisplayedProducts(products.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(products.length / itemsPerPage));
+  }, [products, itemOffset]);
+
+  const handlePageClick = (event: any) => {
+    const newOffset = (event.selected * itemsPerPage) % products.length;
+    setItemOffset(newOffset);
+  };
 
   return (
     <>
@@ -58,6 +74,64 @@ export default function Welcome() {
               <br className="lg:block" hidden="" />
             </h2> */}
                 </div>
+
+                <div className="flex flex-wrap gap-3">
+                  {displayedProducts.map((product: any) => (
+                    <div className="usecasecards group relative w-[270px] flex-grow bg-gray-100 transition hover:z-[1] hover:shadow-2xl xl:block">
+                      <div className="relative flex h-full flex-col space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white">
+                        <img
+                          src={product.iconImage}
+                          className="w-10"
+                          width={512}
+                          height={512}
+                          alt="burger illustration"
+                        />
+                        <div className="flex max-h-[140px] flex-grow flex-col space-y-2 overflow-hidden">
+                          <h5 className="text-xl font-medium text-gray-200 transition group-hover:text-yellow-600">
+                            {product.title}
+                          </h5>
+                          <p className="flex-grow text-sm text-gray-200 group-hover:text-gray-600">
+                            {product.description}
+                          </p>
+                        </div>
+
+                        {/* <Link href="/Industry/entertainment"> */}
+                        <a
+                          href="#"
+                          className="flex items-center justify-between group-hover:text-yellow-600"
+                        >
+                          <span className="text-sm">Read more</span>
+                          <span className="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                            →
+                          </span>
+                        </a>
+                        {/* </Link> */}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <ReactPaginate
+                  nextLabel={<>&#8594;</>}
+                  previousLabel={<>&#8592;</>}
+                  onPageChange={handlePageClick}
+                  pageRangeDisplayed={5}
+                  marginPagesDisplayed={2}
+                  pageCount={pageCount}
+                  pageClassName="page-item"
+                  pageLinkClassName="page-link"
+                  previousClassName="page-item"
+                  previousLinkClassName="page-link"
+                  nextClassName="page-item"
+                  nextLinkClassName="page-link"
+                  breakLabel="..."
+                  breakClassName="page-item"
+                  breakLinkClassName="break-link"
+                  containerClassName="pagination"
+                  activeClassName="active"
+                  renderOnZeroPageCount={null}
+                />
+
                 <div className="mt-16 grid divide-x divide-y overflow-hidden rounded-xl border sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-4">
                   <div className="usecasecards group relative bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
                     <div className="relative space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white">
@@ -365,3 +439,15 @@ export default function Welcome() {
 //     },
 //   };
 // }
+
+export async function getServerSideProps() {
+  const dataDirectory = path.join(process.cwd(), "src/data");
+  let products = await fs.readFile(dataDirectory + "/products.json", "utf8");
+  products = JSON.parse(products).data.getProductCards;
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
