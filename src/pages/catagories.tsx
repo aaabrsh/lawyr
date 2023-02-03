@@ -95,17 +95,16 @@ export default function Welcome({ products }) {
                           </p>
                         </div>
 
-                        {/* <Link href="/Industry/entertainment"> */}
-                        <a
-                          href="#"
+                        <Link href="/catagories/[categoryName]" as={`/catagories/${product.title}`} > 
+                        <div
                           className="flex items-center justify-between group-hover:text-yellow-600"
                         >
                           <span className="text-sm">Read more</span>
                           <span className="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
                             →
                           </span>
-                        </a>
-                        {/* </Link> */}
+                        </div>
+                        </Link>
                       </div>
                     </div>
                   ))}
