@@ -39,12 +39,17 @@ export default function Sidebar({ active, setActive }: any) {
     },
 
     {
-      name: "Catagories",
+      name: "Services",
       icon: AiTwotoneFileText,
       link: "/catagories",
       items: [],
     },
-
+    {
+      name: "Legalese",
+      icon: AiTwotoneFileText,
+      link: "/legalese",
+      items: [],
+    },
     {
       name: "Plan",
       icon: AiTwotoneFileText,
