@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react-hooks/exhaustive-deps */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import { useState, Fragment, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "../components/Dashboard/Sidebar";
@@ -12,14 +11,17 @@ import { checkout } from "../lib/getStripe";
 import initStripe from "stripe";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
+import { useRef } from "react";
 
 // import axios from "axios";
+
 export default function Plans({ plans }) {
+  const [legalese, setLegalese] = useState();
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
   const { data: session } = useSession();
-  const [selected, setSelected] = useState("gptneo");
+  const ref = useRef(null);
   const user = session?.user?.email;
   function closeModal() {
     setIsOpen(false);
@@ -27,7 +29,54 @@ export default function Plans({ plans }) {
   function openStartModal() {
     setIsOpen(true);
   }
+  const queryPrompt = (prompt) => {
+    const DEFAULT_PARAMS = {
+      model: "text-davinci-003",
+      temperature: 0.3,
+      max_tokens: 800,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+    };
+    fetch("/prompts/legalese.prompt")
+      .then((response) => response.text())
+      .then((text) => text.replace("$legalese", prompt))
+      // .then((text) => text.replace("$legalese", JSON.stringify(legalese)))
+      .then((prompt) => {
+        console.log(prompt);
 
+        const params = { ...DEFAULT_PARAMS, prompt: prompt };
+
+        //   const requestOptions = {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //       Authorization: "Bearer " + String(OPENAI_API_KEY),
+        //     },
+        //     body: JSON.stringify(params),
+        //   };
+        //   fetch("https://api.openai.com/v1/completions", requestOptions)
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //       console.log(data);
+        //       const text = data.choices[0].text;
+        //       console.log(text);
+        //       const new_graph = JSON.parse(text);
+        //       console.log(new_graph);
+        //       setState(new_graph, () => {
+        //         console.log(state);
+        //       });
+        //       document.body.style.cursor = "default";
+        //       document.getElementsByClassName("generateButton")[0].disabled = false;
+        //       document.getElementsByClassName("searchBar")[0].value = "";
+        //     })
+        //     .catch((error) => {
+        //       console.log(error);
+        //       document.body.style.cursor = "default";
+        //       document.getElementsByClassName("generateButton")[0].disabled = false;
+        //     });
+      });
+  };
   //   const getFiles = async () => {
   //     const { data } = await axios.get(`/api/file?email=${user}`);
   //     const key = "title";
@@ -41,6 +90,11 @@ export default function Plans({ plans }) {
   useEffect(() => {
     // getFiles();
   }, []);
+
+  const handleClick = (event) => {
+    setLegalese(ref.current.value);
+    queryPrompt(legalese);
+  };
 
   return (
     <>
@@ -62,9 +116,6 @@ export default function Plans({ plans }) {
                       <span className="cursor-pointer rounded-md bg-[#F3F4F6] p-2 font-semibold">
                         Write
                       </span>
-                      <span className="cursor-pointer bg-transparent p-2 font-semibold text-[#7E8490]">
-                        Preview
-                      </span>
                     </div>
                     <div className="flex gap-3 text-[#9CA3AF]">
                       <svg
@@ -81,45 +132,32 @@ export default function Plans({ plans }) {
                           d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
                         />
                       </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 cursor-pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 cursor-pointer"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
-                        />
-                      </svg>
                     </div>
                   </div>
                   <textarea
                     placeholder="Add your comment..."
-                    className="h-[120px] w-[60vw] resize-none rounded-md border-[0.1px] border-[#9EA5B1] p-2 font-bold focus:outline-1 focus:outline-blue-500"
+                    className="h-[220px] w-[60vw] resize-none rounded-md border-[0.1px] border-[#9EA5B1] p-2 font-bold focus:outline-1 focus:outline-blue-500"
                     defaultValue={""}
+                    ref={ref}
+                    id="message"
+                    name="message"
                   />
                   <div className="flex justify-end">
-                    <button className="absolute w-fit rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white">
-                      Post
+                    <button
+                      className="absolute w-fit rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white"
+                      onClick={handleClick}
+                    >
+                      Translate
                     </button>
+                  </div>
+
+                  <div className="result">
+                    <h2 className="py-10	text-4xl	">Translated Document:</h2>
+                    <textarea
+                      placeholder="Add your comment..."
+                      className="h-[220px] w-[60vw] resize-none rounded-md border-[0.1px] border-[#9EA5B1] p-2 font-bold focus:outline-1 focus:outline-blue-500"
+                      defaultValue={legalese}
+                    />
                   </div>
                 </div>
               </div>

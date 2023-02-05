@@ -20,7 +20,8 @@ import Link from "next/link";
 
 export default function Sidebar({ active, setActive }: any) {
   const router = useRouter();
-  // const [active, setActive] = useState(false);
+  //   const [active, setActive] = useState(false);
+  console.log(router.pathname.replace(/\//g, ""));
   const controls = useAnimation();
   const controlText = useAnimation();
   const controlTitleText = useAnimation();
@@ -108,7 +109,7 @@ export default function Sidebar({ active, setActive }: any) {
       <div
         className={
           active
-            ? "  rounded-tr-md bg-[#fff] shadow-2xl"
+            ? "  h-full items-center rounded rounded-tr-md bg-[#fff] bg-gray-200 text-gray-700 shadow-2xl"
             : "  hidden   rounded-tr-md opacity-0 duration-1000 "
         }
       >
@@ -127,10 +128,19 @@ export default function Sidebar({ active, setActive }: any) {
               <div key={group.name} className="my-2">
                 <motion.div
                   animate={controlTitleText}
-                  className="mb-2 ml-4 flex items-center text-lg font-bold text-pink-100"
+                  className="mb-2 ml-4 flex items-center text-lg font-bold text-gray-600"
                 >
-                  <group.icon className="mr-1 text-lg text-pink-500" />
-                  <Link className=" text-pink-500" href={group.link}>
+                  <Link
+                    className={
+                      router.pathname.replace(/\//g, "") ==
+                      group.name.toLowerCase()
+                        ? "mt-2 flex h-12 w-full items-center rounded bg-gray-300 px-3"
+                        : "mt-2 flex h-12 w-full items-center rounded px-3 hover:bg-gray-300"
+                    }
+                    href={group.link}
+                  >
+                    <group.icon className="mr-1 text-lg text-pink-500" />
+
                     {group.name}
                   </Link>
                 </motion.div>
