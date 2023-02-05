@@ -27,7 +27,10 @@ export default function Home() {
     <>
       <body
         className="m-6 h-full bg-cover bg-fixed leading-normal tracking-normal text-indigo-400"
-        style={{ backgroundImage: 'url("header.png")' }}
+        style={{
+          backgroundImage: 'url("lady.png")',
+          backdropFilter: "blur(50px)",
+        }}
       >
         {/*Nav*/}
         <Header />
@@ -119,10 +122,10 @@ export default function Home() {
           </div>
           {/*Right Col*/}
           <div className="w-full overflow-hidden p-12 xl:w-3/5">
-            <img
+            {/* <img
               className="mx-auto w-full -rotate-6 transform transition duration-700 ease-in-out hover:rotate-6 hover:scale-105 md:w-4/5"
               src="macbook.svg"
-            />
+            /> */}
           </div>
         </div>
       </body>

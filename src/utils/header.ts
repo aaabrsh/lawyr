@@ -29,10 +29,10 @@ export const menuItems = [
   },
 ];
 export const navigation = [
-  { name: "Products", href: "/products" },
-  { name: "Solutions", href: "/solutions" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Resources", href: "/resources" },
+  { name: "For Businesses", href: "/forbusinesses" },
+  { name: "For Lawyers", href: "/forlawyers" },
+  // { name: "Pricing", href: "/pricing" },
+  // { name: "Resources", href: "/resources" },
 ];
 const solutions = [
   {

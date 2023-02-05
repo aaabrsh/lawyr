@@ -52,7 +52,7 @@ export default function Sidebar({ active, setActive }: any) {
       items: [],
     },
     {
-      name: "Plan",
+      name: "Plans",
       icon: AiTwotoneFileText,
       link: "/plans",
       items: [],
