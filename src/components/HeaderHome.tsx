@@ -56,15 +56,15 @@ export default function Header() {
   const closeModal = () => setShowModal(false);
 
   useEffect(() => {
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "5e14e397-dbda-4e17-a12e-b12ffdbfde2b";
-    (() => {
-      const d = document;
-      const s = d.createElement("script");
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("body")[0].appendChild(s);
-    })();
+    // window.$crisp = [];
+    // window.CRISP_WEBSITE_ID = "5e14e397-dbda-4e17-a12e-b12ffdbfde2b";
+    // (() => {
+    //   const d = document;
+    //   const s = d.createElement("script");
+    //   s.src = "https://client.crisp.chat/l.js";
+    //   s.async = 1;
+    //   d.getElementsByTagName("body")[0].appendChild(s);
+    // })();
   });
 
   return (
