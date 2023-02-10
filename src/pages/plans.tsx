@@ -12,12 +12,17 @@ import { checkout } from "../lib/getStripe";
 import initStripe from "stripe";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
+import PlansList from "../components/Plans/PlansList";
+import AuthModal from "../components/AuthModel";
+import Subscription from "../components/Plans/Subscription";
 
 // import axios from "axios";
 export default function Plans({ plans }) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
+  const [showAuthModal, setAuthModal] = useState(false);
+  const [customerData, setCustomerData] = useState(null);
   const { data: session } = useSession();
   const [selected, setSelected] = useState("gptneo");
   const user = session?.user?.email;
@@ -41,6 +46,25 @@ export default function Plans({ plans }) {
   useEffect(() => {
     // getFiles();
   }, []);
+
+  useEffect(() => {
+    //fetch the customer data using the id from session
+    const fetchCustomer = async () => {
+      let id = session?.user?.id;
+      let { data } = await axios.get(`/api/customers/${id}`);
+      let temp =
+        data.customer != null
+          ? {
+              ...data.customer,
+              customerName: session?.user?.name,
+              email: session?.user?.email,
+            }
+          : null;
+      setCustomerData(temp);
+    };
+
+    fetchCustomer();
+  }, [session]);
 
   // const cart = {
   //   name: "Subscripbe to sota models",
@@ -77,7 +101,6 @@ export default function Plans({ plans }) {
 
   const showSubscribeButton = !!user && !user.is_subscribed;
   const showCreateAccountButton = !user;
-  const showManageSubscriptionButton = !!user && user.is_subscribed;
 
   return (
     <>
@@ -89,39 +112,21 @@ export default function Plans({ plans }) {
         <div
           className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
         >
-          <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
-            {/* Chat start */}
-            <>
-              {/* component */}
-              <div className="mx-auto flex w-full max-w-3xl justify-around py-16">
-                {plans.map((plan) => (
-                  <div
-                    key={plan.id}
-                    className="h-40 w-80 rounded px-6 py-4 shadow"
-                  >
-                    <h2 className="text-xl">{plan.name}</h2>
-                    <p className="text-gray-500">
-                      ${plan.price / 100} / {plan.interval}
-                    </p>
-                    {/* {!isLoading && ( */}
-                    <div>
-                      {showSubscribeButton && (
-                        <button onClick={processSubscription(plan.id)}>
-                          Subscribe
-                        </button>
-                      )}
-                      {showCreateAccountButton && (
-                        <button>Create Account</button>
-                      )}
-                      {showManageSubscriptionButton && (
-                        <button>Manage Subscription</button>
-                      )}
-                    </div>
-                    {/* )} */}
-                  </div>
-                ))}
-              </div>
-            </>
+          <div className="flex flex-col items-center">
+            <h1 className="text-4xl font-extrabold text-zinc-800 sm:text-center sm:text-4xl">
+              Pricing Plans
+            </h1>
+            {customerData ? (
+              <Subscription customer={customerData} />
+            ) : (
+              <PlansList
+                plans={plans}
+                showSubscribeButton={showSubscribeButton}
+                showCreateAccountButton={showCreateAccountButton}
+                openModal={() => setAuthModal(true)}
+                processSubscription={processSubscription}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -143,6 +148,8 @@ export default function Plans({ plans }) {
           {/* <Options setIsOpen={setIsOpen} /> */}
         </Dialog>
       </Transition>
+
+      <AuthModal show={showAuthModal} onClose={() => setAuthModal(false)} />
     </>
   );
 }
