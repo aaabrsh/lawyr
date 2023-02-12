@@ -71,7 +71,7 @@ enum BillingPlan {
   enterprise
 }
 
-model Products {
+model Product {
   id          String  @id
   active      Boolean @default(true)
   name        String
