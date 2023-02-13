@@ -31,13 +31,19 @@ const upsertProductRecord = async (product: Stripe.Product) => {
 const updateCustomerRecord = async (subscription: any, cancel?: boolean) => {
   console.log("UPDATE CUSTOMER RECORD");
   console.log(subscription);
-  const billingPlan = cancel ? null : subscription.plan;
   const customerData = {
     stripe_customer_id: subscription.customer,
     billingPlan: subscription.plan,
   };
 
   try {
+    //get prduct using the product id from subscription
+    const product = await prisma.product.findUnique({
+      where: { id: subscription.plan.product },
+    });
+
+    const billingPlan = subscription.canceled_at ? null : product?.name;
+
     await prisma.customer.updateMany({
       where: { stripe_customer_id: subscription.customer },
       data: { billingPlan: billingPlan },
