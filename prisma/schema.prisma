@@ -60,7 +60,7 @@ model Customer {
   id                 String      @id @default(cuid())
   userId             String
   stripe_customer_id String
-  billingPlan        BillingPlan
+  billingPlan        BillingPlan?
   user               User        @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
