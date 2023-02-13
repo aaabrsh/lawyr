@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function PlansList({
   plans,
@@ -10,6 +10,21 @@ export default function PlansList({
   const [billingInterval, setBillingInterval] = useState<"year" | "month">(
     "month"
   );
+  const [plansToShow, setPlansToShow] = useState([]);
+
+  useEffect(() => {
+    setPlansToShow(
+      plans.filter((plan: any) => plan.interval === billingInterval)
+    );
+  }, [billingInterval]);
+
+  if (plans.length === 0) {
+    return (
+      <div className="mt-5 text-xl font-bold text-zinc-600">
+        No Plans Found!
+      </div>
+    );
+  }
 
   return (
     <>
@@ -43,7 +58,7 @@ export default function PlansList({
           {/* component */}
           {/* <div className="flex gap-5 flex-wrap bg-zinc-200 py-16"> */}
           <div className="grid w-auto gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {plans.map((plan) => (
+            {plansToShow.map((plan: any) => (
               <div
                 key={plan.id}
                 className="flex h-40 flex-col rounded border border-zinc-400 bg-zinc-800 px-6 py-4 text-white shadow"

@@ -52,14 +52,13 @@ export default function Plans({ plans }) {
     const fetchCustomer = async () => {
       let id = session?.user?.id;
       let { data } = await axios.get(`/api/customers/${id}`);
-      let temp =
-        data.customer != null
-          ? {
-              ...data.customer,
-              customerName: session?.user?.name,
-              email: session?.user?.email,
-            }
-          : null;
+      let temp = data?.customer?.billingPlan
+        ? {
+            ...data.customer,
+            customerName: session?.user?.name,
+            email: session?.user?.email,
+          }
+        : null;
       setCustomerData(temp);
     };
 
@@ -92,7 +91,9 @@ export default function Plans({ plans }) {
   // };
 
   const processSubscription = (planId) => async () => {
-    const { data } = await axios.get(`/api/subscription/${planId}`);
+    const { data } = await axios.post(`/api/subscription/${planId}`, {
+      userId: session?.user?.id,
+    });
     const stripe = await loadStripe(
       process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
     );
