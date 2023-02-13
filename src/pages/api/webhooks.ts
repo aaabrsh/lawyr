@@ -1,4 +1,7 @@
-import { upsertProductRecord } from "../../utils/supabase-admin";
+import {
+  upsertProductRecord,
+  updateCustomerRecord,
+} from "../../utils/supabase-admin";
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 import { Readable } from "node:stream";
@@ -41,7 +44,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       process.env.STRIPE_WEBHOOK_SECRET_LIVE ??
       process.env.STRIPE_WEBHOOK_SECRET;
     let event: Stripe.Event;
-    console.log("SESSION COMPLETED")
 
     try {
       if (!sig || !webhookSecret) return;
@@ -60,25 +62,10 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
             break;
           case "customer.subscription.created":
           case "customer.subscription.updated":
-          case "customer.subscription.deleted":
-            // const subscription = event.data.object as Stripe.Subscription;
-            // await manageSubscriptionStatusChange(
-            //   subscription.id,
-            //   subscription.customer as string,
-            //   event.type === 'customer.subscription.created'
-            // );
+            await updateCustomerRecord(event.data.object);
             break;
-          case "checkout.session.completed":
-            // const checkoutSession = event.data
-            //   .object as Stripe.Checkout.Session;
-            // if (checkoutSession.mode === 'subscription') {
-            //   const subscriptionId = checkoutSession.subscription;
-            //   await manageSubscriptionStatusChange(
-            //     subscriptionId as string,
-            //     checkoutSession.customer as string,
-            //     true
-            //   );
-            // }
+          case "customer.subscription.deleted":
+            await updateCustomerRecord(event.data.object, true);
             break;
           default:
             throw new Error("Unhandled relevant event!");

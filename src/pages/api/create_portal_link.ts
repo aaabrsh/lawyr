@@ -10,7 +10,7 @@ export default async function handler(req: any, res: any) {
 
     const { url } = await stripe.billingPortal.sessions.create({
       customer: req.body.id,
-      return_url: "/plans",
+      return_url: `${req.headers.origin}/plans`,
     });
 
     return res.status(200).json({ url });

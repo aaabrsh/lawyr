@@ -1,63 +1,82 @@
-import { createClient } from "@supabase/supabase-js";
 import Stripe from "stripe";
-
-// Note: supabaseAdmin uses the SERVICE_ROLE_KEY which you must only use in a secure server-side context
-// as it has admin priviliges and overwrites RLS policies!
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-  process.env.SUPABASE_SERVICE_ROLE_KEY || ""
-);
+import { prisma } from "../server/db";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
   apiVersion: "2022-11-15",
 });
 
 const upsertProductRecord = async (product: Stripe.Product) => {
-  const productData = {
-    id: product.id,
-    active: product.active,
-    name: product.name,
-    description: product.description ?? undefined,
-    image: product.images?.[0] ?? null,
-    metadata: product.metadata,
+  if (product.active) {
+    const productData = {
+      id: product.id,
+      active: product.active,
+      name: product.name,
+      description: product.description ?? undefined,
+      image: product.images?.[0] ?? null,
+      metadata: product.metadata,
+    };
+    try {
+      const user = await prisma.product.upsert({
+        where: { id: productData.id },
+        update: { ...productData },
+        create: { ...productData },
+      });
+      console.log(`Product inserted/updated: ${product.id}`);
+    } catch (error) {
+      throw error;
+    }
+  }
+};
+
+const updateCustomerRecord = async (subscription: any, cancel?: boolean) => {
+  console.log("UPDATE CUSTOMER RECORD");
+  console.log(subscription);
+  const billingPlan = cancel ? null : subscription.plan;
+  const customerData = {
+    stripe_customer_id: subscription.customer,
+    billingPlan: subscription.plan,
   };
 
-  const { error } = await supabaseAdmin.from("products").upsert([productData]);
-  if (error) throw error;
-  console.log(`Product inserted/updated: ${product.id}`);
-};
+  try {
+    await prisma.customer.updateMany({
+      where: { stripe_customer_id: subscription.customer },
+      data: { billingPlan: billingPlan },
+    });
 
-const createOrRetrieveCustomer = async ({
-  email,
-  uuid,
-}: {
-  email: string;
-  uuid: string;
-}) => {
-  const { data, error } = await supabaseAdmin
-    .from("customers")
-    .select("stripe_customer_id")
-    .eq("id", uuid)
-    .single();
-  if (error || !data?.stripe_customer_id) {
-    // No customer record found, let's create one.
-    const customerData: { metadata: { supabaseUUID: string }; email?: string } =
-      {
-        metadata: {
-          supabaseUUID: uuid,
-        },
-      };
-    if (email) customerData.email = email;
-    const customer = await stripe.customers.create(customerData);
-    // Now insert the customer ID into our Supabase mapping table.
-    const { error: supabaseError } = await supabaseAdmin
-      .from("customers")
-      .insert([{ id: uuid, stripe_customer_id: customer.id }]);
-    if (supabaseError) throw supabaseError;
-    console.log(`New customer created and inserted for ${uuid}.`);
-    return customer.id;
+    console.log("Customer updated");
+  } catch (error) {
+    throw error;
   }
-  return data.stripe_customer_id;
 };
 
-export { upsertProductRecord, createOrRetrieveCustomer };
+const createOrRetrieveCustomer = async (userId: String) => {
+  try {
+    let stripe_customer: any = {};
+    const db_customer = await prisma.customer.findFirst({
+      where: {
+        userId: userId,
+      },
+    });
+
+    if (db_customer) {
+      //if customer in database exists return data from stripe
+      stripe_customer = await stripe.customers.retrieve(
+        db_customer.stripe_customer_id
+      );
+    } else {
+      //create new user and return
+      stripe_customer = await stripe.customers.create({});
+
+      //insert the new user into database
+      await prisma.customer.create({
+        data: { userId: userId, stripe_customer_id: stripe_customer.id },
+      });
+    }
+
+    return stripe_customer;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export { upsertProductRecord, createOrRetrieveCustomer, updateCustomerRecord };
