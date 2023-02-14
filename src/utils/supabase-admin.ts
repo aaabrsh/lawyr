@@ -1,9 +1,5 @@
-import Stripe from "stripe";
 import { prisma } from "../server/db";
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-  apiVersion: "2022-11-15",
-});
+import stripe from "./stripe";
 
 const upsertProductRecord = async (product: Stripe.Product) => {
   if (product.active) {

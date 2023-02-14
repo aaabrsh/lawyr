@@ -4,11 +4,8 @@ import {
 } from "../../utils/supabase-admin";
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
+import stripe from "../../utils/stripe"
 import { Readable } from "node:stream";
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-  apiVersion: "2022-11-15",
-});
 
 // Stripe requires the raw body to construct the event.
 export const config = {

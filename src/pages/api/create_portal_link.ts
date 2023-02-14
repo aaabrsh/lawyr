@@ -1,12 +1,8 @@
-import Stripe from "stripe";
+import stripe from "../../utils/stripe"
 
 export default async function handler(req: any, res: any) {
   if (req.method === "POST") {
     const customer = { customer_id: req.body.id, return_url: "/plans" };
-
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
-      apiVersion: "2022-11-15",
-    });
 
     const { url } = await stripe.billingPortal.sessions.create({
       customer: req.body.id,
