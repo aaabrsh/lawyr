@@ -15,6 +15,9 @@ import { loadStripe } from "@stripe/stripe-js";
 import PlansList from "../components/Plans/PlansList";
 import AuthModal from "../components/AuthModel";
 import Subscription from "../components/Plans/Subscription";
+import { useRouter } from "next/router";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
+import Stripe from "stripe";
 
 // import axios from "axios";
 export default function Plans({ plans }) {
@@ -26,6 +29,12 @@ export default function Plans({ plans }) {
   const { data: session } = useSession();
   const [selected, setSelected] = useState("gptneo");
   const user = session?.user?.email;
+  let {
+    query: { success },
+  } = useRouter();
+  const [successModal, setSuccessModal] = useState<boolean>(false);
+  const [isSuccessModal, setSuccessModalType] = useState<boolean>(false);
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -46,6 +55,16 @@ export default function Plans({ plans }) {
   useEffect(() => {
     // getFiles();
   }, []);
+
+  useEffect(() => {
+    if (success?.toString().toLowerCase() === "subscribed") {
+      setSuccessModal(true);
+      setSuccessModalType(true);
+    } else if (success?.toString().toLowerCase() === "failed") {
+      setSuccessModal(true);
+      setSuccessModalType(false);
+    }
+  }, [session]);
 
   useEffect(() => {
     //fetch the customer data using the id from session
@@ -131,7 +150,6 @@ export default function Plans({ plans }) {
           </div>
         </div>
       </div>
-
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10 " onClose={closeModal}>
           <Transition.Child
@@ -149,8 +167,82 @@ export default function Plans({ plans }) {
           {/* <Options setIsOpen={setIsOpen} /> */}
         </Dialog>
       </Transition>
-
       <AuthModal show={showAuthModal} onClose={() => setAuthModal(false)} />
+      {/* Modal to show after subscription session */}
+      <Transition appear show={successModal} as={Fragment}>
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={() => setSuccessModal(false)}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <div className="flex justify-center text-5xl">
+                    {isSuccessModal ? (
+                      <AiOutlineCheckCircle className="rounded rounded-[50%] text-green-400" />
+                    ) : (
+                      <AiOutlineCloseCircle className="text-red-400" />
+                    )}
+                  </div>
+                  <Dialog.Title
+                    as="h3"
+                    className="py-2 text-center text-xl font-bold leading-6 text-gray-900"
+                  >
+                    {isSuccessModal ? (
+                      <div>Payment Successful</div>
+                    ) : (
+                      <div>
+                        Payment Cancelled
+                        <div className="pt-2 text-sm">
+                          You Have Not Been Charged!
+                        </div>
+                      </div>
+                    )}
+                  </Dialog.Title>
+
+                  <div className="mt-3 flex justify-center">
+                    <button
+                      type="button"
+                      className={
+                        "rounded-md border border px-4 py-2 text-center text-sm font-medium focus:outline-none" +
+                        (isSuccessModal
+                          ? " border-green-400 bg-green-100 text-green-400"
+                          : " border-red-400 bg-red-100 text-red-400")
+                      }
+                      onClick={() => setSuccessModal(false)}
+                    >
+                      close
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+      ;
     </>
   );
 }
