@@ -1,4 +1,5 @@
 import { prisma } from "../../../server/db";
+import stripe from "../../../utils/stripe";
 
 export default async function fetchCustomer(req: any, res: any) {
   if (req.method === "GET") {
@@ -9,7 +10,21 @@ export default async function fetchCustomer(req: any, res: any) {
         userId: id,
       },
     });
-    res.json({ customer });
+
+    if (!customer?.billingPlan) {
+      //if the customer doesn't have a billing plan(is not subscribed)
+      return res.json(null);
+    }
+
+    const stripe_customer: {} = await stripe.customers.retrieve(
+      customer?.stripe_customer_id ?? ""
+    );
+
+    res.json({
+      ...customer,
+      email: stripe_customer.email,
+      name: stripe_customer.name,
+    });
   } else {
     res.status(405).end("Method Not Allowed");
   }

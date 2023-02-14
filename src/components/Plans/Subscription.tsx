@@ -30,7 +30,7 @@ export default function Subscription({ customer }) {
         </div>
         <div className="pb-2">
           <h1 className="font-bold">Your Name: </h1>
-          <p className="pl-2 font-light">{customer?.customerName}</p>
+          <p className="pl-2 font-light">{customer?.name}</p>
         </div>
         <div className="pb-2">
           <h1 className="font-bold">Your Email: </h1>

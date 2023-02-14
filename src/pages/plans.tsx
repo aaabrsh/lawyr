@@ -17,7 +17,6 @@ import AuthModal from "../components/AuthModel";
 import Subscription from "../components/Plans/Subscription";
 import { useRouter } from "next/router";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
-import Stripe from "stripe";
 
 // import axios from "axios";
 export default function Plans({ plans }) {
@@ -71,14 +70,7 @@ export default function Plans({ plans }) {
     const fetchCustomer = async () => {
       let id = session?.user?.id;
       let { data } = await axios.get(`/api/customers/${id}`);
-      let temp = data?.customer?.billingPlan
-        ? {
-            ...data.customer,
-            customerName: session?.user?.name,
-            email: session?.user?.email,
-          }
-        : null;
-      setCustomerData(temp);
+      setCustomerData(data);
     };
 
     fetchCustomer();
