@@ -8,7 +8,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
 
-export default function ({ questions }) {
+export default function ({ questions, pdf_url }) {
   const questionsCount = questions.length;
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
@@ -24,20 +24,6 @@ export default function ({ questions }) {
 
   const handleNextClick = (event: any) => {
     event.preventDefault();
-
-    //get input elements from the form
-    const formElements = event.target.elements;
-    const formData = {};
-    const currentQuestions = questions[currentPage];
-
-    //extract the name and values of the input elemts and store them on formData
-    currentQuestions.forEach((question: any) => {
-      const formElementName = question.name;
-      formData[formElementName] = formElements[formElementName].value;
-    });
-
-    setFormAnswers((answers) => ({ ...answers, ...formData }));
-
     if (currentPage === questionsCount - 1) {
       //if we're on the last question
       setIsOpen(true);
@@ -47,21 +33,102 @@ export default function ({ questions }) {
   };
 
   const handleChange = (event: any) => {
+    let newValue = event.target.value;
+
+    if (event.target.type === "checkbox") {
+      let oldValues =
+        formAnswers[event.target.name] &&
+        formAnswers[event.target.name].length > 0
+          ? formAnswers[event.target.name]
+          : [];
+      if (oldValues.find((value: any) => value === newValue)) {
+        oldValues = oldValues.filter((value: any) => value !== newValue);
+      } else {
+        oldValues.push(newValue);
+      }
+      newValue = oldValues;
+    }
+
     setFormAnswers((answers) => ({
       ...answers,
-      [event.target.name]: event.target.value,
+      [event.target.name]: newValue,
     }));
   };
 
   const displayFormInput = (question: any, index: number) => {
     switch (question.tag) {
       case "input":
+        //handle different <input /> types (checkbox, radio, text, number, date...)
+        switch (question.type) {
+          case "checkbox":
+          case "radio":
+            return (
+              <div key={index} className="mb-4">
+                <label className={formStyles.label}>{question.label}</label>
+                <div className="flex flex-wrap">
+                  {question.options.map((option: any, index_1: number) => (
+                    <div key={index_1} className="flex flex-grow">
+                      <label
+                        className="pr-2"
+                        htmlFor={question.name + "_" + index_1}
+                      >
+                        {option.label}
+                      </label>
+                      <input
+                        id={question.name + "_" + index_1}
+                        type={question.type}
+                        name={question.name}
+                        value={option.value}
+                        checked={
+                          question.type === "radio" //if input type is radio
+                            ? formAnswers[question.name]
+                              ? formAnswers[question.name] === option.value
+                              : false
+                            : formAnswers[question.name] //if input type is checkbox
+                            ? formAnswers[question.name].find(
+                                (value: any) => value === option.value
+                              )
+                              ? true
+                              : false
+                            : false
+                        }
+                        onChange={handleChange}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          default:
+            return (
+              <div key={index} className="mb-4">
+                <label htmlFor={question.name} className={formStyles.label}>
+                  {question.label}
+                </label>
+                <input
+                  id={question.name}
+                  className={formStyles.input}
+                  type={question.type}
+                  name={question.name}
+                  value={
+                    formAnswers[question.name] ? formAnswers[question.name] : ""
+                  }
+                  onChange={handleChange}
+                  required={question.required}
+                />
+              </div>
+            );
+        }
+
+      case "textarea":
         return (
           <div key={index} className="mb-4">
-            <label className={formStyles.label}>{question.label}</label>
-            <input
+            <label htmlFor={question.name} className={formStyles.label}>
+              {question.label}
+            </label>
+            <textarea
+              id={question.name}
               className={formStyles.input}
-              type={question.type}
               name={question.name}
               value={
                 formAnswers[question.name] ? formAnswers[question.name] : ""
@@ -71,19 +138,28 @@ export default function ({ questions }) {
             />
           </div>
         );
-      case "textarea":
+      case "select":
         return (
           <div key={index} className="mb-4">
-            <label className={formStyles.label}>{question.label}</label>
-            <textarea
+            <label htmlFor={question.name} className={formStyles.label}>
+              {question.label}
+            </label>
+            <select
+              id={question.name}
               className={formStyles.input}
               name={question.name}
+              required={question.required}
+              onChange={handleChange}
               value={
                 formAnswers[question.name] ? formAnswers[question.name] : ""
               }
-              onChange={handleChange}
-              required={question.required}
-            />
+            >
+              {question.options.map((option: any, index_1: number) => (
+                <option key={index_1} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
           </div>
         );
     }
@@ -91,8 +167,9 @@ export default function ({ questions }) {
 
   const handleDownload = async () => {
     // Fetch an existing PDF document
-    const url = "https://eforms.com/download/2018/04/Offical-Demand-Letter.pdf";
-    const existingPdfBytes = await fetch(url).then((res) => res.arrayBuffer());
+    const existingPdfBytes = await fetch(pdf_url).then((res) =>
+      res.arrayBuffer()
+    );
 
     // Load a PDFDocument from the existing PDF bytes
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
@@ -224,19 +301,22 @@ export default function ({ questions }) {
 export async function getServerSideProps(context: any) {
   const categoryName = context.params.categoryName;
   const dataDirectory = path.join(process.cwd(), "src/data");
-  let data = await fs.readFile(dataDirectory + "/questions.json", "utf8");
+  let data: any = await fs.readFile(dataDirectory + "/questions.json", "utf8");
   data = JSON.parse(data)[categoryName];
 
   let questions: any = [];
+  let pdf_url: String = "";
 
   if (data) {
     //if a data with the given category name is found
     questions = data.questions;
+    pdf_url = data.pdf_url;
   }
 
   return {
     props: {
       questions,
+      pdf_url,
     },
   };
 }
