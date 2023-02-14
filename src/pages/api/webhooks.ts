@@ -62,10 +62,8 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
             break;
           case "customer.subscription.created":
           case "customer.subscription.updated":
-            await updateCustomerRecord(event.data.object);
-            break;
           case "customer.subscription.deleted":
-            await updateCustomerRecord(event.data.object, true);
+            await updateCustomerRecord(event.data.object);
             break;
           default:
             throw new Error("Unhandled relevant event!");
