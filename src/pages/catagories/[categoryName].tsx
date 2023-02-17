@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";
 import Sidebar from "../../components/Dashboard/Sidebar";
@@ -7,6 +7,7 @@ import { PDFDocument } from "pdf-lib";
 import { promises as fs } from "fs";
 import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
+import modifyPdf from "../../utils/modifyPdf";
 
 export default function ({ questions, pdf_url }) {
   const questionsCount = questions.length;
@@ -16,6 +17,16 @@ export default function ({ questions, pdf_url }) {
   const [active, setActive] = useState(false);
   const router = useRouter();
   const { categoryName } = router.query;
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://unpkg.com/downloadjs@1.4.7";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const handleBackClick = (event: any) => {
     event.preventDefault();
@@ -174,11 +185,13 @@ export default function ({ questions, pdf_url }) {
     // Load a PDFDocument from the existing PDF bytes
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
+    const pdfBytes: Uint8Array = await modifyPdf(pdfDoc, formAnswers);
+
     // Trigger the browser to download the PDF document
-    download(pdfDoc, "pdf-lib_modification_example.pdf", "application/pdf");
+    download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
 
     //Close Modal
-    setIsOpen(true);
+    setIsOpen(false);
   };
 
   return (
