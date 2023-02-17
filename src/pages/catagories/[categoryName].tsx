@@ -49,7 +49,7 @@ export default function ({ questions, pdf_url }) {
     if (event.target.type === "checkbox") {
       let oldValues =
         formAnswers[event.target.name] &&
-        formAnswers[event.target.name].length > 0
+          formAnswers[event.target.name].length > 0
           ? formAnswers[event.target.name]
           : [];
       if (oldValues.find((value: any) => value === newValue)) {
@@ -96,13 +96,14 @@ export default function ({ questions, pdf_url }) {
                               ? formAnswers[question.name] === option.value
                               : false
                             : formAnswers[question.name] //if input type is checkbox
-                            ? formAnswers[question.name].find(
+                              ? formAnswers[question.name].find(
                                 (value: any) => value === option.value
                               )
-                              ? true
+                                ? true
+                                : false
                               : false
-                            : false
                         }
+                        required={question.type === "radio" ? question.required : false}
                         onChange={handleChange}
                       />
                     </div>
@@ -186,6 +187,17 @@ export default function ({ questions, pdf_url }) {
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
 
     const pdfBytes: Uint8Array = await modifyPdf(pdfDoc, formAnswers);
+
+    // create the blob object with content-type "application/pdf"               
+    var blob = new Blob([pdfBytes], { type: "application/pdf" });
+
+    const formData = new FormData();
+    formData.append("pdfFile", blob);
+
+    fetch(`/api/upload/${categoryName}`, {
+      method: 'POST',
+      body: formData
+    })
 
     // Trigger the browser to download the PDF document
     download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
