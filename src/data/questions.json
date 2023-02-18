@@ -9,7 +9,7 @@
           "name": "radio",
           "default_value": "2",
           "label": "Test Selection",
-          "require": true,
+          "required": true,
           "options": [
             {
               "label": "Option 1",
@@ -27,7 +27,7 @@
           "name": "checkbox",
           "label": "Test Selection",
           "default_value": "1",
-          "require": true,
+          "required": true,
           "options": [
             {
               "label": "Option 1",
@@ -43,7 +43,7 @@
           "tag": "select",
           "name": "selection",
           "label": "Test Selection",
-          "require": true,
+          "required": true,
           "options": [
             {
               "label": "Option 1",
@@ -103,13 +103,542 @@
       ]
     ]
   },
-  "Hidden Money": {
+  "Demand Letters": {
+    "pdf_url": "https://eforms.com/download/2018/04/Offical-Demand-Letter.pdf",
     "questions": []
   },
-  "Sue \u003ccompanyName\u003e": {
+  "Cease and Desist Letters": {
+    "pdf_url": "https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "name",
+          "label": "Name of the person receiving the letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "writing_date",
+          "label": "Official Notice Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "writing_date",
+          "label": "Reason for cease and desist",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "reason",
+          "label": "Explain how the other party is infringing on your Intellectual Property",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "reason",
+          "label": "Therefore, it is required that the other party cease and desist the following",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Your Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City/State",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "writing_date",
+          "label": "Recepient is required to respond by",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Complaints": {
+    "pdf_url": "",
     "questions": []
   },
-  "Ticket Disputes": {
+  "Powers of Attorney": {
+    "pdf_url": "https://eforms.com/download/2015/09/Durable-Financial-Power-of-Attorney-Form.pdf",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Principal's First Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Principal's Last Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Principal's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Address Line 2",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Agent's First Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Agent's Last Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Agent's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Address Line 2",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Zip Code",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Wills": {
+    "pdf_url": "https://eforms.com/download/2016/03/last-will-and-testament-template.pdf",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Testator's First Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Testator's Last Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State of Residency",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Testator's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Testator's Address Line 2",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "radio",
+          "label": "Marital Status",
+          "required": true,
+          "options": [
+            {
+              "label": "Married",
+              "value": "married"
+            },
+            {
+              "label": "Single",
+              "value": "single"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "writing_date",
+          "label": "How many children does the testator have",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "First name of 1st child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Last name of 1st child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "First name of 2nd child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Last name of 2nd child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "First name of 3rd child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Last name of 3rd child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "First name of 4th child",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Last name of 4th child",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "radio",
+          "label": "Are there any children under 18 years old",
+          "required": true,
+          "options": [
+            {
+              "label": "Married",
+              "value": "married"
+            },
+            {
+              "label": "Single",
+              "value": "single"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "First Name of the personal representative of this will",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Last Name of the personal representative of this will",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Personal Representative's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Personal Representative's Address Line 2",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "reason",
+          "label": "If your spouse dies before you, where do you want your property to go",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "reason",
+          "label": "State your personal wishes if you have any",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Landlord-Tenant Agreements": {
+    "pdf_url": "https://eforms.com/download/2017/12/Notice-of-Default-on-Lease-Agreement.pdf",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "writing_date",
+          "label": "Notice Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Leased Property's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Personal Representative's Address Line 2",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Landlord's or Agent's telephone number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "name": "writing_date",
+          "label": "Landlord's or Agent's email",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "writing_date",
+          "label": "Full Name of Tenant",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "writing_date",
+          "label": "Original Lease Signature Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "reason",
+          "label": "Reason for this notice",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "writing_date",
+          "label": "How many days will tenant have to correct breach of lease",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Contracts": {
+    "pdf_url": "https://eforms.com/download/2021/10/Partnership-Agreement.pdf",
     "questions": []
   }
 }
