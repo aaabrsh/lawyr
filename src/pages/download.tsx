@@ -66,7 +66,6 @@ export default function Welcome() {
 
     formKeys.forEach((key) => {
       const field = form.getTextField(key);
-      key;
       field.setText(formData[key]);
       field.setFontSize(12);
     });

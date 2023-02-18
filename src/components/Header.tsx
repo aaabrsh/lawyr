@@ -16,6 +16,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import useStore from "../../store/useStore";
 
 import {
   BsFillArrowLeftSquareFill,
@@ -33,22 +34,25 @@ export default function Header() {
   const user = session?.user;
   const isLoadingUser = status === "loading";
   const [showModal, setShowModal] = useState(false);
-  //   const { addsearchText, removeSearchText } = useStore();
+  const { addsearchText, removeSearchText } = useStore();
   const [isSearchVisible, setIsSearchVisible] = useState(false);
 
   let [inputText, setInputText] = useState("");
-  const inputHandler = (e) => {
-    //convert input text to lower case
-    const lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-    console.log(inputText);
-    // const useStore = create((set) => ({
-    //   searchText: inputText,
-    // }));
+
+  useEffect(() => {
     addsearchText(inputText);
     if ((inputText = "")) {
       removeSearchText();
     }
+  }, [inputText])
+
+  const inputHandler = (e) => {
+    //convert input text to lower case
+    const lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+    // const useStore = create((set) => ({
+    //   searchText: inputText,
+    // }));
   };
 
   const handleClear = (e) => {
@@ -335,13 +339,13 @@ export default function Header() {
         )}
       </Disclosure>
       <div
-        className="relative w-full bg-gray-600 shadow-xl transition delay-150 ease-in-out"
+        className="relative w-full bg-gray-900 py-4 shadow-xl transition delay-150 ease-in-out"
         id="search-content"
         style={{
           display: isSearchVisible ? "block" : "none",
         }}
       >
-        <div className="container mx-auto py-4 text-white">
+        <div className="container w-7/12 px-5 mx-auto text-white bg-gray-800 border border-gray-700 rounded rounded-[100px]">
           <input
             id="searchfield"
             type="search"
@@ -349,7 +353,7 @@ export default function Header() {
             autoFocus="autofocus"
             onChange={inputHandler}
             // onComm={handleClear}
-            className="w-full appearance-none bg-gray-600 p-2 text-xl leading-normal text-white transition focus:border-transparent focus:outline-none lg:text-2xl"
+            className="w-full appearance-none px-2 py-2 bg-transparent leading-normal text-white transition focus:border-transparent focus:outline-none"
           />
         </div>
       </div>

@@ -13,19 +13,22 @@ import Link from "next/link";
 // import { promises as fs } from "fs";
 import path from "path";
 import ReactPaginate from "react-paginate";
-import { getProductCards as products } from "../../data/products";
+import { getProductCards as allProducts } from "../../data/products";
+import useStore from "../../../store/useStore";
 
 // import axios from "axios";
 export default function Welcome() {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
+  const [products, setProducts] = useState(allProducts);
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [itemsPerPage, setItemsPerPage] = useState(8);
   const [pageCount, setPageCount] = useState(products.length / itemsPerPage);
   const [itemOffset, setItemOffset] = useState(0);
   const { data: session } = useSession();
   const user = session?.user?.email;
+  const { searchText } = useStore();
   function closeModal() {
     setIsOpen(false);
   }
@@ -33,7 +36,23 @@ export default function Welcome() {
     setIsOpen(true);
   }
 
-  console.log(products);
+  useEffect(() => {
+    const filteredProducts = allProducts.filter((product: any) => {
+      //if no input the return the original
+      if (searchText === "" || searchText === null) {
+        return product;
+      }
+      //return the item which contains the user input
+      else {
+        // console.log(el.event.textPrompt);
+        return product.title
+          .toLowerCase()
+          .includes(searchText);
+      }
+    });
+    setProducts(filteredProducts);
+    setItemOffset(0);
+  }, [searchText])
 
   // const fetchJson = () => {
   //   fetch("./data.json")
