@@ -9,7 +9,7 @@ import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
 import modifyPdf from "../../utils/modifyPdf";
 
-export default function ({ questions, pdf_url }) {
+export default function Questions({ questions, pdf_url }) {
   const questionsCount = questions.length;
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
