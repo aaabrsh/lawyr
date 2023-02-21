@@ -218,11 +218,11 @@ export default function Questions({ questions, pdf_url }) {
         >
           <div className="py-6 px-10">
             {questions.length === 0 ? (
-              <div>No Questions Found</div>
+              <div className="my-2 font-medium text-zinc-700 px-8 text-lg">No Questions Found</div>
             ) : (
               // Multi-step form
               <div>
-                <h1 className="my-2">
+                <h1 className="my-2 font-medium text-zinc-700 px-8 text-lg">
                   Step {currentPage + 1} of {questionsCount}
                 </h1>
                 <form onSubmit={handleNextClick} className={formStyles.form}>
