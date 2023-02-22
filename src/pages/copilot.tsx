@@ -127,9 +127,13 @@ export default function Copilot({ plans }) {
               <div className="flex min-h-screen">
                 <div className="w-64 flex-auto border-r-2 border-indigo-300 bg-indigo-50 p-4">
                   <div>
-                    <div>
-                      <label htmlFor="file">Load from file:</label>{" "}
-                      <input onChange={onFileChange} type="file" />
+                    <div className="m-auto w-1/2">
+                      <label htmlFor="file">Load a new pdf:</label>{" "}
+                      <input
+                        onChange={onFileChange}
+                        type="file"
+                        className="mb-8 rounded-full border-2 border-gray-900 px-6 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
+                      />
                     </div>
                     <div className="pdfdiv-assistant">
                       <Document
@@ -153,7 +157,7 @@ export default function Copilot({ plans }) {
                       </Document>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="footer m-auto w-1/3">
                     <div className="button-container">
                       {/* <button onClick={handleZoomIn} disabled={pageScale >= 3}>
                         Zoom +
@@ -195,7 +199,7 @@ export default function Copilot({ plans }) {
                   </div>
                 </div>
                 {/* <div className="flex-1 bg-indigo-50 p-4"> */}
-                <div className="flex w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
+                <div className=" sticky	top-0 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
                   <div className="flex h-0 flex-grow flex-col overflow-auto p-4">
                     <div className="mt-2 flex w-full max-w-xs space-x-3">
                       {/* <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" /> */}
