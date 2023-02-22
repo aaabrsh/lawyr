@@ -199,7 +199,7 @@ export default function Copilot({ plans }) {
                   </div>
                 </div>
                 {/* <div className="flex-1 bg-indigo-50 p-4"> */}
-                <div className=" sticky	top-0 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
+                <div className="sticky top-0	ml-4 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
                   <div className="flex h-0 flex-grow flex-col overflow-auto p-4">
                     <div className="mt-2 flex w-full max-w-xs space-x-3">
                       {/* <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" /> */}
