@@ -17,22 +17,32 @@
     radial-gradient(at 26% 56%, rgb(254, 215, 170) 0, transparent 8%);
 }
 
-.pagination{
-  @apply py-2 border border-gray-800/50 flex justify-center
-}
- 
-.page-item{
-  @apply rounded-[50%] w-10 h-10 mx-2 bg-gray-900/50
+.pagination {
+  @apply flex justify-center border border-gray-800/50 py-2;
 }
 
-.page-link{
-  @apply w-full h-full flex justify-center items-center hover:border-2 hover:rounded-[50%] hover:border-white
+.page-item {
+  @apply mx-2 h-10 w-10 rounded-[50%] bg-gray-900/50;
 }
 
-.break-link{
-  @apply w-full h-full flex justify-center items-center
+.page-link {
+  @apply flex h-full w-full items-center justify-center hover:rounded-[50%] hover:border-2 hover:border-white;
 }
 
-.active{
-  @apply bg-gray-50/80 text-blue-700
+.break-link {
+  @apply flex h-full w-full items-center justify-center;
+}
+
+.active {
+  @apply bg-gray-50/80 text-blue-700;
+}
+
+.pdfdiv-assistant .react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 80% !important;
+  height: 60% !important;
+}
+
+.react-pdf__Page__annotations {
+  display: none !important;
 }

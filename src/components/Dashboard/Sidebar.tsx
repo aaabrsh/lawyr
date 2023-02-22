@@ -52,6 +52,12 @@ export default function Sidebar({ active, setActive }: any) {
       items: [],
     },
     {
+      name: "Copilot",
+      icon: AiTwotoneFileText,
+      link: "/copilot",
+      items: [],
+    },
+    {
       name: "Plans",
       icon: AiTwotoneFileText,
       link: "/plans",

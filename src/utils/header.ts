@@ -20,7 +20,7 @@ export const menuItems = [
   {
     label: "Dashboard",
     icon: BookmarkIcon,
-    href: "/dashboard/welcome",
+    href: "/dashboard",
   },
   {
     label: "Logout",
@@ -29,7 +29,7 @@ export const menuItems = [
   },
 ];
 export const navigation = [
-  { name: "For Businesses", href: "/forbusinesses" },
+  { name: "For Businesses", href: "/forcompanies" },
   { name: "For Lawyers", href: "/forlawyers" },
   // { name: "Pricing", href: "/pricing" },
   // { name: "Resources", href: "/resources" },
