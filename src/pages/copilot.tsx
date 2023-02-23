@@ -18,6 +18,7 @@ import initStripe from "stripe";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
 import { useRef } from "react";
+import useStore from "../../store/useStore";
 
 // import axios from "axios";
 
@@ -34,6 +35,11 @@ export default function Copilot({ plans }) {
   const [pageNumber, setPageNumber] = useState(1);
   const ref = useRef(null);
   const user = session?.user?.email;
+  const { pdf_url } = useStore();
+
+  useEffect(() => {
+    setFile(pdf_url ?? "../../pdf.pdf");
+  }, []);
 
   function handleNext() {
     if (pageNumber < totalPages) {

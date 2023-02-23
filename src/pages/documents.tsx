@@ -6,10 +6,14 @@ import { FiExternalLink } from "react-icons/fi";
 import Sidebar from "../components/Dashboard/Sidebar";
 import Header from "../components/Header";
 import { getSession } from "next-auth/react";
+import useStore from "../../store/useStore";
+import { useRouter } from "next/router";
 
 export default function Documents({ pdf_files }) {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState(false);
+  const { addPdfUrl } = useStore();
+  const router = useRouter();
 
   function closeModal() {
     setIsOpen(false);
@@ -19,7 +23,8 @@ export default function Documents({ pdf_files }) {
   }
 
   async function handleLinkClick(pdf_url: string) {
-    //TODO load the file to copilot here
+    addPdfUrl(pdf_url);
+    router.push("/copilot");
   }
   return (
     <>
@@ -52,8 +57,7 @@ export default function Documents({ pdf_files }) {
                   {pdf_files.map((file: any) => (
                     <tr className="border-b-2">
                       <td className="cursor-pointer py-2">
-                        <Link
-                          href={file.pdf_url}
+                        <div
                           onClick={() => handleLinkClick(file.pdf_url)}
                           target="_blank"
                           className="flex w-full items-center text-cyan-800 underline"
@@ -64,7 +68,7 @@ export default function Documents({ pdf_files }) {
                           <span className="px-5">
                             <FiExternalLink />
                           </span>
-                        </Link>
+                        </div>
                       </td>
                       <td className="py-2 pr-5">{file.created_at}</td>
                     </tr>
