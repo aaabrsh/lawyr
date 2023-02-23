@@ -126,22 +126,22 @@ export default function Plans({ plans }) {
                       </span>
                       <span className="mt-2 flex items-end gap-3">
                         <label
-                          class="mb-2 block font-bold text-gray-700"
-                          for="file"
+                          className="mb-2 block font-bold text-gray-700"
+                          htmlFor="file"
                         >
                           Choose a file
                         </label>
-                        <div class="relative">
+                        <div className="relative">
                           <input
                             type="file"
                             id="file"
                             name="file"
                             accept="application/pdf"
                             onChange={handleFileUpload}
-                            class="absolute top-0 left-0 h-full w-full cursor-pointer opacity-0"
+                            className="absolute top-0 left-0 h-full w-full cursor-pointer opacity-0"
                           />
-                          <div class="inline-flex justify-center rounded-md border border-transparent bg-[#4F46E5] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
-                            <span class="text-white truncate w-[200px]">
+                          <div className="inline-flex justify-center rounded-md border border-transparent bg-[#4F46E5] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
+                            <span className="w-[200px] truncate text-white">
                               {file ? file.name : "No file chosen"}
                             </span>
                           </div>
