@@ -3,6 +3,7 @@ import {
   HomeIcon,
   BookmarkIcon,
   ArrowLeftOnRectangleIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 import { signOut } from "next-auth/react";
 
@@ -17,6 +18,11 @@ export const menuItems = [
   //   icon: UserCircleIcon,
   //   href: "/profile",
   // },
+  {
+    label: "Setting",
+    icon: Cog6ToothIcon,
+    href: "/plans",
+  },
   {
     label: "Dashboard",
     icon: BookmarkIcon,

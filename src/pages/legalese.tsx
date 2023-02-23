@@ -18,7 +18,7 @@ import { useRef } from "react";
 export default function Plans({ plans }) {
   const [legalese, setLegalese] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const [files, setFiles] = useState([]);
+  const [file, setFile] = useState();
   const [active, setActive] = useState(false);
   const { data: session } = useSession();
   const ref = useRef(null);
@@ -29,6 +29,12 @@ export default function Plans({ plans }) {
   function openStartModal() {
     setIsOpen(true);
   }
+
+  const handleFileUpload = async (e) => {
+    const uploadedFile = e.target.files[0];
+    setFile(uploadedFile);
+  };
+
   const queryPrompt = (prompt) => {
     const DEFAULT_PARAMS = {
       model: "text-davinci-003",
@@ -47,34 +53,36 @@ export default function Plans({ plans }) {
 
         const params = { ...DEFAULT_PARAMS, prompt: prompt };
 
-        //   const requestOptions = {
-        //     method: "POST",
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //       Authorization: "Bearer " + String(OPENAI_API_KEY),
-        //     },
-        //     body: JSON.stringify(params),
-        //   };
-        //   fetch("https://api.openai.com/v1/completions", requestOptions)
-        //     .then((response) => response.json())
-        //     .then((data) => {
-        //       console.log(data);
-        //       const text = data.choices[0].text;
-        //       console.log(text);
-        //       const new_graph = JSON.parse(text);
-        //       console.log(new_graph);
-        //       setState(new_graph, () => {
-        //         console.log(state);
-        //       });
-        //       document.body.style.cursor = "default";
-        //       document.getElementsByClassName("generateButton")[0].disabled = false;
-        //       document.getElementsByClassName("searchBar")[0].value = "";
-        //     })
-        //     .catch((error) => {
-        //       console.log(error);
-        //       document.body.style.cursor = "default";
-        //       document.getElementsByClassName("generateButton")[0].disabled = false;
-        //     });
+        const requestOptions = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + String(OPENAI_API_KEY),
+          },
+          body: JSON.stringify(params),
+        };
+        fetch("https://api.openai.com/v1/completions", requestOptions)
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            const text = data.choices[0].text;
+            console.log(text);
+            const new_graph = JSON.parse(text);
+            console.log(new_graph);
+            setState(new_graph, () => {
+              console.log(state);
+            });
+            document.body.style.cursor = "default";
+            document.getElementsByClassName("generateButton")[0].disabled =
+              false;
+            document.getElementsByClassName("searchBar")[0].value = "";
+          })
+          .catch((error) => {
+            console.log(error);
+            document.body.style.cursor = "default";
+            document.getElementsByClassName("generateButton")[0].disabled =
+              false;
+          });
       });
   };
   //   const getFiles = async () => {
@@ -115,6 +123,29 @@ export default function Plans({ plans }) {
                     <div className="mb-4">
                       <span className="cursor-pointer rounded-md bg-[#F3F4F6] p-2 font-semibold">
                         Write
+                      </span>
+                      <span className="mt-2 flex items-end gap-3">
+                        <label
+                          class="mb-2 block font-bold text-gray-700"
+                          for="file"
+                        >
+                          Choose a file
+                        </label>
+                        <div class="relative">
+                          <input
+                            type="file"
+                            id="file"
+                            name="file"
+                            accept="application/pdf"
+                            onChange={handleFileUpload}
+                            class="absolute top-0 left-0 h-full w-full cursor-pointer opacity-0"
+                          />
+                          <div class="inline-flex justify-center rounded-md border border-transparent bg-[#4F46E5] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">
+                            <span class="text-white truncate w-[200px]">
+                              {file ? file.name : "No file chosen"}
+                            </span>
+                          </div>
+                        </div>
                       </span>
                     </div>
                     <div className="flex gap-3 text-[#9CA3AF]">

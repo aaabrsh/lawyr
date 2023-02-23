@@ -1,7 +1,8 @@
 export const getProductCards = [
   {
     title: "Demand Letters",
-    description: "letters that demand payment or some other action from another party.",
+    description:
+      "letters that demand payment or some other action from another party.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/scwrf9prjzqxyni.png?Expires=1728337081\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=VCI81wdYfso2KKfKfUI6JSrrIlx0woFyvOStd-3z1zq~zMYyvkcmb0TXvDnTgIuP6TO4n4gRrBlzyV5Wq6U41NUMO0h82e~GoLKwIbsbhmE6N74E4IxbC1ZhKNKsl6SX5mUCm8k3vMVo-n1CyxyBUbvtadtF7bboQAHu94QLxyyzKLC0z3utDeEl-WxY3xBMLf52xqOAdvTun7j8e1~QL3IcW6JQE27xXfImmemSrmlMpd3e4~AsHWmVcgR1S2sEv~O26PmfV-A4JO6b~Ja7sDA1GTDzOnUOro7qPSrs9RZJPc0tTF2iY82GYUsOVp5bTJdcAK6-U03BtyLa2mqhXQ__",
     iconImage:
@@ -9,49 +10,55 @@ export const getProductCards = [
   },
   {
     title: "Cease and Desist Letters",
-    description: "letters that demand that a party stop a particular activity, such as harassing the sender or using their intellectual property.",
+    description:
+      "letters that demand that a party stop a particular activity, such as harassing the sender or using their intellectual property.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/o3jqkazxynlkwi4.png?Expires=1739824664\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JZzN-8-3c6mZ~5CmozZYV~hEgwY0Nq2g2XVI2a2UdUjMgdyaSL3D7~VzD9OKyv2ZUDGOVV68Eju7yHEvMl1ffKre-ztAPB~Al0Q6rQBUZAIgAz35-mBHgscQAHFIHtdu74Uc9LafRaa1B5mQ3Zf4DQeOaWVTJjYawOPWzvDqjvEb4ADrmhivblc89OkSg8QEMnkIR3X4Gu2GTIilUw1eNzFtqxnJkNZX8e-WrWO~LYyqh~18YjL3b84IXF-ejzMm-wfYBR8pUxRIQ-sjz26Yi6YWEyohE8zlmO0ZJazjMC7BAVLAe1iJ-4m8J8cItVCWVziQsTh39DPUhBSiHIjoVA__",
     iconImage:
       "https://d2pp7hm7rdj612.cloudfront.net/77kcixa5fbfspbj.png?Expires=1739824671\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=AFOcPiTqDfkcUxPL3olBKC241pCg8jFXOo5PNdhk9lvJZ6Y9F8fLbRE5OuWPCfx~UUO0smDjHy3d16tbq65vwsamgLlbolD38L8YPXWZesEgSvHsoyLUXZrLR~QZgX2Jbr3~NK3l9eyoIhQHOGQm7NwD8a1a7blyDr78AtdybhvBakrZpcUqG~y9IPmDMIUreKuo2YLANVcrewiNaOPQINA9b-pKe3jAhQCypRy4n1bf-F63YeOpG8nW4aPySvzDmxdHoQOoa2-dyqctq7biMrCPBnJhVIPgWifi9DRgZ0UhIqrB2ofyWRvJ1~3knZH8K3OzRG0HbF7smceqiOZWcA__",
   },
   {
-    title: "Complaints",
-    description: "legal complaints that are filed in court to initiate a lawsuit.",
+    title: "Landlord-Tenant Agreements",
+    description:
+      "contracts between a landlord and tenant that specify the terms of the tenancy.",
     cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/j5uvhovrafsxt6z.png?Expires=1728847284\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e4IZKMGIz4h6OyRBtdrEUEkAgAAwy7KTjsLvpgQcCouwXE~gW2UlfVMPFC3BFCAl8K6qxJYxb13HpanUWer7khOxAEaVPT6I8EBNlMH2bbpDJwhGaXDdvw8ia8RS00Tw3vC3sTbPTS31ifScS427boM59Qg3lPiVlbzot5w8z0P-egrzn8xkylfBCPFQOAnVw-0ENE3tOXl1~riXu0cDkBU93mc9kYeP5A~v7McwdA4-JCpJUF5zvuQAA0sAffBAYIy7FfdnXBs3LhjEDwHtRcz7OWd-HAuNtUSGyOj8I4kwqRNEUp5d2hQdxbMOTBGLKhqzxcbDb~88~53GsJfClw__",
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/landlord.png",
     iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/qldqdm3udakht8l.png?Expires=1728847288\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LNr~fc2wGye7FutoPt2TIv9w5boD1b~mrrbgF-lUb4fPeYTfYf8XxHy6aoxOmNBcOGUyVQenlEK4YoQaV4dqpuTxrtqv~v~8OH3FsdZ5kH~o54aUm7Q7G2mBcBKinhtcovIzVO1rP8r2oE8WJ1U4P8nx6GrpGqT-8gIsjE3rHAn2LoZglppTZc5RS2ttvs~atuD6LO79nIk8ndoiicXiP6GC2oTy--9YsIVS-iXzZ96WlJBD5e0Duk9~drwV0YIEklxeCMerkO~8p1ZuFMIjIz4wWHcHfMmNGPqjP5ZHk2bmVlo1vaEA3o3-I05U~iUiKHCpM25pCzOwPTXHSg3S7g__",
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/landlord.png",
   },
   {
     title: "Powers of Attorney",
-    description: "legal documents that give someone the authority to act on behalf of another person.",
+    description:
+      "legal documents that give someone the authority to act on behalf of another person.",
     cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/suing.png",
     iconImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/suing.png",
   },
   {
     title: "Wills",
-    description: "legal documents that specify how a person's assets will be distributed after they die.",
+    description:
+      "legal documents that specify how a person's assets will be distributed after they die.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/p8nzlph6hvaf8r9.png?Expires=1751660610\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=SavqPy-YYufu2MKlAiQTCmV2T98h5MZK7-qHsnOijNpzC9zR-xW1a3NE~ng5F5SINyzXaNmCq1V5V8fmGO1zHMNsWhWOrbf~n5PE5v8P2pmb5OV6OR8uIToizHGAmrxR4TcRVwSvzwpWQ-CDDHWMg05ERtkhLTTEF6dAxuRWmupXVG4oE0FSxCxjIPviGqn2ETumUljVRQ0UjtO8annJUyVv32xzGYG9gi9QWdOM-1uO95MFIj119TGKPHyDrmmE2xBr3H~4CQcpgNp9MHKPaKfuBLixfG1QURZlPIc1~H4EvAsl9hc5aMvdwDm5j4weQBu~jLAbDOaLKKjQjxwXPg__",
     iconImage:
       "https://d2pp7hm7rdj612.cloudfront.net/0vb8mya9bu6cxqv.png?Expires=1751660623\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Zu-839wQRDIFCqrATO0RPEcUx-l-cI~mfkNk6yI49UtBOJDUGi1RdgADXCU7awQiGT0tiAEmzKsrsh1~9yCrQ8slhMDkdh96eM8abcXrJNzljIs~W16CF-JZ8NyZGypxz1bYvypwVCaNespJutVWeQUO3AlfkXAp46OlA9qJUfRAGhpN~p0D1GClORi4tMH7x409b6EQpZY6rypoythlSd~SZWuPfHztcBV4Rw4ntTqyV8NW-q4-GQ4g2l2g2hvHJiLcUkPhOQcOsW125-aEi-OqVmEbp9Ywc6HPOCpIjC72zWO1K4XkiHZgNiuvAEKF3zRwjyIlx84IT4shYtdBrw__",
   },
   {
-    title: "Landlord-Tenant Agreements",
-    description: "contracts between a landlord and tenant that specify the terms of the tenancy.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/landlord.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/landlord.png",
-  },
-  {
     title: "Contracts",
-    description: "agreements between two or more parties that specify their obligations to each other.",
+    description:
+      "agreements between two or more parties that specify their obligations to each other.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/rhojav9ei7ibbws.png?Expires=1728580007\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=hn8GOKp-FC59SxPE~bE4FO4jgvYumHKE~3cvDJektgYmlv9VdqmURzYuUrHCFv4ltYdnCSTdRhsriFKMNCne2UBeiG8rmAfWWiSnlow8zQFw-drqlpstuR59yXxrksM4OIaQaSeSM2aJi~O4YJIzrjbguU9uA4Vj18nwLQg9RDLhYcKiosAjL73YDAqeXoRX6Rje540~Gf2m6zG3aAC7Lg7EPrMoesLzhzp1Kq3ZR0aYbgir0dMOVIfo8oItTnlAMTL9bTNlETP9d0TR3ThBNmYFi2GE806ualvG3K~PAdjrMoLCTVRpkYXaGtlsHZke~WLNw~aNM4YLdtNT1Jdy5Q__",
     iconImage:
       "https://d2pp7hm7rdj612.cloudfront.net/omqbu6cp2g6jdx9.png?Expires=1728580011\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=eIR6hzHlV3i2W13HzfrfocbN~76C3IzosY1PIKJ-n0Jb8OLDQnh1PDN6xks0LhtrS3UcX4zbGGs9gugF6Gq3CggN4t6g3ULtetqlLPll7EniTQVLqe4QEl-fZcvIfDIRyrlwZbBTtQpwIAAU~ihniiqvNpqw2D8bU7oGBvzrSP2LQsGAWOMhtcCgINziwzBTjHc1jLdgLmNcoBRGQzeXKIF4LFwj6iAP6u28kaA0tsS7Qr4xRAbAX0-b4OEuDITZv~VzyDXChZy5zv8VetKvhWsr~S7bS4FkxzPVxgCMxMsEtzw1Sf2snGi7uUTue3IllXx8VzekDloMarN2S5cAWQ__",
+  },
+  {
+    title: "Complaints",
+    description:
+      "legal complaints that are filed in court to initiate a lawsuit.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/j5uvhovrafsxt6z.png?Expires=1728847284\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e4IZKMGIz4h6OyRBtdrEUEkAgAAwy7KTjsLvpgQcCouwXE~gW2UlfVMPFC3BFCAl8K6qxJYxb13HpanUWer7khOxAEaVPT6I8EBNlMH2bbpDJwhGaXDdvw8ia8RS00Tw3vC3sTbPTS31ifScS427boM59Qg3lPiVlbzot5w8z0P-egrzn8xkylfBCPFQOAnVw-0ENE3tOXl1~riXu0cDkBU93mc9kYeP5A~v7McwdA4-JCpJUF5zvuQAA0sAffBAYIy7FfdnXBs3LhjEDwHtRcz7OWd-HAuNtUSGyOj8I4kwqRNEUp5d2hQdxbMOTBGLKhqzxcbDb~88~53GsJfClw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/qldqdm3udakht8l.png?Expires=1728847288\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LNr~fc2wGye7FutoPt2TIv9w5boD1b~mrrbgF-lUb4fPeYTfYf8XxHy6aoxOmNBcOGUyVQenlEK4YoQaV4dqpuTxrtqv~v~8OH3FsdZ5kH~o54aUm7Q7G2mBcBKinhtcovIzVO1rP8r2oE8WJ1U4P8nx6GrpGqT-8gIsjE3rHAn2LoZglppTZc5RS2ttvs~atuD6LO79nIk8ndoiicXiP6GC2oTy--9YsIVS-iXzZ96WlJBD5e0Duk9~drwV0YIEklxeCMerkO~8p1ZuFMIjIz4wWHcHfMmNGPqjP5ZHk2bmVlo1vaEA3o3-I05U~iUiKHCpM25pCzOwPTXHSg3S7g__",
   },
   {
     title: "Customer Service Issues",

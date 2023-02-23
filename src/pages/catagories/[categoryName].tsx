@@ -8,14 +8,17 @@ import { promises as fs } from "fs";
 import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
 import modifyPdf from "../../utils/modifyPdf";
+import { useSession } from "next-auth/react";
 
-export default function ({ questions, pdf_url }) {
+export default function Questions({ questions, pdf_url }) {
   const questionsCount = questions.length;
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [formAnswers, setFormAnswers] = useState({});
   const [active, setActive] = useState(false);
   const router = useRouter();
+  const { data: session } = useSession();
+  const userId = session?.user?.id;
   const { categoryName } = router.query;
 
   useEffect(() => {
@@ -49,7 +52,7 @@ export default function ({ questions, pdf_url }) {
     if (event.target.type === "checkbox") {
       let oldValues =
         formAnswers[event.target.name] &&
-          formAnswers[event.target.name].length > 0
+        formAnswers[event.target.name].length > 0
           ? formAnswers[event.target.name]
           : [];
       if (oldValues.find((value: any) => value === newValue)) {
@@ -96,14 +99,16 @@ export default function ({ questions, pdf_url }) {
                               ? formAnswers[question.name] === option.value
                               : false
                             : formAnswers[question.name] //if input type is checkbox
-                              ? formAnswers[question.name].find(
+                            ? formAnswers[question.name].find(
                                 (value: any) => value === option.value
                               )
-                                ? true
-                                : false
+                              ? true
                               : false
+                            : false
                         }
-                        required={question.type === "radio" ? question.required : false}
+                        required={
+                          question.type === "radio" ? question.required : false
+                        }
                         onChange={handleChange}
                       />
                     </div>
@@ -188,19 +193,19 @@ export default function ({ questions, pdf_url }) {
 
     const pdfBytes: Uint8Array = await modifyPdf(pdfDoc, formAnswers);
 
-    // create the blob object with content-type "application/pdf"               
+    // create the blob object with content-type "application/pdf"
     var blob = new Blob([pdfBytes], { type: "application/pdf" });
 
     const formData = new FormData();
     formData.append("pdfFile", blob);
 
-    fetch(`/api/upload/${categoryName}`, {
-      method: 'POST',
-      body: formData
-    })
+    fetch(`/api/upload/${userId}/${categoryName}`, {
+      method: "POST",
+      body: formData,
+    });
 
     // Trigger the browser to download the PDF document
-    download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+    download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
 
     //Close Modal
     setIsOpen(false);
@@ -218,11 +223,13 @@ export default function ({ questions, pdf_url }) {
         >
           <div className="py-6 px-10">
             {questions.length === 0 ? (
-              <div>No Questions Found</div>
+              <div className="my-2 px-8 text-lg font-medium text-zinc-700">
+                No Questions Found
+              </div>
             ) : (
               // Multi-step form
               <div>
-                <h1 className="my-2">
+                <h1 className="my-2 px-8 text-lg font-medium text-zinc-700">
                   Step {currentPage + 1} of {questionsCount}
                 </h1>
                 <form onSubmit={handleNextClick} className={formStyles.form}>

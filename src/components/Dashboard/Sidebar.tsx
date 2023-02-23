@@ -13,6 +13,7 @@ import {
   AiTwotoneFileText,
   AiTwotoneSound,
   AiTwotoneVideoCamera,
+  AiFillFilePdf
 } from "react-icons/ai";
 
 import { motion, useAnimation } from "framer-motion";
@@ -30,6 +31,12 @@ export default function Sidebar({ active, setActive }: any) {
       name: "Dashboard",
       icon: AiFillCode,
       link: "/dashboard",
+      items: [],
+    },
+    {
+      name: "Documents",
+      icon: AiFillFilePdf,
+      link: "/documents",
       items: [],
     },
     {
