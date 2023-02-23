@@ -2,10 +2,8 @@ import { NextApiResponse } from "next";
 import { NextApiRequest } from "next";
 import formidable from "formidable";
 import fs from "node:fs";
-import {
-  S3Client,
-  PutObjectCommand,
-} from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { prisma } from "../../../../server/db";
 
 const SECRET_ACCESS_KEY = process.env.SECRET_ACCESS_KEY ?? "";
 const ACCESS_KEY_ID = process.env.ACCESS_KEY_ID ?? "";
@@ -30,8 +28,9 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method == "POST") {
-
-    const { fileName } = req.query;
+    let { userId, fileName } = req.query;
+    fileName = `${fileName} ${Date.now().toString()}.pdf`; //add time to it to make the filename unique
+    let pdf_url = `https://pub-d138560812bf42bdb84dbe672d95be48.r2.dev/${bucket}/${fileName}`;
     const form = formidable();
     form.parse(req, async (err: any, fields: any, files: any) => {
       if (!files.pdfFile) {
@@ -48,6 +47,12 @@ export default async function handler(
         try {
           const command = new PutObjectCommand(params);
           await S3.send(command);
+          await prisma.pdfFile.create({
+            data: {
+              userId: userId,
+              pdf_url: pdf_url,
+            },
+          });
           return res.status(201).send("File uploaded");
         } catch (error) {
           console.log(error);

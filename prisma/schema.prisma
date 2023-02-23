@@ -81,7 +81,7 @@ enum BillingPlan {
 model PdfFile {
     id         String   @id @default(cuid())
     userId     String
-    file_name  String
+    pdf_url    String
     created_at DateTime @default(now())
     user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

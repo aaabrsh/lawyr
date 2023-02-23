@@ -542,7 +542,7 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "writing_date",
+          "name": "Date of Notice",
           "label": "Notice Date",
           "required": true
         }
@@ -551,35 +551,28 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Address of Leased Premises",
           "label": "Leased Property's Street Address",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "Personal Representative's Address Line 2",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
+          "name": "City",
           "label": "City",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "State",
           "label": "State",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Zip",
           "label": "Zip Code",
           "required": true
         }
@@ -588,14 +581,14 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Telephone",
           "label": "Landlord's or Agent's telephone number",
           "required": true
         },
         {
           "tag": "input",
           "type": "email",
-          "name": "writing_date",
+          "name": "EMail",
           "label": "Landlord's or Agent's email",
           "required": true
         }
@@ -604,7 +597,7 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Dear",
           "label": "Full Name of Tenant",
           "required": true
         }
@@ -613,7 +606,7 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "writing_date",
+          "name": "This Notice of Default is in reference to the Lease Agreement dated",
           "label": "Original Lease Signature Date",
           "required": true
         }
@@ -621,7 +614,7 @@
       [
         {
           "tag": "textarea",
-          "name": "reason",
+          "name": "AGREEMENT DUE TO THE FOLLOWING 2",
           "label": "Reason for this notice",
           "required": true
         }
@@ -630,7 +623,7 @@
         {
           "tag": "input",
           "type": "number",
-          "name": "writing_date",
+          "name": "If this breach of lease is not corrected within",
           "label": "How many days will tenant have to correct breach of lease",
           "required": true
         }

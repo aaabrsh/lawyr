@@ -18,11 +18,8 @@ export default function Documents({ pdf_files }) {
     setIsOpen(true);
   }
 
-  async function getUrl(file_name: string) {
-    const { url } = await fetch(`api/getUrl/${file_name}`).then((res) =>
-      res.json()
-    );
-    window.open(url, "_blank");
+  async function handleLinkClick(pdf_url: string) {
+    //TODO load the file to copilot here
   }
   return (
     <>
@@ -55,18 +52,19 @@ export default function Documents({ pdf_files }) {
                   {pdf_files.map((file: any) => (
                     <tr className="border-b-2">
                       <td className="cursor-pointer py-2">
-                        <a
-                          onClick={() => getUrl(file.file_name)}
+                        <Link
+                          href={file.pdf_url}
+                          onClick={() => handleLinkClick(file.pdf_url)}
                           target="_blank"
                           className="flex w-full items-center text-cyan-800 underline"
                         >
                           <span className="min-w-[300px] max-w-[400px] flex-grow truncate">
-                            {file.file_name}
+                            {file.pdf_url}
                           </span>
                           <span className="px-5">
                             <FiExternalLink />
                           </span>
-                        </a>
+                        </Link>
                       </td>
                       <td className="py-2 pr-5">{file.created_at}</td>
                     </tr>
@@ -110,6 +108,9 @@ export async function getServerSideProps(context: any) {
           (file.created_at = `${file.created_at.getDate()}-${file.created_at.getMonth()}-${file.created_at.getFullYear()}`)
       );
       return res;
+    })
+    .catch(() => {
+      return [];
     });
 
   return {
