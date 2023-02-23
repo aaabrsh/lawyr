@@ -205,7 +205,7 @@ export default function Questions({ questions, pdf_url }) {
     });
 
     // Trigger the browser to download the PDF document
-    download(pdfBytes, "pdf-lib_modification_example.pdf", "application/pdf");
+    download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
 
     //Close Modal
     setIsOpen(false);

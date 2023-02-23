@@ -105,7 +105,82 @@
   },
   "Demand Letters": {
     "pdf_url": "https://eforms.com/download/2018/04/Offical-Demand-Letter.pdf",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "I",
+          "label": "You Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "From 1",
+          "label": "Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "From 2",
+          "label": "City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "From 3",
+          "label": "State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "From 4",
+          "label": "Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Dear",
+          "label": "Deptor's Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date",
+          "label": "Date of this Demand Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "If there is no response to this demand letter by",
+          "label": "Recepient is required to respond by",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "undefined",
+          "label": "Reason For Letter",
+          "required": true
+        }
+      ]
+    ]
   },
   "Cease and Desist Letters": {
     "pdf_url": "https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf",
@@ -114,7 +189,7 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "name",
+          "name": "Dear",
           "label": "Name of the person receiving the letter",
           "required": true
         }
@@ -123,53 +198,38 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "writing_date",
+          "name": "Date",
           "label": "Official Notice Date",
           "required": true
         }
       ],
       [
         {
-          "tag": "input",
-          "type": "date",
-          "name": "writing_date",
+          "tag": "textarea",
+          "name": "This letter is served upon due to",
           "label": "Reason for cease and desist",
           "required": true
         }
       ],
       [
         {
-          "tag": "textarea",
-          "name": "reason",
-          "label": "Explain how the other party is infringing on your Intellectual Property",
-          "required": true
-        },
-        {
-          "tag": "textarea",
-          "name": "reason",
-          "label": "Therefore, it is required that the other party cease and desist the following",
-          "required": true
-        }
-      ],
-      [
-        {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "From 1",
           "label": "Your Full Name",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "From 2",
           "label": "Address",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "From 3",
           "label": "City/State",
           "required": true
         }
@@ -178,7 +238,7 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "writing_date",
+          "name": "day of",
           "label": "Recepient is required to respond by",
           "required": true
         }
@@ -196,15 +256,8 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "Principal's First Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Principal's Last Name",
+          "name": "I",
+          "label": "Principal's Full Name",
           "required": true
         },
         {
@@ -247,15 +300,8 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "Agent's First Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Agent's Last Name",
+          "name": "hereby designate",
+          "label": "Agent's Full Name",
           "required": true
         },
         {
@@ -303,15 +349,8 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "Testator's First Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Testator's Last Name",
+          "name": "of",
+          "label": "Testator's Flll Name",
           "required": true
         }
       ],
@@ -319,7 +358,7 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "resident in the City of",
           "label": "State of Residency",
           "required": true
         }
