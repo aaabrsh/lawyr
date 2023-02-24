@@ -12,6 +12,10 @@ import initStripe from "stripe";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
 import { useRef } from "react";
+import { pdfjs } from "react-pdf";
+
+import workerSrc from "../../pdf-worker";
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 // import axios from "axios";
 
@@ -33,6 +37,27 @@ export default function Plans({ plans }) {
   const handleFileUpload = async (e) => {
     const uploadedFile = e.target.files[0];
     setFile(uploadedFile);
+
+    const reader = new FileReader();
+
+    reader.onload = async () => {
+      const fileData = new Uint8Array(reader.result);
+
+      // Load the PDF file and get the first page
+      const loadingTask = pdfjs.getDocument({
+        data: fileData,
+      });
+      const pdf = await loadingTask.promise;
+      const page = await pdf.getPage(1);
+
+      // Extract text content from the page
+      const content = await page.getTextContent();
+      const text = content.items.map((item) => item.str).join(" ");
+      setLegalese(text);
+      queryPrompt(legalese);
+    };
+
+    reader.readAsArrayBuffer(uploadedFile);
   };
 
   const queryPrompt = (prompt) => {
