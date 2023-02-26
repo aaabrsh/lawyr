@@ -20,65 +20,75 @@ import {
 
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
+import { useSession } from "next-auth/react";
+
+const basicPlanMenu = [
+  {
+    name: "Dashboard",
+    icon: AiFillCode,
+    link: "/dashboard",
+    items: [],
+  },
+  {
+    name: "Documents",
+    icon: AiFillFilePdf,
+    link: "/documents",
+    items: [],
+  },
+  {
+    name: "Chat",
+    icon: AiFillCode,
+    link: "/chat",
+    items: [],
+  },
+  {
+    name: "Services",
+    icon: AiTwotoneFileText,
+    link: "/catagories",
+    items: [],
+  },
+  {
+    name: "Legalese",
+    icon: AiTwotoneFileText,
+    link: "/legalese",
+    items: [],
+  },
+  {
+    name: "Copilot",
+    icon: AiTwotoneFileText,
+    link: "/copilot",
+    items: [],
+  },
+  {
+    name: "Sign Documents",
+    icon: AiTwotoneFileText,
+    link: "/sign",
+    items: [],
+  },
+  {
+    name: "Plans",
+    icon: AiTwotoneFileText,
+    link: "/plans",
+    items: [],
+  },
+];
+
+//TODO add corresponding menu items for each plan type
+const proPlanMenu = [];
+const businessPlanMenu = [];
+const enterprisePlanMenu = [];
 
 export default function Sidebar({ active, setActive }: any) {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [menuItems, setMenuItems] = useState(basicPlanMenu);
+  const { data: session } = useSession();
   const router = useRouter();
   //   const [active, setActive] = useState(false);
   console.log(router.pathname.replace(/\//g, ""));
   const controls = useAnimation();
   const controlText = useAnimation();
   const controlTitleText = useAnimation();
-  const data = [
-    {
-      name: "Dashboard",
-      icon: AiFillCode,
-      link: "/dashboard",
-      items: [],
-    },
-    {
-      name: "Documents",
-      icon: AiFillFilePdf,
-      link: "/documents",
-      items: [],
-    },
-    {
-      name: "Chat",
-      icon: AiFillCode,
-      link: "/chat",
-      items: [],
-    },
 
-    {
-      name: "Services",
-      icon: AiTwotoneFileText,
-      link: "/catagories",
-      items: [],
-    },
-    {
-      name: "Legalese",
-      icon: AiTwotoneFileText,
-      link: "/legalese",
-      items: [],
-    },
-    {
-      name: "Copilot",
-      icon: AiTwotoneFileText,
-      link: "/copilot",
-      items: [],
-    },
-    {
-      name: "Sign Documents",
-      icon: AiTwotoneFileText,
-      link: "/sign",
-      items: [],
-    },
-    {
-      name: "Plans",
-      icon: AiTwotoneFileText,
-      link: "/plans",
-      items: [],
-    },
-  ];
   const showMore = () => {
     controls.start({
       width: "250px",
@@ -113,9 +123,41 @@ export default function Sidebar({ active, setActive }: any) {
 
     setActive(false);
   };
+
   useEffect(() => {
     showMore();
+
+    async function fetchCustomer() {
+      let userId = session?.user?.id;
+      //get the current user's customer information
+      let data = await fetch(`/api/customers/${userId}`).then((res) =>
+        res.json()
+      );
+      setCurrentUser(data.customer);
+    }
+    fetchCustomer();
   }, []);
+
+  useEffect(() => {
+    getMenuItems();
+  }, [currentUser]);
+
+  function getMenuItems() {
+    switch (currentUser?.billingPlan) {
+      case "pro":
+        setMenuItems(proPlanMenu);
+        break;
+      case "business":
+        setMenuItems(businessPlanMenu);
+        break;
+      case "enterprise":
+        setMenuItems(enterprisePlanMenu);
+        break;
+      case "standard":
+      default:
+        setMenuItems(basicPlanMenu);
+    }
+  }
 
   return (
     <motion.div>
@@ -145,7 +187,7 @@ export default function Sidebar({ active, setActive }: any) {
             />
           )}
           <div className="grow ">
-            {data.map((group) => (
+            {menuItems.map((group) => (
               <div key={group.name} className="my-2">
                 <motion.div
                   animate={controlTitleText}

@@ -58,7 +58,7 @@ export default function Plans({ plans }) {
     const fetchCustomer = async () => {
       let id = session?.user?.id;
       let { data } = await axios.get(`/api/customers/${id}`);
-      setCustomerData(data);
+      setCustomerData(data.customer);
     };
 
     fetchCustomer();
