@@ -111,7 +111,7 @@
           "tag": "input",
           "type": "text",
           "name": "I",
-          "label": "You Name",
+          "label": "Your Name",
           "required": true
         }
       ],

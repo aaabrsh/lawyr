@@ -15,6 +15,7 @@ export default function Questions({ questions, pdf_url }) {
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [formAnswers, setFormAnswers] = useState({});
+  const [failMsg, setFailMsg] = useState(null);
   const [active, setActive] = useState(false);
   const router = useRouter();
   const { data: session } = useSession();
@@ -40,6 +41,7 @@ export default function Questions({ questions, pdf_url }) {
     event.preventDefault();
     if (currentPage === questionsCount - 1) {
       //if we're on the last question
+      setFailMsg(null);
       setIsOpen(true);
     } else {
       setCurrentPage((current) => current + 1);
@@ -199,16 +201,21 @@ export default function Questions({ questions, pdf_url }) {
     const formData = new FormData();
     formData.append("pdfFile", blob);
 
-    fetch(`/api/upload/${userId}/${categoryName}`, {
+    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
 
-    // Trigger the browser to download the PDF document
-    download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
-
-    //Close Modal
-    setIsOpen(false);
+    console.log(upload);
+    if (upload.status >= 200 && upload.status < 400) {
+      // Trigger the browser to download the PDF document
+      download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
+      //Close Modal
+      setIsOpen(false);
+    } else {
+      let errorText = await upload.text();
+      setFailMsg(errorText);
+    }
   };
 
   return (
@@ -265,7 +272,10 @@ export default function Questions({ questions, pdf_url }) {
         <Dialog
           as="div"
           className="relative z-10"
-          onClose={() => setIsOpen(false)}
+          onClose={() => {
+            setIsOpen(false);
+            setFailMsg(null);
+          }}
         >
           <Transition.Child
             as={Fragment}
@@ -298,27 +308,36 @@ export default function Questions({ questions, pdf_url }) {
                     Download PDF
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your PDF file is Ready. Click the download button to
-                      download
-                    </p>
+                    {failMsg ? (
+                      <p className="text-sm text-red-500">{failMsg}</p>
+                    ) : (
+                      <p className="text-sm text-gray-500">
+                        Your PDF file is Ready. Click the download button to
+                        download
+                      </p>
+                    )}
                   </div>
 
                   <div className="mt-4 flex justify-end gap-2">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-red-900 bg-red-100 px-4 py-2 text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        setIsOpen(false);
+                        setFailMsg(null);
+                      }}
                     >
                       Cancel
                     </button>
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-blue-900 bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={handleDownload}
-                    >
-                      Download PDF
-                    </button>
+                    {!failMsg && (
+                      <button
+                        type="button"
+                        className="inline-flex justify-center rounded-md border border-blue-900 bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                        onClick={handleDownload}
+                      >
+                        Download PDF
+                      </button>
+                    )}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
