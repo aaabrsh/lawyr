@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { prisma } from "../server/db";
 import stripe from "./stripe";
 

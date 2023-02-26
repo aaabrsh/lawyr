@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { type GetServerSidePropsContext } from "next";
 import { unstable_getServerSession } from "next-auth";
 

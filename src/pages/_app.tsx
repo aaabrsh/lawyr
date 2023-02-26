@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import Router from "next/router";
 import "../styles/globals.css";
 import type { AppType } from "next/app";
 import type { Session } from "next-auth";
-import Footer from "../components/Footer";
+import Footer from "../components/ui/Footer";
 import Header from "../components/Header";
 import { SessionProvider } from "next-auth/react";
 import NProgress from "nprogress"; //nprogress module

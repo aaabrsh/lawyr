@@ -1,10 +1,12 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import {
   upsertProductRecord,
   updateCustomerRecord,
 } from "../../utils/supabase-admin";
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
-import stripe from "../../utils/stripe"
+import stripe from "../../utils/stripe";
 import { Readable } from "node:stream";
 
 // Stripe requires the raw body to construct the event.

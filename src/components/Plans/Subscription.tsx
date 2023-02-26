@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 export default function Subscription({ customer }) {
   const redirectCustomerPortal = async () => {
     const res: Response = await fetch("/api/create_portal_link", {

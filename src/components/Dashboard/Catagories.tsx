@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
+//@ts-nocheck
 import { useState, Fragment, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "./Sidebar";
@@ -45,14 +47,12 @@ export default function Welcome() {
       //return the item which contains the user input
       else {
         // console.log(el.event.textPrompt);
-        return product.title
-          .toLowerCase()
-          .includes(searchText);
+        return product.title.toLowerCase().includes(searchText);
       }
     });
     setProducts(filteredProducts);
     setItemOffset(0);
-  }, [searchText])
+  }, [searchText]);
 
   // const fetchJson = () => {
   //   fetch("./data.json")

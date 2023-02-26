@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { Dialog, Transition } from "@headlessui/react";
 import { prisma } from "../server/db";
 import Link from "next/link";

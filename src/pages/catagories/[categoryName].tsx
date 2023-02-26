@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { Fragment, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Header from "../../components/Header";

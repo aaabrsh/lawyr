@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { FormEvent, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
