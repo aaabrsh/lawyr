@@ -8,9 +8,13 @@ import Header from "../components/Header";
 import { getSession } from "next-auth/react";
 import useStore from "../../store/useStore";
 import { useRouter } from "next/router";
+import { AiFillDelete } from "react-icons/ai";
+import axios from "axios";
 
 export default function Documents({ pdf_files }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [fileToDelete, setFileToDelete] = useState(null);
   const [active, setActive] = useState(false);
   const { addPdfUrl } = useStore();
   const router = useRouter();
@@ -26,6 +30,25 @@ export default function Documents({ pdf_files }) {
     addPdfUrl(pdf_url);
     router.push("/copilot");
   }
+
+  function handleDeleteClick(fileId: any) {
+    setFileToDelete(fileId);
+    setIsModalOpen(true);
+  }
+
+  async function deleteFile() {
+    if (fileToDelete) {
+      await axios.delete(`/api/pdf_files/${fileToDelete}`);
+      closeConfirmationModal();
+      router.reload();
+    }
+  }
+
+  function closeConfirmationModal() {
+    setFileToDelete(null);
+    setIsModalOpen(false);
+  }
+
   return (
     <>
       <Header />
@@ -49,17 +72,19 @@ export default function Documents({ pdf_files }) {
               <table>
                 <thead className="">
                   <tr className="w-full border-b-2 border-b-zinc-700 py-3 text-left text-zinc-800">
-                    <th>PDF File</th>
+                    <th>File Name</th>
+                    <th>PDF URL</th>
                     <th>Created At</th>
+                    <th>Actions</th>
                   </tr>
                 </thead>
                 <tbody className="">
                   {pdf_files.map((file: any) => (
                     <tr className="border-b-2">
+                      <td className="py-2 pr-5">{file.file_name}</td>
                       <td className="cursor-pointer py-2">
                         <div
                           onClick={() => handleLinkClick(file.pdf_url)}
-                          target="_blank"
                           className="flex w-full items-center text-cyan-800 underline"
                         >
                           <span className="min-w-[300px] max-w-[400px] flex-grow truncate">
@@ -71,6 +96,12 @@ export default function Documents({ pdf_files }) {
                         </div>
                       </td>
                       <td className="py-2 pr-5">{file.created_at}</td>
+                      <td className="py-2">
+                        <AiFillDelete
+                          onClick={() => handleDeleteClick(file.id)}
+                          className="m-auto cursor-pointer text-xl text-red-500"
+                        />
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -96,6 +127,66 @@ export default function Documents({ pdf_files }) {
           {/* <Options setIsOpen={setIsOpen} /> */}
         </Dialog>
       </Transition>
+
+      <Transition appear show={isModalOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={closeConfirmationModal}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Do You Want to Delete the Selected File?
+                  </Dialog.Title>
+
+                  <div className="mt-4 flex justify-end gap-2">
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-red-900 bg-red-300 px-4 py-2 text-sm font-medium hover:bg-red-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2"
+                      onClick={closeConfirmationModal}
+                    >
+                      No
+                    </button>
+                    <button
+                      type="button"
+                      className="inline-flex justify-center rounded-md border border-green-900 bg-green-300 px-4 py-2 text-sm font-medium hover:bg-green-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2"
+                      onClick={deleteFile}
+                    >
+                      Yes
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </>
   );
 }
@@ -104,7 +195,7 @@ export async function getServerSideProps(context: any) {
   const session = await getSession(context);
   let pdf_files = await prisma.pdfFile
     .findMany({
-      where: { userId: session?.user?.id },
+      where: { userId: `${session?.user?.id}` },
     })
     .then((res) => {
       res.map(
