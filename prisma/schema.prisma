@@ -64,11 +64,12 @@ model User {
 }
 
 model Customer {
-    id                 String       @id @default(cuid())
-    userId             String
-    stripe_customer_id String
-    billingPlan        BillingPlan?
-    user               User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+    id                   String       @id @default(cuid())
+    userId               String
+    stripe_customer_id   String
+    billingPlan          BillingPlan?
+    generated_pdfs_count Int          @default(0)
+    user                 User         @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 enum BillingPlan {
@@ -82,6 +83,7 @@ model PdfFile {
     id         String   @id @default(cuid())
     userId     String
     pdf_url    String
+    file_name  String
     created_at DateTime @default(now())
     user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
