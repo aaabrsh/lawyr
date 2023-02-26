@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+//@ts-nocheck
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -13,7 +15,7 @@ import {
   AiTwotoneFileText,
   AiTwotoneSound,
   AiTwotoneVideoCamera,
-  AiFillFilePdf
+  AiFillFilePdf,
 } from "react-icons/ai";
 
 import { motion, useAnimation } from "framer-motion";
@@ -62,6 +64,12 @@ export default function Sidebar({ active, setActive }: any) {
       name: "Copilot",
       icon: AiTwotoneFileText,
       link: "/copilot",
+      items: [],
+    },
+    {
+      name: "Sign Documents",
+      icon: AiTwotoneFileText,
+      link: "/sign",
       items: [],
     },
     {

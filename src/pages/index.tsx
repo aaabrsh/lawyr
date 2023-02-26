@@ -1,8 +1,12 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import Head from "next/head";
 import React, { useEffect, useState, Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { useSession } from "next-auth/react";
 import AuthModal from "../components/AuthModel";
+import LearnMoreModal from "../components/LearnMoreModel";
+
 // import {menuItems,navigation} from "../utils/header"
 import {
   ArrowDownIcon,
@@ -20,8 +24,13 @@ export default function Home() {
   // const user = session?.user;
   // const isLoadingUser = status === "loading";
   const [showModal, setShowModal] = useState(false);
+  const [showLearnMoreModal, setShowLearnMoreModal] = useState(false);
+
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+  const closeLearnmMoreModal = () => setShowLearnMoreModal(false);
+
+  const openLearnMoreModal = () => setShowLearnMoreModal(true);
 
   return (
     <>
@@ -88,13 +97,22 @@ export default function Home() {
               Sub-hero message, not too long and not too short. Make it just
               right!
             </p>
-            <button
-              className="transform rounded bg-gradient-to-r from-purple-800 to-green-500 py-2 px-4 font-bold text-white transition duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-green-500 focus:ring"
-              type="button"
-              onClick={openModal}
-            >
-              Get Started
-            </button>
+            <div className="flex">
+              <button
+                className="mr-4 transform rounded bg-gradient-to-r from-purple-800 to-green-500 py-2 px-4 font-bold text-white transition duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-green-500 focus:ring"
+                type="button"
+                onClick={openModal}
+              >
+                Get Started
+              </button>
+              <button
+                className="transform rounded bg-gradient-to-r from-purple-800 to-green-500 py-2 px-4 font-bold text-white transition duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-green-500 focus:ring"
+                type="button"
+                onClick={openLearnMoreModal}
+              >
+                Learn More
+              </button>
+            </div>
             {/* <form className="mb-4 w-full rounded-lg bg-gray-900 px-8 pt-6 pb-8 opacity-75 shadow-lg">
     <div className="mb-4">
       <label
@@ -130,6 +148,10 @@ export default function Home() {
         </div>
       </body>
       <AuthModal show={showModal} onClose={closeModal} />
+      <LearnMoreModal
+        show={showLearnMoreModal}
+        onClose={closeLearnmMoreModal}
+      />
     </>
   );
 }

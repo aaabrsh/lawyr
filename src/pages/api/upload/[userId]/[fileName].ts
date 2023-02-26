@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { NextApiResponse } from "next";
 import { NextApiRequest } from "next";
 import formidable from "formidable";

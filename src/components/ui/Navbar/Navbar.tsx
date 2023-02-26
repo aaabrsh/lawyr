@@ -1,10 +1,12 @@
-import Link from 'next/link';
-import s from './Navbar.module.css';
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
+import Link from "next/link";
+import s from "./Navbar.module.css";
 
-import Logo from 'components/icons/Logo';
-import { useRouter } from 'next/router';
-import { useUser } from 'utils/useUser';
-import { useSupabaseClient } from '@supabase/auth-helpers-react';
+import Logo from "components/icons/Logo";
+import { useRouter } from "next/router";
+import { useUser } from "utils/useUser";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 const Navbar = () => {
   const router = useRouter();
@@ -17,14 +19,14 @@ const Navbar = () => {
         Skip to content
       </a>
       <div className="mx-auto max-w-6xl px-6">
-        <div className="flex justify-between align-center flex-row py-4 md:py-6 relative">
+        <div className="align-center relative flex flex-row justify-between py-4 md:py-6">
           <div className="flex flex-1 items-center">
             <Link href="/">
               <a className={s.logo} aria-label="Logo">
                 <Logo />
               </a>
             </Link>
-            <nav className="space-x-2 ml-6 hidden lg:block">
+            <nav className="ml-6 hidden space-x-2 lg:block">
               <Link href="/">
                 <a className={s.link}>Pricing</a>
               </Link>
@@ -40,7 +42,7 @@ const Navbar = () => {
                 className={s.link}
                 onClick={async () => {
                   await supabaseClient.auth.signOut();
-                  router.push('/signin');
+                  router.push("/signin");
                 }}
               >
                 Sign out

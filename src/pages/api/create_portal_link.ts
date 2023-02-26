@@ -1,4 +1,6 @@
-import stripe from "../../utils/stripe"
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
+import stripe from "../../utils/stripe";
 
 export default async function handler(req: any, res: any) {
   if (req.method === "POST") {

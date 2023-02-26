@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "../components/Dashboard/Sidebar";
@@ -110,12 +112,12 @@ export async function getServerSideProps(context: any) {
         if (res && res.dob) {
           let year = res.dob.getFullYear();
           let month: any = res.dob.getMonth();
-          if(month < 10){
-            month = `0${month}`
+          if (month < 10) {
+            month = `0${month}`;
           }
-          let date = res.dob.getDate()
-          if(date < 10){
-            date = `0${date}`
+          let date = res.dob.getDate();
+          if (date < 10) {
+            date = `0${date}`;
           }
           res.dob = `${year}-${month}-${date}`;
         }

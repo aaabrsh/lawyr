@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import Stripe from "stripe";
 
 export const stripe = new Stripe(

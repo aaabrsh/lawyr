@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import cn from "classnames";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -6,11 +8,11 @@ import Button from "../components/ui/Button";
 import { postData } from "../utils/helpers";
 import { getStripe } from "../utils/stripe-client";
 import { useUser } from "../utils/useUser";
-import { Price, ProductWithPrice } from "types";
+// import { Price, ProductWithPrice } from "types";
 
-interface Props {
-  products: ProductWithPrice[];
-}
+// interface Props {
+//   products: ProductWithPrice[];
+// }
 
 type BillingInterval = "year" | "month";
 

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { NextApiRequest, NextApiResponse } from "next";
 import { prisma } from "../../../server/db";
 

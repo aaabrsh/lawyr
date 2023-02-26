@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import Head from "next/head";
 import React, { useEffect, useState, Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";

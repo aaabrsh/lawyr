@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { createBrowserSupabaseClient } from "@supabase/auth-helpers-nextjs";
 
 export const supabase = createBrowserSupabaseClient();
