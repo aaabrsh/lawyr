@@ -195,6 +195,17 @@ export default function Documents({ pdf_files }) {
 
 export async function getServerSideProps(context: any) {
   const session = await getSession(context);
+
+  //redirect to home page if user is not logged in
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   let pdf_files = await prisma.pdfFile
     .findMany({
       where: { userId: `${session?.user?.id}` },

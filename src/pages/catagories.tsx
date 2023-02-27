@@ -159,25 +159,19 @@ export default function Welcome({ products }) {
     </>
   );
 }
-// export async function getServerSideProps(context) {
-//   const session = await getSession(context);
-//   if (!session) {
-//     return {
-//       redirect: {
-//         destination: "/",
-//         permanent: false,
-//       },
-//     };
-//   }
 
-//   return {
-//     props: {
-//       session,
-//     },
-//   };
-// }
+export async function getServerSideProps(context: any) {
+  //redirect to home page if user is not logged in
+  const session = await getSession(context);
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
 
-export async function getServerSideProps() {
   const dataDirectory = path.join(process.cwd(), "src/data");
   let products = await fs.readFile(dataDirectory + "/products.json", "utf8");
   products = JSON.parse(products).data.getProductCards;
