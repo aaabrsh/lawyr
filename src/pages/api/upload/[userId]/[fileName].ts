@@ -41,13 +41,13 @@ export default async function handler(
 
     //stop execution if customer is not found with the given userId
     if (!customer) {
-      console.log("user account not found");
-      return res.status(404).send("user account not found");
+      console.log("customer account not found");
+      return res.status(404).send("customer account not found");
     }
 
     //check if the current customer hasn't exceeded the allowed number of file generations
     switch (customer?.billingPlan) {
-      case "standard":
+      case "basic":
         //TODO - the numbers used here are only for testing purpose, change them later
         if (customer.generated_pdfs_count >= 5)
           return res
@@ -56,7 +56,7 @@ export default async function handler(
               "file generation limit exceeded for the current subscription plan"
             );
         break;
-      case "pro":
+      case "lawyer":
         if (customer.generated_pdfs_count >= 10)
           return res
             .status(400)
@@ -64,7 +64,7 @@ export default async function handler(
               "file generation limit exceeded for the current subscription plan"
             );
         break;
-      case "business":
+      case "company":
         if (customer.generated_pdfs_count >= 15)
           return res
             .status(400)
@@ -72,16 +72,8 @@ export default async function handler(
               "file generation limit exceeded for the current subscription plan"
             );
         break;
-      case "enterprise":
-        if (customer.generated_pdfs_count >= 20)
-          return res
-            .status(400)
-            .send(
-              "file generation limit exceeded for the current subscription plan"
-            );
-        break;
       default:
-        return res.status(400).send("user has not subscribed yet");
+        return res.status(404).send("user has not subscribed yet");
     }
 
     //add the current date and time to the file name to make it unique

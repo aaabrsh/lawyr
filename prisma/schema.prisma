@@ -76,10 +76,9 @@ model Customer {
 }
 
 enum BillingPlan {
-    standard
-    pro
-    business
-    enterprise
+    basic
+    lawyer
+    company
 }
 
 model PdfFile {
