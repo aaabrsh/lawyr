@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-export default function UserForm({ user, id }) {
+export default function UserForm({ user, id, customer }) {
   const [userData, setUserData] = useState(user);
   let router = useRouter();
 
@@ -131,7 +131,7 @@ export default function UserForm({ user, id }) {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                <div className="col-span-6 sm:col-span-3 lg:col-span-3">
                   <label
                     htmlFor="region"
                     className="block text-sm font-medium text-gray-700"
@@ -147,7 +147,7 @@ export default function UserForm({ user, id }) {
                     onChange={handleChange}
                   />
                 </div>
-                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                <div className="col-span-6 sm:col-span-3 lg:col-span-3">
                   <label
                     htmlFor="zip-code"
                     className="block text-sm font-medium text-gray-700"
@@ -163,6 +163,71 @@ export default function UserForm({ user, id }) {
                     onChange={handleChange}
                   />
                 </div>
+                {customer?.billingPlan === "company" && (
+                  <fieldset className="col-span-6 border border-gray-300 p-5 pb-7">
+                    <legend className="font-bold text-gray-700">
+                      &nbsp; Company Information &nbsp;
+                    </legend>
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="company_name"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Company name
+                      </label>
+                      <input
+                        type="text"
+                        name="company_name"
+                        id="company_name"
+                        className="mt-1 block w-full rounded-md border border-gray-300 p-2 px-3 shadow-sm focus:border-pink-500 focus:outline-none focus:ring-pink-500 sm:text-sm"
+                        value={userData.company_name}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </fieldset>
+                )}
+                {customer?.billingPlan === "lawyer" && (
+                  <fieldset className="col-span-6 grid grid-cols-6 gap-6 border border-gray-300 p-5 pb-7">
+                    <legend className="font-bold text-gray-700">
+                      &nbsp; License Information &nbsp;
+                    </legend>
+                    <div className="col-span-3">
+                      <label
+                        htmlFor="license_country"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        License Country
+                      </label>
+                      <input
+                        type="text"
+                        name="license_country"
+                        id="license_country"
+                        className="mt-1 block w-full rounded-md border border-gray-300 p-2 px-3 shadow-sm focus:border-pink-500 focus:outline-none focus:ring-pink-500 sm:text-sm"
+                        value={userData.license_country}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="col-span-3">
+                      <label
+                        htmlFor="license_state"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        License State
+                      </label>
+                      <input
+                        type="text"
+                        name="license_state"
+                        id="license_state"
+                        className="mt-1 block w-full rounded-md border border-gray-300 p-2 px-3 shadow-sm focus:border-pink-500 focus:outline-none focus:ring-pink-500 sm:text-sm"
+                        value={userData.license_state}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </fieldset>
+                )}
               </div>
             </div>
             <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">

@@ -46,21 +46,24 @@ model Session {
 }
 
 model User {
-    id             String     @id @default(cuid())
-    name           String?
-    email          String?    @unique
-    emailVerified  DateTime?
-    dob            DateTime?
-    country        String?
-    street_address String?
-    city           String?
-    state          String?
-    zip_code       String?
-    image          String?
-    accounts       Account[]
-    sessions       Session[]
-    subscriptions  Customer[]
-    PdfFiles       PdfFile[]
+    id              String     @id @default(cuid())
+    name            String?
+    email           String?    @unique
+    emailVerified   DateTime?
+    dob             DateTime?
+    country         String?
+    street_address  String?
+    city            String?
+    state           String?
+    zip_code        String?
+    image           String?
+    license_country String?
+    license_state   String?
+    company_name    String?
+    accounts        Account[]
+    sessions        Session[]
+    subscriptions   Customer[]
+    PdfFiles        PdfFile[]
 }
 
 model Customer {
