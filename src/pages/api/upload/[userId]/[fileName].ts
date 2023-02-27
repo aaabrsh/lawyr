@@ -42,7 +42,7 @@ export default async function handler(
     //stop execution if customer is not found with the given userId
     if (!customer) {
       console.log("user account not found");
-      return res.status(400).send("user account not found");
+      return res.status(404).send("user account not found");
     }
 
     //check if the current customer hasn't exceeded the allowed number of file generations
