@@ -268,7 +268,7 @@ export function Sign({ plans }) {
                         >
                           {/* <Signature /> */}
                           {signature && (
-                            <Image
+                            <img
                               className="signature-image"
                               src={signature}
                               style={{
