@@ -11,8 +11,10 @@ import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
 import modifyPdf from "../../utils/modifyPdf";
 import { useSession } from "next-auth/react";
+import axios from "axios";
+import { pdf, Document, Page, Text, StyleSheet } from "@react-pdf/renderer";
 
-export default function Questions({ questions, pdf_url }) {
+export default function Questions({ questions, prompt }) {
   const questionsCount = questions.length;
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
@@ -23,6 +25,30 @@ export default function Questions({ questions, pdf_url }) {
   const { data: session } = useSession();
   const userId = session?.user?.id;
   const { categoryName } = router.query;
+
+  //styles for pdf
+  const styles = StyleSheet.create({
+    body: {
+      paddingTop: 35,
+      paddingBottom: 65,
+      paddingHorizontal: 35,
+    },
+    text: {
+      margin: 6,
+      fontSize: 14,
+      textAlign: "justify",
+      fontFamily: "Times-Roman",
+    },
+    pageNumber: {
+      position: "absolute",
+      fontSize: 12,
+      bottom: 30,
+      left: 0,
+      right: 0,
+      textAlign: "center",
+      color: "grey",
+    },
+  });
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -187,36 +213,55 @@ export default function Questions({ questions, pdf_url }) {
   };
 
   const handleDownload = async () => {
-    // Fetch an existing PDF document
-    const existingPdfBytes = await fetch(pdf_url).then((res) =>
-      res.arrayBuffer()
+    //get letter from openai based on user input
+    let response = await axios.post("/api/openai", {
+      prompt: prompt,
+      formData: { ...formAnswers },
+    });
+
+    //split the whole text into an array of paragraphs
+    let paragraphs = response.data.split("\n");
+
+    //create the pdf doc
+    let pdfDoc = (
+      <Document>
+        <Page style={styles.body}>
+          {paragraphs.map((line, index) => (
+            <Text style={styles.text} key={index}>
+              {line}
+            </Text>
+          ))}
+          <Text
+            style={styles.pageNumber}
+            render={({ pageNumber, totalPages }) =>
+              `${pageNumber} / ${totalPages}`
+            }
+            fixed
+          />
+        </Page>
+      </Document>
     );
 
-    // Load a PDFDocument from the existing PDF bytes
-    const pdfDoc = await PDFDocument.load(existingPdfBytes);
-
-    const pdfBytes: Uint8Array = await modifyPdf(pdfDoc, formAnswers);
-
-    // create the blob object with content-type "application/pdf"
-    var blob = new Blob([pdfBytes], { type: "application/pdf" });
+    //convert pdf doc to blob
+    const blob = await pdf(pdfDoc).toBlob();
 
     const formData = new FormData();
     formData.append("pdfFile", blob);
 
+    //upload file to aws
     let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
 
-    console.log(upload);
     if (upload.status >= 200 && upload.status < 400) {
       // Trigger the browser to download the PDF document
-      download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
+      download(blob, `${categoryName}.pdf`, "application/pdf");
       //Close Modal
       setIsOpen(false);
     } else {
-      if(upload.status === 404){
-        return router.push('/plans')
+      if (upload.status === 404) {
+        return router.push("/plans");
       }
       let errorText = await upload.text();
       setFailMsg(errorText);
@@ -361,18 +406,18 @@ export async function getServerSideProps(context: any) {
   data = JSON.parse(data)[categoryName];
 
   let questions: any = [];
-  let pdf_url: String = "";
+  let prompt: String = "";
 
   if (data) {
     //if a data with the given category name is found
     questions = data.questions;
-    pdf_url = data.pdf_url;
+    prompt = data.prompt;
   }
 
   return {
     props: {
       questions,
-      pdf_url,
+      prompt,
     },
   };
 }
