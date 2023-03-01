@@ -26,7 +26,9 @@ export default function Welcome() {
   const [products, setProducts] = useState(allProducts);
   const [displayedProducts, setDisplayedProducts] = useState([]);
   const [itemsPerPage, setItemsPerPage] = useState(8);
-  const [pageCount, setPageCount] = useState(products.length / itemsPerPage);
+  const [pageCount, setPageCount] = useState(
+    Math.ceil(products.length / itemsPerPage)
+  );
   const [itemOffset, setItemOffset] = useState(0);
   const { data: session } = useSession();
   const user = session?.user?.email;

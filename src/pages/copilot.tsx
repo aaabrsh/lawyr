@@ -35,10 +35,12 @@ export default function Copilot({ plans }) {
   const [pageNumber, setPageNumber] = useState(1);
   const ref = useRef(null);
   const user = session?.user?.email;
-  const { pdf_url } = useStore();
+  const { pdf_url, blobFile } = useStore();
 
   useEffect(() => {
-    setFile(pdf_url ?? "../../pdf.pdf");
+    if (blobFile) {
+      setFile(blobFile);
+    }
   }, []);
 
   function handleNext() {

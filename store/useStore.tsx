@@ -11,6 +11,7 @@ const useStore = create((set) => ({
   addsearchText: (searchText: any) => set({ searchText: searchText }),
   removeSearchText: () => set({ searchText: "s" }),
   addPdfUrl: (pdf_url: string) => set({ pdf_url: pdf_url }),
+  addPdfFile: (blobFile: string) => set({ blobFile: blobFile }),
 }));
 
 // const useStore = create(
