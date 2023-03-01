@@ -1250,102 +1250,6 @@
       ]
     ]
   },
-  "Confidentiality Agreement": {
-    "prompt": "generate a Confidentiality Agreement letter using the following information: ",
-    "questions": [
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Sender's Full Name",
-          "label": "Sender's Full Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Sender's Street Address",
-          "label": "Sender's Street Address",
-          "required": false
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Sender's City",
-          "label": "Sender's City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Sender's State",
-          "label": "Sender's State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Sender's Zip Code",
-          "label": "Sender's Zip Code",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Recipient's Full Name",
-          "label": "Recipient's Full Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Recipient's Street Address",
-          "label": "Recipient's Street Address",
-          "required": false
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Recipient's City",
-          "label": "Recipient's City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Recipient's State",
-          "label": "Recipient's State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Recipient's Zip Code",
-          "label": "Recipient's Zip Code",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "date",
-          "name": "Date of Letter",
-          "label": "Date of Letter",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "textarea",
-          "name": "Purpose of disclosing confidential information",
-          "label": "Purpose of disclosing confidential information",
-          "required": true
-        }
-      ]
-    ]
-  },
   "Partnership Agreement": {
     "prompt": "generate a Partnership Agreement letter using the following information: ",
     "questions": [
@@ -1865,25 +1769,899 @@
   },
   "Sales Agreement": {
     "prompt": "generate a Sales Agreement letter using the following information: ",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Street Address",
+          "label": "Seller's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's City",
+          "label": "Seller's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's State",
+          "label": "Seller's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Zip Code",
+          "label": "Seller's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Buyer's Full Name",
+          "label": "Buyer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Street Address",
+          "label": "Buyer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's City",
+          "label": "Buyer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's State",
+          "label": "Buyer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Zip Code",
+          "label": "Buyer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of goods, including quantity and price",
+          "label": "List of the description of goods, including quantity and price",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Total Purchase Price",
+          "label": "Total Purchase Price",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Payment Terms",
+          "label": "Payment Terms",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Deposit Amount",
+          "label": "Deposit Amount",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Method of Payment",
+          "label": "Method of Payment",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Last Payment Date",
+          "label": "Last Payment Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Delivery Date",
+          "label": "Delivery Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of days to notify seller of any defects or dicrepancies",
+          "label": "Number of days to notify seller of any defects or dicrepancies",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery Street Address",
+          "label": "Delivery Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery City",
+          "label": "Delivery City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery State",
+          "label": "Delivery State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery Zip Code",
+          "label": "Delivery Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "list of any applicable taxes, shipping or handling fees",
+          "label": "Any applicable taxes, shipping or handling fees if any",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        }
+      ]
+    ]
   },
   "Service Agreement": {
     "prompt": "generate a Service Agreement letter using the following information: ",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Service Provider/Company's Full Name",
+          "label": "Service Provider/Company's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's Street Address",
+          "label": "Service Provider/Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's City",
+          "label": "Service Provider/Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's State",
+          "label": "Service Provider/Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's Zip Code",
+          "label": "Service Provider/Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Client's Full Name",
+          "label": "Client's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Street Address",
+          "label": "Client's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's City",
+          "label": "Client's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's State",
+          "label": "Client's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Zip Code",
+          "label": "Client's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of services to be provided",
+          "label": "Description of services to be provided",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Fee Amount",
+          "label": "Fee Amount",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Payment Terms",
+          "label": "Payment Terms",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date of Agreement",
+          "label": "Start Date of Agreement",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date of Agreement",
+          "label": "End Date of Agreement",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of days required for written notice of termination",
+          "label": "Number of days required for written notice of termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Full Name",
+          "label": "Your Name",
+          "required": true
+        }
+      ]
+    ]
   },
-  "Purchase Agreement": {
-    "prompt": "generate a Purchase Agreement letter using the following information: ",
-    "questions": []
+  "Waiver and Release Form": {
+    "prompt": "generate a Waiver and Release Form letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Participant's Full Name",
+          "label": "Participant's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's Street Address",
+          "label": "Participant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's City",
+          "label": "Participant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's State",
+          "label": "Participant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's Zip Code",
+          "label": "Participant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Organizer's Full Name",
+          "label": "Organizer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's Street Address",
+          "label": "Organizer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's City",
+          "label": "Organizer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's State",
+          "label": "Organizer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's Zip Code",
+          "label": "Organizer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Event/Activity",
+          "label": "Name of Event/Activity",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Event/Activity",
+          "label": "Date of Event/Activity",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Location of Event/Activity",
+          "label": "Location of Event/Activity",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "description of the type of claims being released, such as personal injury, property damage, or other liability.",
+          "label": "A clear and specific description of the type of claims being released, such as personal injury, property damage, or other liability.",
+          "required": true
+        }
+      ]
+    ]
   },
   "License Agreement": {
     "prompt": "generate a License Agreement letter using the following information: ",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Licensor's Full Name",
+          "label": "Licensor's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's Street Address",
+          "label": "Licensor's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's City",
+          "label": "Licensor's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's State",
+          "label": "Licensor's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's Zip Code",
+          "label": "Licensor's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Licensee's Full Name",
+          "label": "Licensee's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's Street Address",
+          "label": "Licensee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's City",
+          "label": "Licensee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's State",
+          "label": "Licensee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's Zip Code",
+          "label": "Licensee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the Licensed product",
+          "label": "Name of the Licensed product",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Effective Date of Agreement",
+          "label": "Effective Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "License Fee",
+          "label": "License Fee",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Payment Date",
+          "label": "Payment Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Number of days required for written notice of termination",
+          "label": "Number of days required for written notice of termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
   },
   "Loan Agreement": {
     "prompt": "generate a Loan Agreement letter using the following information: ",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Full Name",
+          "label": "Lender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Street Address",
+          "label": "Lender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's City",
+          "label": "Lender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's State",
+          "label": "Lender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Zip Code",
+          "label": "Lender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Full Name",
+          "label": "Borrower's Full Name",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Phone Number",
+          "label": "Borrower's Phone Number",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Street Address",
+          "label": "Borrower's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's City",
+          "label": "Borrower's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's State",
+          "label": "Borrower's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Zip Code",
+          "label": "Borrower's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Loan Amount in Numbers",
+          "label": "Loan Amount in Numbers",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Loan Amount in Words",
+          "label": "Loan Amount in Words",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Interest Rate in Numbers",
+          "label": "Interest Rate in Numbers",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Interest Rate in Words",
+          "label": "Interest Rate in Words",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Loan Term in Months",
+          "label": "Loan Term in Months",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "select",
+          "name": "repayment schedule",
+          "label": "repayment schedule",
+          "required": true,
+          "options": [
+            {
+              "label": "monthly",
+              "value": "monthly"
+            },
+            {
+              "label": "weekly",
+              "value": "weekly"
+            },
+            {
+              "label": "bi-weekly",
+              "value": "bi-weekly"
+            }
+          ]
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Amount of Each Payment",
+          "label": "Amount of Each Payment",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date of Loan",
+          "label": "Start Date of Loan",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date of Loan",
+          "label": "End Date of Loan",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "late fee or late payment penalty",
+          "label": "late fee or late payment penalty",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Collateral or Security for the Loan",
+          "label": "Description of Collateral or Security for the Loan",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
   },
-  " ////////////////////////////////": {},
+  "Confidentiality Agreement": {
+    "prompt": "generate a Confidentiality Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Full Name",
+          "label": "Sender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Sender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Sender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Sender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Sender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Purpose of disclosing confidential information",
+          "label": "Purpose of disclosing confidential information",
+          "required": true
+        }
+      ]
+    ]
+  },
   "Lease Agreement": {
     "prompt": "generate a Lease Agreement letter using the following information: ",
     "questions": []
@@ -1900,8 +2678,8 @@
     "prompt": "generate a Consulting Agreement letter using the following information: ",
     "questions": []
   },
-  "Waiver and Release Form": {
-    "prompt": "generate a Waiver and Release Form letter using the following information: ",
+  "Purchase Agreement": {
+    "prompt": "generate a Purchase Agreement letter using the following information: ",
     "questions": []
   },
   "Operating Agreement": {
