@@ -6,6 +6,8 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { useSession } from "next-auth/react";
 import AuthModal from "../components/AuthModel";
 import LearnMoreModal from "../components/LearnMoreModel";
+import NewsletterForm from "../components/subscribe";
+import Testimonials from "../components/testimonials";
 
 // import {menuItems,navigation} from "../utils/header"
 import {
@@ -32,10 +34,24 @@ export default function Home() {
 
   const openLearnMoreModal = () => setShowLearnMoreModal(true);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://fabulous-inventor-5051.ck.page/36d6fb58ad/index.js";
+    script.async = true;
+    // script.data-uid = "36d6fb58ad";
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <body
-        className="m-6 h-full bg-cover bg-fixed leading-normal tracking-normal text-indigo-400"
+        className="m-6 h-screen bg-cover bg-fixed leading-normal tracking-normal text-indigo-400"
         style={{
           backgroundImage: 'url("lady.png")',
           backdropFilter: "blur(50px)",
@@ -152,6 +168,8 @@ export default function Home() {
         show={showLearnMoreModal}
         onClose={closeLearnmMoreModal}
       />
+      <NewsletterForm />
+      <Testimonials />
     </>
   );
 }
