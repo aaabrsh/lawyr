@@ -8,6 +8,7 @@ import {
   BsFillArrowLeftSquareFill,
   BsFillArrowRightSquareFill,
 } from "react-icons/bs";
+import { HiMenuAlt1 } from "react-icons/hi";
 import { Disclosure } from "@headlessui/react";
 
 import {
@@ -158,16 +159,16 @@ export default function Sidebar({ active, setActive }: any) {
     <motion.div>
       {!active && (
         <div className=" cursor-pointer">
-          <BsFillArrowRightSquareFill
+          <HiMenuAlt1
             onClick={showMore}
-            className=" cursor-pointer text-2xl text-white"
+            className=" top-30 absolute left-10 cursor-pointer text-4xl"
           />
         </div>
       )}
       <div
         className={
           active
-            ? "  h-full items-center rounded rounded-tr-md bg-[#fff] bg-gray-200 text-gray-700 shadow-2xl"
+            ? "  h-full items-center rounded rounded-tr-md bg-[#fff] bg-gray-200 text-gray-700 shadow-[10px_0_5px_-2px_rgb(0,0,0,0.3)]"
             : "  hidden   rounded-tr-md opacity-0 duration-1000 "
         }
       >
