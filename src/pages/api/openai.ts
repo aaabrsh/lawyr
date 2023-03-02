@@ -14,10 +14,9 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
-    const { prompt, formData } = req.body;
-    const input = `${prompt} ${JSON.stringify({ ...formData })}`;
+    const { prompt } = req.body;
 
-    const params = { ...DEFAULT_PARAMS, prompt: input };
+    const params = { ...DEFAULT_PARAMS, prompt: prompt };
 
     const requestOptions = {
       method: "POST",

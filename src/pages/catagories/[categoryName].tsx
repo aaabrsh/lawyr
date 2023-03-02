@@ -80,10 +80,12 @@ export default function Questions({ questions, prompt }) {
     if (currentPage === questionsCount - 1) {
       //if we're on the last question
 
+      //generate the prompt
+      const input = `${prompt} ${JSON.stringify({ ...formAnswers })}`;
+
       //get letter from openai based on user input
       let response = await axios.post("/api/openai", {
-        prompt: prompt,
-        formData: { ...formAnswers },
+        prompt: input,
       });
 
       //split the whole text into an array of paragraphs
