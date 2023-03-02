@@ -75,9 +75,8 @@ const basicPlanMenu = [
 ];
 
 //TODO add corresponding menu items for each plan type
-const proPlanMenu = [];
-const businessPlanMenu = [];
-const enterprisePlanMenu = [];
+const lawyerPlanMenu = [];
+const companyPlanMenu = [];
 
 export default function Sidebar({ active, setActive }: any) {
   const [currentUser, setCurrentUser] = useState(null);
@@ -134,7 +133,7 @@ export default function Sidebar({ active, setActive }: any) {
       let data = await fetch(`/api/customers/${userId}`).then((res) =>
         res.json()
       );
-      setCurrentUser(data.customer);
+      setCurrentUser(data?.customer);
     }
     fetchCustomer();
   }, []);
@@ -145,16 +144,13 @@ export default function Sidebar({ active, setActive }: any) {
 
   function getMenuItems() {
     switch (currentUser?.billingPlan) {
-      case "pro":
-        setMenuItems(proPlanMenu);
+      case "lawyer":
+        setMenuItems(lawyerPlanMenu);
         break;
-      case "business":
-        setMenuItems(businessPlanMenu);
+      case "company":
+        setMenuItems(companyPlanMenu);
         break;
-      case "enterprise":
-        setMenuItems(enterprisePlanMenu);
-        break;
-      case "standard":
+      case "basic":
       default:
         setMenuItems(basicPlanMenu);
     }

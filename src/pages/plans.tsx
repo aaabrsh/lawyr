@@ -13,7 +13,7 @@ import { prisma } from "../server/db";
 import UserForm from "../components/Setting/UserForm";
 import Plans from "../components/Plans";
 
-export default function PlanSetting({ session, user, plans }) {
+export default function PlanSetting({ session, user, plans, customer }) {
   let initial_data = {
     name: user?.name ?? "",
     email: user?.email ?? "",
@@ -23,6 +23,9 @@ export default function PlanSetting({ session, user, plans }) {
     city: user?.city ?? "",
     state: user?.state ?? "",
     zip_code: user?.zip_code ?? "",
+    license_country: user?.license_country ?? "",
+    license_state: user?.license_state ?? "",
+    company_name: user?.company_name ?? "",
   };
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState(false);
@@ -44,8 +47,10 @@ export default function PlanSetting({ session, user, plans }) {
         <div
           className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
         >
-          <Plans plans={plans} />
-          {!session?.user && <UserForm user={initial_data} id={user?.id} />}
+          <Plans plans={plans} customer={customer} />
+          {!session?.user && (
+            <UserForm user={initial_data} id={user?.id} customer={customer} />
+          )}
         </div>
       </div>
       <Transition appear show={isOpen} as={Fragment}>
@@ -101,6 +106,7 @@ export async function getServerSideProps(context: any) {
 
   //get current user data
   let user: any = {};
+  let customer: any = null;
   try {
     user = await prisma.user
       .findFirst({
@@ -123,6 +129,11 @@ export async function getServerSideProps(context: any) {
         }
         return res;
       });
+
+    //get customer information
+    let id = session?.user?.id;
+    let { data } = await axios.get(`/api/customers/${id}`);
+    customer = data?.customer;
   } catch (err) {
     console.log(err);
   }
@@ -131,6 +142,7 @@ export async function getServerSideProps(context: any) {
       plans: sortedPlans,
       session,
       user,
+      customer,
     },
   };
 }

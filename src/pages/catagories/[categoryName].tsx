@@ -215,6 +215,9 @@ export default function Questions({ questions, pdf_url }) {
       //Close Modal
       setIsOpen(false);
     } else {
+      if(upload.status === 404){
+        return router.push('/plans')
+      }
       let errorText = await upload.text();
       setFailMsg(errorText);
     }

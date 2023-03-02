@@ -14,12 +14,12 @@ import { useRouter } from "next/router";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 
 // import axios from "axios";
-export default function Plans({ plans }) {
+export default function Plans({ plans, customer }) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
   const [showAuthModal, setAuthModal] = useState(false);
-  const [customerData, setCustomerData] = useState(null);
+  const [customerData, setCustomerData] = useState(customer);
   const { data: session } = useSession();
   const [selected, setSelected] = useState("gptneo");
   const user = session?.user?.email;
@@ -51,17 +51,6 @@ export default function Plans({ plans }) {
       setSuccessModal(true);
       setSuccessModalType(false);
     }
-  }, [session]);
-
-  useEffect(() => {
-    //fetch the customer data using the id from session
-    const fetchCustomer = async () => {
-      let id = session?.user?.id;
-      let { data } = await axios.get(`/api/customers/${id}`);
-      setCustomerData(data.customer);
-    };
-
-    fetchCustomer();
   }, [session]);
 
   // const cart = {
