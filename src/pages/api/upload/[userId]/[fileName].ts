@@ -79,9 +79,6 @@ export default async function handler(
     //add the current date and time to the file name to make it unique
     fileName = `${fileName} ${Date.now().toString()}.pdf`;
 
-    //the public url of the object to be uploaded
-    let pdf_url = `https://pub-d138560812bf42bdb84dbe672d95be48.r2.dev/${bucket}/${fileName}`;
-
     const form = formidable();
     form.parse(req, async (err: any, fields: any, files: any) => {
       if (!files.pdfFile) {
@@ -106,7 +103,6 @@ export default async function handler(
           await prisma.pdfFile.create({
             data: {
               userId: userId,
-              pdf_url: pdf_url,
               file_name: fileName,
             },
           });

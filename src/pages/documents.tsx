@@ -3,7 +3,7 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { prisma } from "../server/db";
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import Sidebar from "../components/Dashboard/Sidebar";
 import Header from "../components/Header";
@@ -18,7 +18,7 @@ export default function Documents({ pdf_files }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [fileToDelete, setFileToDelete] = useState(null);
   const [active, setActive] = useState(false);
-  const { addPdfUrl } = useStore();
+  const { addPdfFile } = useStore();
   const router = useRouter();
 
   function closeModal() {
@@ -28,8 +28,16 @@ export default function Documents({ pdf_files }) {
     setIsOpen(true);
   }
 
-  async function handleLinkClick(pdf_url: string) {
-    addPdfUrl(pdf_url);
+  async function handleLinkClick(fileName: string) {
+    let response = await fetch(`/api/aws/download/${fileName}`);
+
+    if (response.status >= 400) {
+      console.error("Failed to get object");
+      return;
+    }
+
+    let pdfBlob = await response.blob();
+    addPdfFile(pdfBlob);
     router.push("/copilot");
   }
 
@@ -83,14 +91,13 @@ export default function Documents({ pdf_files }) {
                 <tbody className="">
                   {pdf_files.map((file: any) => (
                     <tr className="border-b-2">
-                      <td className="py-2 pr-5">{file.file_name}</td>
                       <td className="cursor-pointer py-2">
                         <div
-                          onClick={() => handleLinkClick(file.pdf_url)}
+                          onClick={() => handleLinkClick(file.file_name)}
                           className="flex w-full items-center text-cyan-800 underline"
                         >
-                          <span className="min-w-[300px] max-w-[400px] flex-grow truncate">
-                            {file.pdf_url}
+                          <span className="min-w-[300px] max-w-[400px] flex-grow">
+                          {file.file_name}
                           </span>
                           <span className="px-5">
                             <FiExternalLink />
