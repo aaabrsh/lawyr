@@ -241,15 +241,12 @@ export function Sign({ plans }) {
       const pngImage = await pdfDoc.embedPng(imageURL);
       const pngDims = pngImage.scale(0.5);
 
-      const pages = pdfDoc.getPages();
-
-      pages.forEach((page) => {
-        page.drawImage(pngImage, {
-          x: position.x,
-          y: position.y,
-          width: pngDims.width,
-          height: pngDims.height,
-        });
+      const page = pdfDoc.getPages()[pageNumber - 1];
+      page?.drawImage(pngImage, {
+        x: position.x,
+        y: position.y,
+        width: pngDims.width,
+        height: pngDims.height,
       });
 
       const pdfBytesToDownload = await pdfDoc.save();
