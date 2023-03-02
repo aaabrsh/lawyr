@@ -53,8 +53,7 @@ export default function Plans({ plans }) {
       // Extract text content from the page
       const content = await page.getTextContent();
       const text = content.items.map((item) => item.str).join(" ");
-      setLegalese(text);
-      queryPrompt(legalese);
+      queryPrompt(text);
     };
 
     reader.readAsArrayBuffer(uploadedFile);
@@ -74,39 +73,35 @@ export default function Plans({ plans }) {
       .then((text) => text.replace("$legalese", prompt))
       // .then((text) => text.replace("$legalese", JSON.stringify(legalese)))
       .then((prompt) => {
-        console.log(prompt);
-
         const params = { ...DEFAULT_PARAMS, prompt: prompt };
 
         const requestOptions = {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer " + String(OPENAI_API_KEY),
+            Authorization:
+              "Bearer " +
+              String("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"),
           },
           body: JSON.stringify(params),
         };
         fetch("https://api.openai.com/v1/completions", requestOptions)
           .then((response) => response.json())
           .then((data) => {
-            console.log(data);
             const text = data.choices[0].text;
-            console.log(text);
-            const new_graph = JSON.parse(text);
-            console.log(new_graph);
-            setState(new_graph, () => {
-              console.log(state);
-            });
-            document.body.style.cursor = "default";
-            document.getElementsByClassName("generateButton")[0].disabled =
-              false;
-            document.getElementsByClassName("searchBar")[0].value = "";
+            setLegalese(text);
+            // const new_graph = JSON.parse(text);
+            // console.log("graph ", new_graph);
+            // document.body.style.cursor = "default";
+            // document.getElementsByClassName("generateButton")[0].disabled =
+            //   false;
+            // document.getElementsByClassName("searchBar")[0].value = "";
           })
           .catch((error) => {
             console.log(error);
-            document.body.style.cursor = "default";
-            document.getElementsByClassName("generateButton")[0].disabled =
-              false;
+            // document.body.style.cursor = "default";
+            // document.getElementsByClassName("generateButton")[0].disabled =
+            //   false;
           });
       });
   };
@@ -125,8 +120,7 @@ export default function Plans({ plans }) {
   }, []);
 
   const handleClick = (event) => {
-    setLegalese(ref.current.value);
-    queryPrompt(legalese);
+    queryPrompt(ref.current.value);
   };
 
   return (

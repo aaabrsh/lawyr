@@ -23,6 +23,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 import SignatureCanvas from "react-signature-canvas";
 import { useRef } from "react";
+import { PDFDocument } from "pdf-lib";
 
 // import axios from "axios";
 
@@ -60,14 +61,15 @@ export function Sign({ plans }) {
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
   const { data: session } = useSession();
-  const [file, setFile] = useState("../../pdf.pdf");
+  const [file, setFile] = useState(null);
+  const [originalFile, setOriginalFile] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [pageScale, setPageScale] = useState(1);
   const [pageNumber, setPageNumber] = useState(1);
   const ref = useRef(null);
   const user = session?.user?.email;
-  const { pdf_url } = useStore();
+  const { blobFile } = useStore();
 
   const [openModel, setOpenModal] = useState(false);
 
@@ -95,7 +97,25 @@ export function Sign({ plans }) {
   };
 
   useEffect(() => {
-    setFile(pdf_url ?? "../../pdf.pdf");
+    if (blobFile) {
+      const fileType = blobFile.type;
+      const file = new File([blobFile], "pdf.pdf", { type: fileType });
+
+      setFile(file);
+      setOriginalFile(file);
+    } else {
+      async function loadPdf() {
+        const response = await fetch("../../pdf.pdf");
+        const pdfBlob = await response.blob();
+
+        const fileType = pdfBlob.type;
+        const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
+
+        setFile(file);
+        setOriginalFile(file);
+      }
+      loadPdf();
+    }
   }, []);
 
   function handleNext() {
@@ -123,6 +143,11 @@ export function Sign({ plans }) {
 
   function onFileChange(event) {
     setFile(event.target.files[0]);
+    setOriginalFile(event.target.files[0]);
+  }
+
+  function handleResetFile(event) {
+    setFile(originalFile);
   }
 
   function onDocumentLoadSuccess({ numPages }) {
@@ -186,31 +211,75 @@ export function Sign({ plans }) {
   };
 
   const onDrop = (item, monitor) => {
-    console.log(monitor.getClientOffset());
     // setSignature(item.signature);
     setSignature(imageURL);
 
-    console.log(signature);
-    // const offset = monitor.getClientOffset();
-    // setSignaturePosition(item.position);
-    const delta = monitor.getDifferenceFromInitialOffset();
+    const offset = monitor.getClientOffset();
+
+    const pdfPage = document.querySelector(".react-pdf__Page__canvas");
+    const pdfRect = pdfPage.getBoundingClientRect();
+
+    const pdfScaleX = pdfPage.width / pdfRect.width;
+    const pdfScaleY = pdfPage.height / pdfRect.height;
+
+    let xPos = Math.round(offset.x - pdfRect.x) * pdfScaleX;
+    let yPos = Math.round(pdfRect.height - (offset.y - pdfRect.y)) * pdfScaleY;
+
     const position = {
-      x: Math.round(item.x + delta.x),
-      y: Math.round(item.y + delta.y),
+      x: xPos,
+      y: yPos,
     };
-    // const pdfPage = document.querySelector(".pdfdiv-assistant");
-    // const pdfRect = pdfPage.getBoundingClientRect();
-    // const pdfScale = pdfRect.width / pdfPage.clientWidth;
-    // const xPos = position.x * pdfScale;
-    // const yPos = pdfRect.height - position.y * pdfScale;
 
-    // setSignaturePosition(xPos, yPos);
+    const fileReader = new FileReader();
+    fileReader.readAsArrayBuffer(file);
 
-    setSignaturePosition(
-      monitor.getClientOffset().x,
-      monitor.getClientOffset().y
-    );
+    fileReader.onload = async () => {
+      const pdfBytes = new Uint8Array(fileReader.result);
+
+      const pdfDoc = await PDFDocument.load(pdfBytes);
+
+      const pngImage = await pdfDoc.embedPng(imageURL);
+      const pngDims = pngImage.scale(0.5);
+
+      const pages = pdfDoc.getPages();
+
+      pages.forEach((page) => {
+        page.drawImage(pngImage, {
+          x: position.x,
+          y: position.y,
+          width: pngDims.width,
+          height: pngDims.height,
+        });
+      });
+
+      const pdfBytesToDownload = await pdfDoc.save();
+      const newFile = new File([pdfBytesToDownload], file.name, {
+        type: "application/pdf",
+      });
+
+      setFile(newFile);
+    };
+
     // setShowModal(false);
+  };
+
+  const handlePdfDownload = () => {
+    const blob = new Blob([file], {
+      type: "application/x-www-form-urlencoded",
+    });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = file.name;
+
+    // trigger the download
+    document.body.appendChild(link);
+    link.click();
+
+    // cleanup
+    URL.revokeObjectURL(url);
+    document.body.removeChild(link);
   };
 
   const [, drop] = useDrop({
@@ -265,22 +334,7 @@ export function Sign({ plans }) {
                           pageNumber={numPages}
                           scale={pageScale}
                           renderTextLayer={false}
-                        >
-                          {/* <Signature /> */}
-                          {signature && (
-                            <img
-                              className="signature-image"
-                              src={signature}
-                              style={{
-                                position: "absolute",
-                                left: `${signaturePosition.x}px`,
-                                top: `${signaturePosition.y}px`,
-                                height: "50px",
-                                width: "100px",
-                              }}
-                            />
-                          )}
-                        </Page>
+                        ></Page>
                       </Document>
                     </div>
                   </div>
@@ -407,6 +461,10 @@ export function Sign({ plans }) {
                           </p>
                         </div>
                         <Signature />
+                        <button onClick={handleResetFile}>Reset File</button>
+                        <button onClick={handlePdfDownload}>
+                          Download File
+                        </button>
                       </>
                     )}
                     {openModel && (

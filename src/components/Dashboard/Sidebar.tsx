@@ -84,7 +84,6 @@ export default function Sidebar({ active, setActive }: any) {
   const { data: session } = useSession();
   const router = useRouter();
   //   const [active, setActive] = useState(false);
-  console.log(router.pathname.replace(/\//g, ""));
   const controls = useAnimation();
   const controlText = useAnimation();
   const controlTitleText = useAnimation();

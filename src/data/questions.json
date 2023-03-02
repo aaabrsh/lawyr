@@ -1,117 +1,13 @@
 {
-  "Customer Service Issues": {
-    "pdf_url": "https://eforms.com/download/2018/04/Offical-Demand-Letter.pdf",
-    "questions": [
-      [
-        {
-          "tag": "input",
-          "type": "radio",
-          "name": "radio",
-          "default_value": "2",
-          "label": "Test Selection",
-          "required": true,
-          "options": [
-            {
-              "label": "Option 1",
-              "value": "1"
-            },
-            {
-              "label": "Option 2",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "tag": "input",
-          "type": "checkbox",
-          "name": "checkbox",
-          "label": "Test Selection",
-          "default_value": "1",
-          "required": true,
-          "options": [
-            {
-              "label": "Option 1",
-              "value": "1"
-            },
-            {
-              "label": "Option 2",
-              "value": "2"
-            }
-          ]
-        },
-        {
-          "tag": "select",
-          "name": "selection",
-          "label": "Test Selection",
-          "required": true,
-          "options": [
-            {
-              "label": "Option 1",
-              "value": 1
-            },
-            {
-              "label": "Option 2",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "name",
-          "label": "Full Name",
-          "required": true
-        },
-        {
-          "tag": "textarea",
-          "name": "reason",
-          "label": "Reason For Letter",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "date",
-          "name": "writing_date",
-          "label": "Date of Letter",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "date",
-          "name": "last_date",
-          "label": "Last Date For Response",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "rand1",
-          "label": "Lorem ipsum dolor",
-          "required": false
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "rand2",
-          "label": "Et dolor feugait",
-          "required": false
-        }
-      ]
-    ]
-  },
   "Demand Letters": {
-    "pdf_url": "https://eforms.com/download/2018/04/Offical-Demand-Letter.pdf",
+    "prompt": "generate an official demand letter using the following information: ",
     "questions": [
       [
         {
           "tag": "input",
           "type": "text",
-          "name": "I",
-          "label": "Your Name",
+          "name": "Sender's Full Name",
+          "label": "Your Full Name",
           "required": true
         }
       ],
@@ -119,29 +15,29 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "From 1",
-          "label": "Street Address",
+          "name": "Sender's Street Address",
+          "label": "Your Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Your City",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "From 2",
-          "label": "City",
+          "name": "Sender's State",
+          "label": "Your State",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "From 3",
-          "label": "State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "From 4",
-          "label": "Zip Code",
+          "name": "Sender's Zip Code",
+          "label": "Your Zip Code",
           "required": true
         }
       ],
@@ -149,8 +45,38 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "Dear",
-          "label": "Deptor's Full Name",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
           "required": true
         }
       ],
@@ -158,39 +84,116 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "Date",
+          "name": "Date of letter",
           "label": "Date of this Demand Letter",
           "required": true
         }
       ],
       [
         {
+          "tag": "textarea",
+          "name": "the issue or problem that needs to be resolved",
+          "label": "Describe the issue or problem that needs to be resolved",
+          "required": true
+        }
+      ],
+      [
+        {
           "tag": "input",
           "type": "date",
-          "name": "If there is no response to this demand letter by",
-          "label": "Recepient is required to respond by",
+          "name": "time frame to take action before",
+          "label": "Recepient is required to take action before",
           "required": true
         }
       ],
       [
         {
           "tag": "textarea",
-          "name": "undefined",
-          "label": "Reason For Letter",
+          "name": "legal actions you plan to take",
+          "label": "Describe the legal actions you plan to take",
           "required": true
         }
       ]
     ]
   },
   "Cease and Desist Letters": {
-    "pdf_url": "https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf",
+    "prompt": "generate a cease and desist letter using the following information: ",
     "questions": [
       [
         {
           "tag": "input",
           "type": "text",
-          "name": "Dear",
-          "label": "Name of the person receiving the letter",
+          "name": "Sender's Full Name",
+          "label": "Your Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Your Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Your City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Your State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Your Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
           "required": true
         }
       ],
@@ -198,39 +201,16 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "Date",
-          "label": "Official Notice Date",
+          "name": "Date of letter",
+          "label": "Date of Letter",
           "required": true
         }
       ],
       [
         {
           "tag": "textarea",
-          "name": "This letter is served upon due to",
-          "label": "Reason for cease and desist",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "From 1",
-          "label": "Your Full Name",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "From 2",
-          "label": "Address",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "From 3",
-          "label": "City/State",
+          "name": "Description of the infringing activity",
+          "label": "Describe the activity that the recipient is engaging in that you want them to stop",
           "required": true
         }
       ],
@@ -238,61 +218,157 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "day of",
-          "label": "Recepient is required to respond by",
+          "name": "Deadline to respond or take action",
+          "label": "Deadline to respond or take action",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Consequences if the infringing activity continues",
+          "label": "Consequences if the infringing activity continues",
           "required": true
         }
       ]
     ]
   },
   "Complaints": {
-    "pdf_url": "",
-    "questions": []
-  },
-  "Powers of Attorney": {
-    "pdf_url": "https://eforms.com/download/2015/09/Durable-Financial-Power-of-Attorney-Form.pdf",
+    "prompt": "generate a complaint using the following information: ",
     "questions": [
       [
         {
           "tag": "input",
           "type": "text",
-          "name": "I",
+          "name": "Sender's Full Name",
+          "label": "Your Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Your Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Your City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Your State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Your Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "list of the specific problems that led to dissatisfaction",
+          "label": "List your reasons for complaint",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "list of the specific actions that sender would like to see taken",
+          "label": "Describe specific action you would like to see taken",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Powers of Attorney": {
+    "prompt": "generate a power of attorney letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Principal's Full Name",
           "label": "Principal's Full Name",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Principal's Street Address",
           "label": "Principal's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Principal's City",
+          "label": "Principal's City",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "Address Line 2",
+          "name": "Principal's State",
+          "label": "Principal's State",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
-          "label": "City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Zip Code",
+          "name": "Principal's Zip Code",
+          "label": "Principal's Zip Code",
           "required": true
         }
       ],
@@ -300,289 +376,140 @@
         {
           "tag": "input",
           "type": "text",
-          "name": "hereby designate",
+          "name": "Agent's Full Name",
           "label": "Agent's Full Name",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "writing_date",
+          "name": "Agent's Street Address",
           "label": "Agent's Street Address",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Address Line 2",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Zip Code",
-          "required": true
-        }
-      ]
-    ]
-  },
-  "Wills": {
-    "pdf_url": "https://eforms.com/download/2016/03/last-will-and-testament-template.pdf",
-    "questions": [
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "of",
-          "label": "Testator's Flll Name",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "resident in the City of",
-          "label": "State of Residency",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Testator's Street Address",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Testator's Address Line 2",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Zip Code",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "radio",
-          "name": "radio",
-          "label": "Marital Status",
-          "required": true,
-          "options": [
-            {
-              "label": "Married",
-              "value": "married"
-            },
-            {
-              "label": "Single",
-              "value": "single"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "number",
-          "name": "writing_date",
-          "label": "How many children does the testator have",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "First name of 1st child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Last name of 1st child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "First name of 2nd child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Last name of 2nd child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "First name of 3rd child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Last name of 3rd child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "First name of 4th child",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Last name of 4th child",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "radio",
-          "name": "radio",
-          "label": "Are there any children under 18 years old",
-          "required": true,
-          "options": [
-            {
-              "label": "Married",
-              "value": "married"
-            },
-            {
-              "label": "Single",
-              "value": "single"
-            }
-          ]
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "First Name of the personal representative of this will",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Last Name of the personal representative of this will",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Personal Representative's Street Address",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Personal Representative's Address Line 2",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "City",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "State",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "writing_date",
-          "label": "Zip Code",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "textarea",
-          "name": "reason",
-          "label": "If your spouse dies before you, where do you want your property to go",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "textarea",
-          "name": "reason",
-          "label": "State your personal wishes if you have any",
           "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agent's City",
+          "label": "Agent's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agent's State",
+          "label": "Agent's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agent's Zip Code",
+          "label": "Agent's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "powers granted to agent",
+          "label": "Powers Granted to the Agent",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "limitations on agent's powers or Specific instructions from the principal",
+          "label": "Limitations on the agent's powers or Specific instructions from the principal",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The date the power of attorney is being granted",
+          "label": "The date the power of attorney is being granted",
+          "required": true
         }
       ]
     ]
   },
   "Landlord-Tenant Agreements": {
-    "pdf_url": "https://eforms.com/download/2017/12/Notice-of-Default-on-Lease-Agreement.pdf",
+    "prompt": "generate a landlord-tenant agreement letter using the following information: ",
     "questions": [
       [
         {
           "tag": "input",
-          "type": "date",
-          "name": "Date of Notice",
-          "label": "Notice Date",
+          "type": "text",
+          "name": "Landlord's Full Name",
+          "label": "Landlord's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Landlord's Street Address",
+          "label": "Landlord's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Landlord's City",
+          "label": "Landlord's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Landlord's State",
+          "label": "Landlord's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Landlord's Zip Code",
+          "label": "Landlord's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tenant's Full Name",
+          "label": "Tenant's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tenant's Street Address",
+          "label": "Tenant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tenant's City",
+          "label": "Tenant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tenant's State",
+          "label": "Tenant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tenant's Zip Code",
+          "label": "Tenant's Zip Code",
           "required": true
         }
       ],
@@ -592,52 +519,36 @@
           "type": "text",
           "name": "Address of Leased Premises",
           "label": "Leased Property's Street Address",
-          "required": true
+          "required": false
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "City",
+          "name": "Property's Location City",
           "label": "City",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "State",
+          "name": "Property's Location State",
           "label": "State",
           "required": true
         },
         {
           "tag": "input",
           "type": "text",
-          "name": "Zip",
+          "name": "Property's Location Zip Code",
           "label": "Zip Code",
-          "required": true
+          "required": false
         }
       ],
       [
         {
           "tag": "input",
           "type": "text",
-          "name": "Telephone",
-          "label": "Landlord's or Agent's telephone number",
-          "required": true
-        },
-        {
-          "tag": "input",
-          "type": "email",
-          "name": "EMail",
-          "label": "Landlord's or Agent's email",
-          "required": true
-        }
-      ],
-      [
-        {
-          "tag": "input",
-          "type": "text",
-          "name": "Dear",
-          "label": "Full Name of Tenant",
+          "name": "Type of Property",
+          "label": "Type of Property",
           "required": true
         }
       ],
@@ -645,16 +556,15 @@
         {
           "tag": "input",
           "type": "date",
-          "name": "This Notice of Default is in reference to the Lease Agreement dated",
-          "label": "Original Lease Signature Date",
+          "name": "Lease Start Date",
+          "label": "Lease Start Date",
           "required": true
-        }
-      ],
-      [
+        },
         {
-          "tag": "textarea",
-          "name": "AGREEMENT DUE TO THE FOLLOWING 2",
-          "label": "Reason for this notice",
+          "tag": "input",
+          "type": "date",
+          "name": "Lease End Date",
+          "label": "Lease End Date",
           "required": true
         }
       ],
@@ -662,15 +572,2118 @@
         {
           "tag": "input",
           "type": "number",
-          "name": "If this breach of lease is not corrected within",
-          "label": "How many days will tenant have to correct breach of lease",
+          "name": "Monthly Rent Amount",
+          "label": "Monthly Rent Amount",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Security Deposit Amount",
+          "label": "Security Deposit Amount",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Terms of the lease",
+          "label": "Terms of the lease (e.g. pets allowed/not allowed, smoking allowed/not allowed, etc.)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any additional terms or conditions that need to be included in the agreement (skip if null)",
+          "label": "Any additional terms or conditions that need to be included in the agreement",
           "required": true
         }
       ]
     ]
   },
   "Contracts": {
-    "pdf_url": "https://eforms.com/download/2021/10/Partnership-Agreement.pdf",
+    "prompt": "generate a contract letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Contract",
+          "label": "Date of Contract",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Name",
+          "label": "Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Street Address",
+          "label": "Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's City",
+          "label": "Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's State",
+          "label": "Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Zip Code",
+          "label": "Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Name",
+          "label": "Client's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Street Address",
+          "label": "Client's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's City",
+          "label": "Client's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's State",
+          "label": "Client's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Zip Code",
+          "label": "Client's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the service or product to be provided",
+          "label": "Description of the service or product to be provided",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Reference to any contract or proposal (skip if null)",
+          "label": "Reference to any contract or proposal",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Total amount of payment",
+          "label": "Total amount of payment",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Payment installment details",
+          "label": "Payment installment details. ",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Length of contract - upto",
+          "label": "Length of contract",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Number of days/weeks/months required for written notice of termination",
+          "label": "Number of days/weeks/months required for written notice of termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Warranties by company",
+          "label": "Warranties by comapny",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Warranties by client",
+          "label": "Warranties by client",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reference to governing law and dispute resolution procedures (skip if null)",
+          "label": "Reference to governing law and dispute resolution procedures (if any)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Your name",
+          "label": "Your name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Your title",
+          "label": "Your title",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Non-Disclosure Agreement (NDA)": {
+    "prompt": "generate a Non-Disclosure Agreement (NDA) letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Disclosing Party's Full Name",
+          "label": "Disclosing Party's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Disclosing Party's Street Address",
+          "label": "Disclosing Party's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Disclosing Party's City",
+          "label": "Disclosing Party's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Disclosing Party's State",
+          "label": "Disclosing Party's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Disclosing Party's Zip Code",
+          "label": "Disclosing Party's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Receiving Party's Full Name",
+          "label": "Receiving Party's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Receiving Party's Street Address",
+          "label": "Receiving Party's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Receiving Party's City",
+          "label": "Receiving Party's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Receiving Party's State",
+          "label": "Receiving Party's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Receiving Party's Zip Code",
+          "label": "Receiving Party's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The scope of the confidential information that will be shared",
+          "label": "The scope of the confidential information that will be shared",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "The purpose of the disclosure of the confidential information for the receiving party",
+          "label": "The purpose of the disclosure of the confidential information for the receiving party",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End date of agreement",
+          "label": "End date of agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The consequences of a breach of the NDA",
+          "label": "The consequences of a breach of the NDA",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state whose laws will govern the agreement",
+          "label": "The state whose laws will govern the agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any additional terms or clauses that the parties wish to include in the agreement",
+          "label": "Any additional terms or clauses that the parties wish to include in the agreement",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Employment Agreement": {
+    "prompt": "generate a Employment Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Employee's Full Name",
+          "label": "Employee's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Street Address",
+          "label": "Employee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's City",
+          "label": "Employee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's State",
+          "label": "Employee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Zip Code",
+          "label": "Employee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Employment Start Date",
+          "label": "Employment Start Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Position",
+          "label": "Position",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Job Description",
+          "label": "Job Description",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Annual Salary",
+          "label": "Annual Salary",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Notice Period in Days",
+          "label": "Notice Period in Days",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Your Name",
+          "label": "Your Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Separation Agreement": {
+    "prompt": "generate a Separation Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's Full Name",
+          "label": "Employer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's Street Address",
+          "label": "Employer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's City",
+          "label": "Employer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's State",
+          "label": "Employer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's Zip Code",
+          "label": "Employer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Full Name",
+          "label": "Employee's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Street Address",
+          "label": "Employee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's City",
+          "label": "Employee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's State",
+          "label": "Employee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Zip Code",
+          "label": "Employee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Termination/Separation",
+          "label": "Date of Termination/Separation Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for Termination",
+          "label": "Reason for Termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Severance payment amount",
+          "label": "Severance payment amount",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "List of Company Property to be returned if any",
+          "label": "List of Company Property to be returned if any",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Date of Property Return",
+          "label": "Date of Property Return",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Company's State",
+          "label": "Company's State",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Release of Liability": {
+    "prompt": "generate a Release of Liability letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender/Signatory's Full Name",
+          "label": "Sender/Signatory's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender/Signatory's Street Address",
+          "label": "Sender/Signatory's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender/Signatory's City",
+          "label": "Sender/Signatory's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender/Signatory's State",
+          "label": "Sender/Signatory's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender/Signatory's Zip Code",
+          "label": "Sender/Signatory's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for Liability",
+          "label": "Reason for Liability",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Partnership Agreement": {
+    "prompt": "generate a Partnership Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 1's Full Name",
+          "label": "Partner 1's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 1's Street Address",
+          "label": "Partner 1's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 1's City",
+          "label": "Partner 1's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 1's State",
+          "label": "Partner 1's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 1's Zip Code",
+          "label": "Partner 1's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 2's Full Name",
+          "label": "Partner 2's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 2's Street Address",
+          "label": "Partner 2's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 2's City",
+          "label": "Partner 2's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 2's State",
+          "label": "Partner 2's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner 2's Zip Code",
+          "label": "Partner 2's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Partnership",
+          "label": "Name of Partnership",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Purpose of Partnership",
+          "label": "Purpose of Partnership",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Partner 1's capital contribution",
+          "label": "Partner 1's capital contribution",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Partner 2's capital contribution",
+          "label": "Partner 2's capital contribution",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Notice Period in Days",
+          "label": "Notice Period in Days",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "governing state",
+          "label": "governing state",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Promissory Note": {
+    "prompt": "generate a Promissory Note letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Full Name",
+          "label": "Lender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Street Address",
+          "label": "Lender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's City",
+          "label": "Lender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's State",
+          "label": "Lender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Zip Code",
+          "label": "Lender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Full Name",
+          "label": "Borrower's Full Name",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Phone Number",
+          "label": "Borrower's Phone Number",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Street Address",
+          "label": "Borrower's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's City",
+          "label": "Borrower's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's State",
+          "label": "Borrower's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Zip Code",
+          "label": "Borrower's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Principal Amount (the amount borrowed)",
+          "label": "Principal Amount (the amount borrowed)",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Interest Rate in %",
+          "label": "Interest Rate in %",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Loan",
+          "label": "Date of Loan",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Due Date",
+          "label": "Due Date",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Shareholder Agreement": {
+    "prompt": "generate a Shareholder Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shareholder's Full Name",
+          "label": "Shareholder's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shareholder's Street Address",
+          "label": "Shareholder's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shareholder's City",
+          "label": "Shareholder's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shareholder's State",
+          "label": "Shareholder's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shareholder's Zip Code",
+          "label": "Shareholder's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Street Address",
+          "label": "Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's City",
+          "label": "Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's State",
+          "label": "Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Zip Code",
+          "label": "Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of Shares Perchased",
+          "label": "Number of Shares Perchased",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Price per Share",
+          "label": "Price per Share",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Total Purchase Price",
+          "label": "Total Purchase Price",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "The percentage of outstanding shares triggering the tag-along right",
+          "label": "The percentage of outstanding shares triggering the tag-along right",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "the state governing the corporation and the agreement",
+          "label": "the state governing the corporation and the agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the person writing this letter",
+          "label": "Name of the person writing this letter",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Title of the person writing this letter",
+          "label": "Title of the person writing this letter",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Intellectual Property Assignment Agreement": {
+    "prompt": "generate a Intellectual Property Assignment Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignor's Full Name",
+          "label": "Assignor's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignor's Street Address",
+          "label": "Assignor's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignor's City",
+          "label": "Assignor's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignor's State",
+          "label": "Assignor's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignor's Zip Code",
+          "label": "Assignor's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignee's Name",
+          "label": "Assignee's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignee's Street Address",
+          "label": "Assignee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignee's City",
+          "label": "Assignee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignee's State",
+          "label": "Assignee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assignee's Zip Code",
+          "label": "Assignee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the intellectual property being assigned",
+          "label": "Description of the intellectual property being assigned",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Any specific terms or conditions of the assignment",
+          "label": "Any specific terms or conditions of the assignment",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "the state governing the agreement",
+          "label": "the state governing the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Sales Agreement": {
+    "prompt": "generate a Sales Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Street Address",
+          "label": "Seller's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's City",
+          "label": "Seller's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's State",
+          "label": "Seller's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Zip Code",
+          "label": "Seller's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Buyer's Full Name",
+          "label": "Buyer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Street Address",
+          "label": "Buyer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's City",
+          "label": "Buyer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's State",
+          "label": "Buyer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Zip Code",
+          "label": "Buyer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of goods, including quantity and price",
+          "label": "List of the description of goods, including quantity and price",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Total Purchase Price",
+          "label": "Total Purchase Price",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Payment Terms",
+          "label": "Payment Terms",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Deposit Amount",
+          "label": "Deposit Amount",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Method of Payment",
+          "label": "Method of Payment",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Last Payment Date",
+          "label": "Last Payment Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Delivery Date",
+          "label": "Delivery Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of days to notify seller of any defects or dicrepancies",
+          "label": "Number of days to notify seller of any defects or dicrepancies",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery Street Address",
+          "label": "Delivery Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery City",
+          "label": "Delivery City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery State",
+          "label": "Delivery State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery Zip Code",
+          "label": "Delivery Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "list of any applicable taxes, shipping or handling fees",
+          "label": "Any applicable taxes, shipping or handling fees if any",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Service Agreement": {
+    "prompt": "generate a Service Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Service Provider/Company's Full Name",
+          "label": "Service Provider/Company's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's Street Address",
+          "label": "Service Provider/Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's City",
+          "label": "Service Provider/Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's State",
+          "label": "Service Provider/Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Service Provider/Company's Zip Code",
+          "label": "Service Provider/Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Client's Full Name",
+          "label": "Client's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Street Address",
+          "label": "Client's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's City",
+          "label": "Client's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's State",
+          "label": "Client's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Zip Code",
+          "label": "Client's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of services to be provided",
+          "label": "Description of services to be provided",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Fee Amount",
+          "label": "Fee Amount",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Payment Terms",
+          "label": "Payment Terms",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date of Agreement",
+          "label": "Start Date of Agreement",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date of Agreement",
+          "label": "End Date of Agreement",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of days required for written notice of termination",
+          "label": "Number of days required for written notice of termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Full Name",
+          "label": "Your Name",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Waiver and Release Form": {
+    "prompt": "generate a Waiver and Release Form letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Participant's Full Name",
+          "label": "Participant's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's Street Address",
+          "label": "Participant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's City",
+          "label": "Participant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's State",
+          "label": "Participant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Participant's Zip Code",
+          "label": "Participant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Organizer's Full Name",
+          "label": "Organizer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's Street Address",
+          "label": "Organizer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's City",
+          "label": "Organizer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's State",
+          "label": "Organizer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Organizer's Zip Code",
+          "label": "Organizer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Event/Activity",
+          "label": "Name of Event/Activity",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Event/Activity",
+          "label": "Date of Event/Activity",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Location of Event/Activity",
+          "label": "Location of Event/Activity",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "description of the type of claims being released, such as personal injury, property damage, or other liability.",
+          "label": "A clear and specific description of the type of claims being released, such as personal injury, property damage, or other liability.",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "License Agreement": {
+    "prompt": "generate a License Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Licensor's Full Name",
+          "label": "Licensor's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's Street Address",
+          "label": "Licensor's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's City",
+          "label": "Licensor's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's State",
+          "label": "Licensor's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensor's Zip Code",
+          "label": "Licensor's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Licensee's Full Name",
+          "label": "Licensee's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's Street Address",
+          "label": "Licensee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's City",
+          "label": "Licensee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's State",
+          "label": "Licensee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Licensee's Zip Code",
+          "label": "Licensee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the Licensed product",
+          "label": "Name of the Licensed product",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Effective Date of Agreement",
+          "label": "Effective Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "License Fee",
+          "label": "License Fee",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Payment Date",
+          "label": "Payment Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Number of days required for written notice of termination",
+          "label": "Number of days required for written notice of termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Loan Agreement": {
+    "prompt": "generate a Loan Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Full Name",
+          "label": "Lender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Street Address",
+          "label": "Lender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's City",
+          "label": "Lender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's State",
+          "label": "Lender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Lender's Zip Code",
+          "label": "Lender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Full Name",
+          "label": "Borrower's Full Name",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Phone Number",
+          "label": "Borrower's Phone Number",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Street Address",
+          "label": "Borrower's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's City",
+          "label": "Borrower's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's State",
+          "label": "Borrower's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Borrower's Zip Code",
+          "label": "Borrower's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Loan Amount in Numbers",
+          "label": "Loan Amount in Numbers",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Loan Amount in Words",
+          "label": "Loan Amount in Words",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Interest Rate in Numbers",
+          "label": "Interest Rate in Numbers",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Interest Rate in Words",
+          "label": "Interest Rate in Words",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Loan Term in Months",
+          "label": "Loan Term in Months",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "select",
+          "name": "repayment schedule",
+          "label": "repayment schedule",
+          "required": true,
+          "options": [
+            {
+              "label": "monthly",
+              "value": "monthly"
+            },
+            {
+              "label": "weekly",
+              "value": "weekly"
+            },
+            {
+              "label": "bi-weekly",
+              "value": "bi-weekly"
+            }
+          ]
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Amount of Each Payment",
+          "label": "Amount of Each Payment",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date of Loan",
+          "label": "Start Date of Loan",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date of Loan",
+          "label": "End Date of Loan",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "late fee or late payment penalty",
+          "label": "late fee or late payment penalty",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Collateral or Security for the Loan",
+          "label": "Description of Collateral or Security for the Loan",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Confidentiality Agreement": {
+    "prompt": "generate a Confidentiality Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Full Name",
+          "label": "Sender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Sender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Sender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Sender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Sender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Full Name",
+          "label": "Recipient's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Street Address",
+          "label": "Recipient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's City",
+          "label": "Recipient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's State",
+          "label": "Recipient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient's Zip Code",
+          "label": "Recipient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Purpose of disclosing confidential information",
+          "label": "Purpose of disclosing confidential information",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Lease Agreement": {
+    "prompt": "generate a Lease Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Employment Offer Letter": {
+    "prompt": "generate a Employment Offer Letter letter using the following information: ",
+    "questions": []
+  },
+  "Independent Contractor Agreement": {
+    "prompt": "generate a Independent Contractor Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Consulting Agreement": {
+    "prompt": "generate a Consulting Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Purchase Agreement": {
+    "prompt": "generate a Purchase Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Operating Agreement": {
+    "prompt": "generate a Operating Agreement letter using the following information: ",
     "questions": []
   }
 }

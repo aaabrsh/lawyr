@@ -11,18 +11,47 @@ import path from "path";
 import { Dialog, Transition } from "@headlessui/react";
 import modifyPdf from "../../utils/modifyPdf";
 import { useSession } from "next-auth/react";
+import axios from "axios";
+import { pdf, Document, Page, Text, StyleSheet } from "@react-pdf/renderer";
+import useStore from "../../../store/useStore";
 
-export default function Questions({ questions, pdf_url }) {
+export default function Questions({ questions, prompt }) {
   const questionsCount = questions.length;
   let [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
   const [formAnswers, setFormAnswers] = useState({});
+  const [blobFile, setBlobFile] = useState(null);
   const [failMsg, setFailMsg] = useState(null);
   const [active, setActive] = useState(false);
   const router = useRouter();
   const { data: session } = useSession();
   const userId = session?.user?.id;
   const { categoryName } = router.query;
+  const { addPdfFile } = useStore();
+
+  //styles for pdf
+  const styles = StyleSheet.create({
+    body: {
+      paddingTop: 35,
+      paddingBottom: 65,
+      paddingHorizontal: 35,
+    },
+    text: {
+      margin: 6,
+      fontSize: 14,
+      textAlign: "justify",
+      fontFamily: "Times-Roman",
+    },
+    pageNumber: {
+      position: "absolute",
+      fontSize: 12,
+      bottom: 30,
+      left: 0,
+      right: 0,
+      textAlign: "center",
+      color: "grey",
+    },
+  });
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -34,17 +63,55 @@ export default function Questions({ questions, pdf_url }) {
     };
   }, []);
 
+  useEffect(() => {
+    if (blobFile) {
+      setFailMsg(null);
+      setIsOpen(true);
+    }
+  }, [blobFile]);
+
   const handleBackClick = (event: any) => {
     event.preventDefault();
     setCurrentPage((current) => current - 1);
   };
 
-  const handleNextClick = (event: any) => {
+  const handleNextClick = async (event: any) => {
     event.preventDefault();
     if (currentPage === questionsCount - 1) {
       //if we're on the last question
-      setFailMsg(null);
-      setIsOpen(true);
+
+      //get letter from openai based on user input
+      let response = await axios.post("/api/openai", {
+        prompt: prompt,
+        formData: { ...formAnswers },
+      });
+
+      //split the whole text into an array of paragraphs
+      let paragraphs = response.data.split("\n");
+
+      //create the pdf doc
+      let pdfDoc = (
+        <Document>
+          <Page style={styles.body}>
+            {paragraphs.map((line, index) => (
+              <Text style={styles.text} key={index}>
+                {line}
+              </Text>
+            ))}
+            <Text
+              style={styles.pageNumber}
+              render={({ pageNumber, totalPages }) =>
+                `${pageNumber} / ${totalPages}`
+              }
+              fixed
+            />
+          </Page>
+        </Document>
+      );
+
+      //convert pdf doc to blob
+      const blob = await pdf(pdfDoc).toBlob();
+      setBlobFile(blob);
     } else {
       setCurrentPage((current) => current + 1);
     }
@@ -187,36 +254,45 @@ export default function Questions({ questions, pdf_url }) {
   };
 
   const handleDownload = async () => {
-    // Fetch an existing PDF document
-    const existingPdfBytes = await fetch(pdf_url).then((res) =>
-      res.arrayBuffer()
-    );
-
-    // Load a PDFDocument from the existing PDF bytes
-    const pdfDoc = await PDFDocument.load(existingPdfBytes);
-
-    const pdfBytes: Uint8Array = await modifyPdf(pdfDoc, formAnswers);
-
-    // create the blob object with content-type "application/pdf"
-    var blob = new Blob([pdfBytes], { type: "application/pdf" });
-
     const formData = new FormData();
-    formData.append("pdfFile", blob);
+    formData.append("pdfFile", blobFile);
 
+    //upload file to aws
     let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
 
-    console.log(upload);
     if (upload.status >= 200 && upload.status < 400) {
       // Trigger the browser to download the PDF document
-      download(pdfBytes, `${categoryName}.pdf`, "application/pdf");
+      download(blobFile, `${categoryName}.pdf`, "application/pdf");
       //Close Modal
       setIsOpen(false);
     } else {
-      if(upload.status === 404){
-        return router.push('/plans')
+      if (upload.status === 404) {
+        return router.push("/plans");
+      }
+      let errorText = await upload.text();
+      setFailMsg(errorText);
+    }
+  };
+
+  const handleOpenWithCopilot = async () => {
+    const formData = new FormData();
+    formData.append("pdfFile", blobFile);
+
+    //upload file to aws
+    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
+      method: "POST",
+      body: formData,
+    });
+
+    if (upload.status >= 200 && upload.status < 400) {
+      addPdfFile(blobFile);
+      router.push("/copilot");
+    } else {
+      if (upload.status === 404) {
+        return router.push("/plans");
       }
       let errorText = await upload.text();
       setFailMsg(errorText);
@@ -335,13 +411,22 @@ export default function Questions({ questions, pdf_url }) {
                       Cancel
                     </button>
                     {!failMsg && (
-                      <button
-                        type="button"
-                        className="inline-flex justify-center rounded-md border border-blue-900 bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                        onClick={handleDownload}
-                      >
-                        Download PDF
-                      </button>
+                      <>
+                        <button
+                          type="button"
+                          className="inline-flex justify-center rounded-md border border-blue-900 bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                          onClick={handleDownload}
+                        >
+                          Download PDF
+                        </button>
+                        <button
+                          type="button"
+                          className="inline-flex justify-center rounded-md border border-cyan-900 bg-cyan-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2"
+                          onClick={handleOpenWithCopilot}
+                        >
+                          Open With Copilot
+                        </button>
+                      </>
                     )}
                   </div>
                 </Dialog.Panel>
@@ -361,18 +446,18 @@ export async function getServerSideProps(context: any) {
   data = JSON.parse(data)[categoryName];
 
   let questions: any = [];
-  let pdf_url: String = "";
+  let prompt: String = "";
 
   if (data) {
     //if a data with the given category name is found
     questions = data.questions;
-    pdf_url = data.pdf_url;
+    prompt = data.prompt;
   }
 
   return {
     props: {
       questions,
-      pdf_url,
+      prompt,
     },
   };
 }
