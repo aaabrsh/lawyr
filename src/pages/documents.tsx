@@ -48,7 +48,7 @@ export default function Documents({ pdf_files }) {
 
   async function deleteFile() {
     if (fileToDelete) {
-      await axios.delete(`/api/pdf_files/${fileToDelete}`);
+      await axios.delete(`/api/aws/delete/${fileToDelete}`);
       closeConfirmationModal();
       router.reload();
     }

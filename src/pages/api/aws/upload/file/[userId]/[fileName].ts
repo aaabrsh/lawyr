@@ -5,7 +5,7 @@ import { NextApiRequest } from "next";
 import formidable from "formidable";
 import fs from "node:fs";
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
-import { prisma } from "../../../../server/db";
+import { prisma } from "../../../../../../server/db";
 
 const SECRET_ACCESS_KEY = process.env.SECRET_ACCESS_KEY ?? "";
 const ACCESS_KEY_ID = process.env.ACCESS_KEY_ID ?? "";

@@ -260,7 +260,7 @@ export default function Questions({ questions, prompt }) {
     formData.append("pdfFile", blobFile);
 
     //upload file to aws
-    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
+    let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
@@ -284,7 +284,7 @@ export default function Questions({ questions, prompt }) {
     formData.append("pdfFile", blobFile);
 
     //upload file to aws
-    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
+    let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
