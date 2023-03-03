@@ -80,10 +80,12 @@ export default function Questions({ questions, prompt }) {
     if (currentPage === questionsCount - 1) {
       //if we're on the last question
 
+      //generate the prompt
+      const input = `${prompt} ${JSON.stringify({ ...formAnswers })}`;
+
       //get letter from openai based on user input
       let response = await axios.post("/api/openai", {
-        prompt: prompt,
-        formData: { ...formAnswers },
+        prompt: input,
       });
 
       //split the whole text into an array of paragraphs
@@ -258,7 +260,7 @@ export default function Questions({ questions, prompt }) {
     formData.append("pdfFile", blobFile);
 
     //upload file to aws
-    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
+    let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });
@@ -282,7 +284,7 @@ export default function Questions({ questions, prompt }) {
     formData.append("pdfFile", blobFile);
 
     //upload file to aws
-    let upload = await fetch(`/api/upload/${userId}/${categoryName}`, {
+    let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
       body: formData,
     });

@@ -55,6 +55,7 @@ model User {
   license_country String?
   license_state   String?
   company_name    String?
+  signature       String?
   accounts        Account[]
   sessions        Session[]
   subscriptions   Customer[]
@@ -73,16 +74,15 @@ model Customer {
 enum BillingPlan {
   basic
   lawyer
-  company
+  business
 }
 
 model PdfFile {
-    id         String   @id @default(cuid())
-    userId     String
-    file_name  String
-    created_at DateTime @default(now())
-    user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
+  id         String   @id @default(cuid())
+  userId     String
+  file_name  String
+  created_at DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Product {
@@ -100,11 +100,4 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
-}
-
-enum BillingPlan {
-  standard
-  pro
-  business
-  enterprise
 }

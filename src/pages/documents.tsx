@@ -48,7 +48,7 @@ export default function Documents({ pdf_files }) {
 
   async function deleteFile() {
     if (fileToDelete) {
-      await axios.delete(`/api/pdf_files/${fileToDelete}`);
+      await axios.delete(`/api/aws/delete/${fileToDelete}`);
       closeConfirmationModal();
       router.reload();
     }
@@ -90,7 +90,7 @@ export default function Documents({ pdf_files }) {
                 </thead>
                 <tbody className="">
                   {pdf_files.map((file: any) => (
-                    <tr className="border-b-2">
+                    <tr className="border-b-2" key={file.id}>
                       <td className="cursor-pointer py-2">
                         <div
                           onClick={() => handleLinkClick(file.file_name)}

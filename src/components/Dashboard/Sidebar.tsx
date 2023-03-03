@@ -76,7 +76,7 @@ const basicPlanMenu = [
 
 //TODO add corresponding menu items for each plan type
 const lawyerPlanMenu = [];
-const companyPlanMenu = [];
+const businessPlanMenu = [];
 
 export default function Sidebar({ active, setActive }: any) {
   const [currentUser, setCurrentUser] = useState(null);
@@ -146,8 +146,8 @@ export default function Sidebar({ active, setActive }: any) {
       case "lawyer":
         setMenuItems(lawyerPlanMenu);
         break;
-      case "company":
-        setMenuItems(companyPlanMenu);
+      case "business":
+        setMenuItems(businessPlanMenu);
         break;
       case "basic":
       default:

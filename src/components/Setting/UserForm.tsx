@@ -163,7 +163,7 @@ export default function UserForm({ user, id, customer }) {
                     onChange={handleChange}
                   />
                 </div>
-                {customer?.billingPlan === "company" && (
+                {customer?.billingPlan === "business" && (
                   <fieldset className="col-span-6 border border-gray-300 p-5 pb-7">
                     <legend className="font-bold text-gray-700">
                       &nbsp; Company Information &nbsp;

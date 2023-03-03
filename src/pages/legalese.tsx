@@ -3,15 +3,9 @@
 import { useState, Fragment, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "../components/Dashboard/Sidebar";
-import { useSession, getSession } from "next-auth/react";
+import { getSession } from "next-auth/react";
 import Header from "../components/Header";
-import Image from "next/image";
-import Catagories from "../components/Dashboard/Catagories";
-import { checkout } from "../lib/getStripe";
-import initStripe from "stripe";
 import axios from "axios";
-import { loadStripe } from "@stripe/stripe-js";
-import { useRef } from "react";
 import { pdfjs } from "react-pdf";
 
 import workerSrc from "../../pdf-worker";
@@ -20,13 +14,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 // import axios from "axios";
 
 export default function Plans({ plans }) {
-  const [legalese, setLegalese] = useState();
+  const [legalese, setLegalese] = useState("");
+  const [inputText, setInputText] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [file, setFile] = useState();
   const [active, setActive] = useState(false);
-  const { data: session } = useSession();
-  const ref = useRef(null);
-  const user = session?.user?.email;
   function closeModal() {
     setIsOpen(false);
   }
@@ -53,74 +45,29 @@ export default function Plans({ plans }) {
       // Extract text content from the page
       const content = await page.getTextContent();
       const text = content.items.map((item) => item.str).join(" ");
-      queryPrompt(text);
+      setInputText(text);
     };
 
     reader.readAsArrayBuffer(uploadedFile);
   };
 
   const queryPrompt = (prompt) => {
-    const DEFAULT_PARAMS = {
-      model: "text-davinci-003",
-      temperature: 0.3,
-      max_tokens: 800,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-    };
     fetch("/prompts/legalese.prompt")
       .then((response) => response.text())
       .then((text) => text.replace("$legalese", prompt))
-      // .then((text) => text.replace("$legalese", JSON.stringify(legalese)))
       .then((prompt) => {
-        const params = { ...DEFAULT_PARAMS, prompt: prompt };
-
-        const requestOptions = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization:
-              "Bearer " +
-              String("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"),
-          },
-          body: JSON.stringify(params),
-        };
-        fetch("https://api.openai.com/v1/completions", requestOptions)
-          .then((response) => response.json())
-          .then((data) => {
-            const text = data.choices[0].text;
-            setLegalese(text);
-            // const new_graph = JSON.parse(text);
-            // console.log("graph ", new_graph);
-            // document.body.style.cursor = "default";
-            // document.getElementsByClassName("generateButton")[0].disabled =
-            //   false;
-            // document.getElementsByClassName("searchBar")[0].value = "";
-          })
-          .catch((error) => {
-            console.log(error);
-            // document.body.style.cursor = "default";
-            // document.getElementsByClassName("generateButton")[0].disabled =
-            //   false;
-          });
+        axios.post("/api/openai", { prompt }).then(({ data }) => {
+          setLegalese(data.trim());
+        });
       });
   };
-  //   const getFiles = async () => {
-  //     const { data } = await axios.get(`/api/file?email=${user}`);
-  //     const key = "title";
-  //     const array = data.datas
-  //     const arrayUniqueByKey = [
-  //       ...new Map(array.map((item) => [item[key], item])).values(),
-  //     ];
 
-  //     setFiles(arrayUniqueByKey);
-  //   };
-  useEffect(() => {
-    // getFiles();
-  }, []);
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
 
-  const handleClick = (event) => {
-    queryPrompt(ref.current.value);
+  const handleClick = () => {
+    queryPrompt(inputText);
   };
 
   return (
@@ -187,8 +134,8 @@ export default function Plans({ plans }) {
                   <textarea
                     placeholder="Add your comment..."
                     className="h-[220px] w-[60vw] resize-none rounded-md border-[0.1px] border-[#9EA5B1] p-2 font-bold focus:outline-1 focus:outline-blue-500"
-                    defaultValue={""}
-                    ref={ref}
+                    value={inputText}
+                    onChange={handleInputChange}
                     id="message"
                     name="message"
                   />
@@ -206,7 +153,7 @@ export default function Plans({ plans }) {
                     <textarea
                       placeholder="Add your comment..."
                       className="h-[220px] w-[60vw] resize-none rounded-md border-[0.1px] border-[#9EA5B1] p-2 font-bold focus:outline-1 focus:outline-blue-500"
-                      defaultValue={legalese}
+                      value={legalese}
                     />
                   </div>
                 </div>
