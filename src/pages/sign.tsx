@@ -24,6 +24,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import SignatureCanvas from "react-signature-canvas";
 import { useRef } from "react";
 import { PDFDocument } from "pdf-lib";
+import { prisma } from "../server/db";
 
 // import axios from "axios";
 
@@ -56,7 +57,7 @@ import { PDFDocument } from "pdf-lib";
 //   return <div ref={drag}>Drag me!</div>;
 // }
 
-export function Sign({ plans }) {
+export function Sign({ user }) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
@@ -68,7 +69,6 @@ export function Sign({ plans }) {
   const [pageScale, setPageScale] = useState(1);
   const [pageNumber, setPageNumber] = useState(1);
   const ref = useRef(null);
-  const user = session?.user?.email;
   const { blobFile } = useStore();
 
   const [openModel, setOpenModal] = useState(false);
@@ -97,6 +97,11 @@ export function Sign({ plans }) {
   };
 
   useEffect(() => {
+    loadPdf();
+    loadSignature();
+  }, []);
+
+  async function loadPdf() {
     if (blobFile) {
       const fileType = blobFile.type;
       const file = new File([blobFile], "pdf.pdf", { type: fileType });
@@ -104,19 +109,40 @@ export function Sign({ plans }) {
       setFile(file);
       setOriginalFile(file);
     } else {
-      async function loadPdf() {
-        const response = await fetch("../../pdf.pdf");
-        const pdfBlob = await response.blob();
+      const response = await fetch("../../pdf.pdf").catch((res) =>
+        console.error(res)
+      );
+      const pdfBlob = await response.blob();
 
-        const fileType = pdfBlob.type;
-        const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
+      const fileType = pdfBlob.type;
+      const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
 
-        setFile(file);
-        setOriginalFile(file);
-      }
-      loadPdf();
+      setFile(file);
+      setOriginalFile(file);
     }
-  }, []);
+  }
+
+  async function loadSignature() {
+    let fileName = user?.signature;
+    //URL encode the input because it contains '/'
+    fileName = fileName.replace("/", "%2F");
+
+    let response = await fetch(`/api/aws/download/${fileName}`);
+
+    if (response.status >= 400) {
+      console.error("Failed to get object");
+      return;
+    }
+
+    let imageBlob = await response.blob();
+    imageBlob = new Blob([imageBlob], { type: "image/png" });
+
+    const reader = new FileReader();
+    reader.readAsDataURL(imageBlob);
+    reader.onload = () => {
+      setImageURL(reader.result);
+    };
+  }
 
   function handleNext() {
     if (pageNumber < totalPages) {
@@ -281,11 +307,8 @@ export function Sign({ plans }) {
 
   const handleSaveSignature = async () => {
     if (imageURL && session?.user?.id) {
-
       const blob = await fetch(imageURL).then((res) => res.blob());
 
-      console.log(blob)
-      
       const formData = new FormData();
       formData.append("image", blob);
 
@@ -573,10 +596,10 @@ export function Sign({ plans }) {
   );
 }
 
-export default function MyPageWrapper() {
+export default function MyPageWrapper({ user }) {
   return (
     <DndProvider backend={HTML5Backend}>
-      <Sign />
+      <Sign user={user} />
     </DndProvider>
   );
 }
@@ -592,9 +615,19 @@ export async function getServerSideProps(context) {
     };
   }
 
+  const user = await prisma.user
+    .findUnique({
+      where: { id: session.user.id },
+      select: { id: true, signature: true },
+    })
+    .catch(() => {
+      return {};
+    });
+
   return {
     props: {
       session,
+      user,
     },
   };
 }

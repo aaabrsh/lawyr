@@ -39,15 +39,26 @@ export default async function handler(
       // create a Readable stream from the object Body
       const objectStream = Readable.from(Body);
 
+      //get file extension from fileName and use it to set response header
+      const extension = fileName.split(".").pop();
+      let contentType = "";
+      if (extension === ".pdf") {
+        contentType = "application/pdf";
+      } else if (extension === ".png") {
+        contentType = "image/png";
+      }
+
       // set appropriate headers for the response
-      res.setHeader("Content-Type", "application/pdf");
+      res.setHeader("Content-Type", contentType);
       res.setHeader("Content-Disposition", `attachment; filename=${fileName}`);
 
       // pipe the object stream to the response stream
       objectStream.pipe(res);
     } catch (error) {
       console.log(error);
-      res.status(error.$metadata.httpStatusCode).send(`no file found: ${error}`);
+      res
+        .status(error.$metadata.httpStatusCode)
+        .send(`no file found: ${error}`);
     }
   } else {
     res.setHeader("Allow", "POST");
