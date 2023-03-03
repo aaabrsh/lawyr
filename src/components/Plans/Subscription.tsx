@@ -27,7 +27,7 @@ export default function Subscription({ customer }) {
             <span className="font-bold">{customer?.billingPlan}</span>&nbsp;plan
           </p>
         </div>
-        {customer?.billingPlan === "company" ? (
+        {customer?.billingPlan === "business" ? (
           <div className="pb-2">
             <h1 className="font-bold">Company Name: </h1>
             <p className="pl-2 font-light">{customer?.company_name}</p>

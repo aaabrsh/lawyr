@@ -64,7 +64,7 @@ export default async function handler(
               "file generation limit exceeded for the current subscription plan"
             );
         break;
-      case "company":
+      case "business":
         if (customer.generated_pdfs_count >= 15)
           return res
             .status(400)
