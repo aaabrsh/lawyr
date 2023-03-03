@@ -279,6 +279,38 @@ export function Sign({ plans }) {
     document.body.removeChild(link);
   };
 
+  const handleSaveSignature = async () => {
+    if (imageURL && session?.user?.id) {
+
+      const blob = await fetch(imageURL).then((res) => res.blob());
+
+      console.log(blob)
+      
+      const formData = new FormData();
+      formData.append("image", blob);
+
+      // Send the FormData to the Next.js API endpoint
+      fetch(`/api/aws/upload/image/${session.user.id}`, {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          if (response.status < 400) {
+            //TODO show Success Message
+            console.log("Image uploaded successfully");
+          } else {
+            //TODO show error message
+            console.log("error");
+          }
+        })
+        .catch((error) => {
+          console.error("Error uploading image", error);
+        });
+    } else {
+      console.log("couldn't save signature");
+    }
+  };
+
   const [, drop] = useDrop({
     accept: "signature",
     drop: onDrop,
@@ -461,6 +493,9 @@ export function Sign({ plans }) {
                         <button onClick={handleResetFile}>Reset File</button>
                         <button onClick={handlePdfDownload}>
                           Download File
+                        </button>
+                        <button onClick={handleSaveSignature}>
+                          Save Signature
                         </button>
                       </>
                     )}
