@@ -459,7 +459,10 @@ export function Sign({ user }) {
                 {/* <div className="flex-1 bg-indigo-50 p-4"> */}
                 <div className="sticky top-0	ml-4 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
                   <div className="app">
-                    <button onClick={() => setOpenModal(true)}>
+                    <button
+                      onClick={() => setOpenModal(true)}
+                      className="m-3 rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white"
+                    >
                       Create Signature
                     </button>
                     <br />
@@ -538,15 +541,29 @@ export function Sign({ user }) {
                           </p>
                         </div>
                         <Signature />
-                        <button onClick={handleResetFile}>Reset File</button>
-                        <button onClick={handlePdfDownload}>
+                        <button
+                          onClick={handleResetFile}
+                          className="m-3 rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white"
+                        >
+                          Reset File
+                        </button>
+                        <button
+                          onClick={handlePdfDownload}
+                          className="m-3 rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white"
+                        >
                           Download File
                         </button>
-                        <button onClick={handleSaveSignature}>
+                        <button
+                          onClick={handleSaveSignature}
+                          className="m-3 rounded bg-[#4F46E5] py-2 px-3 text-sm font-semibold text-white"
+                        >
                           Save Signature
                         </button>
                         {user?.signature && (
-                          <button onClick={handleDeleteSignature}>
+                          <button
+                            onClick={handleDeleteSignature}
+                            className="m-3 rounded bg-red-700 py-2 px-3 text-sm font-semibold text-white"
+                          >
                             Delete Saved Signature
                           </button>
                         )}
@@ -579,16 +596,26 @@ export function Sign({ user }) {
                               ref={sigCanvas}
                             />
                             <hr />
-                            <button onClick={() => sigCanvas.current.clear()}>
+                            <button
+                              onClick={() => sigCanvas.current.clear()}
+                              className="m-2 rounded bg-blue-600 py-2 px-4 text-sm font-semibold text-white"
+                            >
                               Clear
                             </button>
                           </div>
 
                           <div className="modal__bottom">
-                            <button onClick={() => setOpenModal(false)}>
+                            <button
+                              onClick={() => setOpenModal(false)}
+                              className="m-2 rounded bg-red-600 py-2 px-3 text-sm font-semibold text-white"
+                            >
                               Cancel
                             </button>
-                            <button className="create" onClick={create}>
+                            <button
+                              className="create"
+                              onClick={create}
+                              className="m-2 rounded bg-green-600 py-2 px-3 text-sm font-semibold text-white"
+                            >
                               Create
                             </button>
                           </div>
