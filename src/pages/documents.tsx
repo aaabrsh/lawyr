@@ -83,8 +83,7 @@ export default function Documents({ pdf_files }) {
                 <thead className="">
                   <tr className="w-full border-b-2 border-b-zinc-700 py-3 text-left text-zinc-800">
                     <th>File Name</th>
-                    <th>PDF URL</th>
-                    <th>Created At</th>
+                    <th className="pr-5">Created At</th>
                     <th>Actions</th>
                   </tr>
                 </thead>

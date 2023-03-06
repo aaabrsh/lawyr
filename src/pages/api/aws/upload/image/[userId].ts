@@ -54,7 +54,6 @@ export default async function handler(
         res.status(400).send("No file uploaded");
         return;
       } else {
-
         // Define the uploading parameters
         const params = {
           Bucket: bucket,
@@ -85,9 +84,11 @@ export default async function handler(
             });
             console.log("signature added to user table");
 
-            return res.status(201).send("Image uploaded successfully");
+            return res.status(201).json({ fileName });
           } else {
-            res.status(awsResponse.$metadata.httpStatusCode).send("error: file not uploaded");
+            res
+              .status(awsResponse.$metadata.httpStatusCode)
+              .json({error: "file not uploaded"});
           }
         } catch (error) {
           console.log(error);
