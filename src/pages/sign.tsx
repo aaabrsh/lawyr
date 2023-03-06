@@ -25,6 +25,7 @@ import SignatureCanvas from "react-signature-canvas";
 import { useRef } from "react";
 import { PDFDocument } from "pdf-lib";
 import { prisma } from "../server/db";
+import axios from "axios";
 
 // import axios from "axios";
 
@@ -98,7 +99,9 @@ export function Sign({ user }) {
 
   useEffect(() => {
     loadPdf();
-    loadSignature();
+    if (user?.signature) {
+      loadSignature();
+    }
   }, []);
 
   async function loadPdf() {
@@ -109,16 +112,19 @@ export function Sign({ user }) {
       setFile(file);
       setOriginalFile(file);
     } else {
-      const response = await fetch("../../pdf.pdf").catch((res) =>
-        console.error(res)
-      );
-      const pdfBlob = await response.blob();
+      try {
+        const response = await fetch("../../pdf.pdf");
 
-      const fileType = pdfBlob.type;
-      const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
+        const pdfBlob = await response.blob();
 
-      setFile(file);
-      setOriginalFile(file);
+        const fileType = pdfBlob.type;
+        const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
+
+        setFile(file);
+        setOriginalFile(file);
+      } catch (error) {
+        console.error(error);
+      }
     }
   }
 
@@ -317,8 +323,10 @@ export function Sign({ user }) {
         method: "POST",
         body: formData,
       })
-        .then((response) => {
-          if (response.status < 400) {
+        .then(async (response) => {
+          if (response.status < 300 && response.status >= 200) {
+            let { fileName } = await response.json();
+            user.signature = fileName;
             //TODO show Success Message
             console.log("Image uploaded successfully");
           } else {
@@ -331,6 +339,23 @@ export function Sign({ user }) {
         });
     } else {
       console.log("couldn't save signature");
+    }
+  };
+
+  const handleDeleteSignature = async () => {
+    let fileName = user?.signature;
+    if (fileName) {
+      //URL encode the input because it contains '/'
+      fileName = fileName.replace("/", "%2F");
+    }
+
+    let response = await axios.delete(
+      `/api/aws/delete/${user?.id}/${fileName}`
+    );
+
+    if (response.status >= 200 && response.status < 300) {
+      user.signature = null;
+      setImageURL(null);
     }
   };
 
@@ -520,6 +545,11 @@ export function Sign({ user }) {
                         <button onClick={handleSaveSignature}>
                           Save Signature
                         </button>
+                        {user?.signature && (
+                          <button onClick={handleDeleteSignature}>
+                            Delete Saved Signature
+                          </button>
+                        )}
                       </>
                     )}
                     {openModel && (
