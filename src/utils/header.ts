@@ -37,6 +37,7 @@ export const menuItems = [
 export const navigation = [
   { name: "For Businesses", href: "/forcompanies" },
   { name: "For Lawyers", href: "/forlawyers" },
+  { name: "Blog", href: "/blog" },
   // { name: "Pricing", href: "/pricing" },
   // { name: "Resources", href: "/resources" },
 ];

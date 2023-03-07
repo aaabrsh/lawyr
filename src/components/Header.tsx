@@ -44,7 +44,7 @@ export default function Header() {
     if ((inputText = "")) {
       removeSearchText();
     }
-  }, [inputText])
+  }, [inputText]);
 
   const inputHandler = (e) => {
     //convert input text to lower case
@@ -84,11 +84,10 @@ export default function Header() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Sota Models - Customize AI</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <script async src="https://cdn.splitbee.io/sb.js"></script> */}
-      </Head>
+      </Head> */}
       <Disclosure as="nav" className="">
         {(open) => (
           <>
@@ -345,7 +344,7 @@ export default function Header() {
           display: isSearchVisible ? "block" : "none",
         }}
       >
-        <div className="container w-7/12 px-5 mx-auto text-white bg-gray-800 border border-gray-700 rounded rounded-[100px]">
+        <div className="container mx-auto w-7/12 rounded rounded-[100px] border border-gray-700 bg-gray-800 px-5 text-white">
           <input
             id="searchfield"
             type="search"
@@ -353,7 +352,7 @@ export default function Header() {
             autoFocus="autofocus"
             onChange={inputHandler}
             // onComm={handleClear}
-            className="w-full appearance-none px-2 py-2 bg-transparent leading-normal text-white transition focus:border-transparent focus:outline-none"
+            className="w-full appearance-none bg-transparent px-2 py-2 leading-normal text-white transition focus:border-transparent focus:outline-none"
           />
         </div>
       </div>
