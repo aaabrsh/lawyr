@@ -69,11 +69,10 @@ export default function Header() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Sota Models - Customize AI</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <script async src="https://cdn.splitbee.io/sb.js"></script> */}
-      </Head>
+      </Head> */}
       <Disclosure as="nav" className="">
         {(open) => (
           <>

@@ -1,5 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
+import Head from "next/head";
+import globalMeta from "../../globalmeta";
 import { useState, Fragment, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "../components/Dashboard/Sidebar";
@@ -72,6 +74,25 @@ export default function Plans({ plans }) {
 
   return (
     <>
+      <Head>
+        <title>
+          Ailawyr Legalase Simplifier - Simplify Legal Contracts and Documents
+        </title>
+        <meta
+          name="description"
+          content="Ailawyr Legalase Simplifier can help you simplify legal contracts and documents. Our AI-powered platform can analyze complex legal language and provide plain-language summaries."
+        />
+
+        {/*
+        	Open graph meta tags.
+    	*/}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content={globalMeta.siteName} />
+        <meta property="og:type" content={globalMeta.ogType} />
+        <meta property="og:description" content={globalMeta.description} />
+        <meta property="og:image" content={globalMeta.siteLogo} />
+        <meta property="og:url" content={globalMeta.canonicalUrl} />
+      </Head>
       <Header />
       <div className="flex bg-[#fdfdff]">
         <div className=" flex-none ">

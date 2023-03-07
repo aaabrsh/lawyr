@@ -4,7 +4,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
-
+import Head from "next/head";
+import globalMeta from "../../globalmeta";
 import { useState, Fragment, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Sidebar from "../components/Dashboard/Sidebar";
@@ -43,6 +44,23 @@ export default function Chat() {
 
   return (
     <>
+      <Head>
+        <title>Ailawyr Chat - Your AI Assistant Lawyer</title>
+        <meta
+          name="description"
+          content="Ailawyr Chat is your AI assistant lawyer, providing fast and efficient legal advice and support. Our AI-powered chatbot can assist with legal questions, document review, and more."
+        />
+
+        {/*
+        	Open graph meta tags.
+    	*/}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content={globalMeta.siteName} />
+        <meta property="og:type" content={globalMeta.ogType} />
+        <meta property="og:description" content={globalMeta.description} />
+        <meta property="og:image" content={globalMeta.siteLogo} />
+        <meta property="og:url" content={globalMeta.canonicalUrl} />
+      </Head>
       <Header />
       <div className="flex bg-[#fdfdff]">
         <div className=" flex-none ">
