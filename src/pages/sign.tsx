@@ -65,7 +65,6 @@ export function Sign({ user }) {
   const { data: session } = useSession();
   const [file, setFile] = useState(null);
   const [originalFile, setOriginalFile] = useState(null);
-  const [numPages, setNumPages] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [pageScale, setPageScale] = useState(1);
   const [pageNumber, setPageNumber] = useState(1);
@@ -103,6 +102,14 @@ export function Sign({ user }) {
       loadSignature();
     }
   }, []);
+
+  useEffect(() => {
+    if (pageNumber > totalPages && totalPages !== 0) {
+      setPageNumber(totalPages);
+    } else if (pageNumber < 1 && totalPages > 0) {
+      setPageNumber(1);
+    }
+  }, [pageNumber]);
 
   async function loadPdf() {
     if (blobFile) {
@@ -156,7 +163,7 @@ export function Sign({ user }) {
     }
   }
   function handlePrevious() {
-    if (pageNumber > 0) {
+    if (pageNumber > 1) {
       setPageNumber(pageNumber - 1);
     }
   }
@@ -176,6 +183,7 @@ export function Sign({ user }) {
   function onFileChange(event) {
     setFile(event.target.files[0]);
     setOriginalFile(event.target.files[0]);
+    setPageNumber(1);
   }
 
   function handleResetFile(event) {
@@ -183,7 +191,6 @@ export function Sign({ user }) {
   }
 
   function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
     setTotalPages(numPages);
   }
 
@@ -408,7 +415,7 @@ export function Sign({ user }) {
                         />
                       ))} */}
                         <Page
-                          pageNumber={numPages}
+                          pageNumber={pageNumber}
                           scale={pageScale}
                           renderTextLayer={false}
                         ></Page>
