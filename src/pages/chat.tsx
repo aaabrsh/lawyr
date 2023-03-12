@@ -8,14 +8,22 @@ import { useSession, getSession } from "next-auth/react";
 import Header from "../components/Header";
 import Image from "next/image";
 import Catagories from "../components/Dashboard/Catagories";
+import { prisma } from "../server/db";
+import { pdfjs } from "react-pdf";
+import workerSrc from "../../pdf-worker";
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 // import axios from "axios";
-export default function Chat() {
+export default function Chat({ pdf_files }: any) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
+  const [inputText, setInputText] = useState("");
+  const [chatHistory, setChatHistory] = useState<any[]>([]);
+  const [context, setContext] = useState({});
   const { data: session } = useSession();
   const user = session?.user?.email;
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -23,19 +31,95 @@ export default function Chat() {
     setIsOpen(true);
   }
 
-  //   const getFiles = async () => {
-  //     const { data } = await axios.get(`/api/file?email=${user}`);
-  //     const key = "title";
-  //     const array = data.datas
-  //     const arrayUniqueByKey = [
-  //       ...new Map(array.map((item) => [item[key], item])).values(),
-  //     ];
-
-  //     setFiles(arrayUniqueByKey);
-  //   };
   useEffect(() => {
-    // getFiles();
-  }, []);
+    getPdfFiles(pdf_files);
+  }, [pdf_files]);
+
+  async function getPdfFiles(files: any[]) {
+    files.forEach(async (file: any, index: number) => {
+      let response = await fetch(`/api/aws/download/${file.file_name}`);
+
+      if (response.status >= 400) {
+        console.error("Failed to get object");
+        return;
+      }
+
+      let pdfBlob = await response.blob();
+
+      const fileType = pdfBlob.type;
+      let fileFromBlob = new File([pdfBlob], file.file_name, {
+        type: fileType,
+      });
+
+      const reader = new FileReader();
+
+      reader.onload = async () => {
+        const fileData = new Uint8Array(reader.result);
+
+        // Load the PDF file and get the first page
+        const loadingTask = pdfjs.getDocument({
+          data: fileData,
+        });
+        const pdf = await loadingTask.promise;
+        const totalPagesCount = pdf.numPages;
+        let text = "";
+
+        // Loop over all pages and extract text content
+        for (let i = 1; i <= totalPagesCount; i++) {
+          const page = await pdf.getPage(i);
+          const content = await page.getTextContent();
+          const pageText = content.items.map((item: any) => item.str).join(" ");
+          text += pageText + " ";
+        }
+
+        text = text.trim();
+        let contextKey = `document ${index + 1}`;
+        setContext((currentContext) => ({
+          ...currentContext,
+          [contextKey]: text,
+        }));
+      };
+      reader.readAsArrayBuffer(fileFromBlob);
+    });
+  }
+
+  function handleInputTextChange(event: any) {
+    setInputText(event.target.value);
+  }
+
+  function handleChatInput() {
+    let input = inputText;
+    if (input !== "") {
+      setChatHistory((history) => [
+        ...history,
+        { sender: "user", text: input },
+      ]);
+      chatWithOpenai(input);
+      setInputText("");
+    }
+  }
+
+  async function chatWithOpenai(text: string) {
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: text,
+        context: JSON.stringify(context),
+      }),
+    };
+
+    let response = await fetch("http://localhost:8000/api/chat", requestOptions)
+      .then((res) => res.json())
+      .catch((err) => console.log(err));
+
+    setChatHistory((history) => [
+      ...history,
+      { sender: "bot", text: response },
+    ]);
+  }
 
   return (
     <>
@@ -141,7 +225,7 @@ export default function Chat() {
                   id="messages"
                   className="scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch flex flex-col space-y-4 overflow-y-auto p-3"
                 >
-                  <div className="chat-message">
+                  {/* <div className="chat-message">
                     <div className="flex items-end">
                       <div className="order-2 mx-2 flex max-w-xs flex-col items-start space-y-2 text-xs">
                         <div>
@@ -335,7 +419,67 @@ export default function Chat() {
                         className="order-1 h-6 w-6 rounded-full"
                       />
                     </div>
+                  </div> */}
+                  <div className="chat-message">
+                    <div className="flex items-end">
+                      <div className="order-2 mx-2 flex max-w-xs flex-col items-start space-y-2 text-xs">
+                        <div>
+                          <span className="inline-block rounded-lg rounded-bl-none bg-gray-300 px-4 py-2 text-gray-600">
+                            Hello 👋, how can I help you?
+                          </span>
+                        </div>
+                      </div>
+                      <img
+                        src="logosmall.png"
+                        alt="My profile"
+                        className="order-1 h-6 w-6 rounded-full"
+                      />
+                    </div>
                   </div>
+                  {chatHistory.map((chat: any, index: number) => (
+                    <div key={index}>
+                      {chat.sender === "user" && (
+                        <>
+                          <div className="chat-message">
+                            <div className="flex items-end justify-end">
+                              <div className="order-1 mx-2 flex max-w-xs flex-col items-end space-y-2 text-xs">
+                                <div>
+                                  <span className="inline-block rounded-lg rounded-br-none bg-blue-600 px-4 py-2 text-white ">
+                                    {chat.text}
+                                  </span>
+                                </div>
+                              </div>
+                              <img
+                                src={session?.user?.image ?? ""}
+                                alt="My profile"
+                                className="order-2 h-6 w-6 rounded-full"
+                              />
+                            </div>
+                          </div>
+                        </>
+                      )}
+                      {chat.sender === "bot" && (
+                        <>
+                          <div className="chat-message">
+                            <div className="flex items-end">
+                              <div className="order-2 mx-2 flex max-w-xs flex-col items-start space-y-2 text-xs">
+                                <div>
+                                  <span className="inline-block rounded-lg rounded-bl-none bg-gray-300 px-4 py-2 text-gray-600">
+                                    {chat.text}
+                                  </span>
+                                </div>
+                              </div>
+                              <img
+                                src="logosmall.png"
+                                alt="My profile"
+                                className="order-1 h-6 w-6 rounded-full"
+                              />
+                            </div>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  ))}
                 </div>
                 <div className="fixed bottom-0 mb-2 w-3/5 border-t-2 border-gray-200 px-4 pt-4 sm:mb-0">
                   <div className="relative flex">
@@ -364,6 +508,8 @@ export default function Chat() {
                       type="text"
                       placeholder="Write your message!"
                       className="w-full rounded-md bg-gray-200 py-3 pl-12 text-gray-600 placeholder-gray-600 focus:placeholder-gray-400 focus:outline-none"
+                      value={inputText}
+                      onChange={handleInputTextChange}
                     />
                     <div className="absolute inset-y-0 right-0 hidden items-center sm:flex">
                       <button
@@ -430,6 +576,7 @@ export default function Chat() {
                         </svg>
                       </button>
                       <button
+                        onClick={handleChatInput}
                         type="button"
                         className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-3 text-white transition duration-500 ease-in-out hover:bg-blue-400 focus:outline-none"
                       >
@@ -478,7 +625,7 @@ export default function Chat() {
     </>
   );
 }
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: any) {
   const session = await getSession(context);
   if (!session) {
     return {
@@ -489,9 +636,21 @@ export async function getServerSideProps(context) {
     };
   }
 
+  let pdf_files = await prisma.pdfFile
+    .findMany({
+      where: { userId: `${session?.user?.id}` },
+      select: {
+        id: true,
+        file_name: true,
+      },
+    })
+    .catch(() => {
+      return [];
+    });
+
   return {
     props: {
-      session,
+      pdf_files,
     },
   };
 }
