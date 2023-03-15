@@ -14,11 +14,6 @@ import Sidebar from "../components/Dashboard/Sidebar";
 import { useSession, getSession } from "next-auth/react";
 import Header from "../components/Header";
 import Image from "next/image";
-import Catagories from "../components/Dashboard/Catagories";
-import { checkout } from "../lib/getStripe";
-import initStripe from "stripe";
-import axios from "axios";
-import { loadStripe } from "@stripe/stripe-js";
 import { useRef } from "react";
 import useStore from "../../store/useStore";
 
@@ -30,20 +25,77 @@ export default function Copilot({ plans }) {
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
   const { data: session } = useSession();
-  const [file, setFile] = useState("../../pdf.pdf");
+  const [file, setFile] = useState(null);
   const [numPages, setNumPages] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [pageScale, setPageScale] = useState(1);
   const [pageNumber, setPageNumber] = useState(1);
+  const [inputText, setInputText] = useState("");
+  const [context, setContext] = useState("");
+  const [chatHistory, setChatHistory] = useState<any[]>([]);
   const ref = useRef(null);
   const user = session?.user?.email;
   const { blobFile } = useStore();
 
   useEffect(() => {
-    if (blobFile) {
-      setFile(blobFile);
-    }
+    loadPdf();
   }, []);
+
+  useEffect(() => {
+    if (file) {
+      getPdfText(file);
+    }
+  }, [file]);
+
+  async function loadPdf() {
+    if (blobFile) {
+      const fileType = blobFile.type;
+      const file = new File([blobFile], "pdf.pdf", { type: fileType });
+
+      setFile(file);
+    } else {
+      try {
+        const response = await fetch("../../pdf.pdf");
+
+        const pdfBlob = await response.blob();
+
+        const fileType = pdfBlob.type;
+        const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
+
+        setFile(file);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }
+
+  async function getPdfText(pdfFile) {
+    const reader = new FileReader();
+
+    reader.onload = async () => {
+      const fileData = new Uint8Array(reader.result);
+
+      // Load the PDF file and get the first page
+      const loadingTask = pdfjs.getDocument({
+        data: fileData,
+      });
+      const pdf = await loadingTask.promise;
+      const totalPagesCount = pdf.numPages;
+      let text = "";
+
+      // Loop over all pages and extract text content
+      for (let i = 1; i <= totalPagesCount; i++) {
+        const page = await pdf.getPage(i);
+        const content = await page.getTextContent();
+        const pageText = content.items.map((item) => item.str).join(" ");
+        text += pageText + " ";
+      }
+
+      setContext(text.trim());
+    };
+
+    reader.readAsArrayBuffer(pdfFile);
+  }
 
   function handleNext() {
     if (pageNumber < totalPages) {
@@ -70,19 +122,21 @@ export default function Copilot({ plans }) {
 
   function onFileChange(event) {
     setFile(event.target.files[0]);
+    setPageNumber(1);
   }
 
   function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
     setTotalPages(numPages);
   }
 
   function closeModal() {
     setIsOpen(false);
   }
+
   function openStartModal() {
     setIsOpen(true);
   }
+
   const queryPrompt = (prompt) => {
     const DEFAULT_PARAMS = {
       model: "text-davinci-003",
@@ -102,24 +156,51 @@ export default function Copilot({ plans }) {
         const params = { ...DEFAULT_PARAMS, prompt: prompt };
       });
   };
-  //   const getFiles = async () => {
-  //     const { data } = await axios.get(`/api/file?email=${user}`);
-  //     const key = "title";
-  //     const array = data.datas
-  //     const arrayUniqueByKey = [
-  //       ...new Map(array.map((item) => [item[key], item])).values(),
-  //     ];
-
-  //     setFiles(arrayUniqueByKey);
-  //   };
-  useEffect(() => {
-    // getFiles();
-  }, []);
 
   const handleClick = (event) => {
     setLegalese(ref.current.value);
     queryPrompt(legalese);
   };
+
+  function handleInputTextChange(event: any) {
+    setInputText(event.target.value);
+  }
+
+  function handleChatInput(event) {
+    event.preventDefault();
+
+    let input = inputText;
+    if (input !== "") {
+      setChatHistory((history) => [
+        ...history,
+        { sender: "user", text: input },
+      ]);
+      chatWithOpenai(input);
+      setInputText("");
+    }
+  }
+
+  async function chatWithOpenai(text: string) {
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: text,
+        context: context,
+      }),
+    };
+
+    let response = await fetch("http://localhost:8000/api/chat", requestOptions)
+      .then((res) => res.json())
+      .catch((err) => console.log(err));
+
+    setChatHistory((history) => [
+      ...history,
+      { sender: "bot", text: response },
+    ]);
+  }
 
   return (
     <>
@@ -180,7 +261,7 @@ export default function Copilot({ plans }) {
                         />
                       ))} */}
                         <Page
-                          pageNumber={numPages}
+                          pageNumber={pageNumber}
                           scale={pageScale}
                           renderTextLayer={false}
                         />
@@ -231,8 +312,7 @@ export default function Copilot({ plans }) {
                 {/* <div className="flex-1 bg-indigo-50 p-4"> */}
                 <div className="sticky top-0	ml-4 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
                   <div className="flex h-0 flex-grow flex-col overflow-auto p-4">
-                    <div className="mt-2 flex w-full max-w-xs space-x-3">
-                      {/* <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" /> */}
+                    {/* <div className="mt-2 flex w-full max-w-xs space-x-3">
                       <Image
                         src="/logosmall.png"
                         width="500"
@@ -265,7 +345,53 @@ export default function Copilot({ plans }) {
                         </span>
                       </div>
                       <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" />
+                    </div> */}
+                    <div className="mt-2 flex w-full max-w-xs space-x-3">
+                      <img
+                        src="/logosmall.png"
+                        alt="My profile"
+                        className="h-6 w-6 rounded-full"
+                      />
+                      <div>
+                        <div className="rounded-r-lg rounded-bl-lg bg-gray-300 p-3">
+                          <p className="text-sm">
+                            Hello 👋, how can I help you?
+                          </p>
+                        </div>
+                      </div>
                     </div>
+                    {chatHistory.map((chat: any, index: number) => (
+                      <div key={index}>
+                        {chat.sender === "bot" && (
+                          <div className="mt-2 flex w-full max-w-xs space-x-3">
+                            <img
+                              src="/logosmall.png"
+                              alt="My profile"
+                              className="h-6 w-6 rounded-full"
+                            />
+                            <div>
+                              <div className="rounded-r-lg rounded-bl-lg bg-gray-300 p-3">
+                                <p className="text-sm">{chat.text}</p>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                        {chat.sender === "user" && (
+                          <div className="mt-2 ml-auto flex w-full max-w-xs justify-end space-x-3">
+                            <div>
+                              <div className="rounded-l-lg rounded-br-lg bg-blue-600 p-3 text-white">
+                                <p className="text-sm">{chat.text}</p>
+                              </div>
+                            </div>
+                            <img
+                              src={session?.user?.image ?? ""}
+                              alt="My profile"
+                              className="h-6 w-6 rounded-full"
+                            />
+                          </div>
+                        )}
+                      </div>
+                    ))}
                   </div>
                   <div className="bg-gray-100 p-4">
                     {/* <input
@@ -301,11 +427,13 @@ export default function Copilot({ plans }) {
                           rows={1}
                           className="mx-4 block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
                           placeholder="Your message..."
-                          defaultValue={""}
+                          value={inputText}
+                          onChange={handleInputTextChange}
                         />
                         <button
                           type="submit"
                           className="inline-flex cursor-pointer justify-center rounded-full p-2 text-blue-600 hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600"
+                          onClick={handleChatInput}
                         >
                           <svg
                             className="h-6 w-6 rotate-90"
