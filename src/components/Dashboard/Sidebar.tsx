@@ -179,13 +179,13 @@ export default function Sidebar({ active, setActive }: any) {
       <div
         className={
           active
-            ? "  h-full items-center rounded rounded-tr-md bg-[#fff] bg-gray-200 text-gray-700 shadow-[10px_0_5px_-2px_rgb(0,0,0,0.3)]"
+            ? "  h-full items-center rounded rounded-tr-md bg-[#fff] bg-gray-200 text-gray-700 "
             : "  hidden   rounded-tr-md opacity-0 duration-1000 "
         }
       >
         <motion.div
           animate={controls}
-          className="animate  group relative flex min-h-screen max-w-[250px] flex-col border-r py-10 duration-300 "
+          className="animate  group relative flex min-h-screen max-w-[250px] flex-col  py-10 duration-300 "
         >
           {active && (
             <BsFillArrowLeftSquareFill
@@ -195,7 +195,7 @@ export default function Sidebar({ active, setActive }: any) {
           )}
           <div className="grow ">
             {menuItems.map((group) => (
-              <div key={group.name} className="my-2">
+              <div key={group.name} className="my-5">
                 <motion.div
                   animate={controlTitleText}
                   className="mb-2 ml-4 flex items-center text-lg font-bold text-gray-600"
