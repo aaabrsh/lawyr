@@ -26,6 +26,7 @@ import { useRef } from "react";
 import { PDFDocument } from "pdf-lib";
 import { prisma } from "../server/db";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 // import axios from "axios";
 
@@ -300,6 +301,7 @@ export function Sign({ user }) {
   };
 
   const handlePdfDownload = () => {
+    toast.loading("Loading...");
     const blob = new Blob([file], {
       type: "application/x-www-form-urlencoded",
     });
@@ -309,6 +311,7 @@ export function Sign({ user }) {
     link.href = url;
     link.download = file.name;
 
+    toast.dismiss();
     // trigger the download
     document.body.appendChild(link);
     link.click();
@@ -320,6 +323,7 @@ export function Sign({ user }) {
 
   const handleSaveSignature = async () => {
     if (imageURL && session?.user?.id) {
+      toast.loading("Loading...");
       const blob = await fetch(imageURL).then((res) => res.blob());
 
       const formData = new FormData();
@@ -334,18 +338,20 @@ export function Sign({ user }) {
           if (response.status < 300 && response.status >= 200) {
             let { fileName } = await response.json();
             user.signature = fileName;
-            //TODO show Success Message
-            console.log("Image uploaded successfully");
+            toast.dismiss();
+            toast.success("Image saved successfully");
           } else {
-            //TODO show error message
-            console.log("error");
+            toast.dismiss();
+            toast.error("Error, image not saved");
           }
         })
         .catch((error) => {
+          toast.dismiss();
+          toast.error("Error, image not saved");
           console.error("Error uploading image", error);
         });
     } else {
-      console.log("couldn't save signature");
+      toast.error("couldn't save signature");
     }
   };
 
@@ -356,13 +362,19 @@ export function Sign({ user }) {
       fileName = fileName.replace("/", "%2F");
     }
 
+    toast.loading("Loading...");
     let response = await axios.delete(
       `/api/aws/delete/${user?.id}/${fileName}`
     );
 
     if (response.status >= 200 && response.status < 300) {
+      toast.dismiss();
+      toast.success("Image deleted successfully");
       user.signature = null;
       setImageURL(null);
+    } else {
+      toast.dismiss();
+      toast.error("Error");
     }
   };
 
@@ -397,7 +409,7 @@ export function Sign({ user }) {
                       <input
                         onChange={onFileChange}
                         type="file"
-                        className="mb-8 rounded-full border-2 border-gray-900 px-6 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
+                        className="mb-8 rounded-full border-2 border-gray-900 px-2 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
                       />
                     </div>
                     <div className="pdfdiv-assistant" ref={drop}>
@@ -677,6 +689,21 @@ export async function getServerSideProps(context) {
         permanent: false,
       },
     };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id
+    }
+  })
+
+  if(!customer || !customer.billingPlan){
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false
+      }
+    }
   }
 
   const user = await prisma.user

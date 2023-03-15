@@ -14,6 +14,7 @@ import { useSession } from "next-auth/react";
 import axios from "axios";
 import { pdf, Document, Page, Text, StyleSheet } from "@react-pdf/renderer";
 import useStore from "../../../store/useStore";
+import { toast } from "react-hot-toast";
 
 export default function Questions({ questions, prompt }) {
   const questionsCount = questions.length;
@@ -83,10 +84,12 @@ export default function Questions({ questions, prompt }) {
       //generate the prompt
       const input = `${prompt} ${JSON.stringify({ ...formAnswers })}`;
 
+      toast.loading("Loading...");
       //get letter from openai based on user input
       let response = await axios.post("/api/openai", {
         prompt: input,
       });
+      toast.dismiss();
 
       //split the whole text into an array of paragraphs
       let paragraphs = response.data.split("\n");
@@ -259,6 +262,7 @@ export default function Questions({ questions, prompt }) {
     const formData = new FormData();
     formData.append("pdfFile", blobFile);
 
+    toast.loading("Loading....");
     //upload file to aws
     let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
@@ -267,13 +271,17 @@ export default function Questions({ questions, prompt }) {
 
     if (upload.status >= 200 && upload.status < 400) {
       // Trigger the browser to download the PDF document
+      toast.dismiss();
       download(blobFile, `${categoryName}.pdf`, "application/pdf");
       //Close Modal
       setIsOpen(false);
     } else {
+      toast.dismiss();
       if (upload.status === 404) {
-        return router.push("/plans");
+        toast.loading("redirecting");
+        return router.push("/setting");
       }
+      toast.error("Error")
       let errorText = await upload.text();
       setFailMsg(errorText);
     }
@@ -283,6 +291,7 @@ export default function Questions({ questions, prompt }) {
     const formData = new FormData();
     formData.append("pdfFile", blobFile);
 
+    toast.loading("Loading...");
     //upload file to aws
     let upload = await fetch(`/api/aws/upload/file/${userId}/${categoryName}`, {
       method: "POST",
@@ -291,11 +300,16 @@ export default function Questions({ questions, prompt }) {
 
     if (upload.status >= 200 && upload.status < 400) {
       addPdfFile(blobFile);
+      toast.dismiss();
+      toast.loading("Redirecting to Copilot");
       router.push("/copilot");
     } else {
+      toast.dismiss();
       if (upload.status === 404) {
-        return router.push("/plans");
+        toast.loading("Redirecting");
+        return router.push("/setting");
       }
+      toast.error("Error")
       let errorText = await upload.text();
       setFailMsg(errorText);
     }

@@ -67,9 +67,9 @@ const basicPlanMenu = [
     items: [],
   },
   {
-    name: "Plans",
+    name: "Setting",
     icon: AiTwotoneFileText,
-    link: "/plans",
+    link: "/setting",
     items: [],
   },
 ];

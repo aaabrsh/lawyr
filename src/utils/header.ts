@@ -21,7 +21,7 @@ export const menuItems = [
   {
     label: "Setting",
     icon: Cog6ToothIcon,
-    href: "/plans",
+    href: "/setting",
   },
   {
     label: "Dashboard",

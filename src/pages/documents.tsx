@@ -12,6 +12,7 @@ import useStore from "../../store/useStore";
 import { useRouter } from "next/router";
 import { AiFillDelete } from "react-icons/ai";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 export default function Documents({ pdf_files }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,6 +49,7 @@ export default function Documents({ pdf_files }) {
 
   async function deleteFile() {
     if (fileToDelete) {
+      toast.loading("Loading...")
       await axios.delete(`/api/aws/delete/${fileToDelete}`);
       closeConfirmationModal();
       router.reload();
@@ -210,6 +212,21 @@ export async function getServerSideProps(context: any) {
         permanent: false,
       },
     };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id
+    }
+  })
+
+  if(!customer || !customer.billingPlan){
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false
+      }
+    }
   }
 
   let pdf_files = await prisma.pdfFile

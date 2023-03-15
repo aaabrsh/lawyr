@@ -19,15 +19,15 @@ export default async function fetchCustomer(req: any, res: any) {
         return res.json(null);
       }
 
-      const stripe_customer: {} = await stripe.customers.retrieve(
-        customer?.stripe_customer_id ?? ""
-      );
+      const stripe_customer: {} = await stripe.customers
+        .retrieve(customer?.stripe_customer_id ?? "")
+        .catch(() => ({}));
 
       res.json({
         customer: {
           ...customer,
-          email: stripe_customer.email,
-          name: stripe_customer.name,
+          email: stripe_customer?.email,
+          name: stripe_customer?.name,
         },
       });
     } catch (err) {

@@ -7,6 +7,7 @@ import { getSession } from "next-auth/react";
 import Header from "../components/Header";
 import axios from "axios";
 import { pdfjs } from "react-pdf";
+import { prisma } from "../server/db";
 
 import workerSrc from "../../pdf-worker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
@@ -192,6 +193,21 @@ export async function getServerSideProps(context) {
         permanent: false,
       },
     };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id
+    }
+  })
+
+  if(!customer || !customer.billingPlan){
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false
+      }
+    }
   }
 
   return {

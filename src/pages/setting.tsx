@@ -12,6 +12,7 @@ import initStripe from "stripe";
 import { prisma } from "../server/db";
 import UserForm from "../components/Setting/UserForm";
 import Plans from "../components/Plans";
+import axios from "axios";
 
 export default function PlanSetting({ session, user, plans, customer }) {
   let initial_data = {
@@ -47,7 +48,7 @@ export default function PlanSetting({ session, user, plans, customer }) {
         <div
           className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
         >
-          <Plans plans={plans} customer={customer} />
+          <Plans plans={plans} customer={customer} user={user} />
           {!session?.user && (
             <UserForm user={initial_data} id={user?.id} customer={customer} />
           )}
