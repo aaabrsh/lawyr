@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 //@ts-nocheck
@@ -8,7 +9,17 @@ import {
   BsFillArrowLeftSquareFill,
   BsFillArrowRightSquareFill,
 } from "react-icons/bs";
-import { HiMenuAlt1 } from "react-icons/hi";
+import {
+  HiMenuAlt1,
+  HiOutlineDocumentDuplicate,
+  HiOutlineChat,
+  HiOutlineQrcode,
+  HiOutlineShieldCheck,
+  HiOutlineHome,
+  HiOutlineLightningBolt,
+  HiPencilAlt,
+  HiOutlineUser,
+} from "react-icons/hi";
 import { Disclosure } from "@headlessui/react";
 
 import {
@@ -26,49 +37,49 @@ import { useSession } from "next-auth/react";
 const basicPlanMenu = [
   {
     name: "Dashboard",
-    icon: AiFillCode,
+    icon: HiOutlineHome,
     link: "/dashboard",
     items: [],
   },
   {
     name: "Documents",
-    icon: AiFillFilePdf,
+    icon: HiOutlineDocumentDuplicate,
     link: "/documents",
     items: [],
   },
   {
     name: "Chat",
-    icon: AiFillCode,
+    icon: HiOutlineChat,
     link: "/chat",
     items: [],
   },
   {
     name: "Services",
-    icon: AiTwotoneFileText,
+    icon: HiOutlineLightningBolt,
     link: "/catagories",
     items: [],
   },
   {
     name: "Legalese",
-    icon: AiTwotoneFileText,
+    icon: HiOutlineQrcode,
     link: "/legalese",
     items: [],
   },
   {
     name: "Copilot",
-    icon: AiTwotoneFileText,
+    icon: HiOutlineShieldCheck,
     link: "/copilot",
     items: [],
   },
   {
     name: "Sign Documents",
-    icon: AiTwotoneFileText,
+    icon: HiPencilAlt,
     link: "/sign",
     items: [],
   },
   {
     name: "Plans",
-    icon: AiTwotoneFileText,
+    icon: HiOutlineUser,
     link: "/plans",
     items: [],
   },
