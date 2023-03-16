@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
+
 import { NextApiResponse } from "next";
 import { NextApiRequest } from "next";
 import { S3Client, DeleteObjectCommand } from "@aws-sdk/client-s3";
@@ -41,7 +44,7 @@ export default async function handler(
         Key: file_name,
       });
 
-      let response = await S3.send(deleteCommand);
+      const response = await S3.send(deleteCommand);
       console.log(`Object ${file_name} deleted from bucket ${bucket}`);
 
       res.send("file deleted successfully");

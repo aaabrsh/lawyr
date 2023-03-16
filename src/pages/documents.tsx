@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
+import Head from "next/head";
+import globalMeta from "../../globalmeta";
 import { Dialog, Transition } from "@headlessui/react";
 import { prisma } from "../server/db";
 import Link from "next/link";
@@ -63,6 +65,25 @@ export default function Documents({ pdf_files }) {
 
   return (
     <>
+      <Head>
+        <title>
+          Ailawyr Documents - Manage All Your Legal Documents in One Place
+        </title>
+        <meta
+          name="description"
+          content="Ailawyr Documents provides a centralized place to manage all your legal documents. Our AI-powered platform offers secure document storage, organization, and access."
+        />
+
+        {/*
+        	Open graph meta tags.
+    	*/}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content={globalMeta.siteName} />
+        <meta property="og:type" content={globalMeta.ogType} />
+        <meta property="og:description" content={globalMeta.description} />
+        <meta property="og:image" content={globalMeta.siteLogo} />
+        <meta property="og:url" content={globalMeta.canonicalUrl} />
+      </Head>
       <Header />
       <div className="flex bg-[#fdfdff]">
         <div className=" flex-none ">
@@ -98,7 +119,7 @@ export default function Documents({ pdf_files }) {
                           className="flex w-full items-center text-cyan-800 underline"
                         >
                           <span className="min-w-[300px] max-w-[400px] flex-grow">
-                          {file.file_name}
+                            {file.file_name}
                           </span>
                           <span className="px-5">
                             <FiExternalLink />

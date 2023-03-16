@@ -1,5 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
+import Head from "next/head";
+import globalMeta from "../../globalmeta";
 import { useState, Fragment, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 // import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
@@ -203,6 +205,26 @@ export default function Copilot({ plans }) {
 
   return (
     <>
+      <Head>
+        <title>
+          Ailawyr Copilot - Upload, Analyze, and Get Answers on Your Legal
+          Documents
+        </title>
+        <meta
+          name="description"
+          content="Ailawyr Copilot allows you to upload legal documents, ask questions, and get answers. Our AI-powered platform can analyze legal language and provide explanations and sources."
+        />
+
+        {/*
+        	Open graph meta tags.
+    	*/}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content={globalMeta.siteName} />
+        <meta property="og:type" content={globalMeta.ogType} />
+        <meta property="og:description" content={globalMeta.description} />
+        <meta property="og:image" content={globalMeta.siteLogo} />
+        <meta property="og:url" content={globalMeta.canonicalUrl} />
+      </Head>
       <Header />
       <div className="flex bg-[#fdfdff]">
         <div className=" flex-none ">

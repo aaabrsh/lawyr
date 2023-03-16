@@ -69,11 +69,10 @@ export default function Header() {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Sota Models - Customize AI</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <script async src="https://cdn.splitbee.io/sb.js"></script> */}
-      </Head>
+      </Head> */}
       <Disclosure as="nav" className="">
         {(open) => (
           <>
@@ -139,7 +138,7 @@ export default function Header() {
                     <div className="flex md:space-x-4">
                       {navigation.map((item) => (
                         // <Link href={item.href} key={item.name}>
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           className={classNames(
@@ -151,7 +150,7 @@ export default function Header() {
                           aria-current={item.name ? "page" : undefined}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                         // </Link>
                       ))}
                     </div>
@@ -226,10 +225,10 @@ export default function Header() {
                                       <Menu.Item>
                                         {href ? (
                                           //   <Link href={href}>
-                                          <a className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-500 hover:bg-gray-500 hover:text-pink-400 ">
+                                          <Link className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-500 hover:bg-gray-500 hover:text-pink-400 ">
                                             <Icon className="h-5 w-5 shrink-0 " />
                                             <span className="  ">{label}</span>
-                                          </a>
+                                          </Link>
                                         ) : (
                                           //   </Link>
                                           <button

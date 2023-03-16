@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
 import Head from "next/head";
+import globalMeta from "../../globalmeta";
 import React, { useEffect, useState, Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { useSession } from "next-auth/react";
@@ -8,6 +9,7 @@ import AuthModal from "../components/AuthModel";
 import LearnMoreModal from "../components/LearnMoreModel";
 import NewsletterForm from "../components/subscribe";
 import Testimonials from "../components/testimonials";
+import Footer from "../components/Footer";
 
 // import {menuItems,navigation} from "../utils/header"
 import {
@@ -50,6 +52,26 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>
+          Ailawyr - AI-Based Lawyer Services for Consumers, Companies, and
+          Lawyers
+        </title>
+        <meta
+          name="description"
+          content=" Get quick and affordable legal assistance with Ailawyr's AI-powered platform. Our services are designed to help individuals, businesses, and legal professionals with hundreds of legal tasks."
+        />
+
+        {/*
+        	Open graph meta tags.
+    	*/}
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content={globalMeta.siteName} />
+        <meta property="og:type" content={globalMeta.ogType} />
+        <meta property="og:description" content={globalMeta.description} />
+        <meta property="og:image" content={globalMeta.siteLogo} />
+        <meta property="og:url" content={globalMeta.canonicalUrl} />
+      </Head>
       <body
         className="m-6 h-screen bg-cover bg-fixed leading-normal tracking-normal text-indigo-400"
         style={{
@@ -170,6 +192,7 @@ export default function Home() {
       />
       <NewsletterForm />
       <Testimonials />
+      <Footer />
     </>
   );
 }
