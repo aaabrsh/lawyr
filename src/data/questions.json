@@ -791,7 +791,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Disclosing Party's Full Name",
           "label": "Disclosing Party's Full Name",
           "required": true
@@ -828,7 +828,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Receiving Party's Full Name",
           "label": "Receiving Party's Full Name",
           "required": true
@@ -918,7 +918,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Employee's Full Name",
           "label": "Employee's Full Name",
           "required": true
@@ -997,14 +997,14 @@
       [
         {
           "tag": "input",
-          "type": "number",
+          "type": "text",
           "name": "Your Name",
           "label": "Your Name",
           "required": true
         },
         {
           "tag": "input",
-          "type": "number",
+          "type": "text",
           "name": "Company Name",
           "label": "Company Name",
           "required": true
@@ -1773,7 +1773,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Seller's Full Name",
           "label": "Seller's Full Name",
           "required": true
@@ -1810,7 +1810,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Buyer's Full Name",
           "label": "Buyer's Full Name",
           "required": true
@@ -1968,7 +1968,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Service Provider/Company's Full Name",
           "label": "Service Provider/Company's Full Name",
           "required": true
@@ -2005,7 +2005,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Client's Full Name",
           "label": "Client's Full Name",
           "required": true
@@ -2127,7 +2127,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Participant's Full Name",
           "label": "Participant's Full Name",
           "required": true
@@ -2164,7 +2164,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Organizer's Full Name",
           "label": "Organizer's Full Name",
           "required": true
@@ -2237,7 +2237,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Licensor's Full Name",
           "label": "Licensor's Full Name",
           "required": true
@@ -2274,7 +2274,7 @@
       [
         {
           "tag": "input",
-          "type": "date",
+          "type": "text",
           "name": "Licensee's Full Name",
           "label": "Licensee's Full Name",
           "required": true

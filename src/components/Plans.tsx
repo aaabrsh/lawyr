@@ -14,7 +14,7 @@ import { useRouter } from "next/router";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 
 // import axios from "axios";
-export default function Plans({ plans, customer }) {
+export default function Plans({ plans, customer, user: userData }) {
   const [isOpen, setIsOpen] = useState(false);
   const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
@@ -102,7 +102,7 @@ export default function Plans({ plans, customer }) {
               Pricing Plans
             </h1>
             {customerData ? (
-              <Subscription customer={customerData} />
+              <Subscription customer={customerData} user={userData} />
             ) : (
               <PlansList
                 plans={plans}

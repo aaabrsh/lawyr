@@ -16,6 +16,7 @@ import Header from "../components/Header";
 import Image from "next/image";
 import { useRef } from "react";
 import useStore from "../../store/useStore";
+import { prisma } from "../server/db";
 
 // import axios from "axios";
 
@@ -527,6 +528,21 @@ export async function getServerSideProps(context) {
     return {
       redirect: {
         destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id,
+    },
+  });
+
+  if (!customer || !customer.billingPlan) {
+    return {
+      redirect: {
+        destination: "/setting",
         permanent: false,
       },
     };
