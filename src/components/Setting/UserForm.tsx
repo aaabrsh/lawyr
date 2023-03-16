@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
+import { toast } from "react-hot-toast";
 
 export default function UserForm({ user, id, customer }) {
   const [userData, setUserData] = useState(user);
@@ -17,6 +18,7 @@ export default function UserForm({ user, id, customer }) {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    toast.loading("Loading...")
     await axios.put(`/api/users/${id}`, userData);
     router.reload();
   };

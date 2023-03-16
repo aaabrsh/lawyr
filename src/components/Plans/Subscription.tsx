@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
-export default function Subscription({ customer }) {
+export default function Subscription({ customer, user }) {
   const redirectCustomerPortal = async () => {
     const res: Response = await fetch("/api/create_portal_link", {
       method: "POST",
@@ -46,11 +46,11 @@ export default function Subscription({ customer }) {
           <>
             <div className="pb-2">
               <h1 className="font-bold">License Country: </h1>
-              <p className="pl-2 font-light">{customer?.license_country}</p>
+              <p className="pl-2 font-light">{user?.license_country}</p>
             </div>
             <div className="pb-2">
               <h1 className="font-bold">License State: </h1>
-              <p className="pl-2 font-light">{customer?.license_state}</p>
+              <p className="pl-2 font-light">{user?.license_state}</p>
             </div>
           </>
         )}

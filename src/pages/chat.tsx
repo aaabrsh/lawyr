@@ -16,6 +16,7 @@ import Catagories from "../components/Dashboard/Catagories";
 import { prisma } from "../server/db";
 import { pdfjs } from "react-pdf";
 import workerSrc from "../../pdf-worker";
+import { toast } from "react-hot-toast";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 // import axios from "axios";
@@ -652,6 +653,21 @@ export async function getServerSideProps(context: any) {
     return {
       redirect: {
         destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id,
+    },
+  });
+
+  if (!customer || !customer.billingPlan) {
+    return {
+      redirect: {
+        destination: "/setting",
         permanent: false,
       },
     };

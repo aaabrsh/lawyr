@@ -4,11 +4,11 @@ import stripe from "../../utils/stripe";
 
 export default async function handler(req: any, res: any) {
   if (req.method === "POST") {
-    const customer = { customer_id: req.body.id, return_url: "/plans" };
+    const customer = { customer_id: req.body.id, return_url: "/setting" };
 
     const { url } = await stripe.billingPortal.sessions.create({
       customer: req.body.id,
-      return_url: `${req.headers.origin}/plans`,
+      return_url: `${req.headers.origin}/setting`,
     });
 
     return res.status(200).json({ url });

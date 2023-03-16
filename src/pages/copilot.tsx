@@ -16,6 +16,7 @@ import Header from "../components/Header";
 import Image from "next/image";
 import { useRef } from "react";
 import useStore from "../../store/useStore";
+import { prisma } from "../server/db";
 
 // import axios from "axios";
 
@@ -243,7 +244,7 @@ export default function Copilot({ plans }) {
                       <input
                         onChange={onFileChange}
                         type="file"
-                        className="mb-8 rounded-full border-2 border-gray-900 px-6 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
+                        className="mb-8 rounded-full border-2 border-gray-900 px-2 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
                       />
                     </div>
                     <div className="pdfdiv-assistant">
@@ -484,6 +485,21 @@ export async function getServerSideProps(context) {
         permanent: false,
       },
     };
+  }
+
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: session.user?.id
+    }
+  })
+
+  if(!customer || !customer.billingPlan){
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false
+      }
+    }
   }
 
   return {

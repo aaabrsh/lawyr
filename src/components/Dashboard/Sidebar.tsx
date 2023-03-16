@@ -78,9 +78,9 @@ const basicPlanMenu = [
     items: [],
   },
   {
-    name: "Plans",
+    name: "Settings",
     icon: HiOutlineUser,
-    link: "/plans",
+    link: "/setting",
     items: [],
   },
 ];
