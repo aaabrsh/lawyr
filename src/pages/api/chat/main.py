@@ -10,6 +10,8 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://www.ailawyr.com/",
+    "https://lawyr.vercel.app/",
 ]
 
 app.add_middleware(

@@ -92,113 +92,163 @@ export default function ForLawyers() {
             <div className="rounded-xl bg-blue-50 p-6 md:p-10">
               <div className="inline-flex rounded-full bg-white p-4">
                 <svg
-                  className="text-primary h-8 w-8 fill-current text-blue-600"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
                 >
-                  <defs>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html: ".fa-secondary{opacity:.4}",
-                      }}
-                    />
-                  </defs>
                   <path
-                    d="M560 224h-29.51a159.88 159.88 0 0 0-37.38-52.46L512 96h-32c-29.4 0-55.39 13.5-73 34.32-7.57-1.1-15.12-2.32-23-2.32H256c-94.82 0-160 78.88-160 160a159.75 159.75 0 0 0 64 128v80a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-48h128v48a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-80.72A160.37 160.37 0 0 0 511.28 384H560a16 16 0 0 0 16-16V240a16 16 0 0 0-16-16zm-128 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
-                    className="fa-secondary"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
                   />
-                  <path d="M51.26 255.52a24 24 0 0 1-18.74-28.3C34.74 215.82 45.4 208 57 208h1a6 6 0 0 0 6-6v-20a6 6 0 0 0-6-6C29.5 176 4.1 196.4.47 224.62a54.64 54.64 0 0 0-.47 7.23A56.08 56.08 0 0 0 56 288h40a155.05 155.05 0 0 1 3.37-32H56a23.63 23.63 0 0 1-4.74-.48zM432 256a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM306.5 0a96 96 0 0 0-88.81 132.51A162.64 162.64 0 0 1 256 128h128a104.31 104.31 0 0 1 12.71.88A96.06 96.06 0 0 0 306.5 0z" />
                 </svg>
               </div>
               <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
-                Your feature here
+                Document Review and Analysis
               </h3>
               <p className="mt-4 text-base text-gray-600 md:text-lg">
-                Your feature description summary here.
+                Analyze legal documents quickly and accurately using our
+                AI-powered platform. Our tool identifies key issues, risks, and
+                opportunities, enabling you to provide strategic advice to your
+                clients.
               </p>
             </div>
             <div className="rounded-xl bg-blue-50 p-6 md:p-10">
               <div className="inline-flex rounded-full bg-white p-4">
                 <svg
-                  className="text-primary h-8 w-8 fill-current text-blue-600"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
                 >
-                  <defs>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html: ".fa-secondary{opacity:.4}",
-                      }}
-                    />
-                  </defs>
                   <path
-                    d="M560 224h-29.51a159.88 159.88 0 0 0-37.38-52.46L512 96h-32c-29.4 0-55.39 13.5-73 34.32-7.57-1.1-15.12-2.32-23-2.32H256c-94.82 0-160 78.88-160 160a159.75 159.75 0 0 0 64 128v80a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-48h128v48a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-80.72A160.37 160.37 0 0 0 511.28 384H560a16 16 0 0 0 16-16V240a16 16 0 0 0-16-16zm-128 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
-                    className="fa-secondary"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"
                   />
-                  <path d="M51.26 255.52a24 24 0 0 1-18.74-28.3C34.74 215.82 45.4 208 57 208h1a6 6 0 0 0 6-6v-20a6 6 0 0 0-6-6C29.5 176 4.1 196.4.47 224.62a54.64 54.64 0 0 0-.47 7.23A56.08 56.08 0 0 0 56 288h40a155.05 155.05 0 0 1 3.37-32H56a23.63 23.63 0 0 1-4.74-.48zM432 256a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM306.5 0a96 96 0 0 0-88.81 132.51A162.64 162.64 0 0 1 256 128h128a104.31 104.31 0 0 1 12.71.88A96.06 96.06 0 0 0 306.5 0z" />
                 </svg>
               </div>
               <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
-                Your feature here
+                Legal Research
               </h3>
               <p className="mt-4 text-base text-gray-600 md:text-lg">
-                Your feature description summary here.
+                Conduct legal research more efficiently using our AI-powered
+                legal research tool. Our platform provides access to a vast
+                database of legal information and analyzes it to provide
+                relevant and accurate results.
               </p>
             </div>
             <div className="rounded-xl bg-blue-50 p-6 md:p-10">
               <div className="inline-flex rounded-full bg-white p-4">
                 <svg
-                  className="text-primary h-8 w-8 fill-current text-blue-600"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
                 >
-                  <defs>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html: ".fa-secondary{opacity:.4}",
-                      }}
-                    />
-                  </defs>
                   <path
-                    d="M560 224h-29.51a159.88 159.88 0 0 0-37.38-52.46L512 96h-32c-29.4 0-55.39 13.5-73 34.32-7.57-1.1-15.12-2.32-23-2.32H256c-94.82 0-160 78.88-160 160a159.75 159.75 0 0 0 64 128v80a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-48h128v48a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-80.72A160.37 160.37 0 0 0 511.28 384H560a16 16 0 0 0 16-16V240a16 16 0 0 0-16-16zm-128 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
-                    className="fa-secondary"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
                   />
-                  <path d="M51.26 255.52a24 24 0 0 1-18.74-28.3C34.74 215.82 45.4 208 57 208h1a6 6 0 0 0 6-6v-20a6 6 0 0 0-6-6C29.5 176 4.1 196.4.47 224.62a54.64 54.64 0 0 0-.47 7.23A56.08 56.08 0 0 0 56 288h40a155.05 155.05 0 0 1 3.37-32H56a23.63 23.63 0 0 1-4.74-.48zM432 256a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM306.5 0a96 96 0 0 0-88.81 132.51A162.64 162.64 0 0 1 256 128h128a104.31 104.31 0 0 1 12.71.88A96.06 96.06 0 0 0 306.5 0z" />
                 </svg>
               </div>
               <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
-                Your feature here
+                Contract Drafting and Review
               </h3>
               <p className="mt-4 text-base text-gray-600 md:text-lg">
-                Your feature description summary here.
+                Streamline the contract drafting and review process with our
+                AI-powered platform. Our tool ensures that your contracts are
+                accurate, complete, and legally sound, saving you time and
+                reducing legal liabilities.
               </p>
             </div>
             <div className="rounded-xl bg-blue-50 p-6 md:p-10">
               <div className="inline-flex rounded-full bg-white p-4">
                 <svg
-                  className="text-primary h-8 w-8 fill-current text-blue-600"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 576 512"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
                 >
-                  <defs>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html: ".fa-secondary{opacity:.4}",
-                      }}
-                    />
-                  </defs>
                   <path
-                    d="M560 224h-29.51a159.88 159.88 0 0 0-37.38-52.46L512 96h-32c-29.4 0-55.39 13.5-73 34.32-7.57-1.1-15.12-2.32-23-2.32H256c-94.82 0-160 78.88-160 160a159.75 159.75 0 0 0 64 128v80a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-48h128v48a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-80.72A160.37 160.37 0 0 0 511.28 384H560a16 16 0 0 0 16-16V240a16 16 0 0 0-16-16zm-128 64a16 16 0 1 1 16-16 16 16 0 0 1-16 16z"
-                    className="fa-secondary"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
                   />
-                  <path d="M51.26 255.52a24 24 0 0 1-18.74-28.3C34.74 215.82 45.4 208 57 208h1a6 6 0 0 0 6-6v-20a6 6 0 0 0-6-6C29.5 176 4.1 196.4.47 224.62a54.64 54.64 0 0 0-.47 7.23A56.08 56.08 0 0 0 56 288h40a155.05 155.05 0 0 1 3.37-32H56a23.63 23.63 0 0 1-4.74-.48zM432 256a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM306.5 0a96 96 0 0 0-88.81 132.51A162.64 162.64 0 0 1 256 128h128a104.31 104.31 0 0 1 12.71.88A96.06 96.06 0 0 0 306.5 0z" />
                 </svg>
               </div>
               <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
-                Your feature here
+                Litigation Support
               </h3>
               <p className="mt-4 text-base text-gray-600 md:text-lg">
-                Your feature description summary here.
+                Get valuable insights and analysis to help you build a strong
+                case and increase your chances of success with our AI-powered
+                litigation support tool. Our platform provides advanced data
+                analytics and visualization tools to help you make informed
+                decisions.
+              </p>
+            </div>
+            <div className="rounded-xl bg-blue-50 p-6 md:p-10">
+              <div className="inline-flex rounded-full bg-white p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
+                Case Management
+              </h3>
+              <p className="mt-4 text-base text-gray-600 md:text-lg">
+                Manage your cases more efficiently with our AI-powered case
+                management tool. Our platform streamlines your workflow, tracks
+                deadlines, and enables collaboration with your team and clients.
+              </p>
+            </div>
+            <div className="rounded-xl bg-blue-50 p-6 md:p-10">
+              <div className="inline-flex rounded-full bg-white p-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="h-6 w-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-4 text-base font-medium text-gray-800 md:text-xl">
+                Due Diligence
+              </h3>
+              <p className="mt-4 text-base text-gray-600 md:text-lg">
+                Conduct due diligence more efficiently and effectively with our
+                AI-powered due diligence tool. Our platform analyzes data to
+                identify potential issues, risks, and opportunities, enabling
+                you to provide strategic advice to your clients.
               </p>
             </div>
           </div>

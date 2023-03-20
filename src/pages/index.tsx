@@ -124,16 +124,14 @@ export default function Home() {
         <div className="container mx-auto flex flex-col flex-wrap items-center pt-24 md:flex-row md:pt-36">
           {/*Left Col*/}
           <div className="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-2/5">
-            <h1 className="my-4 text-center text-[120px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[90px]">
-              World&apos;s
-              <span className="bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-                most advanced
-              </span>
-              AI Lawyr!
+            <h1 className="my-4 text-center text-[100px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[80px]">
+              Get the legal help you need, when you need it.
             </h1>
-            <p className="mb-8 text-center text-base leading-normal text-white md:text-left md:text-2xl">
-              Sub-hero message, not too long and not too short. Make it just
-              right!
+            <p className="mb-8 text-center text-base leading-normal text-white md:text-left md:text-lg">
+              Our AI-powered legal services are available 24/7, so you can
+              access the help you need whenever you need it. Whether it&apos;s a
+              quick question or a complex legal issue, our platform is here to
+              support you every step of the way.
             </p>
             <div className="flex">
               <button

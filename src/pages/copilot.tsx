@@ -17,6 +17,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import useStore from "../../store/useStore";
 import { prisma } from "../server/db";
+import { toast } from "react-hot-toast";
 
 // import axios from "axios";
 
@@ -163,6 +164,21 @@ export default function Copilot({ plans }) {
     queryPrompt(legalese);
   };
 
+  function inputSavedQuestion(text: string) {
+    setChatHistory((history) => [...history, { sender: "user", text: text }]);
+    if (text === "Draft a contract") {
+      setChatHistory((history) => [
+        ...history,
+        {
+          sender: "bot",
+          text: "Please explain what kind of contract you need.",
+        },
+      ]);
+    } else {
+      chatWithOpenai(text);
+    }
+  }
+
   function handleInputTextChange(event: any) {
     setInputText(event.target.value);
   }
@@ -172,6 +188,10 @@ export default function Copilot({ plans }) {
 
     let input = inputText;
     if (input !== "") {
+      if (chatHistory[chatHistory.length - 2]?.text === "Draft a contract") {
+        input = `Draft a contract using the following information: ${input}`;
+      }
+
       setChatHistory((history) => [
         ...history,
         { sender: "user", text: input },
@@ -193,14 +213,19 @@ export default function Copilot({ plans }) {
       }),
     };
 
-    let response = await fetch("http://localhost:8000/api/chat", requestOptions)
-      .then((res) => res.json())
-      .catch((err) => console.log(err));
+    const domain = window.location.hostname;
+    const protocol = window.location.protocol;
+    const apiUrl = `${protocol}//${domain}:8000/api/chat`;
 
-    setChatHistory((history) => [
-      ...history,
-      { sender: "bot", text: response },
-    ]);
+    let response = await fetch(apiUrl, requestOptions)
+      .then((res) => res.json())
+      .then((res) => {
+        setChatHistory((history) => [...history, { sender: "bot", text: res }]);
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Error! Could not generate response");
+      });
   }
 
   return (
@@ -239,14 +264,37 @@ export default function Copilot({ plans }) {
               <div className="flex min-h-screen">
                 <div className="w-64 flex-auto border-r-2 border-indigo-300 bg-indigo-50 p-4">
                   <div>
-                    <div className="m-auto w-1/2">
-                      <label htmlFor="file">Load a new pdf:</label>{" "}
+                    {/* load a new document */}
+                    <div className="m-auto mb-8 w-1/2 rounded-md border border-gray-100 bg-white p-4 shadow-md">
+                      <label
+                        htmlFor="upload"
+                        className="flex cursor-pointer flex-col items-center gap-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-10 w-10 fill-white stroke-indigo-500"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          />
+                        </svg>
+                        <span className="font-medium text-gray-600">
+                          Load a new document
+                        </span>
+                      </label>
                       <input
                         onChange={onFileChange}
+                        id="upload"
                         type="file"
-                        className="mb-8 rounded-full border-2 border-gray-900 px-2 py-2 uppercase transition duration-200 ease-in hover:bg-gray-800 hover:text-white focus:outline-none"
+                        className="hidden"
                       />
                     </div>
+
                     <div className="pdfdiv-assistant">
                       <Document
                         file={file}
@@ -394,35 +442,71 @@ export default function Copilot({ plans }) {
                       </div>
                     ))}
                   </div>
+                  <div className="flex flex-col-reverse items-end">
+                    <button
+                      onClick={() =>
+                        inputSavedQuestion("Review the following contract")
+                      }
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
+                      Review the following contract
+                    </button>
+                    <button
+                      onClick={() =>
+                        inputSavedQuestion("Summarize the following contract")
+                      }
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
+                      Summarize the following contract
+                    </button>
+                    <button
+                      onClick={() => inputSavedQuestion("Draft a contract")}
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
+                      Draft a contract
+                    </button>
+                  </div>
+
                   <div className="bg-gray-100 p-4">
                     {/* <input
                       className="flex h-10 w-full items-center rounded px-3 text-sm"
                       type="text"
                       placeholder="Type your message…"
                     /> */}
+
                     <form>
                       <label htmlFor="chat" className="sr-only">
                         Your message
                       </label>
                       <div className="flex items-center rounded-lg bg-gray-50 py-2 px-3 dark:bg-gray-700">
-                        <button
-                          type="button"
-                          disabled="disabled"
-                          className="inline-flex cursor-pointer justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >
-                          <svg
-                            className="h-6 w-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                        <div className="rounded-md border border-gray-100 bg-white p-4 shadow-md">
+                          <label
+                            htmlFor="upload"
+                            className="flex cursor-pointer flex-col items-center gap-2"
                           >
-                            <path
-                              fillRule="evenodd"
-                              d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </button>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="h-6 w-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                              />
+                            </svg>
+                          </label>
+                          <input
+                            onChange={onFileChange}
+                            id="upload"
+                            type="file"
+                            className="hidden"
+                          />
+                        </div>
+
                         <textarea
                           id="chat"
                           rows={1}
@@ -489,17 +573,17 @@ export async function getServerSideProps(context) {
 
   const customer = await prisma.customer.findFirst({
     where: {
-      userId: session.user?.id
-    }
-  })
+      userId: session.user?.id,
+    },
+  });
 
-  if(!customer || !customer.billingPlan){
+  if (!customer || !customer.billingPlan) {
     return {
       redirect: {
         destination: "/setting",
-        permanent: false
-      }
-    }
+        permanent: false,
+      },
+    };
   }
 
   return {
