@@ -17,6 +17,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import useStore from "../../store/useStore";
 import { prisma } from "../server/db";
+import { toast } from "react-hot-toast";
 
 // import axios from "axios";
 
@@ -163,6 +164,21 @@ export default function Copilot({ plans }) {
     queryPrompt(legalese);
   };
 
+  function inputSavedQuestion(text: string) {
+    setChatHistory((history) => [...history, { sender: "user", text: text }]);
+    if (text === "Draft a contract") {
+      setChatHistory((history) => [
+        ...history,
+        {
+          sender: "bot",
+          text: "Please explain what kind of contract you need.",
+        },
+      ]);
+    } else {
+      chatWithOpenai(text);
+    }
+  }
+
   function handleInputTextChange(event: any) {
     setInputText(event.target.value);
   }
@@ -172,6 +188,10 @@ export default function Copilot({ plans }) {
 
     let input = inputText;
     if (input !== "") {
+      if (chatHistory[chatHistory.length - 2]?.text === "Draft a contract") {
+        input = `Draft a contract using the following information: ${input}`;
+      }
+
       setChatHistory((history) => [
         ...history,
         { sender: "user", text: input },
@@ -193,14 +213,19 @@ export default function Copilot({ plans }) {
       }),
     };
 
-    let response = await fetch("http://localhost:8000/api/chat", requestOptions)
-      .then((res) => res.json())
-      .catch((err) => console.log(err));
+    const domain = window.location.hostname;
+    const protocol = window.location.protocol;
+    const apiUrl = `${protocol}//${domain}:8000/api/chat`;
 
-    setChatHistory((history) => [
-      ...history,
-      { sender: "bot", text: response },
-    ]);
+    let response = await fetch(apiUrl, requestOptions)
+      .then((res) => res.json())
+      .then((res) => {
+        setChatHistory((history) => [...history, { sender: "bot", text: res }]);
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Error! Could not generate response");
+      });
   }
 
   return (
@@ -418,13 +443,26 @@ export default function Copilot({ plans }) {
                     ))}
                   </div>
                   <div className="flex flex-col-reverse items-end">
-                    <button className="hover:bg-blue text-blue-dark mt-2 mr-2  rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900">
+                    <button
+                      onClick={() =>
+                        inputSavedQuestion("Review the following contract")
+                      }
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
                       Review the following contract
                     </button>
-                    <button className="hover:bg-blue text-blue-dark mt-2 mr-2  rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900">
+                    <button
+                      onClick={() =>
+                        inputSavedQuestion("Summarize the following contract")
+                      }
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
                       Summarize the following contract
                     </button>
-                    <button className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900">
+                    <button
+                      onClick={() => inputSavedQuestion("Draft a contract")}
+                      className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
+                    >
                       Draft a contract
                     </button>
                   </div>
