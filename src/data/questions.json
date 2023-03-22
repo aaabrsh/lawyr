@@ -913,7 +913,7 @@
     ]
   },
   "Employment Agreement": {
-    "prompt": "generate a Employment Agreement letter using the following information: ",
+    "prompt": "generate an Employment Agreement letter using the following information: ",
     "questions": [
       [
         {
@@ -1658,7 +1658,7 @@
     ]
   },
   "Intellectual Property Assignment Agreement": {
-    "prompt": "generate a Intellectual Property Assignment Agreement letter using the following information: ",
+    "prompt": "generate an Intellectual Property Assignment Agreement letter using the following information: ",
     "questions": [
       [
         {
@@ -2662,28 +2662,1201 @@
       ]
     ]
   },
-  "Lease Agreement": {
-    "prompt": "generate a Lease Agreement letter using the following information: ",
-    "questions": []
-  },
   "Employment Offer Letter": {
-    "prompt": "generate a Employment Offer Letter letter using the following information: ",
-    "questions": []
+    "prompt": "generate an Employment Offer Letter letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Candidate's Full Name",
+          "label": "Candidate's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Full Name",
+          "label": "Sender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Position Being Offered",
+          "label": "Position Being Offered",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date",
+          "label": "Start Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Manager's Name the Employee Will Report to",
+          "label": "Manager's Name the Employee Will Report to",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Salary",
+          "label": "Salary",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Salary Period",
+          "label": "Salary Period",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Benefits Employee is Eligible to",
+          "label": "Benefits Employee is Eligible to",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Deadline for accepting the offer",
+          "label": "Deadline for accepting the offer",
+          "required": true
+        }
+      ]
+    ]
   },
   "Independent Contractor Agreement": {
-    "prompt": "generate a Independent Contractor Agreement letter using the following information: ",
-    "questions": []
+    "prompt": "generate an Independent Contractor Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Name",
+          "label": "Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Street Address",
+          "label": "Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's City",
+          "label": "Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's State",
+          "label": "Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company's Zip Code",
+          "label": "Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Contractor's Name",
+          "label": "Contractor's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Contractor's Street Address",
+          "label": "Contractor's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Contractor's City",
+          "label": "Contractor's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Contractor's State",
+          "label": "Contractor's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Contractor's Zip Code",
+          "label": "Contractor's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Contract",
+          "label": "Date of Contract",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the services to be performed by the contractor",
+          "label": "Description of the services to be performed by the contractor",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Compensation to be paid to the contractor",
+          "label": "Compensation to be paid to the contractor",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Notice Period in Days for Termination",
+          "label": "Notice Period in Days for Termination",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state whose laws will govern the agreement",
+          "label": "The state whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
   },
   "Consulting Agreement": {
     "prompt": "generate a Consulting Agreement letter using the following information: ",
-    "questions": []
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Consultant's Full Name",
+          "label": "Consultant's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Consultant's Street Address",
+          "label": "Consultant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Consultant's City",
+          "label": "Consultant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Consultant's State",
+          "label": "Consultant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Consultant's Zip Code",
+          "label": "Consultant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Full Name",
+          "label": "Client's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Street Address",
+          "label": "Client's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's City",
+          "label": "Client's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's State",
+          "label": "Client's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Client's Zip Code",
+          "label": "Client's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Scope of Work",
+          "label": "Scope of Work",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Compensation",
+          "label": "Compensation",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Payment Terms",
+          "label": "Payment Terms",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date",
+          "label": "Start Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date",
+          "label": "End Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Notice Period in Days",
+          "label": "Notice Period in Days",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
   },
   "Purchase Agreement": {
     "prompt": "generate a Purchase Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Full Name",
+          "label": "Buyer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the Goods Being Purchased",
+          "label": "Description of the Goods Being Purchased",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Payment terms (when and how payment will be made)",
+          "label": "Payment terms (when and how payment will be made)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Delivery Location",
+          "label": "Delivery Location",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Delivery Date",
+          "label": "Delivery Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Seller's Warranties",
+          "label": "Seller's Warranties",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Inspection period in Days",
+          "label": "Inspection period in Days",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Shipping Label": {
+    "prompt": "generate a Shipping Label document using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Full Name",
+          "label": "Sender's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Sender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Sender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Sender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Sender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Full Name",
+          "label": "Recepient's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Street Address",
+          "label": "Recepient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's City",
+          "label": "Recepient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's State",
+          "label": "Recepient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Zip Code",
+          "label": "Recepient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Shipping Method",
+          "label": "Shipping Method",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tracking Number",
+          "label": "Tracking Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Package Weight",
+          "label": "Package Weight",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Contents",
+          "label": "Description of Contents",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Notes/Instructions for the carrier",
+          "label": "Notes/Instructions for the carrier",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Health Care Proxy": {
+    "prompt": "generate a Health Care Proxy letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Full Name of the person appointing the health care proxy",
+          "label": "Full Name of the person appointing the health care proxy",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Street Address of the person appointing the health care proxy",
+          "label": "Street Address of the person appointing the health care proxy",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "City of the person appointing the health care proxy",
+          "label": "City of the person appointing the health care proxy",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "State of the person appointing the health care proxy",
+          "label": "State of the person appointing the health care proxy",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Zip Code of the person appointing the health care proxy",
+          "label": "Zip Code of the person appointing the health care proxy",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Proxy's Full Name",
+          "label": "Proxy's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Proxy's Street Address",
+          "label": "Proxy's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Proxy's City",
+          "label": "Proxy's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Proxy's State",
+          "label": "Proxy's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Proxy's Zip Code",
+          "label": "Proxy's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "A statement outlining the circumstances under which your health care proxy's authority becomes effective",
+          "label": "A statement outlining the circumstances under which your health care proxy's authority becomes effective",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Witness 1's Full Name",
+          "label": "Witness 1's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Witness 2's Full Name",
+          "label": "Witness 2's Full Name",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Bill of Sale": {
+    "prompt": "generate a Bill of Sale letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Phone Number",
+          "label": "Seller's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's City",
+          "label": "Seller's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's State",
+          "label": "Seller's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Zip Code",
+          "label": "Seller's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Full Name",
+          "label": "Buyer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Phone Number",
+          "label": "Buyer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's City",
+          "label": "Buyer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's State",
+          "label": "Buyer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Zip Code",
+          "label": "Buyer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Sale",
+          "label": "Date of Sale",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Item Sold",
+          "label": "Description of Item Sold",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Sale Price",
+          "label": "Sale Price",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Payment Method",
+          "label": "Payment Method",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Joint Venture Agreement": {
+    "prompt": "generate a Joint Venture Agreement letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company Name",
+          "label": "Company Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Name",
+          "label": "Sender's Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner's Name",
+          "label": "Partner's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Partner's Company Name",
+          "label": "Partner's Company Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Purpose of the joint venture",
+          "label": "Purpose of the joint venture",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Ownership",
+          "label": "Description of Ownership",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of Management Structure",
+          "label": "Description of Management Structure",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Contribution of Each Party",
+          "label": "Contribution of Each Party",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Profit and Loss Sharing",
+          "label": "Profit and Loss Sharing",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of Financing",
+          "label": "Description of Financing",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Term of the joint venture",
+          "label": "Term of the joint venture",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date",
+          "label": "Start Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date",
+          "label": "End Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Confidientiality",
+          "label": "Description of Confidientiality",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of Management Structure",
+          "label": "Description of Management Structure",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Memorandum of Understanding (MOU)": {
+    "prompt": "generate a Memorandum of Understanding (MOU) letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender Company's Name",
+          "label": "Sender Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Name",
+          "label": "Sender's Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Name",
+          "label": "Recepient's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Company Name",
+          "label": "Recepient's Company Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Purpose of the Memorandum of Understanding (MOU)",
+          "label": "Purpose of the Memorandum of Understanding (MOU)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of Responsibility of Each Party",
+          "label": "Description of Responsibility of Each Party",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Scope of the Memorandum of Understanding (MOU)",
+          "label": "Scope of the Memorandum of Understanding (MOU)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the collaboration and communication",
+          "label": "Description of the collaboration and communication",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of the ownership, use, and protection of intellectual property",
+          "label": "Description of the ownership, use, and protection of intellectual property",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the confidentiality",
+          "label": "Description of the confidentiality",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of Financing",
+          "label": "Description of Financing",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date",
+          "label": "Start Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date",
+          "label": "End Date",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the termination of the MOU",
+          "label": "Description of the termination of the MOU",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Letter of Intent (LOI)": {
+    "prompt": "generate a Letter of Intent (LOI) letter using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Full Name",
+          "label": "Recepient's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Street Address",
+          "label": "Recepient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's City",
+          "label": "Recepient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's State",
+          "label": "Recepient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Zip Code",
+          "label": "Recepient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Purpose of the Letter of Intent (LOI)",
+          "label": "Purpose of the Letter of Intent (LOI)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Profession or Field of Expertise",
+          "label": "Writer's Profession or Field of Expertise",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of years of experience in the related field",
+          "label": "Number of years of experience in the related field",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Specific skills or knowledge related to the opportunity",
+          "label": "Specific skills or knowledge related to the opportunity",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Goals and objectives related to the opportunity",
+          "label": "Goals and objectives related to the opportunity",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Passion and interest in the related industry",
+          "label": "Passion and interest in the related industry",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Name",
+          "label": "Sender's Name",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Security Agreement": {
+    "prompt": "generate a Security Agreement letter using the following information: ",
     "questions": []
   },
-  "Operating Agreement": {
-    "prompt": "generate a Operating Agreement letter using the following information: ",
+  "Pledge Agreement": {
+    "prompt": "generate a Pledge Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Copyright License Agreement": {
+    "prompt": "generate a Copyright License Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Trademark License Agreement": {
+    "prompt": "generate a Trademark License Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Employment Non-Compete Agreement": {
+    "prompt": "generate an Employment Non-Compete Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Independent Contractor Non-Compete Agreement": {
+    "prompt": "generate an Independent Contractor Non-Compete Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Warranty Disclaimer": {
+    "prompt": "generate a Warranty Disclaimer letter using the following information: ",
+    "questions": []
+  },
+  "Limited Warranty": {
+    "prompt": "generate a Limited Warranty letter using the following information: ",
+    "questions": []
+  },
+  "General Release Agreement": {
+    "prompt": "generate a General Release Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Settlement Agreement": {
+    "prompt": "generate a Settlement Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Termination Agreement": {
+    "prompt": "generate a Termination Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Severance Agreement": {
+    "prompt": "generate a Severance Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Consent Agreement": {
+    "prompt": "generate a Consent Agreement letter using the following information: ",
+    "questions": []
+  },
+  "Consent to Release Information": {
+    "prompt": "generate a Consent to Release Information letter using the following information: ",
+    "questions": []
+  },
+  "Consent to Background Check": {
+    "prompt": "generate a Consent to Background Check letter using the following information: ",
+    "questions": []
+  },
+  "Affidavit": {
+    "prompt": "generate an Affidavit letter using the following information: ",
+    "questions": []
+  },
+  "Bill of Lading": {
+    "prompt": "generate a Bill of Lading letter using the following information: ",
+    "questions": []
+  },
+  "Acknowledgment of Receipt of Employee Handbook": {
+    "prompt": "generate an Acknowledgment of Receipt of Employee Handbook letter using the following information: ",
     "questions": []
   }
 }
