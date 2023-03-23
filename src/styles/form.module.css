@@ -1,26 +1,26 @@
 .form {
-    @apply mb-4 max-w-screen-md lg:w-8/12 md:w-10/12 sm:w-11/12 box-border rounded-lg px-8 pt-6 pb-8 text-zinc-700 opacity-75 shadow;
+  @apply mx-auto mb-4 box-border max-w-screen-md rounded-lg px-8 pt-6 pb-8 text-zinc-700 opacity-75 shadow sm:w-11/12 md:w-10/12 lg:w-8/12;
 }
 
-.inputs_container{
-    @apply mb-6 sm:flex w-full gap-10;
+.inputs_container {
+  @apply mb-6 w-full gap-10 sm:flex;
 }
 .input {
-    @apply mt-1 block w-full rounded-md border border-zinc-400 p-2 px-3 shadow-sm focus:border-pink-500 focus:outline-none focus:ring-pink-500 sm:text-sm;
+  @apply mt-1 block w-full rounded-md border border-zinc-400 p-2 px-3 shadow-sm focus:border-pink-500 focus:outline-none focus:ring-pink-500 sm:text-sm;
 }
 
 .label {
-    @apply block text-sm font-medium text-zinc-900
+  @apply block text-sm font-medium text-zinc-900;
 }
 
 .label_inline {
-    @apply pt-[3px] pl-1 absolute z-10 text-gray-700
+  @apply absolute z-10 pt-[3px] pl-1 text-gray-700;
 }
 
 .year_input {
-    @apply pl-5 w-auto
+  @apply w-auto pl-5;
 }
 
 .button {
-    @apply inline-flex justify-center rounded-md border border-transparent bg-pink-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2
+  @apply inline-flex justify-center rounded-md border border-transparent bg-pink-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2;
 }

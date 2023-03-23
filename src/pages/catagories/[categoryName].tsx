@@ -281,7 +281,7 @@ export default function Questions({ questions, prompt }) {
         toast.loading("redirecting");
         return router.push("/setting");
       }
-      toast.error("Error")
+      toast.error("Error");
       let errorText = await upload.text();
       setFailMsg(errorText);
     }
@@ -309,7 +309,7 @@ export default function Questions({ questions, prompt }) {
         toast.loading("Redirecting");
         return router.push("/setting");
       }
-      toast.error("Error")
+      toast.error("Error");
       let errorText = await upload.text();
       setFailMsg(errorText);
     }
@@ -325,15 +325,15 @@ export default function Questions({ questions, prompt }) {
         <div
           className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
         >
-          <div className="py-6 px-10">
+          <div className="mx-auto w-5/6 py-6 px-10">
             {questions.length === 0 ? (
               <div className="my-2 px-8 text-lg font-medium text-zinc-700">
                 No Questions Found
               </div>
             ) : (
               // Multi-step form
-              <div>
-                <h1 className="my-2 px-8 text-lg font-medium text-zinc-700">
+              <div className="mt-20">
+                <h1 className="my-2 px-8 text-center text-lg font-medium text-zinc-700">
                   Step {currentPage + 1} of {questionsCount}
                 </h1>
                 <form onSubmit={handleNextClick} className={formStyles.form}>
