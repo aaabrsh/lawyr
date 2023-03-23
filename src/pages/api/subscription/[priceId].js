@@ -45,8 +45,8 @@ const handler = async (req, res) => {
       mode: "subscription",
       payment_method_types: ["card"],
       line_items: lineItems,
-      success_url: "http://localhost:3000/setting/?success=subscribed",
-      cancel_url: "http://localhost:3000/setting/?success=failed",
+      success_url: `${process.env.NEXTAUTH_URL}/setting/?success=subscribed`,
+      cancel_url: `${process.env.NEXTAUTH_URL}/setting/?success=failed`,
     });
 
     res.send({
