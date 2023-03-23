@@ -327,8 +327,8 @@ export default function Questions({ questions, prompt }) {
         >
           <div className="mx-auto w-5/6 py-6 px-10">
             {questions.length === 0 ? (
-              <div className="my-2 px-8 text-lg font-medium text-zinc-700">
-                No Questions Found
+              <div className="my-2 p-8 py-20 text-center text-2xl font-medium text-zinc-500">
+                Coming Soon
               </div>
             ) : (
               // Multi-step form
