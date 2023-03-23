@@ -91,6 +91,7 @@ export async function getServerSideProps(context: any) {
   //get plans
   const stripe = initStripe(process.env.STRIPE_SECRET_KEY);
   const { data: prices } = await stripe.prices.list();
+
   const plans = await Promise.all(
     prices.map(async (price: any) => {
       const product = await stripe.products.retrieve(price.product);
@@ -133,7 +134,7 @@ export async function getServerSideProps(context: any) {
 
     //get customer information
     let id = session?.user?.id;
-    let { data } = await axios.get(`/api/customers/${id}`);
+    let data = await fetch(`/api/customers/${id}`).then((res) => res.json());
     customer = data?.customer;
   } catch (err) {
     console.log(err);

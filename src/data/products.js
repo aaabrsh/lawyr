@@ -232,6 +232,66 @@ export const getProductCards = [
       "https://d2pp7hm7rdj612.cloudfront.net/qldqdm3udakht8l.png?Expires=1728847288\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LNr~fc2wGye7FutoPt2TIv9w5boD1b~mrrbgF-lUb4fPeYTfYf8XxHy6aoxOmNBcOGUyVQenlEK4YoQaV4dqpuTxrtqv~v~8OH3FsdZ5kH~o54aUm7Q7G2mBcBKinhtcovIzVO1rP8r2oE8WJ1U4P8nx6GrpGqT-8gIsjE3rHAn2LoZglppTZc5RS2ttvs~atuD6LO79nIk8ndoiicXiP6GC2oTy--9YsIVS-iXzZ96WlJBD5e0Duk9~drwV0YIEklxeCMerkO~8p1ZuFMIjIz4wWHcHfMmNGPqjP5ZHk2bmVlo1vaEA3o3-I05U~iUiKHCpM25pCzOwPTXHSg3S7g__",
   },
   {
+    title: "Employment Offer Letter",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Independent Contractor Agreement",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Consulting Agreement",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Purchase Agreement",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Shipping Label",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Health Care Proxy",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Bill of Sale",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Joint Venture Agreement",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Memorandum of Understanding (MOU)",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
+    title: "Letter of Intent (LOI)",
+    description: "",
+    cardImage: "",
+    iconImage: "",
+  },
+  {
     title: "Customer Service Issues",
     description: "Your immediate problem. Fixed faster.",
     cardImage:

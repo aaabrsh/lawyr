@@ -194,7 +194,7 @@ export default function Copilot({ plans }) {
 
       setChatHistory((history) => [
         ...history,
-        { sender: "user", text: input },
+        { sender: "user", text: inputText },
       ]);
       chatWithOpenai(input);
       setInputText("");
