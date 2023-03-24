@@ -18,23 +18,28 @@ import { useRef } from "react";
 import useStore from "../../store/useStore";
 import { prisma } from "../server/db";
 import { toast } from "react-hot-toast";
+import {
+  Document as PdfDocument,
+  Page as PdfPage,
+  pdf,
+  StyleSheet,
+  Text,
+} from "@react-pdf/renderer";
 
 // import axios from "axios";
 
 export default function Copilot({ plans }) {
-  const [legalese, setLegalese] = useState();
   const [isOpen, setIsOpen] = useState(false);
-  const [files, setFiles] = useState([]);
   const [active, setActive] = useState(false);
   const { data: session } = useSession();
   const [file, setFile] = useState(null);
-  const [numPages, setNumPages] = useState(null);
   const [totalPages, setTotalPages] = useState(0);
   const [pageScale, setPageScale] = useState(1);
   const [pageNumber, setPageNumber] = useState(1);
   const [inputText, setInputText] = useState("");
   const [context, setContext] = useState("");
   const [chatHistory, setChatHistory] = useState<any[]>([]);
+  const [pdfLoading, setPdfLoading] = useState(false);
   const ref = useRef(null);
   const user = session?.user?.email;
   const { blobFile } = useStore();
@@ -50,10 +55,12 @@ export default function Copilot({ plans }) {
   }, [file]);
 
   async function loadPdf() {
+    setPdfLoading(true);
     if (blobFile) {
       const fileType = blobFile.type;
       const file = new File([blobFile], "pdf.pdf", { type: fileType });
 
+      setPdfLoading(false);
       setFile(file);
     } else {
       try {
@@ -65,13 +72,17 @@ export default function Copilot({ plans }) {
         const file = new File([pdfBlob], "pdf.pdf", { type: fileType });
 
         setFile(file);
+        setPdfLoading(false);
       } catch (error) {
+        setPdfLoading(false);
+        toast.error("error");
         console.error(error);
       }
     }
   }
 
   async function getPdfText(pdfFile) {
+    toast.loading("Loading PDF's Content...");
     const reader = new FileReader();
 
     reader.onload = async () => {
@@ -94,9 +105,73 @@ export default function Copilot({ plans }) {
       }
 
       setContext(text.trim());
+      toast.dismiss();
     };
 
     reader.readAsArrayBuffer(pdfFile);
+  }
+
+  async function loadTextToPdf(text: string) {
+    toast.loading("Loading to PDF View...");
+    setPdfLoading(true);
+    //styles for pdf
+    const styles = StyleSheet.create({
+      body: {
+        paddingTop: 35,
+        paddingBottom: 65,
+        paddingHorizontal: 35,
+      },
+      text: {
+        margin: 6,
+        fontSize: 14,
+        textAlign: "justify",
+        fontFamily: "Times-Roman",
+      },
+      pageNumber: {
+        position: "absolute",
+        fontSize: 12,
+        bottom: 30,
+        left: 0,
+        right: 0,
+        textAlign: "center",
+        color: "grey",
+      },
+    });
+
+    //split the whole text into an array of paragraphs
+    let paragraphs = text.split("\n");
+
+    //create the pdf doc
+    let pdfDoc = (
+      <PdfDocument>
+        <PdfPage style={styles.body}>
+          {paragraphs.map((line, index) => (
+            <Text style={styles.text} key={index}>
+              {line}
+            </Text>
+          ))}
+          <Text
+            style={styles.pageNumber}
+            render={({ pageNumber, totalPages }) =>
+              `${pageNumber} / ${totalPages}`
+            }
+            fixed
+          />
+        </PdfPage>
+      </PdfDocument>
+    );
+
+    //convert pdf doc to blob
+
+    const blob = await pdf(pdfDoc).toBlob();
+
+    const fileType = blob.type;
+    const file = new File([blob], "pdf.pdf", { type: fileType });
+
+    setFile(file);
+
+    toast.dismiss();
+    setPdfLoading(false);
   }
 
   function handleNext() {
@@ -159,11 +234,6 @@ export default function Copilot({ plans }) {
       });
   };
 
-  const handleClick = (event) => {
-    setLegalese(ref.current.value);
-    queryPrompt(legalese);
-  };
-
   function inputSavedQuestion(text: string) {
     setChatHistory((history) => [...history, { sender: "user", text: text }]);
     if (text === "Draft a contract") {
@@ -202,6 +272,10 @@ export default function Copilot({ plans }) {
   }
 
   async function chatWithOpenai(text: string) {
+    if (!context) {
+      return toast.error("No Document Found");
+    }
+
     const requestOptions = {
       method: "POST",
       headers: {
@@ -220,7 +294,24 @@ export default function Copilot({ plans }) {
     let response = await fetch(apiUrl, requestOptions)
       .then((res) => res.json())
       .then((res) => {
-        setChatHistory((history) => [...history, { sender: "bot", text: res }]);
+        if (
+          chatHistory[chatHistory.length - 2]?.text === "Draft a contract" &&
+          res.trim() !== "I don't know."
+        ) {
+          loadTextToPdf(res);
+          setChatHistory((history) => [
+            ...history,
+            {
+              sender: "bot",
+              text: "The generated document is loaded to the PDF View",
+            },
+          ]);
+        } else {
+          setChatHistory((history) => [
+            ...history,
+            { sender: "bot", text: res },
+          ]);
+        }
       })
       .catch((err) => {
         console.log(err);
@@ -296,25 +387,35 @@ export default function Copilot({ plans }) {
                     </div>
 
                     <div className="pdfdiv-assistant">
-                      <Document
-                        file={file}
-                        onLoadSuccess={onDocumentLoadSuccess}
-                        width={500}
-                      >
-                        {/* {Array.from({ length: numPages }, (_, index) => (
-                        <Page
-                          key={`page_${index + 1}`}
-                          pageNumber={index + 1}
-                          renderAnnotationLayer={false}
-                          renderTextLayer={false}
-                        />
-                      ))} */}
-                        <Page
-                          pageNumber={pageNumber}
-                          scale={pageScale}
-                          renderTextLayer={false}
-                        />
-                      </Document>
+                      {!pdfLoading ? (
+                        <Document
+                          file={file}
+                          onLoadSuccess={onDocumentLoadSuccess}
+                          width={500}
+                        >
+                          <Page
+                            pageNumber={pageNumber}
+                            scale={pageScale}
+                            renderTextLayer={false}
+                          />
+                        </Document>
+                      ) : (
+                        <div className="flex w-full flex-1 flex-col items-center  px-20">
+                          <div className="w-full animate-pulse flex-row items-center justify-center space-x-1 rounded-xl border p-6 ">
+                            <div className="flex flex-col space-y-2">
+                              <div className="h-5 w-3/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-6/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-11/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-11/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-11/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-4/12 rounded-md bg-gray-300 "></div>
+                              <br />
+                              <div className="h-5 w-2/12 rounded-md bg-gray-300 "></div>
+                              <div className="h-5 w-2/12 rounded-md bg-gray-300 "></div>
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="footer m-auto w-1/3">
@@ -358,43 +459,8 @@ export default function Copilot({ plans }) {
                     </div>
                   </div>
                 </div>
-                {/* <div className="flex-1 bg-indigo-50 p-4"> */}
                 <div className="sticky top-0	ml-4 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
                   <div className="flex h-0 flex-grow flex-col overflow-auto p-4">
-                    {/* <div className="mt-2 flex w-full max-w-xs space-x-3">
-                      <Image
-                        src="/logosmall.png"
-                        width="500"
-                        height="50"
-                        alt=""
-                        className="h-10 w-10 rounded-full sm:h-16 sm:w-16"
-                      />
-                      <div>
-                        <div className="rounded-r-lg rounded-bl-lg bg-gray-300 p-3">
-                          <p className="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                          </p>
-                        </div>
-                        <span className="text-xs leading-none text-gray-500">
-                          2 min ago
-                        </span>
-                      </div>
-                    </div>
-                    <div className="mt-2 ml-auto flex w-full max-w-xs justify-end space-x-3">
-                      <div>
-                        <div className="rounded-l-lg rounded-br-lg bg-blue-600 p-3 text-white">
-                          <p className="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod.
-                          </p>
-                        </div>
-                        <span className="text-xs leading-none text-gray-500">
-                          2 min ago
-                        </span>
-                      </div>
-                      <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300" />
-                    </div> */}
                     <div className="mt-2 flex w-full max-w-xs space-x-3">
                       <img
                         src="/logosmall.png"
@@ -445,19 +511,19 @@ export default function Copilot({ plans }) {
                   <div className="flex flex-col-reverse items-end">
                     <button
                       onClick={() =>
-                        inputSavedQuestion("Review the following contract")
+                        inputSavedQuestion("Review the given document")
                       }
                       className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
                     >
-                      Review the following contract
+                      Review the given document
                     </button>
                     <button
                       onClick={() =>
-                        inputSavedQuestion("Summarize the following contract")
+                        inputSavedQuestion("Summarize the given document")
                       }
                       className="hover:bg-blue text-blue-dark mt-2 mr-2 rounded-lg border-2 border-black bg-transparent py-2 px-4 font-semibold hover:border-pink-700 hover:text-blue-900"
                     >
-                      Summarize the following contract
+                      Summarize the given document
                     </button>
                     <button
                       onClick={() => inputSavedQuestion("Draft a contract")}

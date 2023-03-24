@@ -138,7 +138,7 @@ export default function Header() {
                     <div className="flex md:space-x-4">
                       {navigation.map((item) => (
                         // <Link href={item.href} key={item.name}>
-                        <Link
+                        <a
                           key={item.name}
                           href={item.href}
                           className={classNames(
@@ -150,7 +150,7 @@ export default function Header() {
                           aria-current={item.name ? "page" : undefined}
                         >
                           {item.name}
-                        </Link>
+                        </a>
                         // </Link>
                       ))}
                     </div>

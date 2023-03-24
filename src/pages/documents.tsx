@@ -51,7 +51,7 @@ export default function Documents({ pdf_files }) {
 
   async function deleteFile() {
     if (fileToDelete) {
-      toast.loading("Loading...")
+      toast.loading("Loading...");
       await axios.delete(`/api/aws/delete/${fileToDelete}`);
       closeConfirmationModal();
       router.reload();
@@ -102,41 +102,43 @@ export default function Documents({ pdf_files }) {
                 No Files Found
               </h1>
             ) : (
-              <table>
-                <thead className="">
-                  <tr className="w-full border-b-2 border-b-zinc-700 py-3 text-left text-zinc-800">
-                    <th>File Name</th>
-                    <th className="pr-5">Created At</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody className="">
-                  {pdf_files.map((file: any) => (
-                    <tr className="border-b-2" key={file.id}>
-                      <td className="cursor-pointer py-2">
-                        <div
-                          onClick={() => handleLinkClick(file.file_name)}
-                          className="flex w-full items-center text-cyan-800 underline"
-                        >
-                          <span className="min-w-[300px] max-w-[400px] flex-grow">
-                            {file.file_name}
-                          </span>
-                          <span className="px-5">
-                            <FiExternalLink />
-                          </span>
-                        </div>
-                      </td>
-                      <td className="py-2 pr-5">{file.created_at}</td>
-                      <td className="py-2">
-                        <AiFillDelete
-                          onClick={() => handleDeleteClick(file.id)}
-                          className="m-auto cursor-pointer text-xl text-red-500"
-                        />
-                      </td>
+              <div>
+                <table className="m-auto">
+                  <thead className="">
+                    <tr className="w-full border-b-2 border-b-zinc-700 py-3 text-left text-zinc-800">
+                      <th>File Name</th>
+                      <th className="pr-5">Created At</th>
+                      <th>Actions</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody className="">
+                    {pdf_files.map((file: any) => (
+                      <tr className="border-b-2" key={file.id}>
+                        <td className="cursor-pointer py-2">
+                          <div
+                            onClick={() => handleLinkClick(file.file_name)}
+                            className="flex w-full items-center text-cyan-800 underline"
+                          >
+                            <span className="min-w-[300px] max-w-[400px] flex-grow">
+                              {file.file_name}
+                            </span>
+                            <span className="px-5">
+                              <FiExternalLink />
+                            </span>
+                          </div>
+                        </td>
+                        <td className="py-2 pr-5">{file.created_at}</td>
+                        <td className="py-2">
+                          <AiFillDelete
+                            onClick={() => handleDeleteClick(file.id)}
+                            className="m-auto cursor-pointer text-xl text-red-500"
+                          />
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             )}
           </div>
         </div>
@@ -237,17 +239,17 @@ export async function getServerSideProps(context: any) {
 
   const customer = await prisma.customer.findFirst({
     where: {
-      userId: session.user?.id
-    }
-  })
+      userId: session.user?.id,
+    },
+  });
 
-  if(!customer || !customer.billingPlan){
+  if (!customer || !customer.billingPlan) {
     return {
       redirect: {
         destination: "/setting",
-        permanent: false
-      }
-    }
+        permanent: false,
+      },
+    };
   }
 
   let pdf_files = await prisma.pdfFile
