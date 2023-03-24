@@ -90,7 +90,8 @@ export async function getServerSideProps(context: any) {
 
   //get plans
   const stripe = initStripe(process.env.STRIPE_SECRET_KEY);
-  const { data: prices } = await stripe.prices.list();
+  let { data: prices } = await stripe.prices.list();
+  prices = prices.filter((price) => price.metadata.project === "lawyr");
 
   const plans = await Promise.all(
     prices.map(async (price: any) => {
