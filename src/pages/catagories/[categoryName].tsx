@@ -302,7 +302,7 @@ export default function Questions({ questions, prompt }) {
       addPdfFile(blobFile);
       toast.dismiss();
       toast.loading("Redirecting to Copilot");
-      router.push("/copilot");
+      router.push("/associate");
     } else {
       toast.dismiss();
       if (upload.status === 404) {
@@ -440,7 +440,7 @@ export default function Questions({ questions, prompt }) {
                           className="inline-flex justify-center rounded-md border border-cyan-900 bg-cyan-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2"
                           onClick={handleOpenWithCopilot}
                         >
-                          Open With Copilot
+                          Open With AIlawyr associate
                         </button>
                       </>
                     )}

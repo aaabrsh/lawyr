@@ -9,6 +9,7 @@ import Sidebar from "../components/Dashboard/Sidebar";
 import { useSession, getSession } from "next-auth/react";
 import Header from "../components/Header";
 import Catagories from "../components/Dashboard/Catagories";
+import Search from "../components/Search";
 
 // import axios from "axios";
 export default function Welcome() {
@@ -76,6 +77,7 @@ export default function Welcome() {
             ) : (
               <Choose openStartModal={openStartModal} />
             )} */}
+            <Search />
             <Catagories />
           </div>
         </div>

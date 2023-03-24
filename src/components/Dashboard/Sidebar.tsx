@@ -66,9 +66,9 @@ const basicPlanMenu = [
     items: [],
   },
   {
-    name: "Copilot",
+    name: "Associate",
     icon: HiOutlineShieldCheck,
-    link: "/copilot",
+    link: "/associate",
     items: [],
   },
   {

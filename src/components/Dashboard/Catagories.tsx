@@ -105,8 +105,8 @@ export default function Welcome() {
         <div
           className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
         >
-          <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="overflow-hidden py-16 dark:bg-gray-900">
+          <div className="mx-auto max-w-2xl px-4 pb-16 sm:px-6 sm:pb-12 lg:max-w-7xl lg:px-8">
+            <div className="overflow-hidden pb-16 dark:bg-gray-900">
               <div className="container m-auto space-y-8 px-6 text-gray-300 md:px-12">
                 <div>
                   <span className="text-lg font-semibold text-gray-200">
