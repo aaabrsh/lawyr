@@ -1,6 +1,4 @@
 {
-  "builds": [
-    { "src": "api/chat/*.py", "use": "@now/python" },
-    { "src": "package.json", "use": "@now/next" }
-  ]
+  "redirects": [{ "source": "/api/chat", "destination": "/api/chat" }]
 }
+
