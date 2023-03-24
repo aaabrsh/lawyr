@@ -25,7 +25,6 @@ import {
   StyleSheet,
   Text,
 } from "@react-pdf/renderer";
-import { useWhisper } from "@chengsokdara/use-whisper";
 
 // import axios from "axios";
 
@@ -44,21 +43,6 @@ export default function Copilot({ plans }) {
   const ref = useRef(null);
   const user = session?.user?.email;
   const { blobFile } = useStore();
-  const {
-    recording,
-    speaking,
-    transcribing,
-    transcript,
-    pauseRecording,
-    startRecording,
-    stopRecording,
-  } = useWhisper({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-
-  useEffect(() => {
-    setInputText(transcript.text);
-  }, [transcript]);
 
   useEffect(() => {
     loadPdf();
@@ -588,30 +572,7 @@ export default function Copilot({ plans }) {
                             className="hidden"
                           />
                         </div>
-                        <span className="absolute inset-y-0 flex items-center">
-                          <button
-                            type="button"
-                            onClick={() => {
-                              transcribing ? stopRecording() : startRecording();
-                            }}
-                            className="inline-flex h-12 w-12 items-center justify-center rounded-full text-gray-500 transition duration-500 ease-in-out hover:bg-gray-300 focus:outline-none"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              className="h-6 w-6 text-gray-600"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-                              />
-                            </svg>
-                          </button>
-                        </span>
+
                         <textarea
                           id="chat"
                           rows={1}
