@@ -18,15 +18,15 @@
 }
 
 .pagination {
-  @apply flex justify-center border border-gray-800/50 py-2;
+  @apply flex justify-center py-2;
 }
 
 .page-item {
-  @apply mx-2 h-10 w-10 rounded-[50%] bg-gray-900/50;
+  @apply mx-2 h-10 w-10 rounded-lg bg-white text-black shadow-[0_9px_10px_rgba(0,0,0,0.09)] transition-colors hover:bg-black hover:text-white;
 }
 
 .page-link {
-  @apply flex h-full w-full items-center justify-center hover:rounded-[50%] hover:border-2 hover:border-white;
+  @apply flex h-full w-full items-center justify-center rounded-lg hover:border-2 hover:border-white;
 }
 
 .break-link {
@@ -34,7 +34,7 @@
 }
 
 .active {
-  @apply bg-gray-50/80 text-blue-700;
+  @apply bg-black text-white;
 }
 
 .pdfdiv-assistant .react-pdf__Page__canvas {
@@ -45,4 +45,8 @@
 
 .react-pdf__Page__annotations {
   display: none !important;
+}
+
+.dashboard-search {
+  border-top: 1px rgb(0 0 0 / 10%) solid;
 }

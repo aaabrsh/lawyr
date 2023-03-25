@@ -90,8 +90,8 @@ export default function Search() {
       </Head> */}
 
       <div className="max-w-2x mx-auto lg:max-w-5xl ">
-        <div className="relative flex h-12 w-full items-center overflow-hidden rounded-lg bg-white shadow-lg focus-within:shadow-xl">
-          <div className="grid h-full w-12 place-items-center text-gray-300">
+        <div className="dashboard-search relative flex h-12 w-full items-center overflow-hidden rounded-lg bg-white shadow-xl drop-shadow-md focus-within:shadow-2xl">
+          <div className="grid h-full w-12 place-items-center text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -108,11 +108,11 @@ export default function Search() {
             </svg>
           </div>
           <input
-            className="peer h-full w-full pr-2 text-sm text-gray-700 outline-none"
+            className="peer h-full w-full pr-2 text-sm text-gray-900 outline-none"
             id="searchfield"
             type="search"
             onChange={inputHandler}
-            placeholder="Search something.."
+            placeholder="Search something, eg Purchase Agreement.."
           />
         </div>
       </div>

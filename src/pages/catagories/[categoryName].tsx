@@ -28,6 +28,11 @@ export default function Questions({ questions, prompt }) {
   const { data: session } = useSession();
   const userId = session?.user?.id;
   const { categoryName } = router.query;
+  // console.log(
+  //   router.query.categoryName
+  //     .replaceAll("-", " ")
+  //     .replace(/(^\w|\s\w)/g, (m) => m.toUpperCase())
+  // );
   const { addPdfFile } = useStore();
 
   //styles for pdf
@@ -402,15 +407,15 @@ export default function Questions({ questions, prompt }) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Download PDF
+                    Download Document
                   </Dialog.Title>
                   <div className="mt-2">
                     {failMsg ? (
                       <p className="text-sm text-red-500">{failMsg}</p>
                     ) : (
                       <p className="text-sm text-gray-500">
-                        Your PDF file is Ready. Click the download button to
-                        download
+                        Your document file is Ready. Click the download button
+                        to download
                       </p>
                     )}
                   </div>
@@ -456,7 +461,12 @@ export default function Questions({ questions, prompt }) {
 }
 
 export async function getServerSideProps(context: any) {
-  const categoryName = context.params.categoryName;
+  const categoryName = context.params.categoryName
+    .replaceAll("-", " ")
+    .replace(/(^\w|\s\w)/g, (m) => m.toUpperCase());
+
+  console.log(categoryName, "from server");
+  console.log(context.params.categoryName);
   const dataDirectory = path.join(process.cwd(), "src/data");
   let data: any = await fs.readFile(dataDirectory + "/questions.json", "utf8");
   data = JSON.parse(data)[categoryName];

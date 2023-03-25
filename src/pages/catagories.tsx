@@ -90,7 +90,7 @@ export default function Welcome({ products }) {
                           alt="burger illustration"
                         />
                         <div className="flex max-h-[140px] flex-grow flex-col space-y-2 overflow-hidden">
-                          <h5 className="text-xl font-medium text-gray-200 transition group-hover:text-yellow-600">
+                          <h5 className="text-xl font-medium text-gray-200 transition group-hover:text-yellow-600 ">
                             {product.title}
                           </h5>
                           <p className="flex-grow text-sm text-gray-200 group-hover:text-gray-600">

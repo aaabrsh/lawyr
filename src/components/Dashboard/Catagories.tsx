@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/restrict-template-expressions */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -122,18 +123,18 @@ export default function Welcome() {
                   {displayedProducts.map((product: any) => (
                     <div
                       key={product.title}
-                      className="usecasecards group relative w-[270px] flex-grow bg-gray-100 transition hover:z-[1] hover:shadow-2xl xl:block"
+                      className="usecasecards group relative w-[270px] flex-grow rounded-3xl bg-gray-100 transition hover:z-[1] hover:shadow-2xl xl:block"
                     >
                       <div className="relative flex h-full flex-col space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white">
-                        <img
+                        {/* <img
                           src={product.iconImage}
                           className="w-10"
                           width={512}
                           height={512}
                           alt="burger illustration"
-                        />
+                        /> */}
                         <div className="flex max-h-[140px] flex-grow flex-col space-y-2 overflow-hidden">
-                          <h5 className="text-xl font-medium text-gray-200 transition group-hover:text-yellow-600">
+                          <h5 className="text-xl font-medium text-gray-200 transition  first-letter:pr-1 first-letter:text-7xl first-letter:font-black first-letter:text-white group-hover:text-yellow-600 group-hover:first-letter:text-black">
                             {product.title}
                           </h5>
                           <p className="flex-grow text-sm text-gray-200 group-hover:text-gray-600">
@@ -143,7 +144,9 @@ export default function Welcome() {
 
                         <Link
                           href="/catagories/[categoryName]"
-                          as={`/catagories/${product.title}`}
+                          as={`/catagories/${product.title
+                            .replace(/\s+/g, "-")
+                            .toLowerCase()}`}
                         >
                           <div className="flex items-center justify-between group-hover:text-yellow-600">
                             <span className="text-sm">Read more</span>
