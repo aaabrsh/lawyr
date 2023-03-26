@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
+import dynamic from "next/dynamic";
 import Router from "next/router";
 import "../styles/globals.css";
 import type { AppType } from "next/app";
@@ -10,6 +11,10 @@ import { SessionProvider } from "next-auth/react";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
 import { Toaster } from "react-hot-toast";
+const PwaUpdater = dynamic(() => import(`../components/PwaUpdater`), {
+  ssr: false,
+});
+
 //Binding events.
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -23,6 +28,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <SessionProvider session={session}>
       {/* <Header /> */}
       <Toaster />
+      <PwaUpdater />
       <Component {...pageProps} />
       {/* <Footer /> */}
     </SessionProvider>

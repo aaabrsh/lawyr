@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-var-requires */
 // src/pages/api/examples.ts
+//@ts-nocheck
 import type { NextApiRequest, NextApiResponse } from "next";
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const examples = async (req: NextApiRequest, res: NextApiResponse) => {

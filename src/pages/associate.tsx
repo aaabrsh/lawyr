@@ -643,14 +643,14 @@ export async function getServerSideProps(context) {
     },
   });
 
-  if (!customer || !customer.billingPlan) {
-    return {
-      redirect: {
-        destination: "/setting",
-        permanent: false,
-      },
-    };
-  }
+if (!customer || !customer.billingPlan) {
+  return {
+    redirect: {
+      destination: "/setting",
+      permanent: false,
+    },
+  };
+}
 
   return {
     props: {
