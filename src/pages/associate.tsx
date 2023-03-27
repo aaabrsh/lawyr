@@ -342,18 +342,16 @@ export default function Copilot({ plans }) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="sm:flex bg-[#fdfdff]">
+      <div className="bg-[#fdfdff] sm:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <div className="max-w-12xl lg:max-w-8xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
             {/* Chat start */}
             <>
-              <div className="flex min-h-screen">
-                <div className="w-64 flex-auto border-r-2 border-indigo-300 bg-indigo-50 p-4">
+              <div className="flex min-h-screen flex-col sm:flex-row">
+                <div className="flex-auto border-r-2 border-indigo-300 bg-indigo-50 p-4 sm:w-1/2">
                   <div>
                     {/* load a new document */}
                     <div className="m-auto mb-8 w-1/2 rounded-md border border-gray-100 bg-white p-4 shadow-md">
@@ -459,7 +457,7 @@ export default function Copilot({ plans }) {
                     </div>
                   </div>
                 </div>
-                <div className="sticky top-0	ml-4 flex h-[42rem] w-full max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl">
+                <div className="sticky top-0 mt-4	ml-4 flex h-[42rem] max-w-xl flex-grow flex-col overflow-hidden rounded-lg border-2 border-solid border-indigo-600 bg-white shadow-xl sm:w-1/2">
                   <div className="flex h-0 flex-grow flex-col overflow-auto p-4">
                     <div className="mt-2 flex w-full max-w-xs space-x-3">
                       <img
@@ -643,14 +641,14 @@ export async function getServerSideProps(context) {
     },
   });
 
-if (!customer || !customer.billingPlan) {
-  return {
-    redirect: {
-      destination: "/setting",
-      permanent: false,
-    },
-  };
-}
+  if (!customer || !customer.billingPlan) {
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false,
+      },
+    };
+  }
 
   return {
     props: {

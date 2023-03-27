@@ -161,13 +161,11 @@ export default function Chat({ pdf_files, chat }: any) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="sm:flex bg-[#fdfdff]">
+      <div className="bg-[#fdfdff] sm:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
             {/* Chat start */}
             <>
@@ -484,14 +482,14 @@ export async function getServerSideProps(context: any) {
     },
   });
 
-  if (!customer || !customer.billingPlan) {
-    return {
-      redirect: {
-        destination: "/setting",
-        permanent: false,
-      },
-    };
-  }
+  // if (!customer || !customer.billingPlan) {
+  //   return {
+  //     redirect: {
+  //       destination: "/setting",
+  //       permanent: false,
+  //     },
+  //   };
+  // }
 
   let pdf_files = await prisma.pdfFile
     .findMany({
