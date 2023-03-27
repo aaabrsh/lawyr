@@ -321,7 +321,7 @@ export default function Chat({ pdf_files, chat }: any) {
                     </div>
                   ))}
                 </div>
-                <div className="fixed bottom-0 mb-2 w-3/5 border-t-2 border-gray-200 px-4 pt-4 sm:mb-0">
+                <div className="fixed bottom-0 mb-2 w-11/12 max-w-2xl border-t-2 border-gray-200 px-4 pt-4  sm:mb-0 lg:max-w-7xl">
                   <div className="relative flex">
                     <span className="absolute inset-y-0 flex items-center">
                       <button
@@ -351,10 +351,10 @@ export default function Chat({ pdf_files, chat }: any) {
                       value={inputText}
                       onChange={handleInputTextChange}
                     />
-                    <div className="absolute inset-y-0 right-0 hidden items-center sm:flex">
+                    <div className="absolute inset-y-0 right-0  items-center sm:flex">
                       <button
                         type="button"
-                        className="inline-flex h-10 w-10 items-center justify-center rounded-full text-gray-500 transition duration-500 ease-in-out hover:bg-gray-300 focus:outline-none"
+                        className="hidden h-10 w-10 items-center justify-center rounded-full text-gray-500 transition duration-500 ease-in-out hover:bg-gray-300 focus:outline-none sm:inline-flex "
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -371,7 +371,7 @@ export default function Chat({ pdf_files, chat }: any) {
                           />
                         </svg>
                       </button>
-                      <button
+                      {/* <button
                         type="button"
                         className="inline-flex h-10 w-10 items-center justify-center rounded-full text-gray-500 transition duration-500 ease-in-out hover:bg-gray-300 focus:outline-none"
                       >
@@ -395,8 +395,8 @@ export default function Chat({ pdf_files, chat }: any) {
                             d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
                           />
                         </svg>
-                      </button>
-                      <button
+                      </button> */}
+                      {/* <button
                         type="button"
                         className="inline-flex h-10 w-10 items-center justify-center rounded-full text-gray-500 transition duration-500 ease-in-out hover:bg-gray-300 focus:outline-none"
                       >
@@ -414,13 +414,13 @@ export default function Chat({ pdf_files, chat }: any) {
                             d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                           />
                         </svg>
-                      </button>
+                      </button> */}
                       <button
                         onClick={handleChatInput}
                         type="button"
                         className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-4 py-3 text-white transition duration-500 ease-in-out hover:bg-blue-400 focus:outline-none"
                       >
-                        <span className="font-bold">Send</span>
+                        {/* <span className="font-bold">Send</span> */}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
@@ -482,14 +482,14 @@ export async function getServerSideProps(context: any) {
     },
   });
 
-  // if (!customer || !customer.billingPlan) {
-  //   return {
-  //     redirect: {
-  //       destination: "/setting",
-  //       permanent: false,
-  //     },
-  //   };
-  // }
+  if (!customer || !customer.billingPlan) {
+    return {
+      redirect: {
+        destination: "/setting",
+        permanent: false,
+      },
+    };
+  }
 
   let pdf_files = await prisma.pdfFile
     .findMany({
