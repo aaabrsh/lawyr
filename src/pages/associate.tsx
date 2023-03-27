@@ -342,12 +342,12 @@ export default function Copilot({ plans }) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="flex bg-[#fdfdff]">
+      <div className="sm:flex bg-[#fdfdff]">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
         <div
-          className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
+          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
         >
           <div className="max-w-12xl lg:max-w-8xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
             {/* Chat start */}

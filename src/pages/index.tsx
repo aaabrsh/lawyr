@@ -124,7 +124,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col flex-wrap items-center pt-24 md:flex-row md:pt-36">
           {/*Left Col*/}
           <div className="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-2/5">
-            <h1 className="my-4 text-center text-[100px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[80px]">
+            <h1 className="my-4 text-center text-[40px] lg:text-[100px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[80px]">
               Get the legal help you need, when you need it.
             </h1>
             <p className="mb-8 text-center text-base leading-normal text-white md:text-left md:text-lg">

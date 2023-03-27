@@ -123,7 +123,7 @@ export default function Welcome() {
                   {displayedProducts.map((product: any) => (
                     <div
                       key={product.title}
-                      className="usecasecards group relative w-[270px] flex-grow rounded-3xl bg-gray-100 transition hover:z-[1] hover:shadow-2xl xl:block"
+                      className="usecasecards group relative md:w-[270px] flex-grow rounded-3xl bg-gray-100 transition hover:z-[1] hover:shadow-2xl xl:block"
                     >
                       <div className="relative flex h-full flex-col space-y-8 rounded-lg border-dashed p-8 transition duration-300 group-hover:scale-90 group-hover:border group-hover:bg-white">
                         {/* <img

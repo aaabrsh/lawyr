@@ -6,7 +6,7 @@ import { useState, Fragment, useEffect } from "react";
 export default function Testimonials() {
   return (
     <>
-      <section className="relative overflow-hidden  pt-24 pb-32">
+      <section className="relative overflow-hidden pt-24 pb-32">
         <img
           className="absolute top-0 left-0"
           src="flaro-assets/images/testimonials/gradient.svg"
@@ -18,7 +18,7 @@ export default function Testimonials() {
           alt=""
         />
         <div className="container relative z-10 mx-auto px-4">
-          <h2 className="my-4 text-center text-[120px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[90px]">
+          <h2 className="my-4 text-center text-[40px] lg:text-[120px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[90px]">
             Users are saying
           </h2>
           <p>(tens of thousands issues processed)</p>
