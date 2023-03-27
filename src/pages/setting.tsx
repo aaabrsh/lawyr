@@ -41,7 +41,7 @@ export default function PlanSetting({ session, user, plans, customer }) {
   return (
     <>
       <Header />
-      <div className="sm:file:flex bg-[#fdfdff]">
+      <div className="sm:flex bg-[#fdfdff]">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
@@ -90,7 +90,8 @@ export async function getServerSideProps(context: any) {
 
   //get plans
   const stripe = initStripe(process.env.STRIPE_SECRET_KEY);
-  const { data: prices } = await stripe.prices.list();
+  let { data: prices } = await stripe.prices.list();
+  prices = prices.filter((price: any) => price.metadata.project === "lawyr")
 
   const plans = await Promise.all(
     prices.map(async (price: any) => {
