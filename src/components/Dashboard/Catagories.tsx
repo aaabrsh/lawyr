@@ -50,7 +50,7 @@ export default function Welcome() {
       //return the item which contains the user input
       else {
         // console.log(el.event.textPrompt);
-        return product.title.toLowerCase().includes(searchText);
+        return product.title.toLowerCase().includes(searchText) || product.description.toLowerCase().includes(searchText);
       }
     });
     setProducts(filteredProducts);
