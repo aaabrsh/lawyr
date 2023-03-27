@@ -58,12 +58,12 @@ export default function Welcome({ products }) {
   return (
     <>
       <Header />
-      <div className="flex bg-[#fdfdff]">
+      <div className="sm:flex bg-[#fdfdff]">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
         <div
-          className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
+          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
         >
           <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="overflow-hidden py-16 dark:bg-gray-900">

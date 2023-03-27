@@ -85,12 +85,12 @@ export default function Documents({ pdf_files }) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="flex bg-[#fdfdff]">
+      <div className="sm:flex bg-[#fdfdff]">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
         <div
-          className={active ? "hidden flex-1 duration-1000 sm:block" : "flex-1"}
+          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
         >
           <div className="py-8 px-12">
             <h1 className="py-4 text-2xl font-medium text-zinc-800">
