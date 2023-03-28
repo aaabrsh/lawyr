@@ -6106,6 +6106,34 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
+    title: "Certificates of Divorce",
+    description: "Obtain certified copies of your divorce certificate today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/kz3xgbng4e1yd2a.png?Expires=1728948793\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kwll0JeMYxHA5jUaZWLzFNV7J0vL~Y29ZTDMte2TED7002zCtcYIdHzUNglcc1A3Y5oH85ZF3CGaqdjgvdPazawpTwsiLpLdXFNEEpHRbveIZdRTd4a0JAgkQsQl3SMfNbSVMrPmMYYWBmZNUlcMCrR5Xz1jcpoe0HRA3URwGmsPAHJhR7u9nqZ95lv~SJF-pt7Mx9wrsl6ZJt9-W7Sso3Je0-kRzGmYf2x-qdgW12YBWjcyEvgjBdVj1ClMYFu-NS5gWUVL~QfxOpmjGfu~KP8h7x~d6Rt5Z08XpXBqXiWwK6PIR67tYFnHdSOOwBcFamw7IJq3qbLHkztOTH~nHA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/uncowthoidvhpuh.png?Expires=1728948796\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=PtNSByUTS1oVCQVqfbi7RJVpQN4is-1bpKPg1dYhMuUjatoenqgLpfy76B99ADDjVuslyBEB9ivwCKNh7NgtdApAFTZOcA1EmOIjPJom6-UvM9dwSwbkTpFVsw1pBPZvyagvyOVxyGY2Uxd3IjYuAoVc-1bDCe1fZ2EoKODciIVeUBfFoahPrxhOMAii7yMywwEsFOBS19KKFy4fTO-oIa90hiGgbAKzsqeQC08z0m6tiXihX3ACbDtDQa7DyF7uzfTk~wEmhLqfp5l~PHcSlTxovgS9p2qXG-MEgW~9EJi932s9CxZbYDLaOIGmVqhj-SQ7ohYxOj1a8hcV~77~pA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatmarriagecertificate",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Marriage Certificate Request",
+      "Mail My Marriage Certificate Request",
+      "Certificate of Marriage Request",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eCertificates of Marriage\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, Nevada had the highest marriage rate in the United States, with 25.9 marriages per 1,000 residents.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMarriage certificates are legal documents issued by the government that prove a marriage took place. They’re extremely useful if you want to legally change your last name, share health benefits, file joint taxes, and more. For these use cases, you need a certified copy from your state government. DoNotPay can help you get started with the request process today! \u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
     title: "Check for Warrants",
     description:
       "Check if you or your loved ones have any outstanding police warrants.",
@@ -6158,7 +6186,7 @@ export const getProductCards = [
   {
     title: "Pet Licenses",
     description:
-      "Renew your pet license or register for a new one using DoNotPay.",
+      "Register for a new pet license.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/1v5i44y198rozaf.png?Expires=1728948640\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JsjFPhWda3lUSZATGLI26JHDzu4wJHoW9P4j5DKeq8NjATdLiozYKnV1E0qpOf9PdjKVcvVm7vqOrMI6M6hgVAGtgBaISL4WBCdfnXWuN4r5Qfon7pj20V5PcSZJrqojKKDL~v8YUYuSUFWHO1dhu1k68~bJBlkAHdUeuZFIwwPtnlWAyQHx5p2TmbnS8J7fYbezAzPUeL9I-N3gVmDqHWaJ-41rVIpYKpVO-eFWavOJsxqT6Segmn~2GaVyMrd8OQ95J9W-wY4a7nPWkdgqkSLgwgLhHremchqhZtCFG5ZvvEF54MrzupQgfYkd5HjZN~2GMp0IJDUilNYI-0okMA__",
     iconImage:
@@ -6871,7 +6899,7 @@ export const getProductCards = [
   {
     title: "Voter Registration",
     description:
-      "If you want to register to vote for the first time, or need to update your information, DoNotPay can help.",
+      "If you want to register to vote for the first time.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/3me06zaoqutsglr.png?Expires=1734738685\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mgfltaxirrm2nH8~dJg-RP4FKTY5F4fZRAzxmlf7NERz3owGhVGTblV-JsEaOzCoYYdpvb6iJxVtI3qApJwyNiuBOREx~8lvjVza~J9KQnPO~8VWns4yjRclhjCP6r-srxGEmQnGeUULz-NF5XW9muwdrUokTzKzNZ3fOoNdVNvM2j0LIC8oFZQLEWed5PVRn-qMsJqCbqDLyVS9J4kNKnr3tLIYwc11PSuICboLX3L~D0Ud~nrxNtb0sntiVXDw4NNDPbfNFCAhAaFOWCeFPPVHvIEkC39aEm36H7FWcNyce3hwr0xiYUVXJkD8H1sVax4ri6OqQZAoi1pA~TjnXQ__",
     iconImage:
