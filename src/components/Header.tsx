@@ -282,7 +282,7 @@ export default function Header() {
                           <button
                             type="button"
                             onClick={openModal}
-                            className="ml-4 rounded-md bg-pink-400 px-4 py-1 text-white transition hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-rose-500 focus:ring-opacity-50"
+                            className="ml-4 rounded-md border-pink-500 bg-transparent px-4 py-1 text-white transition hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-rose-500 focus:ring-opacity-50"
                           >
                             Log in
                           </button>

@@ -41,13 +41,11 @@ export default function PlanSetting({ session, user, plans, customer }) {
   return (
     <>
       <Header />
-      <div className="sm:file:flex bg-[#fdfdff]">
+      <div className="flex bg-[#fdfdff] sm:file:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <Plans plans={plans} customer={customer} user={user} />
           {!session?.user && (
             <UserForm user={initial_data} id={user?.id} customer={customer} />
