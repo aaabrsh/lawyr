@@ -233,7 +233,8 @@ export const getProductCards = [
   },
   {
     title: "Employment Offer Letter",
-    description: "",
+    description:
+      "a document sent to a candidate offering them employment in a company",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/employee+benefits.png",
     iconImage:
@@ -250,7 +251,8 @@ export const getProductCards = [
   },
   {
     title: "Health Care Proxy",
-    description: "",
+    description:
+      "a document with which a patient appoints an agent to legally make healthcare decisions stipulated in the proxy.",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/online+health.png",
     iconImage:
@@ -258,7 +260,8 @@ export const getProductCards = [
   },
   {
     title: "Bill of Sale",
-    description: "",
+    description:
+      "a document that details in writing a sale of goods or transfer of property from one party to another",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/awla6q8s6gfu2mn.png?Expires=1728954686\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=orMSrTD8TZFumLqZGzWja1AtlYbrdssGNclReDVv9SQO~ZU9SEkXizodiy6j7LuDhYLp4IbHm7dE47G9rCgxFQseVZIIFBRRpoyd~XPJwC6ESoUPtU95GyCZtbXLr7QY9ImpoIrkk47JYpZnqU6gTbPBzU~GOwQ73-f2dDJRyRvnYmYkfEkfA6xqqgJDGvT8H5jplsJola3SrSYeW4frpIFIS9PAZ4NKJdOU0phlkmh3-xYD8ItXOUtC8xyJBqVCfwV6RuZ6mM20CONOpcbzYuhIja-12PUkLR2DSQE6rR4m-uxeZASYule8WsVG41KgStukQ-Lwk~lLgpsC42SVpQ__",
     iconImage:
@@ -266,7 +269,8 @@ export const getProductCards = [
   },
   {
     title: "Joint Venture Agreement",
-    description: "",
+    description:
+      "a business arrangement in which two or more parties agree to pool their resources for the purpose of accomplishing a specific task",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/wmrsfpast3dpfpx.png?Expires=1737936737\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GdJjQHQczM19~EIHywPtjz8bwt9oAduajuW5ImxbHZJlsU1R8hr~ysM8XHkpfSyM5jpAB~iOPSAod1~bFNBY-AqgVfmaHHzAzV7VGt-oST5zX9vmiRL6OmfXjmtmEsd3u8wKnCmfPB8oQGvDHPaBpAIKkVF-CXYYkqnKfjhVX3Ve2vMjO9khB6o5PAW-C-c0Lp5reIm0zbaZXNTiEvvCms2Jg-43K7ZQE7fPwxjsaBIc3m65rsQ5oLgUavwAq1UPvK4EsNBt7kQggf6Dp339gf8zCLb7by9JsFqy2gg21sfFrP3XMPAJxD4CGbkbI~0utdwHmvHqm47IKhUL4ZbpIQ__",
     iconImage:
@@ -274,7 +278,8 @@ export const getProductCards = [
   },
   {
     title: "Memorandum of Understanding (MOU)",
-    description: "",
+    description:
+      "an agreement between two or more parties expressing a convergence of will between the parties, indicating an intended common line of action",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/j5uvhovrafsxt6z.png?Expires=1728847284\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e4IZKMGIz4h6OyRBtdrEUEkAgAAwy7KTjsLvpgQcCouwXE~gW2UlfVMPFC3BFCAl8K6qxJYxb13HpanUWer7khOxAEaVPT6I8EBNlMH2bbpDJwhGaXDdvw8ia8RS00Tw3vC3sTbPTS31ifScS427boM59Qg3lPiVlbzot5w8z0P-egrzn8xkylfBCPFQOAnVw-0ENE3tOXl1~riXu0cDkBU93mc9kYeP5A~v7McwdA4-JCpJUF5zvuQAA0sAffBAYIy7FfdnXBs3LhjEDwHtRcz7OWd-HAuNtUSGyOj8I4kwqRNEUp5d2hQdxbMOTBGLKhqzxcbDb~88~53GsJfClw__",
     iconImage:
@@ -282,7 +287,8 @@ export const getProductCards = [
   },
   {
     title: "Letter of Intent (LOI)",
-    description: "",
+    description:
+      "a document outlining the understanding between two or more parties which they intend to formalize in a legally binding agreement.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/xyw8f1vl2dq35r9.png?Expires=1708900280835\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LG-B2BjEPwuxw27x7cm3UIsaDX0~sZuL21thXavFjfyqn53o6WABS-kFXIZyC5dJb4EMKuD9XuJqi~maq6QaJ8W3uEg0jW-WQ6fhGsZd2aaZGOxNvOTkk10qsV3lJUv3QYhGKq6ZClzD0coo9t-wahN3nfgVkhdwiBXm0yhR7uJJ1RPgvoQdC~TB5i-NBEDrW8~f02mYlA1h2BwHTbhhybuSoemTRFOIXcZwwhGlkSW3wsFzEijpNvVVZGiT0Ja41sdsHgkvlrL7K5Rjc3~tbO-vaANJ9GDxY~EUrZf-NPWZ2T-cFinAFPd~bUadfiZBazUk-RTSbl720-HbznOQyA__",
     iconImage:
@@ -290,7 +296,8 @@ export const getProductCards = [
   },
   {
     title: "Security Agreement",
-    description: "",
+    description:
+      "a contract that governs the relationship between the parties to a kind of financial transaction known as a secured transaction.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/n7bhxfzo59wydeh.png?Expires=1750707496\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=iAOnULUkyCRh35UuvJhP5ll6NBoQ~G9v3OTeB2O7QF3f7v0ftUDw6c2LGi~vAq0pN-ojlRSoXhqXElETiM~pDcKMvzRBLTecREj8tHT05fVqPxFQG4K-kdGG~1k1lUbSwWgrSvgOV3vyY83LLQwFMESusijFnShdWqk9BYyxJt1nt6U6mPhIK9DDbGwmLR673KoMvYgDQGeVP213Y4RsLgkN4W-H51IBQn75BqdvxEgvnfva9ODvN~4VAzU9Tk3JUW8HbdLZQLVwBpLbQkV7N~E6hMgB9KguGaVhHONy3HwFG9T5~0PItWMVBVrOnBTuK5ZRDfBr~JtPN7mqLklbWw__",
     iconImage:
@@ -298,7 +305,8 @@ export const getProductCards = [
   },
   {
     title: "Pledge Agreement",
-    description: "",
+    description:
+      "a document that is used to create a security interest in equity interests like capital stocks or partnership interests",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/employee+benefits.png",
     iconImage:
@@ -306,7 +314,8 @@ export const getProductCards = [
   },
   {
     title: "Copyright License Agreement",
-    description: "",
+    description:
+      "a legal document that grants an individual or business the right to use someone else's copyrighted intellectual property, such as their original creative work",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/jds61vwcf9bzsaz.png?Expires=1767663976\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=h8pGpzYob0npL4Y4fobR6a67gFojHD5jLDahECo6i9xeqU05UVZe19SLWqHaevq-PH2FGtRrkJr2JzDoHxZ0ghzcXb8xHpVCAAO9TQNezU4Gd~V56y7QVe4VhL1BECs29U~VzaPTm6ai9Y83nhL3eeTVkUh8X9~1Oi7KW4Ot4wd5njKMrUQyaUw2PgraTNoFJnerWIKk9FPuiM54Vn1OUpdTflfMf7wcxUtICMop3BoioGep6YlJNfkmwAJFTlaApQy-CHKSLpg6fXh0g16Ed5e8BMPlSxCuddtwHfg1ECxiOvUpu3j4EJqn3mSom5T8Wui0qCQPTvE5Mgc6bt05Eg__",
     iconImage:
@@ -314,7 +323,8 @@ export const getProductCards = [
   },
   {
     title: "Trademark License Agreement",
-    description: "",
+    description:
+      "a legal document that grants an individual or business the right to use someone else's trademark",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/4zcc5fdsvgtg6ny.png?Expires=1729210808\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=FM4xrP3nxmoCfI6Tb4IT1bmP3-b4-CXYFx9qtYXktb8k4LB1Bm1uq3NOndlLRXNwEclHtgcr8SNunP5QiG6k9aV1l6AIx5J-pNyW20UpM3vLuxhHpBM6-0jFsTQqOyjAgpD4gbSPHZqiBi8zxIHOWHT9cp38ZWrW-JhMfWzzxDj7E0wUOvzhvBBaLTBtzg6JvOagC-VX57ASZcibsfeUMybCdNx1ruRfn7L10TjDJZKXaX6HbpaOuRvTSDmCwffP3cckh6T6wp7XVQf1~Z9IP04nxqNzp7jFcEAHtQUE6QwQ8~BZiZKA7uPc-AUZgGRcZv3yu4cWEJDIxL0sfZTltg__",
     iconImage:
@@ -322,7 +332,8 @@ export const getProductCards = [
   },
   {
     title: "Employment Non-Compete Agreement",
-    description: "",
+    description:
+      "contracts between an employer and an employee that prohibits the employee from competing with the business directly or indirectly for a specific duration of time after their employment has ended",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/employee+benefits.png",
     iconImage:
@@ -330,7 +341,8 @@ export const getProductCards = [
   },
   {
     title: "Independent Contractor Non-Compete Agreement",
-    description: "",
+    description:
+      "a legally binding contract that prohibits an independent contractor from competing with the company who engaged it throughout the term of the contract and, typically, for a certain amount of time afterwards",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/rhojav9ei7ibbws.png?Expires=1728580007\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=hn8GOKp-FC59SxPE~bE4FO4jgvYumHKE~3cvDJektgYmlv9VdqmURzYuUrHCFv4ltYdnCSTdRhsriFKMNCne2UBeiG8rmAfWWiSnlow8zQFw-drqlpstuR59yXxrksM4OIaQaSeSM2aJi~O4YJIzrjbguU9uA4Vj18nwLQg9RDLhYcKiosAjL73YDAqeXoRX6Rje540~Gf2m6zG3aAC7Lg7EPrMoesLzhzp1Kq3ZR0aYbgir0dMOVIfo8oItTnlAMTL9bTNlETP9d0TR3ThBNmYFi2GE806ualvG3K~PAdjrMoLCTVRpkYXaGtlsHZke~WLNw~aNM4YLdtNT1Jdy5Q__",
     iconImage:
@@ -338,7 +350,8 @@ export const getProductCards = [
   },
   {
     title: "Warranty Disclaimer",
-    description: "",
+    description:
+      "a document or statement distributed to inform consumers that a business doesnot accept liability for issues with their product or services",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/is7ecnsjjcsgmyq.png?Expires=1728583590\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=YXpqSF49~PjjE6i9G0u8p2b4VjUHbDtZ3mnnfh7Km9FTBMEagczJFgsuJIRz31UmWlWtL~tTQBINkTly9q1ooNUBccPm04rcUgVX0n126qdbRfr5qduMXS42IsCnGw2pfuzlXDxHTLUbgLY8C2X1EJPSIxwnYoS5Z~rCda2ZMqGK~oT0XCsYr8h4D1kpBgiMCW5c12C1m7KMfbWTjYLV38iq0lPmdSoxAxEByhcMf8FQIZ363-M0pI9~beepY2i75~ofLBF0msoLftxhNjPfkDDyjJaqovrDSC2~N4P3d6S0FCGO5ons4JlsxNQKKCWoUZmju~47LDuxnfKA-QJqkw__",
     iconImage:
@@ -346,7 +359,8 @@ export const getProductCards = [
   },
   {
     title: "Limited Warranty",
-    description: "",
+    description:
+      "a warranty that is limited to just the specific parts, certain types of defects, or other conditions",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/carinsurance.png",
     iconImage:
@@ -354,7 +368,8 @@ export const getProductCards = [
   },
   {
     title: "General Release Agreement",
-    description: "",
+    description:
+      "a written contract in which one or more parties agree to give up legal causes of action against the other party in exchange for adequate consideration",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/125970534_603024633765286_8642296375483169064_n.png",
     iconImage:
@@ -362,7 +377,8 @@ export const getProductCards = [
   },
   {
     title: "Settlement Agreement",
-    description: "",
+    description:
+      "a resolution between disputing parties about a legal case, reached either before or after court action begins.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/g7iporcqv8fmsao.png?Expires=1752442609\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=O8qz3Mho1rX8EDgQ8RpQyyyNdujdxzyDK9h7Kfb80niriDSJPcETahwGDRy9I~mauv~Ensx2D2KlFIDq8fzRy4VzWNd8IvFmthBjKUfeGtPWPHaYeSPXwrsT4c4INkEQyrRmMQsQVE26CyUbgvgFZpnaCJCyz1rj6CUT6c47JdnKDMORi~nibSw9b6nuTdREWdoj38~Hjgc8V53bQESA8weT9h7hv8ABTWwKPezWOHZdHpa5ucik0OyUdhgc0tE4VhE-nmMJWINmK2fjgPUsizIA7Pww-vpNAMiG4bhONhtW1FMMYvdYS65MilFUBbGZuVMsYyVNyiJhtiQ08DYqGw__",
     iconImage:
@@ -370,7 +386,8 @@ export const getProductCards = [
   },
   {
     title: "Termination Agreement",
-    description: "",
+    description:
+      "an agreement where all contracting parties legally end their contractual relationship and agree to cancel the contract",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/w2rogibw54hr0dx.png?Expires=1728864215\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=DeYB3uLqRbiBalFnfnEn-srYhYrg0mG~BXWNmTUJQwdfzbz8tHw3jNIfcIhzkRW2oLz0EJ6dQZihHz7AaLLPVjsbFKbX5laT~tLOVA0Spwh7uwClJSCuRW3Jc9H3cLgmjwjllimia1Ka6R-imQdBbPqQ9qGgaI1F5gQlSVlZE1--Gq8DWNqCYhITrqIOZrhoGIYI0-iIL0g7m-LqyJl-vMC~I5xWQLhYFE3Ah8tH2wgVj43Mut9b8cGEYxq3wwqqBljJQA6kMia0wp2C3O-3SpljoFVKZpS7YQbZlNQxeZup6nHzskEOE-B8bM~VDo6xNNFtaQlRG0uZ61VGruHtRg__",
     iconImage:
@@ -378,7 +395,8 @@ export const getProductCards = [
   },
   {
     title: "Severance Agreement",
-    description: "",
+    description:
+      "pay and benefits that employee may be entitled to receive when they leave employment at a company unwillfully",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/ovveedrf3tp4qnm.png?Expires=1729211769\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=BDRcV5pIM3Fb-V9~I9ABI63xXjAyjttab8Nk1TLLOpugwyM~0Hq6hMGQRhmMXlFccjI2KabXB8mosEqHFLRd7SZA77HwzhkaNeny9qb~jund58HWAxIwwYNE3jBodmu6vHZOq22FdmzHPb-cuuAiLTfTJDkx3e4AS9xzMfuLuNiOJxBEKcVYc6e~hHLI69zKPywmE5Qz2gHrS4sUEzcY3f51dEYeRJLUvSvKOlz2jtNPpkCWkhtt7HuikgceOJVqFBzvNBhmh-c6hEi5C4oIxsdzNOBPCc9d-IghUQxQ531rEjFhdvN~Kam4~RzT82-gglwVSRP5kg-atvqbpsl6OA__",
     iconImage:
@@ -386,7 +404,8 @@ export const getProductCards = [
   },
   {
     title: "Consent Agreement",
-    description: "",
+    description:
+      "a legal contract that governs the relationship between parties where one party gives informed consent to participate in an activity",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/sdwd4tyke3bp0or.png?Expires=1728596559\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rasAahvK2sZaaucqDVBpFQxn8ICvg9y1RuM-wglRo9zsHhuU8F7RaPjAwnc75wCGV6qySHT1nPincSToRrn79gyDsGAm0nmFGveQl7Hz8T2FgAh5lwgR0JpuE8GYkh9FZf5ncoDpXnyoObqyHE2a~gAW3uBoXRvjk7VRr18EqN5KngYZO8XSV9JDhWaRH8-mj9eXGf5uYoCbZ8azLsH1-YCXsIBPsk9JdqX83eueqP2lf3cpwdkvS1E82~NvuimtBTX1lXq8MWu5IK6pSJ4KD1oeaS4eOjp7WW-VQeO2hnUeYIl8VCGvQ8SJHkHNpOe6TeygWv8YeZBfcdNKAsbCWQ__",
     iconImage:
@@ -394,7 +413,8 @@ export const getProductCards = [
   },
   {
     title: "Consent to Release Information",
-    description: "",
+    description:
+      "if a party is consenting to provide another party with access to otherwise confidential information or records about an individual",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/sdwd4tyke3bp0or.png?Expires=1728596559\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rasAahvK2sZaaucqDVBpFQxn8ICvg9y1RuM-wglRo9zsHhuU8F7RaPjAwnc75wCGV6qySHT1nPincSToRrn79gyDsGAm0nmFGveQl7Hz8T2FgAh5lwgR0JpuE8GYkh9FZf5ncoDpXnyoObqyHE2a~gAW3uBoXRvjk7VRr18EqN5KngYZO8XSV9JDhWaRH8-mj9eXGf5uYoCbZ8azLsH1-YCXsIBPsk9JdqX83eueqP2lf3cpwdkvS1E82~NvuimtBTX1lXq8MWu5IK6pSJ4KD1oeaS4eOjp7WW-VQeO2hnUeYIl8VCGvQ8SJHkHNpOe6TeygWv8YeZBfcdNKAsbCWQ__",
     iconImage:
@@ -402,7 +422,8 @@ export const getProductCards = [
   },
   {
     title: "Consent to Background Check",
-    description: "",
+    description:
+      "a release given to allow someone else to perform credit and criminal background checks",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/158169195_426850558421573_6116602202466412843_n.png",
     iconImage:
@@ -410,7 +431,7 @@ export const getProductCards = [
   },
   {
     title: "Affidavit",
-    description: "",
+    description: "a sworn statement put in writing",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/scwrf9prjzqxyni.png?Expires=1728337081\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=VCI81wdYfso2KKfKfUI6JSrrIlx0woFyvOStd-3z1zq~zMYyvkcmb0TXvDnTgIuP6TO4n4gRrBlzyV5Wq6U41NUMO0h82e~GoLKwIbsbhmE6N74E4IxbC1ZhKNKsl6SX5mUCm8k3vMVo-n1CyxyBUbvtadtF7bboQAHu94QLxyyzKLC0z3utDeEl-WxY3xBMLf52xqOAdvTun7j8e1~QL3IcW6JQE27xXfImmemSrmlMpd3e4~AsHWmVcgR1S2sEv~O26PmfV-A4JO6b~Ja7sDA1GTDzOnUOro7qPSrs9RZJPc0tTF2iY82GYUsOVp5bTJdcAK6-U03BtyLa2mqhXQ__",
     iconImage:
@@ -418,7 +439,8 @@ export const getProductCards = [
   },
   {
     title: "Bill of Lading",
-    description: "",
+    description:
+      "a legal document that describes what is being shipped between the shipper and a logistics company, how much of it there is and where it's going",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/rhojav9ei7ibbws.png?Expires=1728580007\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=hn8GOKp-FC59SxPE~bE4FO4jgvYumHKE~3cvDJektgYmlv9VdqmURzYuUrHCFv4ltYdnCSTdRhsriFKMNCne2UBeiG8rmAfWWiSnlow8zQFw-drqlpstuR59yXxrksM4OIaQaSeSM2aJi~O4YJIzrjbguU9uA4Vj18nwLQg9RDLhYcKiosAjL73YDAqeXoRX6Rje540~Gf2m6zG3aAC7Lg7EPrMoesLzhzp1Kq3ZR0aYbgir0dMOVIfo8oItTnlAMTL9bTNlETP9d0TR3ThBNmYFi2GE806ualvG3K~PAdjrMoLCTVRpkYXaGtlsHZke~WLNw~aNM4YLdtNT1Jdy5Q__",
     iconImage:
@@ -426,7 +448,8 @@ export const getProductCards = [
   },
   {
     title: "Acknowledgment of Receipt of Employee Handbook",
-    description: "",
+    description:
+      "an acknowledgment that the employee has read and understands the policies and guidelines presented in the handbook",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/cj9g4yzlelgtm6t.png?Expires=1732823408\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Hiijen4ObzjsYhWgfsPgMrQA7ox2EIkjX6yI3gNLcwlxjJTslKhvyO6YSmZ1jmy3uXNISiKUqn8lMFiJgmStm78GDFBjmUYL9eiwjHyAVe3XYOJcn0RnyJAZbJN0lArLEs5l2GRhz3KWrohOnQBnqmPIzrW~l5-M7yDwSnTi3q9if8LF9e6~XPYjaV0l-YgxaoxXd0GrswYhU4itiU9TQ3O7gLVoCVf9Cg0lqnY7OT-NtqH0RvEuLhEoFvXWnAgD6-OgLePFuKACvGc4AY3f16Df14ao~p6-2n23A4jiHar6z~JqNc6DGqBc-zVWlxW-7nKS3oq6ciag9HSsHoFeVg__",
     iconImage:
@@ -434,7 +457,8 @@ export const getProductCards = [
   },
   {
     title: "Election to Participate in a Benefit Plan",
-    description: "",
+    description:
+      "given to employee for the purpose of joining the pretax benefit plan",
     cardImage:
       "https://donotpay-assets.s3-us-west-2.amazonaws.com/electionForm.png",
     iconImage:
@@ -442,9 +466,1282 @@ export const getProductCards = [
   },
   {
     title: "Consent to Electronic Signatures",
-    description: "",
+    description:
+      "you agree your electronic signature is the legal equivalent of your manual/handwritten signature",
     cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmcaPD.png",
     iconImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmcaPD.png",
+  },
+  {
+    title: "Stock Purchase Agreement",
+    description:
+      "the definitive agreement that finalizes all terms and conditions related to stock purchase",
+    cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmcaPD.png",
+    iconImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmcaPD.png",
+  },
+  {
+    title: "Claim Life Insurance",
+    description: "Need to file a life insurance claim? We're here to help.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/muot8bk4q1ft0cg.png?Expires=1728864184\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=M83nF28p1HiC2gBMKmpmR9RM0MEekNItAL4ng1icA7XzjEUtGBAkMavcZZHESkLeOHYiR-xDBsgmjWyEUeC1xNciIaJ4RNMP1vSlTLhCWvKVTRi6W8B~zGT94uMDlQLhu8s2FumSkeSnfdxzdVg3gYv7~Qea43lSAunA~xASiaLUSjCwzlRJwU2URlj0SzT1e7s-VHMzXc~9GGMZp-YAm3WmZktCOfWbDlFEOUO19fCrhmD0RZmpXsYZ0Bsj9wfyvCMpcbgLVGL1ZSN4qwpqi6WwOIO4azfnY9na4r4eO0HydZvZPD4fsCfzeFIMJAp9tLv8if3KSR9Wdd1R6I0j~w__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/buh6lajptxjoxiy.png?Expires=1728864179\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ExhGFDliD9yw~m8BK8whRWLNL13CcKYU6IEXY5VEFJdgv5VA2iscfA8EcM2k2MIY46KTjSQLlJ2-bidTJfqq~8rvLPYm-wrDarZ~tMkKIH-T8DMNje7wt7ZL440QzDU5RZhePTopDX~PRUIpxDKalIFnKkXrtF2mr~wfgRZbf6Uj7BfMZ2f7nECTCwPQRBdMbdnkyKIe2FWOHXxdR3YgKfXpBHyWyd4luCd-fZIxTX-lfQpvw99TSCiKwELSdkNQ2sXMwONvnx6tN5wAbZQ~Y58dmIasAghAQpWy~4AA3CxNpfEFrVPIaQ-EiDERJ78UKvcnUOesN0cULijJPzVSzA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatlifeinsuranceclaims",
+    siteRoute: "",
+    correspondingTaskNames: ["Claim Life Insurance"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eClaim Life Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2019, $7.4 billion of life insurance benefits went unclaimed nationwide.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf you\'ve recently lost a family member or loved one, claiming life insurance is probably the last thing on your mind. Instead of dealing with long wait times over the phone, have DoNotPay automatically generate the claims letter on your behalf. All you have to do is attach a copy of the death certificate before submitting it to the insurance company.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Claim My Property Insurance",
+    description: "Get compensated for damaged property.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatpropertyinsuranceclaim",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Property Insurance Claim",
+      "Appeal a Denied Property Insurance Claim",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eClaim Property Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIf a tree from your property causes damage to your neighbor\'s property due to a storm or earthquake, the damage is considered an "Act of God" and your neighbor\'s insurance is liable.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf your property was damaged, DoNotPay will help you either claim your insurance or be reimbursed for what you\'ve already begun repairing and replacing by drafting a letter to your insurance company.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Claim My Medical Insurance ",
+    description: "Automatically file medical insurance claims.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/qqa79zk0jnxumav.png?Expires=1728937272\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=AI4ebt~-9xB0S~85NCfSEgyQYzYdxCBq5QvYGLGnlwJqlROFMfRD9XLYR5SWvWr2d~hCzr5Ioiewe33s3dSqxO~RtvKvPqoWjPGyrVMfrYGyMhGq9AAirlP4qiBHUWO3kJWJiZIQ69NSd6Pwy59xpH1Dp9Y7Zd~y7cvDl9q6JFPutTMeN8WKzKKmegl4CPXnady098UVIlpT0yyC5QQP6vv~k6dV5h3Oavok7F9qiUjqcPDgp3lhoZgr~S3I8b9nMo8sdps1LkONH68yM47YqoLCC~mV4Yy1DXnziq4JP2n5aCCcbgb5ytG3GBa~ym-NxEVLw62nae-5OaMYZAYsKg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/mvrlyvhqdfxphrb.png?Expires=1728937275\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=CQv9QMHyszr6y5ghDOtVnFekg-Pnc7CocI2Tt8Y19wjw-copcq7bC-kYdrwQzRKbKTUu~0JW6mOT~Dq~e0ExLzAJZp7VypWQT9T-~Dy59dpEFeFZmrM57t02SjkGDyyZs4e6SuiUv3rczVDhiYs7g61YtZAdHY13YX5ptdCtG62MeSJ6Kv7YyN8HZOs7V3CxLBazfaF1EbH3jNd1xTxhPmDF06mn1om7CxbW2XCEyIAdOTEBEbcW-Wx00kjfFvrDaOCnWF3zZ~j~ykAJx1M0B5t7pBOQLKUNgcs4Dm-WVfVOMlpHKbHLG~ELOzX~7AfHZadNwmeeltoDKjPX9u5ZEA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatmedicalinsuranceclaim",
+    siteRoute: "",
+    correspondingTaskNames: ["Medical Insurance Claim"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eClaim My Medical Insurance\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAs of August 2020, the most expensive drug in America is Myalept (a drug used to treat leptin deficiency) which costs $71,306 per month.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eFile a health insurance claim today with DoNotPay! All you have to do is tell us about the treatment you received and provide a few details about your insurance provider. We\'ll then go ahead and send off an insurance claim.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal Denied Medical Insurance Claims",
+    description: "Appeal any denied medical insurance claims. ",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/yhxg2erookd9sgs.png?Expires=1728937309\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rTQj4F7p7Hp3QYpsApfoAKMY6bmdNBzZsMepBzjJjxy2F6qRo67amPEhACTWv9SEABgEIg89lV4fJjq9a0z1gN3UxVgHh2pgPDuSiWCUn1ATyflEmGP3PmgUkXxcRIxsNof6vW~qRf6VYuuWj8TjEYP9SAfsnLD5IANUrkHsRhhV3gCretPWhlwcof7rzgBJKC~6nu4R4V3VPQeWiN6QK5LaZhM5TWWHcJrQ-uw8wodSuYmqt-QFfJc2g2xNGSbaJDD-arL7LV3vjvfS8I9LHm72~VnjwXVTj34khMS5h8ZYS~OXHlCeHMTtRY6Geg1xk4OwgBeKifg~MekRTY6PWw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/iyr65doecbznqld.png?Expires=1728937312\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ojUZnFxY4q0OM4fC5OECQVl5RcuhX-nFOkr2qdhS7MDrUzaL9z-grc9RlEt-AWw-LWkfUqk7qMN4M5peifBw8RtLp~QeSDmyolGw20TFQpXKja7Q1w~wLCxx4PQQnctNrvxIE10akbtmKcpacKfkgF~9SXggh4rdvF5hrrWitPlzVGQBc0HyphL4wU2U4d5OhrOhtybnZnSmrqvYzf4nrFgPg8yrI7c34v9dRQZmnph~l5t~TGSalbPoBCAT7VgGQ1sJjAmRSqT~ojz65O56lA5uROb1ZIGkOC2jkDkEkwVmPpGKX4IQ~uCB9bYCy795JOa3r7n5qrJ2VlUXikPxyQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatappealmedicalinsurance",
+    siteRoute: "",
+    correspondingTaskNames: ["Appeal a Denied Medical Insurance Claim"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAppeal Denied Medical Insurance Claim\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAs of August 2020, the most expensive drug in America is Myalept (a drug used to treat leptin deficiency) which costs $71,306 per month. \u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eHaving a health insurance claim denied can leave you with unexpected medical bills you aren\'t prepared to handle. Snap a photo of the treatment bill and why the treatment was needed, and we\'ll use the information to appeal the denied claim with the insurance company.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Take Down My Personal Information",
+    description:
+      "Remove your information from search engines and data brokers.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/cqcwnvgdyqz4zk5.png?Expires=1728937358\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=I4xgEEa3FO0h8IWkfhj-a7FIUxrnsuh6hlq84tzGpCOy3etbzpibDbDCV4yIsPl2fi9jZ6~NUmDqz33H3nDQG2gRg4iOHVZWZBDW~ME97OXOY67jYHO8FHQRoqcwGiC~--O5faQcQN4jgbu0sLDR-H9-NRjMVY2zWO8Ddxk~c3V9hsw2glW8OLLo5I219TyWYvwrTGi6INTWN6vRr6FaNuN8FDt5fG2-kZb2WzBoHmVjvP0QowqzubbqH-oSaDPrAw3qDy~E~WqUd7Xldw~tuAAqOES8n8gYToK2qfJuhumxW-vnIIfqldGVlA90U9DJHCbwRAPkPzqyDSiQg11BtA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/wcacv43hzd3fgh2.png?Expires=1728937362\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GX7dW04FBqpt8aqkkt8WJTHCjZRAHiKoBrOttEC5pluiLGNQ9UeVLl7Nt1zqmhmgUawstSM5zvFVzqKOWrv52ZpL6s8z9TVIWIexPsEn5t8r9PfzrhntQGC6~mzMCwLMJvXOD47Z~8HFD6Aj-PThLgEegvizvvtkLqc3u1VYI0R9Fig-xyrWXmxyQskHvn19XPbGcFLxEEXdH-Ena-M2Xs-5mt2G~ZqGAOGt1wJ-tL3a2XFLoXoitWKDfaF25Hej-SQ8hgWlmm2gWThsFUBbQgc9sDEQ8KvkEbBP2G9MjvBr4ELHiR4kyKmQvm8SpLZsvcPHg14MEIl46MG9UoqdSQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatremovepersonalinfo",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Delete Data Broker Data",
+      "Delete All Data Broker Data",
+      "YouTube Privacy Complaint",
+      "Remove My Data From Google",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eTake Down My Personal Information\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to CNBC, over 164.68 million private digital records have been exposed in the US.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will help you remove personal information from Google searches, YouTube videos/comments, and the most common data brokers.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal a Denied Property Insurance Claim",
+    description: "Appeal any denied insurance claims.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatappealpropertyinsurance",
+    siteRoute: "",
+    correspondingTaskNames: [],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAppeal a Denied Property Insurance Claim\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2017, homeowner insurers reported $686 million in claims related to dog bites and injuries. For this reason, many home insurance policies often prohibit certain kinds of dogs as pets, such as Akitas, mastiffs, pit bulls, and Rottweilers.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eProperty insurance claims are denied every day - sometimes legitimately and sometimes for reasons no one understands. Tell us about the damage, snap a few pictures, and we\'ll generate an appeal to challenge the decision based on your case.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal Parking Ticket",
+    description: "Appeal your parking ticket and avoid the fee.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/khjg3g76lqug35m.png?Expires=1728583691\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=IW2mSsQ4~hByQElhB88CBFNazRUXAPxWvM61GD05vH~seFzu-8p~k-vxiO0ulMi9uuNytC5bNnbzEXHLSPPpNysV54VDM2cfikj0ElHKaVqRZ0imlrM1NyUQY~J~YFyEmpLfc-qxMrgQtcrGXf0tu6lN0DLHOXzozlGsQ7apmWSb3d6D9i0THRSFmBPzSxnbGgG6BfGSq6Pq3w80UiEGeTXtY~6h9KtQmSJNBhYZjKjrIb8lqZVSjkxtGfLCals9s8JfDPLBxNthRhlW8jw-5ruDm6eK2SqpX-R7zgr7Ro0b5Mu7V2e1BMRCdYRUc2xhtRQGQP789vlVlp6UK7RHjg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/vz2ccg9oixajmdw.png?Expires=1728583693\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LFa73AgIiROPpdQNf2~7OOuOiXqUSsk3Rr4Mgo7yDSbwEgchkku4xw1PhqaZqAiH4yS0e9kVX1ztnDN1-E540O3kBM6AQU6bzSz~BCJQLzSksNPn4aDImKupnWgiLCV51j~25vwjjSANTd6ORV9G59Dz8~pNNuSTreqmRHf6yRANU5se6Ziln3xrP28YM5c1faTCyWdoflM7dMG7r6uIEVK-SmHGynhdQwyy0PBYgFxdbHneewYqoToBWJ1GpvwGiVcOX9afDrG0TCNuvwkWLNo8ihbdi4o9-C~oaBfGV4iQ5m6YEiqKJ-5geNqAJxCFXciVOcv2sGUehbnmMbIyKg__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatparkingticket",
+    siteRoute: "",
+    correspondingTaskNames: [],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eParking Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe most expensive car ever to be issued a parking ticket was a $15 million vintage Ferrari in London in April 2016.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eNothing is worse than coming back to your car after a few hours to find a small ticket with a big fee stuffed under the windshield wipers. Snap a photo of your ticket, select a defense, and upload any other evidence, and DoNotPay will generate the best possible defense based on your case. We also offer the option pay the ticket for you.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal Speeding Ticket",
+    description: "Appeal your speeding ticket and avoid the fine. ",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ih4ube8jtlluo14.png?Expires=1728583712\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=p5yeBrqAh8w~qZZhkeZdqwoZd1CHHyLw6jrUO-fELvqIqUdzEctNW7zDzDmsGv3IDT6PcJCQajm0hwAtCa5ZjlvceCgDrFI67p7mrh-6fXfN-0vgd88fPziwKTOPMttdj8mYQfiyu3LPWAc3b0MgA7qGhBB8UnlYTTsgvz6a8Vieqz4eoXj4cmsGiF1JH94xW66kUco9bfmHsSftA65G3lxCbSNdPuMJMDx7WNDYvSK2fUnBsHxIHXFl-n42~vuYLm~r2DaJSqDLg0bPgh5fyyDWz~RSoQq9i90un2~8QvEwHisdd~gitj6Mu1b1XnqdOWleBzeh-YBQbkVEuAlyog__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/kdwhsjgavmmlxkc.png?Expires=1728583716\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=eaXpWvG9HTGuO2A5Wrf1nA12gszCWEoklmNK1ZLn-5JuRRdRVN5nKXrcHRhI86EYrnjlwwgtOVORrUCxJLdZhvQ-WvolWDzbHh5ceEl1VvHmTWf0ZAHdJFfoE~kyj3faNos2tzOIIQmt1W3lnbxRrH4gi4vGGu0GjROVMIPgyoD2zY6WhfPCCgQtUFSx~2MdBSYBbaWV03u6GuH4rO6WhHXExrYBqSqX44GfthUfxnGBlZh53wO7UTeSSLXkKm6rIIAuFfp-g2x9dnPDSugOqiJL~KQibBDlHtoosWl1V7DLMZu-E8WofI6g-5RFweA2dzPaprIyn0DwWKrExXSnYQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatspeedingticket",
+    siteRoute: "",
+    correspondingTaskNames: ["Premium Ticket Appeal"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eSpeeding Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAround 35 million speeding tickets are issued each year in the US, which means about 65 speeding tickets every minute.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eSpeeding tickets can leave you down $500, making it one of the most costly traffic tickets to deal with it. Upload your ticket, explain your defense and any evidence associated, and we\'ll handle sending the appeal. We also offer the option to pay the ticket for you.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal Red Light Ticket",
+    description: "Appeal red light tickets and avoid the fees.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/io0pmx197qln4w2.png?Expires=1728583779\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=qoWLuLDr0sZP9FDZcEKGzuF~pmDd1oV6ZPni78Q7nLMyx0pvtUmkw1jUQrFPIlaGjFhGaes1ZaCDLBQjsvWJSizLOi7CWN8hqHoMHLZTtODwtFwtkfjaMUgJZ8vP7tTy1rb-6un14NzmfLi~SalGZe3JuJNm0Os7sr~amcdduzd3MqapgzRmaU8-BqTM3KqHCZIu4XMINikm70gpvKDcfa~TyIQjXZ3Xr9NCrrCoblfMtB6ELom7qajA4UfaSpyj6dDzwT3~Ev18sCsGo2aVjlyI0a09W6LMZhrHv3YWadB4zc71x0EbnV92Leelncrn08zAqldMX7zOfgd4Bz9ZEA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/dm7mb8tusqswue0.png?Expires=1728583783\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=DzB6lYOzAgJJKgx7rFPsiLKU14ehEGkAnUN6AV3lHHEet6U0MjzXU5~-RTJFK1UV~KeVi-Mm4ViEpvkQa-fFOu71Mykepn4sf5OUFlaxrPW5s9UJgE8MZZhQu~7IWudeMOgr3j5ERAyxv9GQoLAVCjQG5ppA48YphcYmOAsle0VTTEQC6BH9W30dt9FnQfABgKp3lh0CLLY~MGLJLH7RWxpQsoLNXpCAJpSYOTINUUFEAY15whST3bFUq6zyr8ZJUWUhWcxN9RrencHk2bbuRYm5qfZDI7uFWtTAQluwCgpTQeP~PcBLlGGuyh4tx92321j18CCHTSX0CK75w~9jiw__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatredlightticket",
+    siteRoute: "",
+    correspondingTaskNames: ["Premium Ticket Appeal"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eRed Light Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn their lifetime, the typical driver will spend the equivalence of two full weeks waiting at red traffic lights.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf you believe you\'ve been wrongly ticketed for a red light violation, upload a picture of the ticket, and we\'ll help you pay it or build your defense to fight it. You\'ll be able to select from several defenses including a malfunctioning red light/camera, mistaken identity, or missing ticket details.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal Toll Booth Ticket",
+    description: "Appeal toll booth tickets and avoid the fines.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/2wehyopx99qzuob.png?Expires=1728583766\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GANGCwht3bxcgWyi60Z2RVqw5CCEMO0xLW9i0obkiTb57TrLT-42niVvIJdN2mE4zWuAb5VqIAO32YYd7AOZr2vneiWBPZnxydzwua589w3aDrtePGd3OplXCGFy198WkmII7gm8aRJzxJzG2U0opVI4qQ34EUtd9cWFNm6kuslhnPfaGIcfxKPeILSdci-4BwmRwIm4xEDsdDlPmxiv8aoxKMf-gF3vh2timBoEK28BTLkol3h-aI3myVsYtZCUTjSAtUAWR4zKdZVCx~jzymBAthRVxF69F3vhV12PYrTIFNBCBClWZxpys9QxrgH2RxO~UC8w~~8JlI-TKJbEsg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/vaogk01sle5q0eq.png?Expires=1728583769\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UVohziOINppKyDnrwoTelc19tZp~EQiLGaFPRNOosKW0w6gkN9Ep3P4H4-O1erQMbuxU5dmqY3KK55-6BqDgLu4yimyrL~88f0YKRsJTdEfxaU02OWIV6tXH2tjqBSJm7wCmHXFK~lR4CW2OKGZoHPR1EMVcbtLz909qF~cq94t64AVe5zs198T68O6ldbwXlyE1qC2cQpQ4GIqGaLHCBTojYO5k1SSayMtjvt8u7ZzjfkzKhyfZl7C6gtpdjhhl0huHD4fDkbGU7al0D39vFCnf4ClQWwZJ3oQmL-vGOXXSN8vzusAcNjY3aoa7~5WT9ZZgcjh1JiFtMkDALyNQ4Q__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chattollboothticket",
+    siteRoute: "",
+    correspondingTaskNames: ["Premium Ticket Appeal"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eToll Booth Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe Pennsylvania Turnpike is the world\'s most expensive toll road, coming in at $112.91.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eMany drivers don\'t even realize they\'ve missed a toll payment until the ticket comes unexpectedly in the mail. Snap a photo of your ticket and DoNotPay will help generate a defense to get the ticket dismissed. You\'ll be able to select from defenses including missing details, proof of toll payment, or lack of car possession at the time of the ticket. We also offer the option to pay the ticket for you.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "DMV Appointment",
+    description: "Make a DMV appointment or get support for other issues.",
+    cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmvPD.png",
+    iconImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmvPD.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatdmvappointment",
+    siteRoute: "",
+    correspondingTaskNames: ["DMV Appointment "],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eDMV Appointment\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe average wait time at a DMV across the US is around 38 minutes, with Massachusetts ranking in with the highest average wait time of 1 hour and 20 minutes.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you need an book an office visit appointment, a behind the wheel driving test, or just get some information, DoNotPay will sort out the details, make the appointment, and notify you when it\'s all done. We\'ll also keep refreshing appointment dates and get you the earliest one available.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Stock Drop Lawsuits",
+    description:
+      "Did you lose money from an unexpected stock drop? Join a class action to get your money back.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/omgk3evztgwmlic.png?Expires=1728847255\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=VLAZEAb5oFwlqPdSnFxV5djTQC1gW86TcwPoq0mR6XdPDqpW7zNkmAUq8MZMlXRi-~TyrekpG9u0ZM~nKOab-qTcbg9k-gImRi~F376yE28p2ImTrzaeIHq8RF1M74WFpFxH9n1-76wOe75ccr-mh0yRDpHHelkeUJPKaYoIeB3RKhw~s-6om22dbzI~utDcO-i1PffMWa~oNU2WZfGDSvgM1XVnHpuhU1yUDqwSbDSBZzcXHJ7AaaaGiV6mwiOZ4bK3j-mQXkeacFDXSZf5WWwynYifeBEFIXV5YqakTwMSnnG3ph33ANIrOhcl7ifpieTotEUIhbqtEZU1slBcgA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/fajfhhcqsjrwvx1.png?Expires=1728847259\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kp1sdY7J6RLsEhWvrEtvGVVcq7YNPrUY1QeHM4leHUE~yCLbzxxN6ImtH3ipvriXB~CGfTUa~aC5AY24ek5b4ca2maFJmQnWD-OPgWZvC2O0knomU38HkTMQeUJI8R24XcyDMWZs6Y8H~AJIg7FUO3hyKjRKBlmB-p1vaXtYzusmT-NK8RjfMfPdRnlfvk-4szYqIzRYQGgHgZcEIQ9y5zr2K~Vg~g8pXA5Y5fanSb5I9bG9x2mMwglVoJhM6zhyXbA1NEkbj63jcN8OVZe~7-x-Lsqk05rTx~E9inirIIddoe111oWPB0Ys0hPd8HS0tr8b8O74rNgnujy3PG~3KA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatstockdrop",
+    siteRoute: "",
+    correspondingTaskNames: ["Join Stock Drop Lawsuit"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eStock Drop Lawsuits\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2009, a stock-drop suit settled for $75 million between Merrill Lynch and employees that held Merrill stock in their retirement plans.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eEvery once in a while, a company will announce bad news or be exposed in a scandal and its stock price will go down. Stock drop lawsuits are crucial for helping the average retail investor during their most financially vulnerable times. All you have to do is tell us the stocks you own and we\'ll scan our database of class actions to check for a match.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Contact Your Government Representative",
+    description: "Impact legislation and make your voice heard.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/contactGovtReps.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/contactGovtReps.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatgovernmentrepresentative",
+    siteRoute: "",
+    correspondingTaskNames: ["Contact My State Representative"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eContact Your Government Representative\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2016, a 60 Minutes Broadcast exposed that newly elected Democratic members were shown a model schedule, where they were expected to spend 4 hours a day dialing for donations. Florida Republican David Jolly said his first responsibility on the job was to raise $18,000 a day.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eChoose whether you want to contact your Senator, House of Representative, Governor, President, or Mayor. Our bots will fill out the contact forms on your legislator\'s website on your behalf!\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Claim Auto Insurance",
+    description: "Had an accident? Claim your auto insurance now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/fxw4mkjiwa24ryo.png?Expires=1728937020\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e509DTPbxlNy0uaI2mOj5NA893B6wgJ4AceUqztLY5RFdGhNa8DVpdMXycubYvrRInnr4rZGI~4~zSWAQ8p6RiWfbFFAu9Blv1VepplVFPdfL4AwZ0feoZOlzgIIao8SLBIlXLKeBQ9fhfikcP0RljVZTTSuzqxy4tQYfUGnOKNE3072R5bTgcwccnGDjExX8pRIOvVpAnRg9RJ51jiGxWjxepOoYH3LtTPJ6vIQIjW-PgXQznFwyOtYCtxcFkksra1cI4Z~I3gaRYF8Dtd4uy6JHW3ad5KlS1owUKKMBAK5lkGA1eZ73hhfQsYS-TKE2KsCBve1Y75Bo4o3docxSw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/2wnbwj2cnogcizj.png?Expires=1728937024\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LGMrlJ~bIOkc5XqAeBa--Rcnoc4HOmMUjw4nkknUFgA~KoZ1pX4F0qfFJjhezbcMS3DTY8BFu8a8suC~87rov3jmdCKvIlS4oQo-LR8FmbN-NYghEadhf-HhOA11RER5qDuPCwsCO4zf5FhgFYbcNvKNmEqH3cU3WBCYR8-xK0YJL-rf-L8x07n4RjVgLdUF0LNZJY6bQ7x4Ed3WGoGkim~5zZVuFZy6-DwaO-YBZvo~g1rCUcjfutQSWvYml5Np-oM7jCGTuAsLFGScG1~E~UzGNYObL1PL-Hy09FIdjyFK9zPW1y6rdJun078cfRL4ON0NVw4K5inUP5jG1xZSCw__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatcarinsuranceclaim",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Submit an Auto Insurance Claim",
+      "Claim My Auto Insurance",
+      "Claim Car Warranty",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eClaim Auto Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eInfamous auto manufacturer Henry Ford didn\'t get his driver\'s license until he reached the age of 56.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWhether it\'s a small "fender bender, a break in, or a stolen vehicle, DoNotPay will collect the information relevant to the incident, assess the damage, and file a claim with your auto insurance.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Return My Purchase",
+    description: "Unhappy with a purchase? Return it automatically.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/returnicon.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/returnicon.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatreturnitem",
+    siteRoute: "",
+    correspondingTaskNames: ["Item Return Request"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eReturn My Purchase\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to David Sobie, co-founder and CEO of Happy Returns, About 5 to 10 percent of in-store purchases are returned. But that rises to 15 to 40 percent for online purchases.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will generate a custom letter that clarifies to the merchant what was wrong with your purchase and whether you want a refund or replacement. We\'ll also get you a return label so you can ship your return package for free.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Anonymous HR Complaint",
+    description: "File any complaint with HR. Anonymously. ",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/88coijvhezz9fcl.png?Expires=1728937385\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UFc0lDTr~e82y4~Btg7uuLx2UA3BXDUJdILxeLLty8Qp9hJDEEwQUgpHmYsLf3Wu0orUd1b791FLsmnPmVKlJ1HdbyPdReiN~o40QQfJt4qEtV6kYjYaH4Pjdo3I-Awvrl-0tXmHY87N7rPZidx36Kz-JTLDnTUy6D1hJ1h~ZzUF9NG0ccW6GRthD2mm1G6bSb2s9IXVOqlexU9Somx2ufXRRwy6yWy9NnhZJNAoTbYUn5A3HFC0U9tyzOhmwu4k3qfPkFpf-QllN4Ip9QPnGC6tCh-R20n8JmF0x4LoHCzg5YPSVbQz~6rBRhfm7E0fm9u591dWtM~ZRwF08vKaaA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/gije4smr6wnvm3p.png?Expires=1728937389\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Qr0zdN4dG6~RoevxOPUVcyplSh38b8GrGf7iPuMYr8nq87d2O9wNdfLaZXuao4NNT2XKhtibletZR~h3hO~f0Hv80YFQRzrcyd8si7L85L29xklfuKpPz63MrAWFa4p~lk6OvCR~BNYWKH7cheKxG9-WEhdahLGsqJIk5t9m34GNT23ud27mPDNh0KKvSdSLE9fRuLDy0v5mZ6~oO1Jw1okkB1qI94W00qql7WZ6aI5Agbur3cps8UA87V3DmjydEyZRGc5Iu2Uwd8fmFXWP7~Tre6HAnSWAqVj~kiOsym2c0~5DQqKQbACkmsET~u7NOcNt~hhbMVjOxAQK9kxGKQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatanoncomplaint",
+    siteRoute: "",
+    correspondingTaskNames: ["File an Anonymous HR Complaint"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAnonymous HR Complaint\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eFrom 1997 to 2018, there were 1,889,631 discrimination complaints filed with the EEOC, with the highest number of complaints occurring in Southern states.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will file a discrimination report to the EEOC. The EEOC will investigate your case so you can reach the cash settlement you deserve.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Employee Reimbursements",
+    description:
+      "Did you pay for a business expense out of pocket? Get reimbursed now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/n6dkwctl0vbhk6v.png?Expires=1729211050\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=sFUT7lgMEwZizydM3SC~lokSUlKFOYjhXIzhsNA7tbK~BCd0BZigvWz9Q5j~eLbxD5nOw-30ZFpRIFGpCqWWSDxm8oYuuf6EoJa~03EcM77KhA2jGjb-bHYdwftyDwyS0aCt1jkDGpyWFME9AqfnXDTa2gOIJzgzYYdg57xp5s86IHPh~4YXyb~XE0aOxJlykIwhmkCjVWUukcJamN5WajWJ4RbRMX8kGqGFf3s76HR-SL3BSu2hE1evT0Y9wOmn0JA-sW9BFAt3ldn8YQLyrPaQ1WKtmjoCwTx59sCGG0l3BIwoJekbvl7i2wQ7iOk~vlPoX~snX6f7JAaNnwUzAQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/q5hdl7ztuql7ne9.png?Expires=1729211053\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JEuDcUNGq0kRGwnNGDK96~S46rRP7DWFMc4MbjkzDbB2CenCKH1y8rPmQylRmARq0ghDCBwd8gXbNcyqA-~8EFg2P0fPIDgxiOqfZRJAlLV6EsJ2q8PvLWRGvSjQw85p6-RPzpuD88F93l7VCMedrFF0gpijeUfg5LOUpgY6DbazTJ2e3BJCvai3pzRTLKoLCgha197hIyJL4pJd71UwVcKBLLs~xmFkUfpyGjOxGjjKF7NKsEF3F92O6DYHhPidtRNI79hiSG6NMBqNYzhpfUT3rOcFA2LHwZFFI5ByoPYmZJVeHJzqhF72mTOs-SH2wuG6v2uXitJeP9Nhex7nBQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatreimbursements",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Employee Reimbursements",
+      "Email My Reimbursement Request",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eEmployee Reimbursements\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003e56% of employees working from home weren\'t allowed to bring resources from the office, and 33% had to then purchase equipment to help with remote work.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWorking from home? We\'ll help you request reimbursements for mileage, work-from-home, meal, business trip, and transportation expenses while you\'re working from home!\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal for More Financial Aid",
+    description:
+      "Didn't get enough financial aid? Contact the school to appeal their decision.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/financialaidappeal.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/financialaidappeal.png",
+    isCategoryCard: false,
+    isCompanyCard: true,
+    chatTopic: "chatfinancialaidappeal",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Financial Aid Appeal Letter",
+      "Mail My Financial Aid Appeal Letter",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAppeal for More Financial Aid\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAlthough 86% of college students benefit from some sort of financial aid, $2 billion in student grants are still left unclaimed every year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eNegotiate for more aid to make college more affordable. DoNotPay will automatically generate your financial aid appeal letter and mail it on your behalf to the school\'s financial aid office.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Client Breach of Contract",
+    description:
+      "Is a client refusing to pay for your services? Settle the dispute now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/w2rogibw54hr0dx.png?Expires=1728864215\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=DeYB3uLqRbiBalFnfnEn-srYhYrg0mG~BXWNmTUJQwdfzbz8tHw3jNIfcIhzkRW2oLz0EJ6dQZihHz7AaLLPVjsbFKbX5laT~tLOVA0Spwh7uwClJSCuRW3Jc9H3cLgmjwjllimia1Ka6R-imQdBbPqQ9qGgaI1F5gQlSVlZE1--Gq8DWNqCYhITrqIOZrhoGIYI0-iIL0g7m-LqyJl-vMC~I5xWQLhYFE3Ah8tH2wgVj43Mut9b8cGEYxq3wwqqBljJQA6kMia0wp2C3O-3SpljoFVKZpS7YQbZlNQxeZup6nHzskEOE-B8bM~VDo6xNNFtaQlRG0uZ61VGruHtRg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/dbddfkx88widadf.png?Expires=1728864219\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=m6qsI1JZ~YIliQiCRooNo17hiwAlXmiIlQ4HFuO5ec3ldIfnnWPEfTOrX0PmNaeQG-fJimxvpiFNSn5lNkt0NCn-ysPYFqyIpprs~NdIWdD0bBxE-FYJCr1~BYk6jvT4Qkfstlv6Pe5JQ-XYXrp-Nu6ckQp2uFZL9TzI1WbVtSAOYJPfsi4xGD~U3uprsisQIdW9dOo42TGt6m0fWWRoCBALM2OVeRJMfgh1o2eWXwn182u5nXSqW3yKoIDn2J6ilOrs9duk8YaNH4F2Pr44YzRTFlfpJgSgJ40cV5uJFW4tfJphTm9QUQd9WO5N1FRSz-gTHie43Uz~WjO60g~O6w__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatbreachofcontract",
+    siteRoute: "",
+    correspondingTaskNames: ["Breach of Contract"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eClient Breach of Contract\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 1999, after seeing a Pepsi commercial advertise an "offer" to redeem 7,000,000 Pepsi Points for an AV-8 Harrier II jump jet, John Leonard bought 7,000,000 points and asked for his jet. He sued Pepsi for breach of contract after being told the offer was a joke.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you\'re dealing with a big corporation, small business client, friend, or subcontractor, it can be so frustrating when people break their promises and you can\'t collect your hard earned money. Send a formal demand letter to clients for breaches of contract and escalate the case to small claims court if necessary.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Plagiarism Monitor",
+    description: "Fight digital theft and protect your online content now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/lx4nne0w25m3waa.png?Expires=1728864200\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=KxSE69m-J~EMMEZsHI67BInC-wf4NWH83239PWQEq4fSFw1sDoBHcG7O~DuaHkMWGxndV1-muCErzmDjUMg~M6~E3Vnw8w5pzkAaTYGSP91B1uhuo0h2RIOqhUtKEX8TuQIiwHDqDnuai5qPSIpSjro8e3PeImvQqZxA5rJsODIn5VOywTNimuD71XsNDmxz9etQwTwHa422z3nQ2TQhV3tlWYNnfK4fsXMwpaBai5~VikH6G-LXsuBHCyQhNyrBYldgRVmNBgFRTC~RpPPBCt0HYebPRocSbjYPKbZaGeSctdROl9-cLhlPbZDzwtc-l04YlGG4lapag5kqVERB5A__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ln63wco0twvtmgm.png?Expires=1728864205\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=cSkHgvr1iqQKjMHq7vaYXWuYcUuLkhtmHjS~xrhla3T5vo~~NKbP5UYSiv7Ilb9mucRqpXgXQO~R1BUnxYMEvxnOU~DgbxWiOBHlxuZbuXnx6TBU9ed5QwSr5t6JO~Q1lGVkvfy51-JZPwKEv5Yad4FZtL7epeuE7cnVYy3b0IXC2-NoZxcEZk8-jYHGAUb2H5uAJ~JGbk4vslEAFizh-SRIy61O64lPMq~FilmILrF-0XuFiYgH5E9uXn0yjq-NdIbSEl90mm24527kZhvx3yMiC7Gxb1b4~KScW1PgJVMLZkdb5IUtH5TafVt2Iexw4FTV156vLGI2SR6s6slAVw__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatplagiarismsearch",
+    siteRoute: "",
+    correspondingTaskNames: ["Plagiarism Search"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003ePlagiarism Monitor\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003e30% of web pages (1.5 billion out of 5.1 billion pages) have similar or duplicated content.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eFight online theft and protect your website content now. DoNotPay will scan the web for any copies of your content and generate a report detailing all suspicious results. We also provide an option to run these scans weekly and generate an up-to-date report with our findings.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Break My Lease",
+    description:
+      "Need to break your lease? See how you can do it legally with no fees.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ykhq3px6pmzqzwn.png?Expires=1733507236\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=EtTmTxzxlUTLwyLJZS0DL5orw5LEvw05Sj58PrEoRcFJi9OWbZ-ukmghOh54cXSlDUBPyBtfVuPLIeSgsdQJzA9qTWZy2~6~2z4PukHwK9BCq1moYGku1cbb9M~rwIBtjqymc5FVySjsnvsonC8CYk83ZBx5glKUUDVqmoYqWRltcsdsJrvPSprx-UvOORHx9TacixAU7e9kQs0kSoWMLy~L9FwNa1jumsq6ZC-FRrmBcBLcdeDdYxc3exo5t9fFKxgjp62SE20yI5P7I~0qZhh~gdH12~MQ3MQdMyU3zQDzB3z99g2It8AtffdqoiYokkFTq~ReACmg48kS727Tbg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/zm2gcfblg9vtgp0.png?Expires=1733507240\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=cmjT3eNvUPgcMS7Ssf0AqVTkjUtWJ4eqUeTxsZVjmHRCXPO6XU8xxWayjJpXW2jrTjiuHQmbuOQFLMUsBAWUIN8OcuSgaPuNtFwIqUl217SudoeboDuFrubLJq9HkMGl5zAIOE1NFrf3BaiXMHK2z5DG2eUnlL~s~dttkmLj9GQKEfIw0rdM7RlsViMWY0wrxobUnzAfnyMCLC~GBQ4Eu297yENdn3qNfgnRtvfzBQV~bdgBPiq2RvWIYEc0rvAzQbtgO00WJiysPBigu3f8haFFHDjkdFgRnssPKAxYuiczlo6mE4EIDt-Sn6rA6z1IowbmwKWvR-oa7emLUbKKKA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatbreaklease",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Break My Lease",
+      "Servicemember Housing Lease Termination",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eBreak My Lease\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, 49% of Americans under 30 years old rented their homes. \n\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMost lease agreements impose penalties, sometimes up to the balance of the lease payments, for terminating the lease early. However, if you need to break your lease, there are many potential conditions of your lease and personal situations protected under state and federal law as reasons to break a lease. DoNotPay can write a letter to leverage the facts of your situation and send it to your landlord to minimize your fees when you break your lease.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Report Tax Fraud",
+    description: "Get cash rewards by reporting companies for tax fraud.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/taxreport.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/taxreport.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chattaxfraudreport",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Report Tax Fraud",
+      "Report Tax Fraud UK",
+      "Anonymous Tax Fraud Report",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "Report Tax Fraud ",
+    bannerDescription:
+      "Get cash rewards by reporting companies for suspicious activity and tax fraud.",
+    bannerRoute: "/web/chat?topic=chattaxfraudreport",
+    bannerImage:
+      '\u003c?xml version="1.0" encoding="UTF-8"?\u003e\n\u003csvg width="412px" height="354px" viewBox="0 0 412 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"\u003e\n    \u003c!-- Generator: Sketch 56.3 (81716) - https://sketch.com --\u003e\n    \u003ctitle\u003etax\u003c/title\u003e\n    \u003cdesc\u003eCreated with Sketch.\u003c/desc\u003e\n    \u003cdefs\u003e\n        \u003crect id="path-1" x="11.34" y="40.824" width="156.492" height="229.824"\u003e\u003c/rect\u003e\n        \u003cfilter x="-2.9%" y="-2.0%" width="105.8%" height="107.8%" filterUnits="objectBoundingBox" id="filter-2"\u003e\n            \u003cfeOffset dx="0" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-3" cx="22.1516494" cy="22.1516494" r="22.1516494"\u003e\u003c/circle\u003e\n        \u003crect id="path-5" x="48.384" y="15.876" width="81.648" height="41.58" rx="5.292"\u003e\u003c/rect\u003e\n        \u003cfilter x="-3.1%" y="-6.0%" width="106.1%" height="124.1%" filterUnits="objectBoundingBox" id="filter-6"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.179987981 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-7" cx="164.052" cy="51.408" r="35.532"\u003e\u003c/circle\u003e\n        \u003cfilter x="-18.3%" y="-11.3%" width="129.7%" height="131.1%" filterUnits="objectBoundingBox" id="filter-8"\u003e\n            \u003cfeMorphology radius="5.04" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"\u003e\u003c/feMorphology\u003e\n            \u003cfeOffset dx="-5" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-9" cx="66.3032432" cy="81.2359459" r="66.15"\u003e\u003c/circle\u003e\n        \u003cfilter x="-9.9%" y="-6.1%" width="115.9%" height="116.7%" filterUnits="objectBoundingBox" id="filter-10"\u003e\n            \u003cfeMorphology radius="5.04" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"\u003e\u003c/feMorphology\u003e\n            \u003cfeOffset dx="-5" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-11" x="0.529385749" y="0.139312039" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n        \u003cfilter x="-8.8%" y="-32.3%" width="117.6%" height="229.0%" filterUnits="objectBoundingBox" id="filter-12"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 1   0 0 0 0 0.454901961   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-13" x="0.529385749" y="11.2184186" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n        \u003cfilter x="-8.8%" y="-32.3%" width="117.6%" height="229.0%" filterUnits="objectBoundingBox" id="filter-14"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 1   0 0 0 0 0.454901961   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003cfilter x="-9.0%" y="-11.1%" width="117.9%" height="122.1%" filterUnits="objectBoundingBox" id="filter-15"\u003e\n            \u003cfeOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127868226 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"\u003e\u003c/feColorMatrix\u003e\n            \u003cfeMerge\u003e\n                \u003cfeMergeNode in="shadowMatrixOuter1"\u003e\u003c/feMergeNode\u003e\n                \u003cfeMergeNode in="SourceGraphic"\u003e\u003c/feMergeNode\u003e\n            \u003c/feMerge\u003e\n        \u003c/filter\u003e\n        \u003clinearGradient x1="60.4844299%" y1="35.8066142%" x2="24.5465035%" y2="57.0172452%" id="linearGradient-16"\u003e\n            \u003cstop stop-color="#2DD682" offset="0%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="27.3358319%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="58.0037443%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="100%"\u003e\u003c/stop\u003e\n        \u003c/linearGradient\u003e\n        \u003cfilter x="-9.0%" y="-11.1%" width="117.9%" height="122.1%" filterUnits="objectBoundingBox" id="filter-17"\u003e\n            \u003cfeOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127868226 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"\u003e\u003c/feColorMatrix\u003e\n            \u003cfeMerge\u003e\n                \u003cfeMergeNode in="shadowMatrixOuter1"\u003e\u003c/feMergeNode\u003e\n                \u003cfeMergeNode in="SourceGraphic"\u003e\u003c/feMergeNode\u003e\n            \u003c/feMerge\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-18" x="0" y="0" width="161.28" height="81.9" rx="15.12"\u003e\u003c/rect\u003e\n        \u003cfilter x="-1.6%" y="-3.1%" width="103.1%" height="112.2%" filterUnits="objectBoundingBox" id="filter-19"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.375600962 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003cpath d="M44.2846676,63.205308 L32.7275624,63.205308 L32.7275624,26.9867298 L20.16,26.9867298 L20.16,17.64 L56.85223,17.64 L56.85223,26.9867298 L44.2846676,26.9867298 L44.2846676,63.205308 Z M84.6072098,63.205308 L81.7337219,53.1954655 L66.829477,53.1954655 L63.9244123,63.205308 L52.1146929,63.205308 L67.429436,17.64 L81.6074147,17.64 L96.9221579,63.205308 L84.6072098,63.205308 Z M74.1552923,27.3024977 L69.0714291,44.859193 L79.460193,44.859193 L74.4079066,27.3024977 L74.1552923,27.3024977 Z M97.9000198,63.205308 L111.825384,40.3752888 L111.825384,40.1226745 L97.9315966,17.64 L111.446463,17.64 L119.814312,33.0494735 L120.03535,33.0494735 L128.466352,17.64 L141.318106,17.64 L126.824359,40.2489816 L126.824359,40.4700192 L141.191799,63.205308 L128.182161,63.205308 L119.34066,48.4273703 L119.088046,48.4273703 L110.214968,63.205308 L97.9000198,63.205308 Z" id="path-20"\u003e\u003c/path\u003e\n        \u003cfilter x="-1.7%" y="-4.4%" width="103.3%" height="117.6%" filterUnits="objectBoundingBox" id="filter-21"\u003e\n            \u003cfeOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.273792614 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n    \u003c/defs\u003e\n    \u003cg id="tax" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"\u003e\n        \u003cg id="Group-4-Copy" transform="translate(21.000000, 33.000000)"\u003e\n            \u003cg id="Group-64" transform="translate(85.680000, 0.000000)"\u003e\n                \u003cpath d="M68.04,17.388 C71.064,5.796 78.372,0 89.964,0 C101.556,0 109.116,5.796 112.644,17.388" id="Path-65" stroke="#394151" stroke-width="8.316"\u003e\u003c/path\u003e\n                \u003crect id="Rectangle" fill="#394151" x="0" y="28.728" width="179.928" height="259.308" rx="10.584"\u003e\u003c/rect\u003e\n                \u003cg id="Rectangle-Copy-57"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"\u003e\u003c/use\u003e\n                    \u003cuse fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n                \u003cg id="Path-63" transform="translate(27.972000, 213.192000)"\u003e\n                    \u003cmask id="mask-4" fill="white"\u003e\n                        \u003cuse xlink:href="#path-3"\u003e\u003c/use\u003e\n                    \u003c/mask\u003e\n                    \u003cuse id="Mask" fill="#3BC1C8" opacity="0.362397693" xlink:href="#path-3"\u003e\u003c/use\u003e\n                    \u003cpath d="M23.4546876,-3.25759551 L23.4546876,23.4546876 L42.3487416,42.3487416 L55.3791236,20.1970921 C50.6013169,1.9545573 47.7780674,-7.16671011 46.9093753,-7.16671011 C46.0406831,-7.16671011 38.2224539,-5.86367191 23.4546876,-3.25759551 Z" fill="#27B0E4" mask="url(#mask-4)"\u003e\u003c/path\u003e\n                \u003c/g\u003e\n                \u003crect id="Rectangle" stroke="#76768D" stroke-width="6.804" x="31.374" y="70.686" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle" fill="#D3DAE4" x="58.212" y="74.088" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-88" fill="#D3DAE4" x="58.212" y="148.176" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-75" fill="#D3DAE4" x="58.212" y="111.132" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-89" fill="#D3DAE4" x="58.212" y="185.22" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-73" stroke="#76768D" stroke-width="6.804" x="31.374" y="144.774" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-58" stroke="#76768D" stroke-width="6.804" x="31.374" y="107.73" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-74" stroke="#76768D" stroke-width="6.804" x="31.374" y="181.818" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003cg id="Rectangle"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"\u003e\u003c/use\u003e\n                    \u003cuse fill="#394151" fill-rule="evenodd" xlink:href="#path-5"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n                \u003crect id="Rectangle" fill="#808899" opacity="0.401832217" x="47.88" y="15.12" width="83.16" height="21.42" rx="5.67"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle" fill="#F4B657" x="92.988" y="233.5284" width="23.5872" height="23.5872"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-52" fill="#F4B657" x="128.5956" y="210.924" width="23.5872" height="46.1916"\u003e\u003c/rect\u003e\n                \u003cg id="Oval" stroke-linecap="round" stroke-linejoin="round"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"\u003e\u003c/use\u003e\n                    \u003ccircle stroke="#FFFFFF" stroke-width="5.04" fill="#F5C33C" fill-rule="evenodd" cx="164.052" cy="51.408" r="38.052"\u003e\u003c/circle\u003e\n                \u003c/g\u003e\n                \u003cpath d="M182.925633,45.2117323 C181.804172,46.3382576 180.906561,47.5608157 180.256698,48.8452816 C178.784855,51.7607455 178.690768,54.9174562 179.98534,57.9740924 C181.16005,60.7492373 182.435819,64.8345056 179.9673,68.2556489 C178.183382,70.7301713 174.796217,72.4024867 171.187202,74.0378371 L171.172264,74.0446635 C168.959342,75.0496856 166.869152,75.9987023 165.355482,77.2158249 L164.230039,78.12 L163.105009,77.2158249 C161.583368,75.9929917 159.485973,75.0418039 157.265729,74.0351408 C153.660226,72.4011082 150.276403,70.7293231 148.492312,68.2540079 C146.023206,64.8307263 147.300437,60.7474802 148.475967,57.9736834 C149.770069,54.9164893 149.675692,51.759208 148.202676,48.8436254 C147.553048,47.5590131 146.655142,46.3371014 145.534799,45.2119368 L144.396,44.0684664 L149.131043,38.2230222 L150.458598,38.9888942 C152.597295,40.2227585 154.477696,40.8225191 156.207365,40.8224459 C158.517358,40.8222844 160.740942,39.7952921 163.0053,37.6826941 L164.229746,36.54 L165.455013,37.6825767 C167.720543,39.7954384 169.944243,40.8225191 172.25289,40.8224459 C173.971486,40.8224459 175.851888,40.2213522 178.000835,38.9848812 L179.328565,38.2211324 L184.064373,44.0682618 L182.925633,45.2117323 Z" id="Path" fill="#A5760A"\u003e\u003c/path\u003e\n                \u003crect id="Rectangle" fill="#A5760A" opacity="0.386904762" x="146.16" y="27.72" width="34.02" height="3.78" rx="1.89"\u003e\u003c/rect\u003e\n            \u003c/g\u003e\n            \u003cg id="Group" transform="translate(0.000000, 56.700000)"\u003e\n                \u003cg id="Oval" stroke-linecap="round" stroke-linejoin="round"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"\u003e\u003c/use\u003e\n                    \u003ccircle stroke="#FFFFFF" stroke-width="5.04" fill="#394151" fill-rule="evenodd" cx="66.3032432" cy="81.2359459" r="68.67"\u003e\u003c/circle\u003e\n                \u003c/g\u003e\n                \u003cg id="Group-66" transform="translate(9.313784, -0.000000)"\u003e\n                    \u003cpath d="M89.1846699,26.5250123 C86.8116245,39.4161683 84.8870982,41.3401748 71.9964619,43.7132202 C84.8881376,46.0857459 86.8116245,48.0102722 89.1846699,60.9009085 C91.5577153,48.0097525 93.4817219,46.0857459 106.372878,43.7132202 C93.4817219,41.3401748 91.558235,39.4161683 89.1846699,26.5250123 Z" id="Path" fill="#FB9900" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M53.0500246,-3.37507799e-14 C51.218971,9.94687961 49.733997,11.4314526 39.7875184,13.2625061 C49.7347991,15.0931587 51.218971,16.5781327 53.0500246,26.5246113 C54.8810781,16.5777317 56.3656511,15.0931587 66.3125307,13.2625061 C56.3656511,11.4314526 54.8814791,9.94687961 53.0500246,-3.37507799e-14 Z" id="Path-Copy-6" fill="#FFB600" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M114.625946,70.1018182 C113.187261,77.9172236 112.020496,79.0836738 104.205405,80.5223587 C112.021126,81.9607286 113.187261,83.1274939 114.625946,90.9425842 C116.064631,83.1271788 117.231081,81.9607286 125.046486,80.5223587 C117.231081,79.0836738 116.064946,77.9172236 114.625946,70.1018182 Z" id="Path-Copy-7" fill="#FFDD7B" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M11.3678624,37.8928747 C9.79838794,46.4187715 8.52555308,47.6912626 0,49.2607371 C8.52624054,50.8298678 9.79838794,52.1027027 11.3678624,60.6282558 C12.9373369,52.102359 14.209828,50.8298678 22.7357248,49.2607371 C14.209828,47.6912626 12.9376806,46.4187715 11.3678624,37.8928747 Z" id="Path-Copy-8" fill="#FFB600" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M47.3660934,60.6285995 C27.856913,60.7139082 17.2100408,74.6278547 15.4254767,102.370439 L15.4254777,102.370439 C14.9499033,109.763652 18.5676722,116.822047 24.8473586,120.752862 C31.4380844,124.878374 39.5758772,126.94113 49.2607371,126.94113 C63.4337273,126.94113 73.7413372,122.523553 80.1835668,113.688398 L80.1835684,113.688399 C81.0285663,112.529532 81.4528582,111.117032 81.386318,109.684353 C79.8631022,76.8880035 68.5230273,60.5360856 47.3660934,60.6285995 Z" id="Path-64" fill="#FFB600"\u003e\u003c/path\u003e\n                    \u003cg id="Group-3" transform="translate(30.406627, 39.713040)"\u003e\n                        \u003cpath d="M17.6213423,26.802113 C27.0157059,26.802113 34.6313423,19.136755 34.6313423,9.68105669 C34.6313423,0.225358384 26.2057059,7.2351915 16.8113423,7.2351915 C7.41697869,7.2351915 0.611342282,0.225358384 0.611342282,9.68105669 C0.611342282,19.136755 8.22697869,26.802113 17.6213423,26.802113 Z" id="Oval-Copy-26" fill="#FFDB84"\u003e\u003c/path\u003e\n                        \u003cellipse id="Oval" fill="#FB9900" cx="17.5565087" cy="7.52551179" rx="17.01" ry="7.35567568"\u003e\u003c/ellipse\u003e\n                    \u003c/g\u003e\n                    \u003cpath d="M48.4167344,110.033983 C39.5224803,110.033983 32.3122627,102.823765 32.3122627,93.9295108 C32.3122627,85.0352566 39.5224803,77.825039 48.4167344,77.825039 C57.3109886,77.825039 64.5212061,85.0352566 64.5212061,93.9295108 C64.5212061,102.823765 57.3109886,110.033983 48.4167344,110.033983 Z M47.4694125,83.5089702 C45.8999381,92.034867 44.6271032,93.3073582 36.1015501,94.8768326 C44.6277907,96.4459634 45.8999381,97.7187982 47.4694125,106.244351 C49.038887,97.7184545 50.3113781,96.4459634 58.8372749,94.8768326 C50.3113781,93.3073582 49.0392307,92.034867 47.4694125,83.5089702 Z" id="Combined-Shape" fill-opacity="0.86" fill="#FFE29A"\u003e\u003c/path\u003e\n                    \u003cg id="Group-45" transform="translate(70.268993, 98.242850)"\u003e\n                        \u003cg id="Rectangle"\u003e\n                            \u003cuse fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"\u003e\u003c/use\u003e\n                            \u003cuse fill="#FFC800" fill-rule="evenodd" xlink:href="#path-11"\u003e\u003c/use\u003e\n                        \u003c/g\u003e\n                        \u003cg id="Rectangle-Copy-61"\u003e\n                            \u003cuse fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"\u003e\u003c/use\u003e\n                            \u003cuse fill="#FFC800" fill-rule="evenodd" xlink:href="#path-13"\u003e\u003c/use\u003e\n                        \u003c/g\u003e\n                        \u003crect id="Rectangle-Copy-62" fill="#FFC800" x="0.529385749" y="22.2975251" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n                    \u003c/g\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n            \u003cpolygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="255.889705 66.5820569 249.610193 63.2541955 243.430141 66.78 244.514595 59.5029495 239.4 54.4427698 246.349741 53.2731667 249.368801 46.62 252.579522 53.1741952 259.559999 54.1224913 254.594594 59.3428103"\u003e\u003c/polygon\u003e\n            \u003cg id="Group-31-Copy-2" filter="url(#filter-15)" transform="translate(262.620937, 211.301563) rotate(-1.000000) translate(-262.620937, -211.301563) translate(204.120937, 163.801563)"\u003e\n                \u003cpath d="M0,52.5161555 L42.0824241,94.8890754 L68.5759481,67.8500683 C71.7256713,64.6354944 76.7229053,64.1316937 80.450885,66.6528859 C84.2051996,69.191888 89.2230886,68.7629224 92.4919725,65.6235263 L116.50525,42.5614681 L74.0142122,-2.84217094e-14 L50.9222655,23.2977613 C43.5102885,17.8864938 33.2523996,18.7235011 26.8157073,25.2647709 L0,52.5161555 Z" id="Path-45" fill="url(#linearGradient-16)"\u003e\u003c/path\u003e\n                \u003cpath d="M46.0220957,25.8523434 C40.3546322,35.3880187 40.3546322,43.285882 46.0220957,49.5459332 C51.6895592,55.8059844 59.7180067,56.1057219 70.1074381,50.4451458 L78.9470778,58.6277321 C85.7297412,48.9140876 85.7297412,40.9013433 78.9470778,34.5894992 C72.1644144,28.2776552 64.4111855,28.2776552 55.687391,34.5894992 L48.8420528,27.4532392 L52.714948,27.4532392 L62.0938673,17.4676821 C66.2731459,19.8986865 70.430902,21.1738107 74.5671357,21.2930547 C78.7033694,21.4122986 82.3959538,20.3634928 85.644889,18.1466372 L99.0165435,31.7129282 C96.8007449,36.2043507 95.6928455,39.9491412 95.6928455,42.9472998 C95.6928455,45.9454584 96.8007449,49.0807184 99.0165435,52.3530798 L91.8261386,59.579231 C88.5438283,62.877859 83.4888681,63.6384784 79.3811875,61.4518216 C75.2573789,59.2565793 70.1886431,59.9694254 66.8302798,63.2169294 L51.3822456,78.1550255 C49.070443,75.5934679 45.760382,74.2086971 41.4520627,74.0007131 C37.1437434,73.7927291 34.0137179,74.8666049 32.061986,77.2223405 L16.366677,61.978704 C18.5196629,59.0609465 19.5961559,55.6419277 19.5961559,51.7216474 C19.5961559,47.8013672 18.5196629,44.383588 16.366677,41.4683101 L30.337802,28.057019 C34.5444823,24.0189036 40.8651862,23.1304287 46.0220957,25.8523434 L46.0220957,25.8523434 Z" id="Path-46" fill="#FAEFDA"\u003e\u003c/path\u003e\n            \u003c/g\u003e\n            \u003cg id="Group-31-Copy-3" filter="url(#filter-17)" transform="translate(309.240937, 213.821563) rotate(-1.000000) translate(-309.240937, -213.821563) translate(250.740937, 166.321563)"\u003e\n                \u003cpath d="M0,52.5161555 L42.0824241,94.8890754 L68.5759481,67.8500683 C71.7256713,64.6354944 76.7229053,64.1316937 80.450885,66.6528859 C84.2051996,69.191888 89.2230886,68.7629224 92.4919725,65.6235263 L116.50525,42.5614681 L74.0142122,-2.84217094e-14 L50.9222655,23.2977613 C43.5102885,17.8864938 33.2523996,18.7235011 26.8157073,25.2647709 L0,52.5161555 Z" id="Path-45" fill="url(#linearGradient-16)"\u003e\u003c/path\u003e\n                \u003cpath d="M46.0220957,25.8523434 C40.3546322,35.3880187 40.3546322,43.285882 46.0220957,49.5459332 C51.6895592,55.8059844 59.7180067,56.1057219 70.1074381,50.4451458 L78.9470778,58.6277321 C85.7297412,48.9140876 85.7297412,40.9013433 78.9470778,34.5894992 C72.1644144,28.2776552 64.4111855,28.2776552 55.687391,34.5894992 L48.8420528,27.4532392 L52.714948,27.4532392 L62.0938673,17.4676821 C66.2731459,19.8986865 70.430902,21.1738107 74.5671357,21.2930547 C78.7033694,21.4122986 82.3959538,20.3634928 85.644889,18.1466372 L99.0165435,31.7129282 C96.8007449,36.2043507 95.6928455,39.9491412 95.6928455,42.9472998 C95.6928455,45.9454584 96.8007449,49.0807184 99.0165435,52.3530798 L91.8261386,59.579231 C88.5438283,62.877859 83.4888681,63.6384784 79.3811875,61.4518216 C75.2573789,59.2565793 70.1886431,59.9694254 66.8302798,63.2169294 L51.3822456,78.1550255 C49.070443,75.5934679 45.760382,74.2086971 41.4520627,74.0007131 C37.1437434,73.7927291 34.0137179,74.8666049 32.061986,77.2223405 L16.366677,61.978704 C18.5196629,59.0609465 19.5961559,55.6419277 19.5961559,51.7216474 C19.5961559,47.8013672 18.5196629,44.383588 16.366677,41.4683101 L30.337802,28.057019 C34.5444823,24.0189036 40.8651862,23.1304287 46.0220957,25.8523434 L46.0220957,25.8523434 Z" id="Path-46" fill="#FAEFDA"\u003e\u003c/path\u003e\n            \u003c/g\u003e\n            \u003cg id="Group-2" transform="translate(276.295390, 155.533857) rotate(-20.000000) translate(-276.295390, -155.533857) translate(195.295390, 114.533857)"\u003e\n                \u003cg id="Rectangle"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"\u003e\u003c/use\u003e\n                    \u003crect stroke="#FDDA5C" stroke-width="6.3" stroke-linejoin="square" fill="#E98649" fill-rule="evenodd" x="3.15" y="3.15" width="154.98" height="75.6" rx="15.12"\u003e\u003c/rect\u003e\n                \u003c/g\u003e\n                \u003cg id="TAX" fill-rule="nonzero"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"\u003e\u003c/use\u003e\n                    \u003cuse fill="#FAF9FF" xlink:href="#path-20"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n        \u003c/g\u003e\n    \u003c/g\u003e\n\u003c/svg\u003e',
+    bannerBackground:
+      '\u003c?xml version="1.0" encoding="UTF-8"?\u003e\n\u003csvg width="1094px" height="380px" viewBox="0 0 1094 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"\u003e\n    \u003c!-- Generator: Sketch 56.3 (81716) - https://sketch.com --\u003e\n    \u003ctitle\u003etax-bg\u003c/title\u003e\n    \u003cdesc\u003eCreated with Sketch.\u003c/desc\u003e\n    \u003cdefs\u003e\n        \u003crect id="path-1" x="0" y="0" width="1094" height="380"\u003e\u003c/rect\u003e\n    \u003c/defs\u003e\n    \u003cg id="tax-bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"\u003e\n        \u003cg id="Group-59"\u003e\n            \u003cg id="chargebacks-copy-9"\u003e\n                \u003cg id="spam-collector-copy"\u003e\n                    \u003cg id="Group-6-Copy-2"\u003e\n                        \u003cg id="Group-4"\u003e\n                            \u003cmask id="mask-2" fill="white"\u003e\n                                \u003cuse xlink:href="#path-1"\u003e\u003c/use\u003e\n                            \u003c/mask\u003e\n                            \u003cuse id="Mask" fill="#3BC1C8" xlink:href="#path-1"\u003e\u003c/use\u003e\n                            \u003cg id="Group-5" opacity="0.948544457" mask="url(#mask-2)"\u003e\n                                \u003cg transform="translate(819.000000, 141.000000)"\u003e\n                                    \u003cpath d="M284.889627,286.722506 L2.55795385e-13,286.722506 L2.55795385e-13,285.095529 C2.94075571e-13,133.515226 122.880114,10.6351122 274.460417,10.6351122 C277.937762,10.6351122 281.414793,10.7011978 284.889627,10.8333333 L284.889627,10.8333333 L284.889627,286.722506 Z" id="Path-9-Copy-2" fill="#50CCD3"\u003e\u003c/path\u003e\n                                    \u003cpath d="M285.110903,287.337237 L141.05461,287.337237 L141.05461,286.41043 C141.05461,206.850336 205.550809,142.354136 285.110903,142.354136 L285.110903,142.354136 L285.110903,287.337237 Z" id="Path-9-Copy-6" fill="#3BC1C8" transform="translate(213.082756, 214.845687) rotate(-360.000000) translate(-213.082756, -214.845687) "\u003e\u003c/path\u003e\n                                \u003c/g\u003e\n                            \u003c/g\u003e\n                            \u003cg id="Group-5-Copy" opacity="0.495349702" mask="url(#mask-2)"\u003e\n                                \u003cg transform="translate(136.000000, 130.000000) rotate(-180.000000) translate(-136.000000, -130.000000) translate(-7.000000, -14.000000)"\u003e\n                                    \u003cpath d="M284.889627,286.722506 L2.55795385e-13,286.722506 L2.55795385e-13,285.095529 C2.94075571e-13,133.515226 122.880114,10.6351122 274.460417,10.6351122 C277.937762,10.6351122 281.414793,10.7011978 284.889627,10.8333333 L284.889627,10.8333333 L284.889627,286.722506 Z" id="Path-9-Copy-2" fill="#FFD0DA" opacity="0.433082217"\u003e\u003c/path\u003e\n                                    \u003cpath d="M285.110903,287.337237 L141.05461,287.337237 L141.05461,286.41043 C141.05461,206.850336 205.550809,142.354136 285.110903,142.354136 L285.110903,142.354136 L285.110903,287.337237 Z" id="Path-9-Copy-6" fill="#3BC1C8" transform="translate(213.082756, 214.845687) rotate(-360.000000) translate(-213.082756, -214.845687) "\u003e\u003c/path\u003e\n                                \u003c/g\u003e\n                            \u003c/g\u003e\n                        \u003c/g\u003e\n                    \u003c/g\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n        \u003c/g\u003e\n    \u003c/g\u003e\n\u003c/svg\u003e',
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eReport Tax Fraud\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe historical noncompliance rate for paying all taxes owed is 17 percent, meaning that about 1 in 6 is guilty of tax evasion.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eReport any business or company for suspicious tax activity—and earn cash rewards. DoNotPay will file an official IRS report on your behalf, and you can earn up to 30% of the money the IRS collects.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Planning Permissions",
+    description:
+      "Let DoNotPay guide you through the process of getting a building permit, so you can start your home renovation project legally and safely.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/dooxvumml8ewuap.png?Expires=1729210269\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Qbr9AfoKD3MQJt2umeDzJbEWd0VzhaolL6XUK855MQEjDtqBKd570l57FI0sd5pk7FldzAurtH6jUHGjIeuNdZzbJl6X-RDORfkOZQIDlFYaeCqXQtjVj8KXC~-aQjZQebklPN-GWF5D01pAWkuC8c0eBH~fH4-Ow0XRTfmsKFbM4Iaz47gonlcZQDCr2wqGxM25xR8f8eVcwVGnlysXQ9cVjGOMIlyBm2S0pqJiqtEgOBztSNkMaTYEeSu8uLBCpe6wk9kHKE-TtVssjEiPSBmPZy85d9MnpG1gpr80sGfpqOCHxoV9TzALcgO1U3tj9k68VFhQbLdh368h4ipnvg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/7xuxa0p6bspah7c.png?Expires=1729210272\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=sIhfFmWyIIVoBvmvs~wCu8MyptX369Q-J8HmGBMRaIAHnyzW6dORlSgQ5IeLLrEMZ8ggJS-OMrEo6WIxQNSsBtSEDefy9ak8KHTd4btUvbqzc~E9qFMefTDotdQGd8JoZukF2XsKrSUT-JYU9uzsQDjz~lFZxfchFduf7KYiW2H5s2v-~G0EB35IK1tOpdf6AEcYKlue2hTW9B0RfFg-a8~9hY6xJk4jTtLnmoYsyfQUiVDBpdS-NJNpEeKr~g5YhlU8~DfSH~v-LeN7Uvhp3WZY~FdR9gD117AEcV~EOi2oQj~mCm~XbG3OsSNw-qkWEZpHgCsbpr5r0evwHOF2MA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatplanningpermissions",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Planning Permissions",
+      "Check Building Permit Requirements",
+      "Building Permission from HOA",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003ePlanning Permissions\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn some states, you need a building permit just to install a fence in your yard!  Where you install the fence also matters — fences above 6 ft. in your backyard require permits, while the threshold is 3.5 ft. for frontyard fences.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eStarting your home renovation project can be extremely exciting, but applying for a building permit isn\'t always easy. DoNotPay will help guide you through the building permit process by checking if your project needs a building permit, contacting any HOAs you\'re a part of to request building permission, or generating detailed instructions on how to start and complete your building permit application process.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Redeem Damaged Money",
+    description:
+      "Was your money accidentally ripped, soiled, or damaged? DoNotPay can help you get it replaced.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/veha53kwft9pl43.png?Expires=1728954136\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=HYp-k25b2olMslWwHUWBeOanJ~BjjVRGFHGuEKMGvoBZufXTK48ZEEhpv-u3SHuQ9twDqH9rF9FH3eXPlZ0LaG2WnFns47rhO7fAhp0~3fue02m4sf6SbRFn5aA9BBuC1~DGGcHIx98NK-t6OJFmzcaSGX3uJHZsfB~twCyGcN9mVcacEqQDshcvezzMmfGC-sMrZikrTiu8Agu1dkBOnnLkYDarQjis55RMXy~pCX6P9mpwtdiEcuT11nlZFBjEfTpp19VoUYpHXZYVoI1ffd~FLbMq-qsTsOtmKZudhytPwdtfrho3k1lA7XyNEtAuMPQJHiPy-JJhxeClgn5dxQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/gueg8way3zlq1vw.png?Expires=1728954138\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=K4yKBGpY~fqesrOuO1qcbE30NMtW1zqP6rGv0lwEudcN4b957PHBxXW7kFgB0GMBg~nXkNnyh~hmQdxiy-QbSAPxtsu9CUbV8d~ItE1-BvCDU5zCxyw8bH0Sqvn88pZyC476zxB5J4ukikjRSDMtJAI9UPtlIraXAXi5w9vOgQ9HlQKudTFlGa4JXy0jhh9qHX9hiL04awbPZpdiaq~82kPIHT1Lc5VfGp5rW0Zp7xRf~NnEDnzbf23JtBpja8~ygGQhA-KiFu9dtBUyVWGr1XmIjv2cUold-kzxRSathRm~uf7RoEokVsA2PAOMia8uFYIM6JNQKFEHbXzaNelteQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatredeemdamagedmoney",
+    siteRoute: "",
+    correspondingTaskNames: ["Redeem Damaged Money"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eRedeem Damaged Money\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe US Department of Treasury receives more than 22,000 requests each year for redeeming damaged currency (an estimated value of $35 million)!\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you have ripped, soiled, or damaged money, don’t toss it out just yet. If more than half of the bill is still present, you can get it replaced at your local bank. Otherwise, DoNotPay can help you fill out the claim form and request a damaged currency evaluation and replacement from the US Treasury.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Birth Certificates",
+    description:
+      "Get certified copies of a birth certificate issued by the government for you or your loved one.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/acgdp2hu1l54a6o.png?Expires=1728949182\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=nNnF-HGb0q~WGyN-wPsgWSo3kwJUks5vHMbBhVxL6bG6jBKnYdzfsfGdC9HVzLTVxY61xXgdIPV75uPCxzY2czKIyC~Kho4qVM3cl9MnYQctk9BmQJsqFnu8p6ZHSi2R5q2RNKtPscjH9MLPks4lBas9V-0o9gRkUQWBU~lC4oY6OwsHxckkyysJ36-rRoOLtV1-n3m8MWjYbwh1Za9zn6on9Bv~O4G6yG7zBvdbMIzEHxIDROjN9bVCGYuzTikSMjnfwJxj5weEPoBPeAnf-mQR29LI9EOo8iqRmkkB34gZbUFgLOf~7r-5GTlGUkl7oNkgoIL3Q2ZJyikOWcROFw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/wgxruli96ufxl5i.png?Expires=1728949186\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=pIiSClv-anP1oXmJ~bg0GHpN5LmD7zQKMlbVvZXE1a~Bs4Rpi3HgFM~euQKEZPq4-rxGlTjLOAStIfzvsCCB5RLu3mrDkCwIxRZf3fJGj3vdjZGoPK1BoTeoHXrXYccHKL2YHdfSr4ongCrKfqAi-4SP9UtWgSSJakdIVKiyEqN6r44lFJ5Ru8pxV6lKiRnsjMesROvBDSVBq~sANmLpBDdpsBRoz-NsjfFhTpcuhD~0skCffiudrYjWAqBaoVc9hptE785OQ4ruwbnXOqVWnj4zJbLlbNUbav0f6TTH3-148ZI9GE5Hhxqjkl3DIl85hXqbgXW5cwgukbc2tsaq-g__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatbirthcertificate",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Birth Certificate Application",
+      "Mail My Birth Certificate Application",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eBirth Certificate Application\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eBirth certificates haven’t always been the standard. World War II actually pushed more Americans to adopt birth certificates because they had to prove their citizenship in order to be hired to work at defense-related plants.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eBirth certificates are important and useful documents to have because they are considered a valid form of identification and can be used in most legal settings. If you lost your birth certificate, or need extra copies, DoNotPay can help! We’ll first help you fill out the application form and then help you pay the fees by mailing a check.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Death Certificates",
+    description:
+      "Get certified copies of death certificates issued by the government straight from your laptop.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/78gn2a89psogs5z.png?Expires=1728948806\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=KkYkOquTh2Xp5bGuTXvuzWHOnpHPckpMWN8rxmVla9wtfEyqi-2BjQLHn96Py~MOQlDa351IB3DDGutYGIfVlwhHBlERq0SrF7wB3vS1ILyOMZ9Ezpo70h-FEV~dFg-Wduu2JoctbqxDmOmg5agGRTum7l0TCuO8w3S4dVr0Z3xuj3XdJdkjc7ihePmJJteldcZ3zg4rakwV3pWMoUrkNrqpWqfp4iAadNl12FyEuABJbONjf6hXbYLcbaFVsgQbwb4jxP44Z7YDwG8txhSyRZUpnPeOK3xxuT2GMC2xGvqrhzyUK5verE7WcwjA2HGfHKvmg1lA~uhTUpxYrGreyw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/azvlorm4afak69g.png?Expires=1728948808\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=dsNoQN3IWtCr6DPeIK8QHZBe~8TVDUISoCcbB7en7lqqkvgUjCAxo7Lp33s6QzZnn2IsTjAzTpmRnglt5uI7prxTl4Ck5ZG7XTY0NgOMox4maOEJzPstHyVw31Nt-vWa9Pmaux4aj2v7aaownqVwfKCgvCbF9OnxQ-nHWOhVeRvc32lCe2W0v13WnR0zHGUvRKljQH1B6iM~MZefeZxKoDZ2ot-BRcYmqCeuiNEeSZVE5mewQV7QE6MyzsjYyI1PHRGolz9DKDAWMVUwRMLzaVk7ZC2RkRm5YBIST~yLkW~65TEDA-n6S~EdzCV6P9kyDzhSlCrMrsf~7-sTPJYzbw__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatdeathcertificate",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Death Certificate Request",
+      "Mail My Death Certificate Request",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eDeath Certificates\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eDeath certificates are the only form of legal and state proof that someone died. They’re  used by the government to stop payments, pensions, and issue other benefits.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhile it’s not always easy to talk about, death certificates are extremely important because they’re the only legal way to prove that someone has died. Whether you need to close a loved one’s financial account or need access to state benefits, DoNotPay can help you access certified copies of a death certificate. We’ll first help you fill out the application form and then help you pay the fees by mailing a check.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Certificates of Marriage",
+    description: "Obtain certified copies of your marriage certificate today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/kz3xgbng4e1yd2a.png?Expires=1728948793\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kwll0JeMYxHA5jUaZWLzFNV7J0vL~Y29ZTDMte2TED7002zCtcYIdHzUNglcc1A3Y5oH85ZF3CGaqdjgvdPazawpTwsiLpLdXFNEEpHRbveIZdRTd4a0JAgkQsQl3SMfNbSVMrPmMYYWBmZNUlcMCrR5Xz1jcpoe0HRA3URwGmsPAHJhR7u9nqZ95lv~SJF-pt7Mx9wrsl6ZJt9-W7Sso3Je0-kRzGmYf2x-qdgW12YBWjcyEvgjBdVj1ClMYFu-NS5gWUVL~QfxOpmjGfu~KP8h7x~d6Rt5Z08XpXBqXiWwK6PIR67tYFnHdSOOwBcFamw7IJq3qbLHkztOTH~nHA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/uncowthoidvhpuh.png?Expires=1728948796\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=PtNSByUTS1oVCQVqfbi7RJVpQN4is-1bpKPg1dYhMuUjatoenqgLpfy76B99ADDjVuslyBEB9ivwCKNh7NgtdApAFTZOcA1EmOIjPJom6-UvM9dwSwbkTpFVsw1pBPZvyagvyOVxyGY2Uxd3IjYuAoVc-1bDCe1fZ2EoKODciIVeUBfFoahPrxhOMAii7yMywwEsFOBS19KKFy4fTO-oIa90hiGgbAKzsqeQC08z0m6tiXihX3ACbDtDQa7DyF7uzfTk~wEmhLqfp5l~PHcSlTxovgS9p2qXG-MEgW~9EJi932s9CxZbYDLaOIGmVqhj-SQ7ohYxOj1a8hcV~77~pA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatmarriagecertificate",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Marriage Certificate Request",
+      "Mail My Marriage Certificate Request",
+      "Certificate of Marriage Request",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eCertificates of Marriage\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, Nevada had the highest marriage rate in the United States, with 25.9 marriages per 1,000 residents.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMarriage certificates are legal documents issued by the government that prove a marriage took place. They’re extremely useful if you want to legally change your last name, share health benefits, file joint taxes, and more. For these use cases, you need a certified copy from your state government. DoNotPay can help you get started with the request process today! \u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Certificates of Divorce",
+    description: "Obtain certified copies of your divorce certificate today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/kz3xgbng4e1yd2a.png?Expires=1728948793\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kwll0JeMYxHA5jUaZWLzFNV7J0vL~Y29ZTDMte2TED7002zCtcYIdHzUNglcc1A3Y5oH85ZF3CGaqdjgvdPazawpTwsiLpLdXFNEEpHRbveIZdRTd4a0JAgkQsQl3SMfNbSVMrPmMYYWBmZNUlcMCrR5Xz1jcpoe0HRA3URwGmsPAHJhR7u9nqZ95lv~SJF-pt7Mx9wrsl6ZJt9-W7Sso3Je0-kRzGmYf2x-qdgW12YBWjcyEvgjBdVj1ClMYFu-NS5gWUVL~QfxOpmjGfu~KP8h7x~d6Rt5Z08XpXBqXiWwK6PIR67tYFnHdSOOwBcFamw7IJq3qbLHkztOTH~nHA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/uncowthoidvhpuh.png?Expires=1728948796\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=PtNSByUTS1oVCQVqfbi7RJVpQN4is-1bpKPg1dYhMuUjatoenqgLpfy76B99ADDjVuslyBEB9ivwCKNh7NgtdApAFTZOcA1EmOIjPJom6-UvM9dwSwbkTpFVsw1pBPZvyagvyOVxyGY2Uxd3IjYuAoVc-1bDCe1fZ2EoKODciIVeUBfFoahPrxhOMAii7yMywwEsFOBS19KKFy4fTO-oIa90hiGgbAKzsqeQC08z0m6tiXihX3ACbDtDQa7DyF7uzfTk~wEmhLqfp5l~PHcSlTxovgS9p2qXG-MEgW~9EJi932s9CxZbYDLaOIGmVqhj-SQ7ohYxOj1a8hcV~77~pA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatmarriagecertificate",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Marriage Certificate Request",
+      "Mail My Marriage Certificate Request",
+      "Certificate of Marriage Request",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eCertificates of Marriage\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, Nevada had the highest marriage rate in the United States, with 25.9 marriages per 1,000 residents.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMarriage certificates are legal documents issued by the government that prove a marriage took place. They’re extremely useful if you want to legally change your last name, share health benefits, file joint taxes, and more. For these use cases, you need a certified copy from your state government. DoNotPay can help you get started with the request process today! \u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Pet Licenses",
+    description: "Register for a new pet license.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/1v5i44y198rozaf.png?Expires=1728948640\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JsjFPhWda3lUSZATGLI26JHDzu4wJHoW9P4j5DKeq8NjATdLiozYKnV1E0qpOf9PdjKVcvVm7vqOrMI6M6hgVAGtgBaISL4WBCdfnXWuN4r5Qfon7pj20V5PcSZJrqojKKDL~v8YUYuSUFWHO1dhu1k68~bJBlkAHdUeuZFIwwPtnlWAyQHx5p2TmbnS8J7fYbezAzPUeL9I-N3gVmDqHWaJ-41rVIpYKpVO-eFWavOJsxqT6Segmn~2GaVyMrd8OQ95J9W-wY4a7nPWkdgqkSLgwgLhHremchqhZtCFG5ZvvEF54MrzupQgfYkd5HjZN~2GMp0IJDUilNYI-0okMA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ani9vyygdu65qx0.png?Expires=1728948642\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mq9rYFEZsujzbJP~IA1xoBWqb8VpzyJk0za9wgM6wqOGjLB1en3UZtp1l52GGUlwTgT6n2gDu02LLb7Pzue1FNXsYjf6QW2hDdNRIrvxTeiVhZpGGq7JSH10PivZPLKF79wPBFMouS4yGFoKNqHQmv-lKPjsdpbckPR7CigICzGTNU4XisMmnCw-fQ9Wv91dLy0nCdUDnuvLeMCUgGm6F-HokhlESsUAAkLsGgJ2qvssIeNf4FOvrvNHyZUPabr6Pbj~hAEWO7Esdg0F137V2aHTb1h9zQPh7G4HxJq88w0P4M0ZBuFSuHJD1T1JCQxlhuixqXpBwuF1HuovHZ2ZRQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatpetlicenses",
+    siteRoute: "",
+    correspondingTaskNames: ["Get My Pet License", "Check Pet License Fee"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003ePet Licenses\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003ePet licenses can be quite expensive and cost anywhere from $20 to $200 per year. Most states offer cheaper rates for spayed/neutered pets and senior/veteran owners.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003ePet licenses are not only legally required in most states, but also helpful to have in order to prove vaccinations and make it easier for people to find and return lost pets. The application process varies based on the county and state, but if you need help renewing or registering for a pet license, DoNotPay can help you do it online right from your laptop.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "File Police Report",
+    description: "Were you victim to a crime? File a police report today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/rjtucx8bvwjvpv0.png?Expires=1729458679\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=RB4J4zfe~VkSzOZ6MN6AFTT9Q4ivk3BcJ5~qz9DwFzX8NbYXpnghprHrems86VQ923OXEF1Dbxd5E4r1ejZ6FtkE36lijMrF6undBdzmnWr-nlCvTvx49fh9BfGvaGf1Y9OlLsfwRYrd4Ax1~u6l7g44dqNQ0A8AMv4~rP3N3rpaA0NYAjXUzEYtUVUYwcTXRAj5WVmbvg1uT8E8sCm~JGwq3F4OwhszX1AJS3vjHamezNg5RMuNFrPPFHDFeYGiicq30VJ8Tl1bWcmcVU6nl-kaEBHC5RrMLm8ILSsNir3PhCupoKW4lLMJtEuMzCTVOv~1d-9ikiVn6G0Ky1JKFw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/lwwdfacdg7drcag.png?Expires=1729458684\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=nTOJLQmA1sfY9DO~2AOtbpvUH0~plZZAzlAHiIpuvxeFEr1g7iO5Bwvw63eZxpsnAs1Yt7CZuJzaKMMNuhFyEgLqqCCay-2ky-QD3HX7dzv~bhldZ-DTL3zbr3rlCHBOPX3LepHFpN08Bn80DrGzDX6wlJcYEFcs-9lDj7vhwHI3AcJtPPPah2iO0YjHzm5csd5HPZ6DsnfB0bCw5Hh9ARPpQHb~tQn-cFIxkfSeYh-lKiBz3wQXe8T0q0rX5YlHATS1XGOPt2JB5Sxy7rvcKzQYn6cfV4B1rJqejOnXJpFZLiO3vXod0T-12WdD2fVl5ECvZgfdGHIo7r83PqOG~Q__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatpolicereport",
+    siteRoute: "",
+    correspondingTaskNames: ["File Police Report"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003ePolice Reports\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2020, there were 640,836 criminal offenses reported in the US.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you were a victim to identity theft, vandalism, vehicle burglary, or theft, you should file a report with your local police to get the incident on the records. DoNotPay can help you file the report with evidence, so you can do it straight from your laptop.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Firearm Registration",
+    description:
+      "Register your firearms to be in compliance with your state laws.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ptykiaw0dxy6kqf.png?Expires=1729987500\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GeN6ohVeqbiXpH5gNfymO5mZMBYR7JFr7ia5VsymSYbnsEVmSsTuKY~qs9MGmKT70FrwzzbY7vA-9bvBc3-E6ZVOaF6TzbwbmNNxRHI5WRdEfXLiu5k3j8IKcyoYUZEj-VeJzNz8QzmA10FAvvrViBugcphjhezw8KEZBxlExxaI9oI3gTpWnZ8l3quko3j7Dg3mwuJpocT9DTUfqqfXxwfJyisGx5USzrRH~yX-0i94yTbznhM8Va-5~CH0umhsRcMiHajB2fQlOpfC05aNi5GXNzk6T0FIUuusP~G1pUMtjCjnziYeZ2iOxbrCDhUDXXbDgQ0LUWixK6XhhVWllw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/1jsij0u5jkhwiql.png?Expires=1729987504\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=F3Xx1M3EJ8Q42-yDL50K~-2UCeT4dYKTTR2NRzgwKaZ~nXY1q4bxu159xA1hZmZ~bgipYD9NZRpbVDUSCQOCmbDHjA1OxX1G-~R6v59BlrNTMklYV84KW7OiFPhpNL0s~W9aWotUhyrsFVXyFUB~9ScVVKYyyGYvYFzY-bU48Ha5v~Te2-GuFdi3iyNZY~8L2UCo1H3CwigbwP2dvQxBM4lpQY-LjP-9o1-468vQnHxcEK-7wO8b0Tc4fhrAtKba1uViuWnDMSJGZj~mx6IRVU6F0GR5PE0CNpsoUH~HQWBITbk84utysqAaxiL45D1Ujz~jNRbHVUtOn85KG8rozA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatgunregistration",
+    siteRoute: "",
+    correspondingTaskNames: ["Gun Registration"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eFirearm Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eYou are legally required to register your firearm in California, New York, Hawaii, and the District of Columbia.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you own a firearm and either reside in or are planning to move to any of the states above, you have to get it registered to avoid legal penalties. DoNotPay can help you complete the forms you need and make sure you’re in compliance with the laws in your county and state.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Fishing License",
+    description:
+      "Get your official fishing license so you can start fishing today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/r9lo3vwab5elpjf.png?Expires=1730077628\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=BWP9H0E~2M6AgHbCz5IoUsmhNLydML78N0Lw2tjr-WfHQ78UoYh2gqXD3y~02YYeongivdgyFB99UqiBQgOPjywqaNtLiSzKbMwciXbcTB~1rU5j8pqcootCj2QGjMhZ-ao4pJgj~2lLzA~dDWFuQQqtN4~rTyn1hM7J1z78ag6o-bo8Uc3~0SH9zaw4K6Kts2S8L38YYH4wV8Suo8ia-Gz3TFp9zSLMhxhecX5lulMPsibauk-9WK0kzd7q1-9FRbzb3PVGdBUEPY1OYy-Ils6p2LZekH6Y4otGBlK1WzTTLfO09r34sWEihFFXZOrgNp47GDEVrdbAy74v0pmTgg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/mmcjk1m2wajln2u.png?Expires=1730077633\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GpStT2R2qWyXXfy1P8RY2Cr3ki6SAW6k1WsfDJkPpfYKIajUG6PfxgNT84MExUWyKoDtWZMeB8G12cxIHAtYnOxCB9OjL1pe3I3UwuU1wSeuO9hAcSYXn2HvSHPt81GZPeq3MtXeD14nI5MUhw3I9M5ngFprhDK170js8zsjqedopZaqt2flDP-mPk1jIR2Chg-b4ndoP-biM36fDFaWcKMb2wj2vJ3KAr1j5mUBLaMOmy-yuxPF6nDAI~X-9RUjm1O7Wcsxg2GhxFKpFobifAeH83HtgFw2Oy6qCPgaNQkU~R7vCca4GUIBmH7Pg6Yr0mk3~qqB-q4T1JrIJzDn6A__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatfishinglicenses",
+    siteRoute: "",
+    correspondingTaskNames: ["Fishing License"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eFishing License\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2021, there were approximately 29.24 million paid fishing license holders in the U.S\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you have plans to fish in your state or at a travel destination, you are legally required to have a fishing license. These licenses can be temporary or annual, and can also be specific to the type of water you want to fish in. If you need a license, but aren’t sure how to get one, DoNotPay can help. Use our product to avoid unnecessary appointments and forms and get your license delivered to you automatically.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Change My Mailing Address",
+    description:
+      "Are you moving locations and need help changing your mailing address? You're in the right place.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/changeAddress.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/changeAddress.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatchangeaddress",
+    siteRoute: "",
+    correspondingTaskNames: ["Change My Mailing Address"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eChange My Mailing Address\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe average American moves 11.7 times in their lifetime, with 15.3 million American households moving each year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eDoNotPay is here to make your move easier. We\'ll file an address change with USPS on your behalf, so you don\'t have to deal with any of the paperwork. You can start forwarding mail to your new address as soon as 7 days!\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "File a SEC Complaint",
+    description: "Have a trading issue? File your complaint with the SEC now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/j5uvhovrafsxt6z.png?Expires=1728847284\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e4IZKMGIz4h6OyRBtdrEUEkAgAAwy7KTjsLvpgQcCouwXE~gW2UlfVMPFC3BFCAl8K6qxJYxb13HpanUWer7khOxAEaVPT6I8EBNlMH2bbpDJwhGaXDdvw8ia8RS00Tw3vC3sTbPTS31ifScS427boM59Qg3lPiVlbzot5w8z0P-egrzn8xkylfBCPFQOAnVw-0ENE3tOXl1~riXu0cDkBU93mc9kYeP5A~v7McwdA4-JCpJUF5zvuQAA0sAffBAYIy7FfdnXBs3LhjEDwHtRcz7OWd-HAuNtUSGyOj8I4kwqRNEUp5d2hQdxbMOTBGLKhqzxcbDb~88~53GsJfClw__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/qldqdm3udakht8l.png?Expires=1728847288\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LNr~fc2wGye7FutoPt2TIv9w5boD1b~mrrbgF-lUb4fPeYTfYf8XxHy6aoxOmNBcOGUyVQenlEK4YoQaV4dqpuTxrtqv~v~8OH3FsdZ5kH~o54aUm7Q7G2mBcBKinhtcovIzVO1rP8r2oE8WJ1U4P8nx6GrpGqT-8gIsjE3rHAn2LoZglppTZc5RS2ttvs~atuD6LO79nIk8ndoiicXiP6GC2oTy--9YsIVS-iXzZ96WlJBD5e0Duk9~drwV0YIEklxeCMerkO~8p1ZuFMIjIz4wWHcHfMmNGPqjP5ZHk2bmVlo1vaEA3o3-I05U~iUiKHCpM25pCzOwPTXHSg3S7g__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatseccomplaint",
+    siteRoute: "",
+    correspondingTaskNames: ["File a SEC Complaint"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eFile a SEC Complaint\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAn SEC complaint against Facebook around misuse of user data resulted in the company paying $100 million to settle the charges.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eFile a complaint to the SEC for any reason and we\'ll submit an official report on your behalf.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Unban My Account",
+    description:
+      "Was your account unfairly banned?  I can file a demand letter to appeal the suspension on your behalf!",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ksd7olo6g3wdvjd.png?Expires=1715637197\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GEjUygxl230k6SukQI5QVthZq3Zzg2O8EYGkeStS8a256rBwb8vLoytPLqOwVTt4Hphk7NJVqgptuASmui466TrqWI1Kh6DQnkImtBkR-Of4TnWq6qMX2boTOmACGRK4lTrp5gV3wUP4Ys-198Hce~6~rPVup96DExHQ3T6msE8DrQBLK7RxXxAHsXrGgcLLB5l-ncWvElhY6CbnYK~eG9NiLahKe-L9gqgDNBtn9EtWo~mcQLL0w8Y35xdAY1qPGBdM-dlegf3XnPxwN6fQVKBDhQRpCXuZU1a8wtMy4BWLlCTakje0h82Z8abtqVSdeTOpp3v-2wQ~Yk-u~E4cRQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/c1pxd9lf0fyqfag.png?Expires=1715637202\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=HqgM3pFUlea~sx26CLhlg8eCPPNPchFTBMoG8o9q~1B182sv3Ndn2BDaKgiNZBImqi4saRgcg3EPkJRH~a7Xxrw2pARvOWPJGJIm31G2Jtnq~1KNt7hEv6YvNtdxHJCYS095vNsO8LjjUW9SaX-2yCV4zwFm1~HMneok3Mrzkf2AfEq07KpwaQCpMk~W3fzfJV1uUalxFXiD~DVz0b9CwUBnm3Eq8XZ31azRz7dwJ~BkPHySv6ojSflc-rxI1BXHLQj9ZqQvjLcK801gfOPOSeASaYbz3isjOXUUNWEU-78A2e~vodJVDA5JZev1h-DXa6r8Xn2Fr9sLN4Ddk1O39w__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatbannedaccount",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Recover Banned Account",
+      "Appeal Suspended Account",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eUnban My Account\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eFacebook banned 1.3 billion accounts over three months between October and December 2020.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWas your account suspended for no reason or without explanation? We can help you appeal the ban and legally request an explanation.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Negotiate a Cost of Living Raise",
+    description: "Keep up with inflation by negotiating a pay raise now.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/rzj4tlbdpxaiuvf.png?Expires=1729210966\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=N2KctSekLQHIGTPl8rtDm2d6hx-gVq95GvGxJAkp9fjP~siQQa~h8dInlp-5vOgaichgX~jEN-u9z9IHCA2-o4emzX3wIOy19KLzY9~~0mB1y645Ka56jPmgnzKXxJCEk4ZQANYYWUKRkUc6DV-Fle62MXZW~lGnIHGim288bXoUqHAKZsX-mmNWhGubRsYw9oze~LFQoFxPjOEYEcMXSef7UaAzs0gUHXVEX13~2Nk1aX7yRHWKtBhr6SzQOCpu7LeIKcbjeHzz9jlpUymzvhuKDvjHFMRVwFrToqFMRSDZUOs4LoouEFtnTu4rjZhkkGD~V3Wb~dH4bZ0~MGXkRg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/br1ipr40lvr2bor.png?Expires=1729210969\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UdpzPzhoim7sQBpG2ERqD~u-2sfO8sX2jKhq7rR4e0roZhIm0w-PHPCs6dI122vRRBsqdft7apeHoHtRTEcpBJFiR5LALck4FPrsSIiflMAP~c4w5RIKEuGbhWUtXizwsEUMyHOG~gGctHm8KlwpHwywyy05ei2ODRVyy0CbrI9R6100J5NIL0nolhvZsgJb6JriJ3OFgRPEb3xNdFDpVen7o64o-v7VNlNi84UQZKyFbPgnjNETMB~XuAL70ystmPkDS8VdzflAzH8nPWivouTb0V~7doOmdrNKHlbu3H2espVjzZgdEkRjBR3RFGNpE~nGa7iQqD5k7g8KnpmtJA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatnegotiatepayraise",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Negotiate a Cost of Living Raise",
+      "Negotiate a Raise",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eNegotiate a Cost of Living Raise\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eInflation tends to stable year over year in the U.S. economy, with the Consumer Price Index typically rising 2-4% per year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eOur product takes into the account the national average CPI as well as the average year-over-year wage growth in your industry to make a convincing argument as to why you deserve a raise. Choose whether you would like us to email this request to your manager/supervisor on your behalf. If not, we\'ll generate the request as a PDF that you can deliver to them yourself.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Report Crypto Fraud to the SEC",
+    description:
+      "Have you experienced any suspicious or fraudulent crypto activity? Report it to the SEC and potentially get compensated.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/dkmckix61kwj92z.png?Expires=1728954514\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=SjkmyaTLH66-VYYKeI5KIIOQwzDW5le4OOrjBg1CKWdVJbo-NqQP~BX0BuM1J-isMYSGqN4kRL6OlKdJCmiw9f2iORslAhzjRK-VqYG~oCtA5T5zGIhv4-hpRBD6cC1yrW0eZdEDjqtQY-Ds7tjmKen3R7jOCombjPZZ9z06TAOU2TD~GPM1M~ETA~qQEqgh8kqweWX-YUaoCxAzWs3YheWDAG6jRuvRNCmfKbY765iLrj39dJQ54O~GQ8I5UfOxf6THRDM4C0ZWUh0o~F7qwXV3ZCIrF0PCSXQgGyRTXOz279E-v1ZxWDpXnBrRLqHG7TDrXbiZNNSXCzawby1Iqg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/r6gxsdno5sofzw9.png?Expires=1728954517\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=oRnCcNK3Q1QKEURuYVsemCZRASTcErjELXMzegrza2O3qSmdacQwcYgiCmLqyKhn~BxpukLXDs2vX3zGNnStrrL~78y6K38QcGUmuqTptl54sCHbUxUB-cQ7hZGP0bKuytDnaqK3DAPagQvT6Ub6oziVkFExVS8ynW1U6xu-a9GSGDLVTIlkjW9nr1UPi1mLIFuZCUWBkeZoyJ1UAT1VyVFmjH7~c567Bg2C8aFi4X21y4cASZ3c2fZCAw78bZ09U-kVy2bbmZwZBimd9ESzYBUbhvX98UZ3olyVQE5eIFM-9xhs2upAMskLhg59Tdn4bzdeQmHZOwZTWL8~6Y7NrQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatcryptocurrencyscams",
+    siteRoute: "",
+    correspondingTaskNames: ["Report Crypto and ICO Fraud"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eReport Crypto Fraud to the SEC\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eA 2018 research report found that a whopping 73% of crypto projects were scams, indicating that ~$1.3 billion was lost to fraud.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDon\'t let crypto scammers get away with fraud. DoNotPay is here to hold these scammers accountable by filing a SEC report on your behalf. If you choose to opt in as a whistleblower, you can even get compensated for providing helpful information.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Hunting Licenses",
+    description: "Get an official hunting license today.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/fiusutyipdliigf.png?Expires=1731793903\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=eERc4PLK9NtWyNMl7NP4HASjqywFqkWJd8NBqXl8tHuIVYIO5mQqcqFSfBG9Q5CQXINdUZnu7er9wuws3p7sd6mP0eE~wZticokYkF6k8aVVJ9LAtlvYwhWs4S~c~4i0U4VJcNUa65x4iz3y53G9wvFD1uYCh801pbCOTTAMDPE83-erehLjYD1ogyo8mcYCwkMm1LJR36pcIA5fZADKvQzlxz1OQ2a93ZBKQmIHDPZOBK05sJgP5vfjf1LbCcOGrQQ8kbBYRYk9bXRTMkKpgUU-PhnM5FpooHJtHnygEZ2-~40I0rWvAfpNnBQsTQfgalEiPcOyrL2XjMaDD3xuCg__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/9llefykkbaxh7ta.png?Expires=1731793908\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ZiiM0Dyy4cIoYI3xWmz3ZFoMWnHCKxikAKBRt9Iy2LPmZIW0g0Oowy8LtUQneVYTdyTNqLKzutyljC03-pKD2-HYOnfS~EldwZxENC4aUH3AyuiXs0lg9gXILkTZW49WLOWcUPrmrBreQcXLSYYnCvL81p2nWSDA7nA5d4Gs2ufV~qLqk4cU7gzofPCQHLldtGlv2~UtED~nwEFV18l2zeUlcbK8e9g5wtCeS7GcSSkSbPPNn-~7Z9CCRsrnl3L18c94xOZT4WlbkTeDWI5WmF0tikYWS4HlEk-IdaSfxr0CGbwtQQGbDjjc-z~8hJDpRaISL0dkzAmQJivUULBPfA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chathuntinglicense",
+    siteRoute: "",
+    correspondingTaskNames: ["Hunting License"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eHunting Licenses\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to the U.S. Fish And Wildlife Service, a total of 38,854,259 Hunting Licenses, Tags, Permits \u0026 Stamps were registered in 2020.\n\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eHunting licenses are legal requirements at the state level that not only help prevent illegal hunting and promote wildlife sustainability, but they also ensure that everyone gets the necessary training to hunt safely. DoNotPay can help you get your hunting license with minimal effort and save you a trip to your county office through our online process!\n\u003c/div\u003e\n',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Cancel Voter Registration",
+    description:
+      "If you're moving to another state and want to cancel your voter registration, DoNotPay can help you do it in less than five minutes.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/f6nhyqdvgj16398.png?Expires=1734402753\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Dg1SfCrfjqtufII9H28N4u4kZdYg0A7hizQ6fRyMhxahEB35BheO87rKehtsBVglWE7TimmWITpZTZDI-K9k3mSPCXJA1BsEv246bIBDnB8ljxZ7eJdrDRNfeRBUgOMnKo79AgqVRI34d42--q7Bx9I7guIQJ6OEfyZCJ9PypXsSa~VWDMwyNbOoSRlQremKF38gFYRrajyYj-A0FjU-wlDN3j7WYH5Qnm04B8ZHDNO~DkkTkG28V5qav~bIXM1etzKfqwzGQYLpUpv3h3Anz7kcJ76qj5tYvWM2vjdtu8HGWO0WIHeKztcVF~Ru10~zbhqHam3I2JvaAcszeIIgTA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/xrzzjjhe3gxibos.png?Expires=1734402758\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Bj6z86doa4HmHp1th~yWC1a09OBrBdjeoETjuAiU4MMk4B8kOk0Y2OCl7bcQfj7kVyL5LAUz0H8TuEIx3Y5Hry1ISV6PCl787muDPROt0qBVxIK2VSBAA9WlCtrfav0LfHcEioa3M5eJlaIBVvYRvieLDhIz1FtyQlfiqGaB2Ooj9h8W2w~pqV88aPaGarHb3bVYtfuvLNRdRF1ZBXd6-rwwPBEt3NAUMBkW2sbyJDEu1zyTGafVRLMuZ99~YblLLx91rgcoNdovr-EGrvlByTxOKx-RaAG5WwnomW1mNbUQSqS3B9cem~t9NXYsIVuqCvsqNOklEQRJfJ8mCX9GxQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatcancelvoterregistration",
+    siteRoute: "",
+    correspondingTaskNames: ["Cancel Voter Registration"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eCancel Voter Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe 2020 presidential election had the highest voter turnout of the 21st century.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you\'re relocating to another state or no longer want to be registered to vote in your state, you must file an official voter registration cancellation request. DoNotPay can generate the cancellation request form on your behalf and make sure it gets mailed to the right department.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Voter Registration",
+    description: "If you want to register to vote for the first time.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/3me06zaoqutsglr.png?Expires=1734738685\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mgfltaxirrm2nH8~dJg-RP4FKTY5F4fZRAzxmlf7NERz3owGhVGTblV-JsEaOzCoYYdpvb6iJxVtI3qApJwyNiuBOREx~8lvjVza~J9KQnPO~8VWns4yjRclhjCP6r-srxGEmQnGeUULz-NF5XW9muwdrUokTzKzNZ3fOoNdVNvM2j0LIC8oFZQLEWed5PVRn-qMsJqCbqDLyVS9J4kNKnr3tLIYwc11PSuICboLX3L~D0Ud~nrxNtb0sntiVXDw4NNDPbfNFCAhAaFOWCeFPPVHvIEkC39aEm36H7FWcNyce3hwr0xiYUVXJkD8H1sVax4ri6OqQZAoi1pA~TjnXQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/rmqx3wjileygtck.png?Expires=1734738689\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LRngLgusc8-DsEkGGWIMpucC4mU~l6x9~XdcsCn9GwNXVP6eJsiv4b3GRgudav3e4VFen2pa33oAGlHIbSl2ujZpjMs06VJCFTIHQyaiSF146vH~5Y1aj4~tpmLS88CQry7OzPm3Ddj14Qw3CmfqCcz2aMc-H3fjkxoUlwWw1aKwdMOlDq0eqp6h5RB9QvzqSbANIVR9imQ8VAmjU8ut6ijeNtd6Pw2EwtpcFiWzIgi1tBLOd2cbEOoJ7Y7vPfRxEV0J79ceSwuUEm0K9lzX4bfOXVUCFaC3RrS4Vr3Io2Z1vhmBB-WUmP39EKd~SYkYfUk3yMBeAZBlDjiAqa0U5w__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatvoterregistration",
+    siteRoute: "",
+    correspondingTaskNames: ["Voter Registration", "Check Voter Registration"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eVoter Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn many states, you can actually pre-register to vote starting at the age of 16 or 17 depending on your state, so that when you turn 18, you\'re automatically added to the voter roll.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you want to register to vote for the first time, or need to update your information because you changed your name, address, or political party affiliation, DoNotPay can help. We’ll contact your state agency on your behalf and make sure your registration gets updated.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Lower Property Taxes",
+    description: "Find how you can reduce your property taxes.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/propertyTaxPD.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/propertyTaxPD.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatreducepropertytax",
+    siteRoute: "",
+    correspondingTaskNames: ["Reduce Property Tax"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eLower Property Taxes\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe average American household spends $2,471 on property taxes each year.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay automatically identifies which property tax exemptions you are eligible for so that you never miss out on a tax discount again. You\'ll also get detailed steps on how you can appeal a home assessment, so you can reduce the amount of property taxes you owe.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Child Travel Consent Form",
+    description: "Automatically create and notarize your consent form.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/sdwd4tyke3bp0or.png?Expires=1728596559\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rasAahvK2sZaaucqDVBpFQxn8ICvg9y1RuM-wglRo9zsHhuU8F7RaPjAwnc75wCGV6qySHT1nPincSToRrn79gyDsGAm0nmFGveQl7Hz8T2FgAh5lwgR0JpuE8GYkh9FZf5ncoDpXnyoObqyHE2a~gAW3uBoXRvjk7VRr18EqN5KngYZO8XSV9JDhWaRH8-mj9eXGf5uYoCbZ8azLsH1-YCXsIBPsk9JdqX83eueqP2lf3cpwdkvS1E82~NvuimtBTX1lXq8MWu5IK6pSJ4KD1oeaS4eOjp7WW-VQeO2hnUeYIl8VCGvQ8SJHkHNpOe6TeygWv8YeZBfcdNKAsbCWQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/eazykp6unugares.png?Expires=1728596562\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=V2yOsle-jJV8IeU0gIisodhcIRdBMgy7qz21vHeJbzVMO-Ly-F27rhjlyZoY~2C5KcWMAejZT6JlpwH0x-0cmeBH9rMWYf8DjTKCRWeSMS4RRmI5CSEGyYx1fW4TfUr4pKSvl5xlxZCMeENp4ZhSJ6ilSE-iPpI9OWVADJSC0TJkZ59uHLSfXmdo0LcpNbtZ228Q72GEbegyVAwlmLL-UN2tFUbqQWzaLo6m1rpxqD~GM88RzNGLhhEXQm54H29DxEQBByvWuo8Wj6UUxqzI~EgAyhrnfH6kPxWNwe~AaXoLsBY4J66nw7Ys6nazFUYUEDyb2nl2vUBFw9BNG6j6iQ__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatchildtravel",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Minor Travel Consent Form",
+      "Child Travel Consent Form",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eChild Travel Consent Form\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eEvery year, an average of 45,000 people are trafficked through U.S. airports unnoticed.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eTo prevent child trafficking and abduction cases, children are required to carry a Minor Travel Consent Form if they\'re traveling alone or without at least one of their parents/legal guardians. With DoNotPay, parents can generate their own child travel consent forms and get them notarized.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Pet Custody Agreement",
+    description:
+      "Create your own pet custody agreement to ensure your pets are in good hands.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/petTrust.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/petTrust.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatpetcustody",
+    siteRoute: "",
+    correspondingTaskNames: ["Pet Custody Agreement"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003ePet Custody Agreement\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eA survey by the AAML showed an increase of 22% in pet custody hearings in court, with the majority of cases involving dogs (88%).\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eDividing custody of your pet(s)? Generate your own pet custody agreement in a few simple steps. We\'ll help you make an arrangement that works for you in terms of visitation schedules and covering insurance costs and other expenses.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "File a HOA Complaint",
+    description:
+      "Having issues with a neighbor or community maintenance? File a complaint now.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/HOAcomplaints.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/HOAcomplaints.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chathomeownersassociation",
+    siteRoute: "",
+    correspondingTaskNames: ["Homeowners Association Complaint"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eFile a HOA Complaint\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2018 there were 347,000 complaints to the Home Owners Association, most frequently about loud music, landscaping, or pet waste.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWhether you want to report a problematic neighbor, want your HOA to do maintenance, or have any other complaint, DoNotPay will generate a formal complaint letter that you can use. Our letters are backed by state-specific laws that protect your rights as a homeowner.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Appeal a HOA Fine",
+    description:
+      "Did you get a fine from your HOA that you don't deserve? Appeal it now.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/appealHOAFines.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/appealHOAFines.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatappealhoafine",
+    siteRoute: "",
+    correspondingTaskNames: ["Appeal Homeowners Association Fine"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAppeal a HOA Fine\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eBetween 2005 and 2015, HOA fees rose 32.4% across the US.\n\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eHOAs are supposed to benefit the community and homeowners, but sometimes it feels like they\'re out to get you with pesky little fines and fees. DoNotPay can generate a formal appeals letter for you. We\'ll outline your rights as a homeowner and make the case on your behalf, arguing that the alleged violation was either a mistake or unfair due to selective enforcement.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Fight Job Discrimination",
+    description: "Report discrimination to the EEOC in less than 5 minutes.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/employmentdiscrimination.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/employmentdiscrimination.png",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatemploymentdiscrimination",
+    siteRoute: "",
+    correspondingTaskNames: ["Job Discrimination Complaint"],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eEmployment Workplace Discrimination\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eFrom 1997 to 2018, there were 1,889,631 discrimination complaints filed with the EEOC, with the highest number of complaints occurring in Southern states.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will file a discrimination report to the EEOC. The EEOC will investigate your case so you can reach the cash settlement you deserve.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Americans with Disabilities Act",
+    description:
+      "File a discrimination complaint or request reasonable accommodations.",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/kbvfmqtb3spdedc.png?Expires=1728847240\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Bcx3nl5Nu0KSTCLLWUehkWc02X0Ihjyxj4VK~-fkZF4qnlQbbktHNsH8laq45IMomN-cMEwlFxDN~8RL2Vpz6uPP-eakUeu8NgItfOS4ejKNuj-iAgHIbIrZyJKhocgHQaeWtylkJbRtVS4Qv6oaHaJs~CKiKWuu8~eWQzZEfgnH7M-LEHaHkzG7JUzWVJIsRAMlLrZIG0~wAWoqR~aqACppKa1b1yrjZ8oIayQBuUYcvxDn5m0Osw3eMNlkaWar47RuMTINUMn8n76QUP1kqmyVyeE3KSy23LifwAadYvuB4yiMra02TnyI2kuTvSTiD9izHTIKuW2zVUjq6jmCQQ__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/ftwgok0jzt3vped.png?Expires=1728847243\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=M86QpLZRtC5ba5wDuaYVZ~HvwSG1iSvKaGTNdJl-MQRFABpBSQNbckZ7HC4xN7vFe~XnmqY2RTz2i6vbK-I979Ct5-x4eYbhNNdQlEwxmzSh0rbT6bBGyaRDK3cNs5HLxwMUCCH-CySYi04kz18UPYyhYJqJ~PaQbQxic71i1xZRs2gGqlxSVD6tMWEZSOEzCV535CKADi4WFEEMot5Sm~KCSF41rNoP2eVjHby69OpzRLBp6Cw1oEsCxUY-kDJuD--Bb6fhLrkBvJbFnBfaUp48Wt-nSLq5sH3Y7GlwIzysVZUBu3dE5E9s1amT--yDeVAwAPrUgRA6OojArhXK5w__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chatreportadacomplaint",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Request ADA Accommodations",
+      "Americans with Disabilities Act Discrimination Complaint",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eAmericans with Disabilities Act\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eApproximately 57 million Americans have a disability.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will help you file a complaint with the US Department of Justice or your city government. We\'ll also request reasonable accommodations directly from your employer or any institution. If you have already filed a claim with the DOJ and want to know its status, DoNotPay will call the DOJ on your behalf to see if your complaint has been received and is being processed.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "Notice of Intent to Homeschool",
+    description:
+      "Send the superintendent of your school district a Notice of Intent to Homeschool!",
+    cardImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/xyw8f1vl2dq35r9.png?Expires=1708900280835\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LG-B2BjEPwuxw27x7cm3UIsaDX0~sZuL21thXavFjfyqn53o6WABS-kFXIZyC5dJb4EMKuD9XuJqi~maq6QaJ8W3uEg0jW-WQ6fhGsZd2aaZGOxNvOTkk10qsV3lJUv3QYhGKq6ZClzD0coo9t-wahN3nfgVkhdwiBXm0yhR7uJJ1RPgvoQdC~TB5i-NBEDrW8~f02mYlA1h2BwHTbhhybuSoemTRFOIXcZwwhGlkSW3wsFzEijpNvVVZGiT0Ja41sdsHgkvlrL7K5Rjc3~tbO-vaANJ9GDxY~EUrZf-NPWZ2T-cFinAFPd~bUadfiZBazUk-RTSbl720-HbznOQyA__",
+    iconImage:
+      "https://d2pp7hm7rdj612.cloudfront.net/hohr4nosvx2mava.png?Expires=1708900284606\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=J8MHu6lbD67-oV3KCdY4eMZHkD4kyd5~qUJeXgsAj0lAjteYwtCYKJ9TWuU7bVislhm~~e77MH5zzzHcd92Eob-COGRiO0fx6wl6g-ufFRaGBvgcxO-oHViUbOWjjasHIBC6CmY9ifadRr-zBN7sguCzLVsLejYiQSVeAxUMfm9DuGod9G6zGaNIoJo~mDi1ASsnqMJad5ziZEQMsNQrDr7J8qY7i-kPSXjDuxqzqyFDyNUexyHpKsyu5vdNqplQCbQR4ZP997d67Ai6E~Qg6u1DK2ZPo9WQiFFHodKmek9Z44MpympotHT31aTA-S-Etk1wGrf5H3DKgjBmn8G2sA__",
+    isCategoryCard: false,
+    isCompanyCard: false,
+    chatTopic: "chathomeschool",
+    siteRoute: "",
+    correspondingTaskNames: [
+      "Draft Homeschool Notice of Intent",
+      "Homeschool Notice of Intent",
+    ],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [],
+    isHoverDescriptionActive: true,
+    hoverDescription:
+      '\u003ch1\u003eNotice of Intent to Homeschool\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eOver 26% cited a negative environment as their most important reason for homeschooling, and over 90% listed it as one of their reasons for making a change to homeschooling.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eThough requirements differ slightly based on the state, a parent is typically required to submit a Notice of Intent to their local school district/superintendent to homeschool their child. DoNotPay will generate a homeschool letter of intent on your behalf and give you the option to get it notarized.\u003c/div\u003e',
+    __typename: "ProductCard",
+  },
+  {
+    title: "File a Complaint",
+    description:
+      "Unhappy at work? Tired of your loud neighbor? Get your complaints heard in \u003c 5 minutes.",
+    cardImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/anoncomplainticon.png",
+    iconImage:
+      "https://donotpay-assets.s3-us-west-2.amazonaws.com/anoncomplainticon.png",
+    isCategoryCard: true,
+    isCompanyCard: false,
+    chatTopic: "",
+    siteRoute: "",
+    correspondingTaskNames: [],
+    currentProductOfTheDay: false,
+    bannerHeader: "",
+    bannerDescription: "",
+    bannerRoute: "",
+    bannerImage: "",
+    bannerBackground: "",
+    subProducts: [
+      "Americans with Disabilities Act",
+      "File a SEC Complaint",
+      "Fight Job Discrimination",
+      "Neighbor Complaint",
+      "Anonymous HR Complaint",
+      "Plagiarism Monitor",
+      "City Repairs",
+      "Debt Collection Protection",
+    ],
+    isHoverDescriptionActive: false,
+    hoverDescription: "",
+    __typename: "ProductCard",
   },
   {
     title: "Customer Service Issues",
@@ -1756,30 +3053,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Lower Property Taxes",
-    description: "Find how you can reduce your property taxes.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/propertyTaxPD.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/propertyTaxPD.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatreducepropertytax",
-    siteRoute: "",
-    correspondingTaskNames: ["Reduce Property Tax"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eLower Property Taxes\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe average American household spends $2,471 on property taxes each year.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay automatically identifies which property tax exemptions you are eligible for so that you never miss out on a tax discount again. You\'ll also get detailed steps on how you can appeal a home assessment, so you can reduce the amount of property taxes you owe.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Employee Benefits",
     description: "Take advantage of what you deserve.",
     cardImage:
@@ -1927,102 +3200,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Appeal Parking Ticket",
-    description: "Appeal your parking ticket and avoid the fee.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/khjg3g76lqug35m.png?Expires=1728583691\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=IW2mSsQ4~hByQElhB88CBFNazRUXAPxWvM61GD05vH~seFzu-8p~k-vxiO0ulMi9uuNytC5bNnbzEXHLSPPpNysV54VDM2cfikj0ElHKaVqRZ0imlrM1NyUQY~J~YFyEmpLfc-qxMrgQtcrGXf0tu6lN0DLHOXzozlGsQ7apmWSb3d6D9i0THRSFmBPzSxnbGgG6BfGSq6Pq3w80UiEGeTXtY~6h9KtQmSJNBhYZjKjrIb8lqZVSjkxtGfLCals9s8JfDPLBxNthRhlW8jw-5ruDm6eK2SqpX-R7zgr7Ro0b5Mu7V2e1BMRCdYRUc2xhtRQGQP789vlVlp6UK7RHjg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/vz2ccg9oixajmdw.png?Expires=1728583693\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LFa73AgIiROPpdQNf2~7OOuOiXqUSsk3Rr4Mgo7yDSbwEgchkku4xw1PhqaZqAiH4yS0e9kVX1ztnDN1-E540O3kBM6AQU6bzSz~BCJQLzSksNPn4aDImKupnWgiLCV51j~25vwjjSANTd6ORV9G59Dz8~pNNuSTreqmRHf6yRANU5se6Ziln3xrP28YM5c1faTCyWdoflM7dMG7r6uIEVK-SmHGynhdQwyy0PBYgFxdbHneewYqoToBWJ1GpvwGiVcOX9afDrG0TCNuvwkWLNo8ihbdi4o9-C~oaBfGV4iQ5m6YEiqKJ-5geNqAJxCFXciVOcv2sGUehbnmMbIyKg__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatparkingticket",
-    siteRoute: "",
-    correspondingTaskNames: [],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eParking Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe most expensive car ever to be issued a parking ticket was a $15 million vintage Ferrari in London in April 2016.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eNothing is worse than coming back to your car after a few hours to find a small ticket with a big fee stuffed under the windshield wipers. Snap a photo of your ticket, select a defense, and upload any other evidence, and DoNotPay will generate the best possible defense based on your case. We also offer the option pay the ticket for you.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal Speeding Ticket",
-    description: "Appeal your speeding ticket and avoid the fine. ",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ih4ube8jtlluo14.png?Expires=1728583712\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=p5yeBrqAh8w~qZZhkeZdqwoZd1CHHyLw6jrUO-fELvqIqUdzEctNW7zDzDmsGv3IDT6PcJCQajm0hwAtCa5ZjlvceCgDrFI67p7mrh-6fXfN-0vgd88fPziwKTOPMttdj8mYQfiyu3LPWAc3b0MgA7qGhBB8UnlYTTsgvz6a8Vieqz4eoXj4cmsGiF1JH94xW66kUco9bfmHsSftA65G3lxCbSNdPuMJMDx7WNDYvSK2fUnBsHxIHXFl-n42~vuYLm~r2DaJSqDLg0bPgh5fyyDWz~RSoQq9i90un2~8QvEwHisdd~gitj6Mu1b1XnqdOWleBzeh-YBQbkVEuAlyog__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/kdwhsjgavmmlxkc.png?Expires=1728583716\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=eaXpWvG9HTGuO2A5Wrf1nA12gszCWEoklmNK1ZLn-5JuRRdRVN5nKXrcHRhI86EYrnjlwwgtOVORrUCxJLdZhvQ-WvolWDzbHh5ceEl1VvHmTWf0ZAHdJFfoE~kyj3faNos2tzOIIQmt1W3lnbxRrH4gi4vGGu0GjROVMIPgyoD2zY6WhfPCCgQtUFSx~2MdBSYBbaWV03u6GuH4rO6WhHXExrYBqSqX44GfthUfxnGBlZh53wO7UTeSSLXkKm6rIIAuFfp-g2x9dnPDSugOqiJL~KQibBDlHtoosWl1V7DLMZu-E8WofI6g-5RFweA2dzPaprIyn0DwWKrExXSnYQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatspeedingticket",
-    siteRoute: "",
-    correspondingTaskNames: ["Premium Ticket Appeal"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eSpeeding Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAround 35 million speeding tickets are issued each year in the US, which means about 65 speeding tickets every minute.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eSpeeding tickets can leave you down $500, making it one of the most costly traffic tickets to deal with it. Upload your ticket, explain your defense and any evidence associated, and we\'ll handle sending the appeal. We also offer the option to pay the ticket for you.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal Red Light Ticket",
-    description: "Appeal red light tickets and avoid the fees.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/io0pmx197qln4w2.png?Expires=1728583779\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=qoWLuLDr0sZP9FDZcEKGzuF~pmDd1oV6ZPni78Q7nLMyx0pvtUmkw1jUQrFPIlaGjFhGaes1ZaCDLBQjsvWJSizLOi7CWN8hqHoMHLZTtODwtFwtkfjaMUgJZ8vP7tTy1rb-6un14NzmfLi~SalGZe3JuJNm0Os7sr~amcdduzd3MqapgzRmaU8-BqTM3KqHCZIu4XMINikm70gpvKDcfa~TyIQjXZ3Xr9NCrrCoblfMtB6ELom7qajA4UfaSpyj6dDzwT3~Ev18sCsGo2aVjlyI0a09W6LMZhrHv3YWadB4zc71x0EbnV92Leelncrn08zAqldMX7zOfgd4Bz9ZEA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/dm7mb8tusqswue0.png?Expires=1728583783\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=DzB6lYOzAgJJKgx7rFPsiLKU14ehEGkAnUN6AV3lHHEet6U0MjzXU5~-RTJFK1UV~KeVi-Mm4ViEpvkQa-fFOu71Mykepn4sf5OUFlaxrPW5s9UJgE8MZZhQu~7IWudeMOgr3j5ERAyxv9GQoLAVCjQG5ppA48YphcYmOAsle0VTTEQC6BH9W30dt9FnQfABgKp3lh0CLLY~MGLJLH7RWxpQsoLNXpCAJpSYOTINUUFEAY15whST3bFUq6zyr8ZJUWUhWcxN9RrencHk2bbuRYm5qfZDI7uFWtTAQluwCgpTQeP~PcBLlGGuyh4tx92321j18CCHTSX0CK75w~9jiw__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatredlightticket",
-    siteRoute: "",
-    correspondingTaskNames: ["Premium Ticket Appeal"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eRed Light Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn their lifetime, the typical driver will spend the equivalence of two full weeks waiting at red traffic lights.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf you believe you\'ve been wrongly ticketed for a red light violation, upload a picture of the ticket, and we\'ll help you pay it or build your defense to fight it. You\'ll be able to select from several defenses including a malfunctioning red light/camera, mistaken identity, or missing ticket details.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal Toll Booth Ticket",
-    description: "Appeal toll booth tickets and avoid the fines.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/2wehyopx99qzuob.png?Expires=1728583766\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GANGCwht3bxcgWyi60Z2RVqw5CCEMO0xLW9i0obkiTb57TrLT-42niVvIJdN2mE4zWuAb5VqIAO32YYd7AOZr2vneiWBPZnxydzwua589w3aDrtePGd3OplXCGFy198WkmII7gm8aRJzxJzG2U0opVI4qQ34EUtd9cWFNm6kuslhnPfaGIcfxKPeILSdci-4BwmRwIm4xEDsdDlPmxiv8aoxKMf-gF3vh2timBoEK28BTLkol3h-aI3myVsYtZCUTjSAtUAWR4zKdZVCx~jzymBAthRVxF69F3vhV12PYrTIFNBCBClWZxpys9QxrgH2RxO~UC8w~~8JlI-TKJbEsg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/vaogk01sle5q0eq.png?Expires=1728583769\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UVohziOINppKyDnrwoTelc19tZp~EQiLGaFPRNOosKW0w6gkN9Ep3P4H4-O1erQMbuxU5dmqY3KK55-6BqDgLu4yimyrL~88f0YKRsJTdEfxaU02OWIV6tXH2tjqBSJm7wCmHXFK~lR4CW2OKGZoHPR1EMVcbtLz909qF~cq94t64AVe5zs198T68O6ldbwXlyE1qC2cQpQ4GIqGaLHCBTojYO5k1SSayMtjvt8u7ZzjfkzKhyfZl7C6gtpdjhhl0huHD4fDkbGU7al0D39vFCnf4ClQWwZJ3oQmL-vGOXXSN8vzusAcNjY3aoa7~5WT9ZZgcjh1JiFtMkDALyNQ4Q__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chattollboothticket",
-    siteRoute: "",
-    correspondingTaskNames: ["Premium Ticket Appeal"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eToll Booth Ticket\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe Pennsylvania Turnpike is the world\'s most expensive toll road, coming in at $112.91.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eMany drivers don\'t even realize they\'ve missed a toll payment until the ticket comes unexpectedly in the mail. Snap a photo of your ticket and DoNotPay will help generate a defense to get the ticket dismissed. You\'ll be able to select from defenses including missing details, proof of toll payment, or lack of car possession at the time of the ticket. We also offer the option to pay the ticket for you.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Free Fast Food",
     description: "Get free fast food with one snap of your receipt.",
     cardImage:
@@ -2044,28 +3221,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eFree Fast Food\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eBetween 1989 and 2001, $24 million dollars were stolen from McDonald\'s by insiders who knew how to rig the Monopoly game giveaway.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eJust snap a photo of any fast food receipt and we\'ll complete the survey for you to win rewards and claim free food.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "DMV Appointment",
-    description: "Make a DMV appointment or get support for other issues.",
-    cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmvPD.png",
-    iconImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/dmvPD.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatdmvappointment",
-    siteRoute: "",
-    correspondingTaskNames: ["DMV Appointment "],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eDMV Appointment\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe average wait time at a DMV across the US is around 38 minutes, with Massachusetts ranking in with the highest average wait time of 1 hour and 20 minutes.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you need an book an office visit appointment, a behind the wheel driving test, or just get some information, DoNotPay will sort out the details, make the appointment, and notify you when it\'s all done. We\'ll also keep refreshing appointment dates and get you the earliest one available.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -2170,33 +3325,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eConnect With an Inmate\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2018, a group of 363 prisoners hacked into JPay (a service for innmates to receive money and communicate with their families) and created roughly $225,000 in JPay credits.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eSend and receive letters to any incarcerated inmates. If you\'re not sure where they are, we\'ll also help you locate the facility they reside in.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Child Travel Consent Form",
-    description: "Automatically create and notarize your consent form.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/sdwd4tyke3bp0or.png?Expires=1728596559\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rasAahvK2sZaaucqDVBpFQxn8ICvg9y1RuM-wglRo9zsHhuU8F7RaPjAwnc75wCGV6qySHT1nPincSToRrn79gyDsGAm0nmFGveQl7Hz8T2FgAh5lwgR0JpuE8GYkh9FZf5ncoDpXnyoObqyHE2a~gAW3uBoXRvjk7VRr18EqN5KngYZO8XSV9JDhWaRH8-mj9eXGf5uYoCbZ8azLsH1-YCXsIBPsk9JdqX83eueqP2lf3cpwdkvS1E82~NvuimtBTX1lXq8MWu5IK6pSJ4KD1oeaS4eOjp7WW-VQeO2hnUeYIl8VCGvQ8SJHkHNpOe6TeygWv8YeZBfcdNKAsbCWQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/eazykp6unugares.png?Expires=1728596562\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=V2yOsle-jJV8IeU0gIisodhcIRdBMgy7qz21vHeJbzVMO-Ly-F27rhjlyZoY~2C5KcWMAejZT6JlpwH0x-0cmeBH9rMWYf8DjTKCRWeSMS4RRmI5CSEGyYx1fW4TfUr4pKSvl5xlxZCMeENp4ZhSJ6ilSE-iPpI9OWVADJSC0TJkZ59uHLSfXmdo0LcpNbtZ228Q72GEbegyVAwlmLL-UN2tFUbqQWzaLo6m1rpxqD~GM88RzNGLhhEXQm54H29DxEQBByvWuo8Wj6UUxqzI~EgAyhrnfH6kPxWNwe~AaXoLsBY4J66nw7Ys6nazFUYUEDyb2nl2vUBFw9BNG6j6iQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatchildtravel",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Minor Travel Consent Form",
-      "Child Travel Consent Form",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eChild Travel Consent Form\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eEvery year, an average of 45,000 people are trafficked through U.S. airports unnoticed.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eTo prevent child trafficking and abduction cases, children are required to carry a Minor Travel Consent Form if they\'re traveling alone or without at least one of their parents/legal guardians. With DoNotPay, parents can generate their own child travel consent forms and get them notarized.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -2370,37 +3498,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eAirline Services\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, US airlines collected a total of $8.6 billion in baggage and ticket change/cancellation fees.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you have lost or damaged bags, need to change a flight, want a refund for a flight, or have other concerns about your trip, simply enter your flight details and DoNotPay can contact the airline for you to get your issue resolved.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Report Tax Fraud",
-    description: "Get cash rewards by reporting companies for tax fraud.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/taxreport.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/taxreport.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chattaxfraudreport",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Report Tax Fraud",
-      "Report Tax Fraud UK",
-      "Anonymous Tax Fraud Report",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "Report Tax Fraud ",
-    bannerDescription:
-      "Get cash rewards by reporting companies for suspicious activity and tax fraud.",
-    bannerRoute: "/web/chat?topic=chattaxfraudreport",
-    bannerImage:
-      '\u003c?xml version="1.0" encoding="UTF-8"?\u003e\n\u003csvg width="412px" height="354px" viewBox="0 0 412 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"\u003e\n    \u003c!-- Generator: Sketch 56.3 (81716) - https://sketch.com --\u003e\n    \u003ctitle\u003etax\u003c/title\u003e\n    \u003cdesc\u003eCreated with Sketch.\u003c/desc\u003e\n    \u003cdefs\u003e\n        \u003crect id="path-1" x="11.34" y="40.824" width="156.492" height="229.824"\u003e\u003c/rect\u003e\n        \u003cfilter x="-2.9%" y="-2.0%" width="105.8%" height="107.8%" filterUnits="objectBoundingBox" id="filter-2"\u003e\n            \u003cfeOffset dx="0" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-3" cx="22.1516494" cy="22.1516494" r="22.1516494"\u003e\u003c/circle\u003e\n        \u003crect id="path-5" x="48.384" y="15.876" width="81.648" height="41.58" rx="5.292"\u003e\u003c/rect\u003e\n        \u003cfilter x="-3.1%" y="-6.0%" width="106.1%" height="124.1%" filterUnits="objectBoundingBox" id="filter-6"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.179987981 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-7" cx="164.052" cy="51.408" r="35.532"\u003e\u003c/circle\u003e\n        \u003cfilter x="-18.3%" y="-11.3%" width="129.7%" height="131.1%" filterUnits="objectBoundingBox" id="filter-8"\u003e\n            \u003cfeMorphology radius="5.04" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"\u003e\u003c/feMorphology\u003e\n            \u003cfeOffset dx="-5" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003ccircle id="path-9" cx="66.3032432" cy="81.2359459" r="66.15"\u003e\u003c/circle\u003e\n        \u003cfilter x="-9.9%" y="-6.1%" width="115.9%" height="116.7%" filterUnits="objectBoundingBox" id="filter-10"\u003e\n            \u003cfeMorphology radius="5.04" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"\u003e\u003c/feMorphology\u003e\n            \u003cfeOffset dx="-5" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-11" x="0.529385749" y="0.139312039" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n        \u003cfilter x="-8.8%" y="-32.3%" width="117.6%" height="229.0%" filterUnits="objectBoundingBox" id="filter-12"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 1   0 0 0 0 0.454901961   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-13" x="0.529385749" y="11.2184186" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n        \u003cfilter x="-8.8%" y="-32.3%" width="117.6%" height="229.0%" filterUnits="objectBoundingBox" id="filter-14"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 1   0 0 0 0 0.454901961   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003cfilter x="-9.0%" y="-11.1%" width="117.9%" height="122.1%" filterUnits="objectBoundingBox" id="filter-15"\u003e\n            \u003cfeOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127868226 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"\u003e\u003c/feColorMatrix\u003e\n            \u003cfeMerge\u003e\n                \u003cfeMergeNode in="shadowMatrixOuter1"\u003e\u003c/feMergeNode\u003e\n                \u003cfeMergeNode in="SourceGraphic"\u003e\u003c/feMergeNode\u003e\n            \u003c/feMerge\u003e\n        \u003c/filter\u003e\n        \u003clinearGradient x1="60.4844299%" y1="35.8066142%" x2="24.5465035%" y2="57.0172452%" id="linearGradient-16"\u003e\n            \u003cstop stop-color="#2DD682" offset="0%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="27.3358319%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="58.0037443%"\u003e\u003c/stop\u003e\n            \u003cstop stop-color="#2DD682" offset="100%"\u003e\u003c/stop\u003e\n        \u003c/linearGradient\u003e\n        \u003cfilter x="-9.0%" y="-11.1%" width="117.9%" height="122.1%" filterUnits="objectBoundingBox" id="filter-17"\u003e\n            \u003cfeOffset dx="4" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.127868226 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"\u003e\u003c/feColorMatrix\u003e\n            \u003cfeMerge\u003e\n                \u003cfeMergeNode in="shadowMatrixOuter1"\u003e\u003c/feMergeNode\u003e\n                \u003cfeMergeNode in="SourceGraphic"\u003e\u003c/feMergeNode\u003e\n            \u003c/feMerge\u003e\n        \u003c/filter\u003e\n        \u003crect id="path-18" x="0" y="0" width="161.28" height="81.9" rx="15.12"\u003e\u003c/rect\u003e\n        \u003cfilter x="-1.6%" y="-3.1%" width="103.1%" height="112.2%" filterUnits="objectBoundingBox" id="filter-19"\u003e\n            \u003cfeOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"\u003e\u003c/feComposite\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.375600962 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n        \u003cpath d="M44.2846676,63.205308 L32.7275624,63.205308 L32.7275624,26.9867298 L20.16,26.9867298 L20.16,17.64 L56.85223,17.64 L56.85223,26.9867298 L44.2846676,26.9867298 L44.2846676,63.205308 Z M84.6072098,63.205308 L81.7337219,53.1954655 L66.829477,53.1954655 L63.9244123,63.205308 L52.1146929,63.205308 L67.429436,17.64 L81.6074147,17.64 L96.9221579,63.205308 L84.6072098,63.205308 Z M74.1552923,27.3024977 L69.0714291,44.859193 L79.460193,44.859193 L74.4079066,27.3024977 L74.1552923,27.3024977 Z M97.9000198,63.205308 L111.825384,40.3752888 L111.825384,40.1226745 L97.9315966,17.64 L111.446463,17.64 L119.814312,33.0494735 L120.03535,33.0494735 L128.466352,17.64 L141.318106,17.64 L126.824359,40.2489816 L126.824359,40.4700192 L141.191799,63.205308 L128.182161,63.205308 L119.34066,48.4273703 L119.088046,48.4273703 L110.214968,63.205308 L97.9000198,63.205308 Z" id="path-20"\u003e\u003c/path\u003e\n        \u003cfilter x="-1.7%" y="-4.4%" width="103.3%" height="117.6%" filterUnits="objectBoundingBox" id="filter-21"\u003e\n            \u003cfeOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"\u003e\u003c/feOffset\u003e\n            \u003cfeColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.273792614 0" type="matrix" in="shadowOffsetOuter1"\u003e\u003c/feColorMatrix\u003e\n        \u003c/filter\u003e\n    \u003c/defs\u003e\n    \u003cg id="tax" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"\u003e\n        \u003cg id="Group-4-Copy" transform="translate(21.000000, 33.000000)"\u003e\n            \u003cg id="Group-64" transform="translate(85.680000, 0.000000)"\u003e\n                \u003cpath d="M68.04,17.388 C71.064,5.796 78.372,0 89.964,0 C101.556,0 109.116,5.796 112.644,17.388" id="Path-65" stroke="#394151" stroke-width="8.316"\u003e\u003c/path\u003e\n                \u003crect id="Rectangle" fill="#394151" x="0" y="28.728" width="179.928" height="259.308" rx="10.584"\u003e\u003c/rect\u003e\n                \u003cg id="Rectangle-Copy-57"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"\u003e\u003c/use\u003e\n                    \u003cuse fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n                \u003cg id="Path-63" transform="translate(27.972000, 213.192000)"\u003e\n                    \u003cmask id="mask-4" fill="white"\u003e\n                        \u003cuse xlink:href="#path-3"\u003e\u003c/use\u003e\n                    \u003c/mask\u003e\n                    \u003cuse id="Mask" fill="#3BC1C8" opacity="0.362397693" xlink:href="#path-3"\u003e\u003c/use\u003e\n                    \u003cpath d="M23.4546876,-3.25759551 L23.4546876,23.4546876 L42.3487416,42.3487416 L55.3791236,20.1970921 C50.6013169,1.9545573 47.7780674,-7.16671011 46.9093753,-7.16671011 C46.0406831,-7.16671011 38.2224539,-5.86367191 23.4546876,-3.25759551 Z" fill="#27B0E4" mask="url(#mask-4)"\u003e\u003c/path\u003e\n                \u003c/g\u003e\n                \u003crect id="Rectangle" stroke="#76768D" stroke-width="6.804" x="31.374" y="70.686" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle" fill="#D3DAE4" x="58.212" y="74.088" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-88" fill="#D3DAE4" x="58.212" y="148.176" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-75" fill="#D3DAE4" x="58.212" y="111.132" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-89" fill="#D3DAE4" x="58.212" y="185.22" width="93.744" height="7.56"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-73" stroke="#76768D" stroke-width="6.804" x="31.374" y="144.774" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-58" stroke="#76768D" stroke-width="6.804" x="31.374" y="107.73" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-74" stroke="#76768D" stroke-width="6.804" x="31.374" y="181.818" width="15.12" height="15.12"\u003e\u003c/rect\u003e\n                \u003cg id="Rectangle"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"\u003e\u003c/use\u003e\n                    \u003cuse fill="#394151" fill-rule="evenodd" xlink:href="#path-5"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n                \u003crect id="Rectangle" fill="#808899" opacity="0.401832217" x="47.88" y="15.12" width="83.16" height="21.42" rx="5.67"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle" fill="#F4B657" x="92.988" y="233.5284" width="23.5872" height="23.5872"\u003e\u003c/rect\u003e\n                \u003crect id="Rectangle-Copy-52" fill="#F4B657" x="128.5956" y="210.924" width="23.5872" height="46.1916"\u003e\u003c/rect\u003e\n                \u003cg id="Oval" stroke-linecap="round" stroke-linejoin="round"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"\u003e\u003c/use\u003e\n                    \u003ccircle stroke="#FFFFFF" stroke-width="5.04" fill="#F5C33C" fill-rule="evenodd" cx="164.052" cy="51.408" r="38.052"\u003e\u003c/circle\u003e\n                \u003c/g\u003e\n                \u003cpath d="M182.925633,45.2117323 C181.804172,46.3382576 180.906561,47.5608157 180.256698,48.8452816 C178.784855,51.7607455 178.690768,54.9174562 179.98534,57.9740924 C181.16005,60.7492373 182.435819,64.8345056 179.9673,68.2556489 C178.183382,70.7301713 174.796217,72.4024867 171.187202,74.0378371 L171.172264,74.0446635 C168.959342,75.0496856 166.869152,75.9987023 165.355482,77.2158249 L164.230039,78.12 L163.105009,77.2158249 C161.583368,75.9929917 159.485973,75.0418039 157.265729,74.0351408 C153.660226,72.4011082 150.276403,70.7293231 148.492312,68.2540079 C146.023206,64.8307263 147.300437,60.7474802 148.475967,57.9736834 C149.770069,54.9164893 149.675692,51.759208 148.202676,48.8436254 C147.553048,47.5590131 146.655142,46.3371014 145.534799,45.2119368 L144.396,44.0684664 L149.131043,38.2230222 L150.458598,38.9888942 C152.597295,40.2227585 154.477696,40.8225191 156.207365,40.8224459 C158.517358,40.8222844 160.740942,39.7952921 163.0053,37.6826941 L164.229746,36.54 L165.455013,37.6825767 C167.720543,39.7954384 169.944243,40.8225191 172.25289,40.8224459 C173.971486,40.8224459 175.851888,40.2213522 178.000835,38.9848812 L179.328565,38.2211324 L184.064373,44.0682618 L182.925633,45.2117323 Z" id="Path" fill="#A5760A"\u003e\u003c/path\u003e\n                \u003crect id="Rectangle" fill="#A5760A" opacity="0.386904762" x="146.16" y="27.72" width="34.02" height="3.78" rx="1.89"\u003e\u003c/rect\u003e\n            \u003c/g\u003e\n            \u003cg id="Group" transform="translate(0.000000, 56.700000)"\u003e\n                \u003cg id="Oval" stroke-linecap="round" stroke-linejoin="round"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"\u003e\u003c/use\u003e\n                    \u003ccircle stroke="#FFFFFF" stroke-width="5.04" fill="#394151" fill-rule="evenodd" cx="66.3032432" cy="81.2359459" r="68.67"\u003e\u003c/circle\u003e\n                \u003c/g\u003e\n                \u003cg id="Group-66" transform="translate(9.313784, -0.000000)"\u003e\n                    \u003cpath d="M89.1846699,26.5250123 C86.8116245,39.4161683 84.8870982,41.3401748 71.9964619,43.7132202 C84.8881376,46.0857459 86.8116245,48.0102722 89.1846699,60.9009085 C91.5577153,48.0097525 93.4817219,46.0857459 106.372878,43.7132202 C93.4817219,41.3401748 91.558235,39.4161683 89.1846699,26.5250123 Z" id="Path" fill="#FB9900" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M53.0500246,-3.37507799e-14 C51.218971,9.94687961 49.733997,11.4314526 39.7875184,13.2625061 C49.7347991,15.0931587 51.218971,16.5781327 53.0500246,26.5246113 C54.8810781,16.5777317 56.3656511,15.0931587 66.3125307,13.2625061 C56.3656511,11.4314526 54.8814791,9.94687961 53.0500246,-3.37507799e-14 Z" id="Path-Copy-6" fill="#FFB600" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M114.625946,70.1018182 C113.187261,77.9172236 112.020496,79.0836738 104.205405,80.5223587 C112.021126,81.9607286 113.187261,83.1274939 114.625946,90.9425842 C116.064631,83.1271788 117.231081,81.9607286 125.046486,80.5223587 C117.231081,79.0836738 116.064946,77.9172236 114.625946,70.1018182 Z" id="Path-Copy-7" fill="#FFDD7B" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M11.3678624,37.8928747 C9.79838794,46.4187715 8.52555308,47.6912626 0,49.2607371 C8.52624054,50.8298678 9.79838794,52.1027027 11.3678624,60.6282558 C12.9373369,52.102359 14.209828,50.8298678 22.7357248,49.2607371 C14.209828,47.6912626 12.9376806,46.4187715 11.3678624,37.8928747 Z" id="Path-Copy-8" fill="#FFB600" fill-rule="nonzero"\u003e\u003c/path\u003e\n                    \u003cpath d="M47.3660934,60.6285995 C27.856913,60.7139082 17.2100408,74.6278547 15.4254767,102.370439 L15.4254777,102.370439 C14.9499033,109.763652 18.5676722,116.822047 24.8473586,120.752862 C31.4380844,124.878374 39.5758772,126.94113 49.2607371,126.94113 C63.4337273,126.94113 73.7413372,122.523553 80.1835668,113.688398 L80.1835684,113.688399 C81.0285663,112.529532 81.4528582,111.117032 81.386318,109.684353 C79.8631022,76.8880035 68.5230273,60.5360856 47.3660934,60.6285995 Z" id="Path-64" fill="#FFB600"\u003e\u003c/path\u003e\n                    \u003cg id="Group-3" transform="translate(30.406627, 39.713040)"\u003e\n                        \u003cpath d="M17.6213423,26.802113 C27.0157059,26.802113 34.6313423,19.136755 34.6313423,9.68105669 C34.6313423,0.225358384 26.2057059,7.2351915 16.8113423,7.2351915 C7.41697869,7.2351915 0.611342282,0.225358384 0.611342282,9.68105669 C0.611342282,19.136755 8.22697869,26.802113 17.6213423,26.802113 Z" id="Oval-Copy-26" fill="#FFDB84"\u003e\u003c/path\u003e\n                        \u003cellipse id="Oval" fill="#FB9900" cx="17.5565087" cy="7.52551179" rx="17.01" ry="7.35567568"\u003e\u003c/ellipse\u003e\n                    \u003c/g\u003e\n                    \u003cpath d="M48.4167344,110.033983 C39.5224803,110.033983 32.3122627,102.823765 32.3122627,93.9295108 C32.3122627,85.0352566 39.5224803,77.825039 48.4167344,77.825039 C57.3109886,77.825039 64.5212061,85.0352566 64.5212061,93.9295108 C64.5212061,102.823765 57.3109886,110.033983 48.4167344,110.033983 Z M47.4694125,83.5089702 C45.8999381,92.034867 44.6271032,93.3073582 36.1015501,94.8768326 C44.6277907,96.4459634 45.8999381,97.7187982 47.4694125,106.244351 C49.038887,97.7184545 50.3113781,96.4459634 58.8372749,94.8768326 C50.3113781,93.3073582 49.0392307,92.034867 47.4694125,83.5089702 Z" id="Combined-Shape" fill-opacity="0.86" fill="#FFE29A"\u003e\u003c/path\u003e\n                    \u003cg id="Group-45" transform="translate(70.268993, 98.242850)"\u003e\n                        \u003cg id="Rectangle"\u003e\n                            \u003cuse fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"\u003e\u003c/use\u003e\n                            \u003cuse fill="#FFC800" fill-rule="evenodd" xlink:href="#path-11"\u003e\u003c/use\u003e\n                        \u003c/g\u003e\n                        \u003cg id="Rectangle-Copy-61"\u003e\n                            \u003cuse fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"\u003e\u003c/use\u003e\n                            \u003cuse fill="#FFC800" fill-rule="evenodd" xlink:href="#path-13"\u003e\u003c/use\u003e\n                        \u003c/g\u003e\n                        \u003crect id="Rectangle-Copy-62" fill="#FFC800" x="0.529385749" y="22.2975251" width="28.419656" height="7.75081528"\u003e\u003c/rect\u003e\n                    \u003c/g\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n            \u003cpolygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="255.889705 66.5820569 249.610193 63.2541955 243.430141 66.78 244.514595 59.5029495 239.4 54.4427698 246.349741 53.2731667 249.368801 46.62 252.579522 53.1741952 259.559999 54.1224913 254.594594 59.3428103"\u003e\u003c/polygon\u003e\n            \u003cg id="Group-31-Copy-2" filter="url(#filter-15)" transform="translate(262.620937, 211.301563) rotate(-1.000000) translate(-262.620937, -211.301563) translate(204.120937, 163.801563)"\u003e\n                \u003cpath d="M0,52.5161555 L42.0824241,94.8890754 L68.5759481,67.8500683 C71.7256713,64.6354944 76.7229053,64.1316937 80.450885,66.6528859 C84.2051996,69.191888 89.2230886,68.7629224 92.4919725,65.6235263 L116.50525,42.5614681 L74.0142122,-2.84217094e-14 L50.9222655,23.2977613 C43.5102885,17.8864938 33.2523996,18.7235011 26.8157073,25.2647709 L0,52.5161555 Z" id="Path-45" fill="url(#linearGradient-16)"\u003e\u003c/path\u003e\n                \u003cpath d="M46.0220957,25.8523434 C40.3546322,35.3880187 40.3546322,43.285882 46.0220957,49.5459332 C51.6895592,55.8059844 59.7180067,56.1057219 70.1074381,50.4451458 L78.9470778,58.6277321 C85.7297412,48.9140876 85.7297412,40.9013433 78.9470778,34.5894992 C72.1644144,28.2776552 64.4111855,28.2776552 55.687391,34.5894992 L48.8420528,27.4532392 L52.714948,27.4532392 L62.0938673,17.4676821 C66.2731459,19.8986865 70.430902,21.1738107 74.5671357,21.2930547 C78.7033694,21.4122986 82.3959538,20.3634928 85.644889,18.1466372 L99.0165435,31.7129282 C96.8007449,36.2043507 95.6928455,39.9491412 95.6928455,42.9472998 C95.6928455,45.9454584 96.8007449,49.0807184 99.0165435,52.3530798 L91.8261386,59.579231 C88.5438283,62.877859 83.4888681,63.6384784 79.3811875,61.4518216 C75.2573789,59.2565793 70.1886431,59.9694254 66.8302798,63.2169294 L51.3822456,78.1550255 C49.070443,75.5934679 45.760382,74.2086971 41.4520627,74.0007131 C37.1437434,73.7927291 34.0137179,74.8666049 32.061986,77.2223405 L16.366677,61.978704 C18.5196629,59.0609465 19.5961559,55.6419277 19.5961559,51.7216474 C19.5961559,47.8013672 18.5196629,44.383588 16.366677,41.4683101 L30.337802,28.057019 C34.5444823,24.0189036 40.8651862,23.1304287 46.0220957,25.8523434 L46.0220957,25.8523434 Z" id="Path-46" fill="#FAEFDA"\u003e\u003c/path\u003e\n            \u003c/g\u003e\n            \u003cg id="Group-31-Copy-3" filter="url(#filter-17)" transform="translate(309.240937, 213.821563) rotate(-1.000000) translate(-309.240937, -213.821563) translate(250.740937, 166.321563)"\u003e\n                \u003cpath d="M0,52.5161555 L42.0824241,94.8890754 L68.5759481,67.8500683 C71.7256713,64.6354944 76.7229053,64.1316937 80.450885,66.6528859 C84.2051996,69.191888 89.2230886,68.7629224 92.4919725,65.6235263 L116.50525,42.5614681 L74.0142122,-2.84217094e-14 L50.9222655,23.2977613 C43.5102885,17.8864938 33.2523996,18.7235011 26.8157073,25.2647709 L0,52.5161555 Z" id="Path-45" fill="url(#linearGradient-16)"\u003e\u003c/path\u003e\n                \u003cpath d="M46.0220957,25.8523434 C40.3546322,35.3880187 40.3546322,43.285882 46.0220957,49.5459332 C51.6895592,55.8059844 59.7180067,56.1057219 70.1074381,50.4451458 L78.9470778,58.6277321 C85.7297412,48.9140876 85.7297412,40.9013433 78.9470778,34.5894992 C72.1644144,28.2776552 64.4111855,28.2776552 55.687391,34.5894992 L48.8420528,27.4532392 L52.714948,27.4532392 L62.0938673,17.4676821 C66.2731459,19.8986865 70.430902,21.1738107 74.5671357,21.2930547 C78.7033694,21.4122986 82.3959538,20.3634928 85.644889,18.1466372 L99.0165435,31.7129282 C96.8007449,36.2043507 95.6928455,39.9491412 95.6928455,42.9472998 C95.6928455,45.9454584 96.8007449,49.0807184 99.0165435,52.3530798 L91.8261386,59.579231 C88.5438283,62.877859 83.4888681,63.6384784 79.3811875,61.4518216 C75.2573789,59.2565793 70.1886431,59.9694254 66.8302798,63.2169294 L51.3822456,78.1550255 C49.070443,75.5934679 45.760382,74.2086971 41.4520627,74.0007131 C37.1437434,73.7927291 34.0137179,74.8666049 32.061986,77.2223405 L16.366677,61.978704 C18.5196629,59.0609465 19.5961559,55.6419277 19.5961559,51.7216474 C19.5961559,47.8013672 18.5196629,44.383588 16.366677,41.4683101 L30.337802,28.057019 C34.5444823,24.0189036 40.8651862,23.1304287 46.0220957,25.8523434 L46.0220957,25.8523434 Z" id="Path-46" fill="#FAEFDA"\u003e\u003c/path\u003e\n            \u003c/g\u003e\n            \u003cg id="Group-2" transform="translate(276.295390, 155.533857) rotate(-20.000000) translate(-276.295390, -155.533857) translate(195.295390, 114.533857)"\u003e\n                \u003cg id="Rectangle"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-19)" xlink:href="#path-18"\u003e\u003c/use\u003e\n                    \u003crect stroke="#FDDA5C" stroke-width="6.3" stroke-linejoin="square" fill="#E98649" fill-rule="evenodd" x="3.15" y="3.15" width="154.98" height="75.6" rx="15.12"\u003e\u003c/rect\u003e\n                \u003c/g\u003e\n                \u003cg id="TAX" fill-rule="nonzero"\u003e\n                    \u003cuse fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"\u003e\u003c/use\u003e\n                    \u003cuse fill="#FAF9FF" xlink:href="#path-20"\u003e\u003c/use\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n        \u003c/g\u003e\n    \u003c/g\u003e\n\u003c/svg\u003e',
-    bannerBackground:
-      '\u003c?xml version="1.0" encoding="UTF-8"?\u003e\n\u003csvg width="1094px" height="380px" viewBox="0 0 1094 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"\u003e\n    \u003c!-- Generator: Sketch 56.3 (81716) - https://sketch.com --\u003e\n    \u003ctitle\u003etax-bg\u003c/title\u003e\n    \u003cdesc\u003eCreated with Sketch.\u003c/desc\u003e\n    \u003cdefs\u003e\n        \u003crect id="path-1" x="0" y="0" width="1094" height="380"\u003e\u003c/rect\u003e\n    \u003c/defs\u003e\n    \u003cg id="tax-bg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"\u003e\n        \u003cg id="Group-59"\u003e\n            \u003cg id="chargebacks-copy-9"\u003e\n                \u003cg id="spam-collector-copy"\u003e\n                    \u003cg id="Group-6-Copy-2"\u003e\n                        \u003cg id="Group-4"\u003e\n                            \u003cmask id="mask-2" fill="white"\u003e\n                                \u003cuse xlink:href="#path-1"\u003e\u003c/use\u003e\n                            \u003c/mask\u003e\n                            \u003cuse id="Mask" fill="#3BC1C8" xlink:href="#path-1"\u003e\u003c/use\u003e\n                            \u003cg id="Group-5" opacity="0.948544457" mask="url(#mask-2)"\u003e\n                                \u003cg transform="translate(819.000000, 141.000000)"\u003e\n                                    \u003cpath d="M284.889627,286.722506 L2.55795385e-13,286.722506 L2.55795385e-13,285.095529 C2.94075571e-13,133.515226 122.880114,10.6351122 274.460417,10.6351122 C277.937762,10.6351122 281.414793,10.7011978 284.889627,10.8333333 L284.889627,10.8333333 L284.889627,286.722506 Z" id="Path-9-Copy-2" fill="#50CCD3"\u003e\u003c/path\u003e\n                                    \u003cpath d="M285.110903,287.337237 L141.05461,287.337237 L141.05461,286.41043 C141.05461,206.850336 205.550809,142.354136 285.110903,142.354136 L285.110903,142.354136 L285.110903,287.337237 Z" id="Path-9-Copy-6" fill="#3BC1C8" transform="translate(213.082756, 214.845687) rotate(-360.000000) translate(-213.082756, -214.845687) "\u003e\u003c/path\u003e\n                                \u003c/g\u003e\n                            \u003c/g\u003e\n                            \u003cg id="Group-5-Copy" opacity="0.495349702" mask="url(#mask-2)"\u003e\n                                \u003cg transform="translate(136.000000, 130.000000) rotate(-180.000000) translate(-136.000000, -130.000000) translate(-7.000000, -14.000000)"\u003e\n                                    \u003cpath d="M284.889627,286.722506 L2.55795385e-13,286.722506 L2.55795385e-13,285.095529 C2.94075571e-13,133.515226 122.880114,10.6351122 274.460417,10.6351122 C277.937762,10.6351122 281.414793,10.7011978 284.889627,10.8333333 L284.889627,10.8333333 L284.889627,286.722506 Z" id="Path-9-Copy-2" fill="#FFD0DA" opacity="0.433082217"\u003e\u003c/path\u003e\n                                    \u003cpath d="M285.110903,287.337237 L141.05461,287.337237 L141.05461,286.41043 C141.05461,206.850336 205.550809,142.354136 285.110903,142.354136 L285.110903,142.354136 L285.110903,287.337237 Z" id="Path-9-Copy-6" fill="#3BC1C8" transform="translate(213.082756, 214.845687) rotate(-360.000000) translate(-213.082756, -214.845687) "\u003e\u003c/path\u003e\n                                \u003c/g\u003e\n                            \u003c/g\u003e\n                        \u003c/g\u003e\n                    \u003c/g\u003e\n                \u003c/g\u003e\n            \u003c/g\u003e\n        \u003c/g\u003e\n    \u003c/g\u003e\n\u003c/svg\u003e',
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eReport Tax Fraud\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe historical noncompliance rate for paying all taxes owed is 17 percent, meaning that about 1 in 6 is guilty of tax evasion.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eReport any business or company for suspicious tax activity—and earn cash rewards. DoNotPay will file an official IRS report on your behalf, and you can earn up to 30% of the money the IRS collects.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -2715,34 +3812,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Claim Auto Insurance",
-    description: "Had an accident? Claim your auto insurance now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/fxw4mkjiwa24ryo.png?Expires=1728937020\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e509DTPbxlNy0uaI2mOj5NA893B6wgJ4AceUqztLY5RFdGhNa8DVpdMXycubYvrRInnr4rZGI~4~zSWAQ8p6RiWfbFFAu9Blv1VepplVFPdfL4AwZ0feoZOlzgIIao8SLBIlXLKeBQ9fhfikcP0RljVZTTSuzqxy4tQYfUGnOKNE3072R5bTgcwccnGDjExX8pRIOvVpAnRg9RJ51jiGxWjxepOoYH3LtTPJ6vIQIjW-PgXQznFwyOtYCtxcFkksra1cI4Z~I3gaRYF8Dtd4uy6JHW3ad5KlS1owUKKMBAK5lkGA1eZ73hhfQsYS-TKE2KsCBve1Y75Bo4o3docxSw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/2wnbwj2cnogcizj.png?Expires=1728937024\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LGMrlJ~bIOkc5XqAeBa--Rcnoc4HOmMUjw4nkknUFgA~KoZ1pX4F0qfFJjhezbcMS3DTY8BFu8a8suC~87rov3jmdCKvIlS4oQo-LR8FmbN-NYghEadhf-HhOA11RER5qDuPCwsCO4zf5FhgFYbcNvKNmEqH3cU3WBCYR8-xK0YJL-rf-L8x07n4RjVgLdUF0LNZJY6bQ7x4Ed3WGoGkim~5zZVuFZy6-DwaO-YBZvo~g1rCUcjfutQSWvYml5Np-oM7jCGTuAsLFGScG1~E~UzGNYObL1PL-Hy09FIdjyFK9zPW1y6rdJun078cfRL4ON0NVw4K5inUP5jG1xZSCw__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatcarinsuranceclaim",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Submit an Auto Insurance Claim",
-      "Claim My Auto Insurance",
-      "Claim Car Warranty",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eClaim Auto Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eInfamous auto manufacturer Henry Ford didn\'t get his driver\'s license until he reached the age of 56.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWhether it\'s a small "fender bender, a break in, or a stolen vehicle, DoNotPay will collect the information relevant to the incident, assess the damage, and file a claim with your auto insurance.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Fax",
     description: "Fax any document instantly.",
     cardImage: "https://donotpay-assets.s3-us-west-2.amazonaws.com/fax.png",
@@ -2820,135 +3889,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Claim My Property Insurance",
-    description: "Get compensated for damaged property.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatpropertyinsuranceclaim",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Property Insurance Claim",
-      "Appeal a Denied Property Insurance Claim",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eClaim Property Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIf a tree from your property causes damage to your neighbor\'s property due to a storm or earthquake, the damage is considered an "Act of God" and your neighbor\'s insurance is liable.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf your property was damaged, DoNotPay will help you either claim your insurance or be reimbursed for what you\'ve already begun repairing and replacing by drafting a letter to your insurance company.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Claim My Medical Insurance ",
-    description: "Automatically file medical insurance claims.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/qqa79zk0jnxumav.png?Expires=1728937272\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=AI4ebt~-9xB0S~85NCfSEgyQYzYdxCBq5QvYGLGnlwJqlROFMfRD9XLYR5SWvWr2d~hCzr5Ioiewe33s3dSqxO~RtvKvPqoWjPGyrVMfrYGyMhGq9AAirlP4qiBHUWO3kJWJiZIQ69NSd6Pwy59xpH1Dp9Y7Zd~y7cvDl9q6JFPutTMeN8WKzKKmegl4CPXnady098UVIlpT0yyC5QQP6vv~k6dV5h3Oavok7F9qiUjqcPDgp3lhoZgr~S3I8b9nMo8sdps1LkONH68yM47YqoLCC~mV4Yy1DXnziq4JP2n5aCCcbgb5ytG3GBa~ym-NxEVLw62nae-5OaMYZAYsKg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/mvrlyvhqdfxphrb.png?Expires=1728937275\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=CQv9QMHyszr6y5ghDOtVnFekg-Pnc7CocI2Tt8Y19wjw-copcq7bC-kYdrwQzRKbKTUu~0JW6mOT~Dq~e0ExLzAJZp7VypWQT9T-~Dy59dpEFeFZmrM57t02SjkGDyyZs4e6SuiUv3rczVDhiYs7g61YtZAdHY13YX5ptdCtG62MeSJ6Kv7YyN8HZOs7V3CxLBazfaF1EbH3jNd1xTxhPmDF06mn1om7CxbW2XCEyIAdOTEBEbcW-Wx00kjfFvrDaOCnWF3zZ~j~ykAJx1M0B5t7pBOQLKUNgcs4Dm-WVfVOMlpHKbHLG~ELOzX~7AfHZadNwmeeltoDKjPX9u5ZEA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatmedicalinsuranceclaim",
-    siteRoute: "",
-    correspondingTaskNames: ["Medical Insurance Claim"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eClaim My Medical Insurance\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAs of August 2020, the most expensive drug in America is Myalept (a drug used to treat leptin deficiency) which costs $71,306 per month.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eFile a health insurance claim today with DoNotPay! All you have to do is tell us about the treatment you received and provide a few details about your insurance provider. We\'ll then go ahead and send off an insurance claim.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal Denied Medical Insurance Claims",
-    description: "Appeal any denied medical insurance claims. ",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/yhxg2erookd9sgs.png?Expires=1728937309\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=rTQj4F7p7Hp3QYpsApfoAKMY6bmdNBzZsMepBzjJjxy2F6qRo67amPEhACTWv9SEABgEIg89lV4fJjq9a0z1gN3UxVgHh2pgPDuSiWCUn1ATyflEmGP3PmgUkXxcRIxsNof6vW~qRf6VYuuWj8TjEYP9SAfsnLD5IANUrkHsRhhV3gCretPWhlwcof7rzgBJKC~6nu4R4V3VPQeWiN6QK5LaZhM5TWWHcJrQ-uw8wodSuYmqt-QFfJc2g2xNGSbaJDD-arL7LV3vjvfS8I9LHm72~VnjwXVTj34khMS5h8ZYS~OXHlCeHMTtRY6Geg1xk4OwgBeKifg~MekRTY6PWw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/iyr65doecbznqld.png?Expires=1728937312\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ojUZnFxY4q0OM4fC5OECQVl5RcuhX-nFOkr2qdhS7MDrUzaL9z-grc9RlEt-AWw-LWkfUqk7qMN4M5peifBw8RtLp~QeSDmyolGw20TFQpXKja7Q1w~wLCxx4PQQnctNrvxIE10akbtmKcpacKfkgF~9SXggh4rdvF5hrrWitPlzVGQBc0HyphL4wU2U4d5OhrOhtybnZnSmrqvYzf4nrFgPg8yrI7c34v9dRQZmnph~l5t~TGSalbPoBCAT7VgGQ1sJjAmRSqT~ojz65O56lA5uROb1ZIGkOC2jkDkEkwVmPpGKX4IQ~uCB9bYCy795JOa3r7n5qrJ2VlUXikPxyQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatappealmedicalinsurance",
-    siteRoute: "",
-    correspondingTaskNames: ["Appeal a Denied Medical Insurance Claim"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAppeal Denied Medical Insurance Claim\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAs of August 2020, the most expensive drug in America is Myalept (a drug used to treat leptin deficiency) which costs $71,306 per month. \u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eHaving a health insurance claim denied can leave you with unexpected medical bills you aren\'t prepared to handle. Snap a photo of the treatment bill and why the treatment was needed, and we\'ll use the information to appeal the denied claim with the insurance company.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Take Down My Personal Information",
-    description:
-      "Remove your information from search engines and data brokers.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/cqcwnvgdyqz4zk5.png?Expires=1728937358\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=I4xgEEa3FO0h8IWkfhj-a7FIUxrnsuh6hlq84tzGpCOy3etbzpibDbDCV4yIsPl2fi9jZ6~NUmDqz33H3nDQG2gRg4iOHVZWZBDW~ME97OXOY67jYHO8FHQRoqcwGiC~--O5faQcQN4jgbu0sLDR-H9-NRjMVY2zWO8Ddxk~c3V9hsw2glW8OLLo5I219TyWYvwrTGi6INTWN6vRr6FaNuN8FDt5fG2-kZb2WzBoHmVjvP0QowqzubbqH-oSaDPrAw3qDy~E~WqUd7Xldw~tuAAqOES8n8gYToK2qfJuhumxW-vnIIfqldGVlA90U9DJHCbwRAPkPzqyDSiQg11BtA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/wcacv43hzd3fgh2.png?Expires=1728937362\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GX7dW04FBqpt8aqkkt8WJTHCjZRAHiKoBrOttEC5pluiLGNQ9UeVLl7Nt1zqmhmgUawstSM5zvFVzqKOWrv52ZpL6s8z9TVIWIexPsEn5t8r9PfzrhntQGC6~mzMCwLMJvXOD47Z~8HFD6Aj-PThLgEegvizvvtkLqc3u1VYI0R9Fig-xyrWXmxyQskHvn19XPbGcFLxEEXdH-Ena-M2Xs-5mt2G~ZqGAOGt1wJ-tL3a2XFLoXoitWKDfaF25Hej-SQ8hgWlmm2gWThsFUBbQgc9sDEQ8KvkEbBP2G9MjvBr4ELHiR4kyKmQvm8SpLZsvcPHg14MEIl46MG9UoqdSQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatremovepersonalinfo",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Delete Data Broker Data",
-      "Delete All Data Broker Data",
-      "YouTube Privacy Complaint",
-      "Remove My Data From Google",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eTake Down My Personal Information\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to CNBC, over 164.68 million private digital records have been exposed in the US.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will help you remove personal information from Google searches, YouTube videos/comments, and the most common data brokers.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal a Denied Property Insurance Claim",
-    description: "Appeal any denied insurance claims.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/129514585_384905369288123_2306805652888646986_n.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatappealpropertyinsurance",
-    siteRoute: "",
-    correspondingTaskNames: [],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAppeal a Denied Property Insurance Claim\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2017, homeowner insurers reported $686 million in claims related to dog bites and injuries. For this reason, many home insurance policies often prohibit certain kinds of dogs as pets, such as Akitas, mastiffs, pit bulls, and Rottweilers.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eProperty insurance claims are denied every day - sometimes legitimately and sometimes for reasons no one understands. Tell us about the damage, snap a few pictures, and we\'ll generate an appeal to challenge the decision based on your case.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Create a Photo Release Form",
     description: "Automatically generate a photo release form.",
     cardImage:
@@ -2997,54 +3937,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Return My Purchase",
-    description: "Unhappy with a purchase? Return it automatically.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/returnicon.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/returnicon.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatreturnitem",
-    siteRoute: "",
-    correspondingTaskNames: ["Item Return Request"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eReturn My Purchase\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to David Sobie, co-founder and CEO of Happy Returns, About 5 to 10 percent of in-store purchases are returned. But that rises to 15 to 40 percent for online purchases.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will generate a custom letter that clarifies to the merchant what was wrong with your purchase and whether you want a refund or replacement. We\'ll also get you a return label so you can ship your return package for free.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Anonymous HR Complaint",
-    description: "File any complaint with HR. Anonymously. ",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/88coijvhezz9fcl.png?Expires=1728937385\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UFc0lDTr~e82y4~Btg7uuLx2UA3BXDUJdILxeLLty8Qp9hJDEEwQUgpHmYsLf3Wu0orUd1b791FLsmnPmVKlJ1HdbyPdReiN~o40QQfJt4qEtV6kYjYaH4Pjdo3I-Awvrl-0tXmHY87N7rPZidx36Kz-JTLDnTUy6D1hJ1h~ZzUF9NG0ccW6GRthD2mm1G6bSb2s9IXVOqlexU9Somx2ufXRRwy6yWy9NnhZJNAoTbYUn5A3HFC0U9tyzOhmwu4k3qfPkFpf-QllN4Ip9QPnGC6tCh-R20n8JmF0x4LoHCzg5YPSVbQz~6rBRhfm7E0fm9u591dWtM~ZRwF08vKaaA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/gije4smr6wnvm3p.png?Expires=1728937389\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Qr0zdN4dG6~RoevxOPUVcyplSh38b8GrGf7iPuMYr8nq87d2O9wNdfLaZXuao4NNT2XKhtibletZR~h3hO~f0Hv80YFQRzrcyd8si7L85L29xklfuKpPz63MrAWFa4p~lk6OvCR~BNYWKH7cheKxG9-WEhdahLGsqJIk5t9m34GNT23ud27mPDNh0KKvSdSLE9fRuLDy0v5mZ6~oO1Jw1okkB1qI94W00qql7WZ6aI5Agbur3cps8UA87V3DmjydEyZRGc5Iu2Uwd8fmFXWP7~Tre6HAnSWAqVj~kiOsym2c0~5DQqKQbACkmsET~u7NOcNt~hhbMVjOxAQK9kxGKQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatanoncomplaint",
-    siteRoute: "",
-    correspondingTaskNames: ["File an Anonymous HR Complaint"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAnonymous HR Complaint\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eFrom 1997 to 2018, there were 1,889,631 discrimination complaints filed with the EEOC, with the highest number of complaints occurring in Southern states.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will file a discrimination report to the EEOC. The EEOC will investigate your case so you can reach the cash settlement you deserve.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Neighbor Complaint",
     description: "Resolve issues with your neighbors. Automatically.",
     cardImage:
@@ -3070,30 +3962,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eNeighbor Complaint\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to a survey by FindLaw, 42% of homeowners say they have neighbor disputes, with 86% taking some sort of action.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWe\'ll help you summarize your complaint into a legal demand letter and send notice to your neighbor. You can specify the compensation you are seeking for the damages you have incurred, and the letter will include warnings of further legal actions you can take if your neighbor does not comply.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Fight Job Discrimination",
-    description: "Report discrimination to the EEOC in less than 5 minutes.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/employmentdiscrimination.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/employmentdiscrimination.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatemploymentdiscrimination",
-    siteRoute: "",
-    correspondingTaskNames: ["Job Discrimination Complaint"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eEmployment Workplace Discrimination\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eFrom 1997 to 2018, there were 1,889,631 discrimination complaints filed with the EEOC, with the highest number of complaints occurring in Southern states.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will file a discrimination report to the EEOC. The EEOC will investigate your case so you can reach the cash settlement you deserve.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -3222,30 +4090,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "File a SEC Complaint",
-    description: "Have a trading issue? File your complaint with the SEC now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/j5uvhovrafsxt6z.png?Expires=1728847284\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=e4IZKMGIz4h6OyRBtdrEUEkAgAAwy7KTjsLvpgQcCouwXE~gW2UlfVMPFC3BFCAl8K6qxJYxb13HpanUWer7khOxAEaVPT6I8EBNlMH2bbpDJwhGaXDdvw8ia8RS00Tw3vC3sTbPTS31ifScS427boM59Qg3lPiVlbzot5w8z0P-egrzn8xkylfBCPFQOAnVw-0ENE3tOXl1~riXu0cDkBU93mc9kYeP5A~v7McwdA4-JCpJUF5zvuQAA0sAffBAYIy7FfdnXBs3LhjEDwHtRcz7OWd-HAuNtUSGyOj8I4kwqRNEUp5d2hQdxbMOTBGLKhqzxcbDb~88~53GsJfClw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/qldqdm3udakht8l.png?Expires=1728847288\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LNr~fc2wGye7FutoPt2TIv9w5boD1b~mrrbgF-lUb4fPeYTfYf8XxHy6aoxOmNBcOGUyVQenlEK4YoQaV4dqpuTxrtqv~v~8OH3FsdZ5kH~o54aUm7Q7G2mBcBKinhtcovIzVO1rP8r2oE8WJ1U4P8nx6GrpGqT-8gIsjE3rHAn2LoZglppTZc5RS2ttvs~atuD6LO79nIk8ndoiicXiP6GC2oTy--9YsIVS-iXzZ96WlJBD5e0Duk9~drwV0YIEklxeCMerkO~8p1ZuFMIjIz4wWHcHfMmNGPqjP5ZHk2bmVlo1vaEA3o3-I05U~iUiKHCpM25pCzOwPTXHSg3S7g__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatseccomplaint",
-    siteRoute: "",
-    correspondingTaskNames: ["File a SEC Complaint"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFile a SEC Complaint\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAn SEC complaint against Facebook around misuse of user data resulted in the company paying $100 million to settle the charges.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eFile a complaint to the SEC for any reason and we\'ll submit an official report on your behalf.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Brokerage Arbitrations",
     description:
       "Did you lose money because your broker halted trade? File an arbitration. ",
@@ -3299,83 +4143,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Stock Drop Lawsuits",
-    description:
-      "Did you lose money from an unexpected stock drop? Join a class action to get your money back.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/omgk3evztgwmlic.png?Expires=1728847255\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=VLAZEAb5oFwlqPdSnFxV5djTQC1gW86TcwPoq0mR6XdPDqpW7zNkmAUq8MZMlXRi-~TyrekpG9u0ZM~nKOab-qTcbg9k-gImRi~F376yE28p2ImTrzaeIHq8RF1M74WFpFxH9n1-76wOe75ccr-mh0yRDpHHelkeUJPKaYoIeB3RKhw~s-6om22dbzI~utDcO-i1PffMWa~oNU2WZfGDSvgM1XVnHpuhU1yUDqwSbDSBZzcXHJ7AaaaGiV6mwiOZ4bK3j-mQXkeacFDXSZf5WWwynYifeBEFIXV5YqakTwMSnnG3ph33ANIrOhcl7ifpieTotEUIhbqtEZU1slBcgA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/fajfhhcqsjrwvx1.png?Expires=1728847259\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kp1sdY7J6RLsEhWvrEtvGVVcq7YNPrUY1QeHM4leHUE~yCLbzxxN6ImtH3ipvriXB~CGfTUa~aC5AY24ek5b4ca2maFJmQnWD-OPgWZvC2O0knomU38HkTMQeUJI8R24XcyDMWZs6Y8H~AJIg7FUO3hyKjRKBlmB-p1vaXtYzusmT-NK8RjfMfPdRnlfvk-4szYqIzRYQGgHgZcEIQ9y5zr2K~Vg~g8pXA5Y5fanSb5I9bG9x2mMwglVoJhM6zhyXbA1NEkbj63jcN8OVZe~7-x-Lsqk05rTx~E9inirIIddoe111oWPB0Ys0hPd8HS0tr8b8O74rNgnujy3PG~3KA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatstockdrop",
-    siteRoute: "",
-    correspondingTaskNames: ["Join Stock Drop Lawsuit"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eStock Drop Lawsuits\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2009, a stock-drop suit settled for $75 million between Merrill Lynch and employees that held Merrill stock in their retirement plans.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eEvery once in a while, a company will announce bad news or be exposed in a scandal and its stock price will go down. Stock drop lawsuits are crucial for helping the average retail investor during their most financially vulnerable times. All you have to do is tell us the stocks you own and we\'ll scan our database of class actions to check for a match.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Contact Your Government Representative",
-    description: "Impact legislation and make your voice heard.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/contactGovtReps.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/contactGovtReps.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatgovernmentrepresentative",
-    siteRoute: "",
-    correspondingTaskNames: ["Contact My State Representative"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eContact Your Government Representative\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2016, a 60 Minutes Broadcast exposed that newly elected Democratic members were shown a model schedule, where they were expected to spend 4 hours a day dialing for donations. Florida Republican David Jolly said his first responsibility on the job was to raise $18,000 a day.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eChoose whether you want to contact your Senator, House of Representative, Governor, President, or Mayor. Our bots will fill out the contact forms on your legislator\'s website on your behalf!\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Americans with Disabilities Act",
-    description:
-      "File a discrimination complaint or request reasonable accommodations.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/kbvfmqtb3spdedc.png?Expires=1728847240\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Bcx3nl5Nu0KSTCLLWUehkWc02X0Ihjyxj4VK~-fkZF4qnlQbbktHNsH8laq45IMomN-cMEwlFxDN~8RL2Vpz6uPP-eakUeu8NgItfOS4ejKNuj-iAgHIbIrZyJKhocgHQaeWtylkJbRtVS4Qv6oaHaJs~CKiKWuu8~eWQzZEfgnH7M-LEHaHkzG7JUzWVJIsRAMlLrZIG0~wAWoqR~aqACppKa1b1yrjZ8oIayQBuUYcvxDn5m0Osw3eMNlkaWar47RuMTINUMn8n76QUP1kqmyVyeE3KSy23LifwAadYvuB4yiMra02TnyI2kuTvSTiD9izHTIKuW2zVUjq6jmCQQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ftwgok0jzt3vped.png?Expires=1728847243\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=M86QpLZRtC5ba5wDuaYVZ~HvwSG1iSvKaGTNdJl-MQRFABpBSQNbckZ7HC4xN7vFe~XnmqY2RTz2i6vbK-I979Ct5-x4eYbhNNdQlEwxmzSh0rbT6bBGyaRDK3cNs5HLxwMUCCH-CySYi04kz18UPYyhYJqJ~PaQbQxic71i1xZRs2gGqlxSVD6tMWEZSOEzCV535CKADi4WFEEMot5Sm~KCSF41rNoP2eVjHby69OpzRLBp6Cw1oEsCxUY-kDJuD--Bb6fhLrkBvJbFnBfaUp48Wt-nSLq5sH3Y7GlwIzysVZUBu3dE5E9s1amT--yDeVAwAPrUgRA6OojArhXK5w__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatreportadacomplaint",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Request ADA Accommodations",
-      "Americans with Disabilities Act Discrimination Complaint",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAmericans with Disabilities Act\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eApproximately 57 million Americans have a disability.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDoNotPay will help you file a complaint with the US Department of Justice or your city government. We\'ll also request reasonable accommodations directly from your employer or any institution. If you have already filed a claim with the DOJ and want to know its status, DoNotPay will call the DOJ on your behalf to see if your complaint has been received and is being processed.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Mail My Check",
     description: "Need to send a check by mail? We got you covered.",
     cardImage:
@@ -3397,34 +4164,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eMail a Check\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003e42 percent of millennials still rely on checks.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMail checks directly from the comfort of your own home. All you have to do is verify your bank account information that you want to write your checks from, tell us who you want to address the check to, and indicate the amount the check is for. \u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Notice of Intent to Homeschool",
-    description:
-      "Send the superintendent of your school district a Notice of Intent to Homeschool!",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/xyw8f1vl2dq35r9.png?Expires=1708900280835\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LG-B2BjEPwuxw27x7cm3UIsaDX0~sZuL21thXavFjfyqn53o6WABS-kFXIZyC5dJb4EMKuD9XuJqi~maq6QaJ8W3uEg0jW-WQ6fhGsZd2aaZGOxNvOTkk10qsV3lJUv3QYhGKq6ZClzD0coo9t-wahN3nfgVkhdwiBXm0yhR7uJJ1RPgvoQdC~TB5i-NBEDrW8~f02mYlA1h2BwHTbhhybuSoemTRFOIXcZwwhGlkSW3wsFzEijpNvVVZGiT0Ja41sdsHgkvlrL7K5Rjc3~tbO-vaANJ9GDxY~EUrZf-NPWZ2T-cFinAFPd~bUadfiZBazUk-RTSbl720-HbznOQyA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/hohr4nosvx2mava.png?Expires=1708900284606\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=J8MHu6lbD67-oV3KCdY4eMZHkD4kyd5~qUJeXgsAj0lAjteYwtCYKJ9TWuU7bVislhm~~e77MH5zzzHcd92Eob-COGRiO0fx6wl6g-ufFRaGBvgcxO-oHViUbOWjjasHIBC6CmY9ifadRr-zBN7sguCzLVsLejYiQSVeAxUMfm9DuGod9G6zGaNIoJo~mDi1ASsnqMJad5ziZEQMsNQrDr7J8qY7i-kPSXjDuxqzqyFDyNUexyHpKsyu5vdNqplQCbQR4ZP997d67Ai6E~Qg6u1DK2ZPo9WQiFFHodKmek9Z44MpympotHT31aTA-S-Etk1wGrf5H3DKgjBmn8G2sA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chathomeschool",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Draft Homeschool Notice of Intent",
-      "Homeschool Notice of Intent",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eNotice of Intent to Homeschool\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eOver 26% cited a negative environment as their most important reason for homeschooling, and over 90% listed it as one of their reasons for making a change to homeschooling.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eThough requirements differ slightly based on the state, a parent is typically required to submit a Notice of Intent to their local school district/superintendent to homeschool their child. DoNotPay will generate a homeschool letter of intent on your behalf and give you the option to get it notarized.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -3587,39 +4326,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "File a Complaint",
-    description:
-      "Unhappy at work? Tired of your loud neighbor? Get your complaints heard in \u003c 5 minutes.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/anoncomplainticon.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/anoncomplainticon.png",
-    isCategoryCard: true,
-    isCompanyCard: false,
-    chatTopic: "",
-    siteRoute: "",
-    correspondingTaskNames: [],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [
-      "Americans with Disabilities Act",
-      "File a SEC Complaint",
-      "Fight Job Discrimination",
-      "Neighbor Complaint",
-      "Anonymous HR Complaint",
-      "Plagiarism Monitor",
-      "City Repairs",
-      "Debt Collection Protection",
-    ],
-    isHoverDescriptionActive: false,
-    hoverDescription: "",
-    __typename: "ProductCard",
-  },
-  {
     title: "Firearm Safety Exam",
     description:
       "Master firearm safety so you can become certified as a responsible carrier.",
@@ -3728,83 +4434,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Appeal for More Financial Aid",
-    description:
-      "Didn't get enough financial aid? Contact the school to appeal their decision.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/financialaidappeal.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/financialaidappeal.png",
-    isCategoryCard: false,
-    isCompanyCard: true,
-    chatTopic: "chatfinancialaidappeal",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Financial Aid Appeal Letter",
-      "Mail My Financial Aid Appeal Letter",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAppeal for More Financial Aid\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAlthough 86% of college students benefit from some sort of financial aid, $2 billion in student grants are still left unclaimed every year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eNegotiate for more aid to make college more affordable. DoNotPay will automatically generate your financial aid appeal letter and mail it on your behalf to the school\'s financial aid office.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Client Breach of Contract",
-    description:
-      "Is a client refusing to pay for your services? Settle the dispute now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/w2rogibw54hr0dx.png?Expires=1728864215\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=DeYB3uLqRbiBalFnfnEn-srYhYrg0mG~BXWNmTUJQwdfzbz8tHw3jNIfcIhzkRW2oLz0EJ6dQZihHz7AaLLPVjsbFKbX5laT~tLOVA0Spwh7uwClJSCuRW3Jc9H3cLgmjwjllimia1Ka6R-imQdBbPqQ9qGgaI1F5gQlSVlZE1--Gq8DWNqCYhITrqIOZrhoGIYI0-iIL0g7m-LqyJl-vMC~I5xWQLhYFE3Ah8tH2wgVj43Mut9b8cGEYxq3wwqqBljJQA6kMia0wp2C3O-3SpljoFVKZpS7YQbZlNQxeZup6nHzskEOE-B8bM~VDo6xNNFtaQlRG0uZ61VGruHtRg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/dbddfkx88widadf.png?Expires=1728864219\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=m6qsI1JZ~YIliQiCRooNo17hiwAlXmiIlQ4HFuO5ec3ldIfnnWPEfTOrX0PmNaeQG-fJimxvpiFNSn5lNkt0NCn-ysPYFqyIpprs~NdIWdD0bBxE-FYJCr1~BYk6jvT4Qkfstlv6Pe5JQ-XYXrp-Nu6ckQp2uFZL9TzI1WbVtSAOYJPfsi4xGD~U3uprsisQIdW9dOo42TGt6m0fWWRoCBALM2OVeRJMfgh1o2eWXwn182u5nXSqW3yKoIDn2J6ilOrs9duk8YaNH4F2Pr44YzRTFlfpJgSgJ40cV5uJFW4tfJphTm9QUQd9WO5N1FRSz-gTHie43Uz~WjO60g~O6w__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatbreachofcontract",
-    siteRoute: "",
-    correspondingTaskNames: ["Breach of Contract"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eClient Breach of Contract\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 1999, after seeing a Pepsi commercial advertise an "offer" to redeem 7,000,000 Pepsi Points for an AV-8 Harrier II jump jet, John Leonard bought 7,000,000 points and asked for his jet. He sued Pepsi for breach of contract after being told the offer was a joke.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you\'re dealing with a big corporation, small business client, friend, or subcontractor, it can be so frustrating when people break their promises and you can\'t collect your hard earned money. Send a formal demand letter to clients for breaches of contract and escalate the case to small claims court if necessary.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Plagiarism Monitor",
-    description: "Fight digital theft and protect your online content now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/lx4nne0w25m3waa.png?Expires=1728864200\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=KxSE69m-J~EMMEZsHI67BInC-wf4NWH83239PWQEq4fSFw1sDoBHcG7O~DuaHkMWGxndV1-muCErzmDjUMg~M6~E3Vnw8w5pzkAaTYGSP91B1uhuo0h2RIOqhUtKEX8TuQIiwHDqDnuai5qPSIpSjro8e3PeImvQqZxA5rJsODIn5VOywTNimuD71XsNDmxz9etQwTwHa422z3nQ2TQhV3tlWYNnfK4fsXMwpaBai5~VikH6G-LXsuBHCyQhNyrBYldgRVmNBgFRTC~RpPPBCt0HYebPRocSbjYPKbZaGeSctdROl9-cLhlPbZDzwtc-l04YlGG4lapag5kqVERB5A__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ln63wco0twvtmgm.png?Expires=1728864205\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=cSkHgvr1iqQKjMHq7vaYXWuYcUuLkhtmHjS~xrhla3T5vo~~NKbP5UYSiv7Ilb9mucRqpXgXQO~R1BUnxYMEvxnOU~DgbxWiOBHlxuZbuXnx6TBU9ed5QwSr5t6JO~Q1lGVkvfy51-JZPwKEv5Yad4FZtL7epeuE7cnVYy3b0IXC2-NoZxcEZk8-jYHGAUb2H5uAJ~JGbk4vslEAFizh-SRIy61O64lPMq~FilmILrF-0XuFiYgH5E9uXn0yjq-NdIbSEl90mm24527kZhvx3yMiC7Gxb1b4~KScW1PgJVMLZkdb5IUtH5TafVt2Iexw4FTV156vLGI2SR6s6slAVw__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatplagiarismsearch",
-    siteRoute: "",
-    correspondingTaskNames: ["Plagiarism Search"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePlagiarism Monitor\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003e30% of web pages (1.5 billion out of 5.1 billion pages) have similar or duplicated content.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eFight online theft and protect your website content now. DoNotPay will scan the web for any copies of your content and generate a report detailing all suspicious results. We also provide an option to run these scans weekly and generate an up-to-date report with our findings.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Cancel My Timeshare Agreement",
     description: " Have regrets about a timeshare purchase? Act now.",
     cardImage:
@@ -3826,30 +4455,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eCancel My Timeshare Agreement\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eMaintenance fees for owning a timeshare averaged $1,112 per month in 2019.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eHave regrets about a timeshare purchase? Tell us about the timeshare company, the contract name and number, the purchase date, and other details of your agreement to generate a cancellation request letter on your behalf.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Claim Life Insurance",
-    description: "Need to file a life insurance claim? We're here to help.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/muot8bk4q1ft0cg.png?Expires=1728864184\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=M83nF28p1HiC2gBMKmpmR9RM0MEekNItAL4ng1icA7XzjEUtGBAkMavcZZHESkLeOHYiR-xDBsgmjWyEUeC1xNciIaJ4RNMP1vSlTLhCWvKVTRi6W8B~zGT94uMDlQLhu8s2FumSkeSnfdxzdVg3gYv7~Qea43lSAunA~xASiaLUSjCwzlRJwU2URlj0SzT1e7s-VHMzXc~9GGMZp-YAm3WmZktCOfWbDlFEOUO19fCrhmD0RZmpXsYZ0Bsj9wfyvCMpcbgLVGL1ZSN4qwpqi6WwOIO4azfnY9na4r4eO0HydZvZPD4fsCfzeFIMJAp9tLv8if3KSR9Wdd1R6I0j~w__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/buh6lajptxjoxiy.png?Expires=1728864179\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ExhGFDliD9yw~m8BK8whRWLNL13CcKYU6IEXY5VEFJdgv5VA2iscfA8EcM2k2MIY46KTjSQLlJ2-bidTJfqq~8rvLPYm-wrDarZ~tMkKIH-T8DMNje7wt7ZL440QzDU5RZhePTopDX~PRUIpxDKalIFnKkXrtF2mr~wfgRZbf6Uj7BfMZ2f7nECTCwPQRBdMbdnkyKIe2FWOHXxdR3YgKfXpBHyWyd4luCd-fZIxTX-lfQpvw99TSCiKwELSdkNQ2sXMwONvnx6tN5wAbZQ~Y58dmIasAghAQpWy~4AA3CxNpfEFrVPIaQ-EiDERJ78UKvcnUOesN0cULijJPzVSzA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatlifeinsuranceclaims",
-    siteRoute: "",
-    correspondingTaskNames: ["Claim Life Insurance"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eClaim Life Insurance\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2019, $7.4 billion of life insurance benefits went unclaimed nationwide.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eIf you\'ve recently lost a family member or loved one, claiming life insurance is probably the last thing on your mind. Instead of dealing with long wait times over the phone, have DoNotPay automatically generate the claims letter on your behalf. All you have to do is attach a copy of the death certificate before submitting it to the insurance company.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -3921,56 +4526,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Print Photos From Home",
-    description:
-      "Have your photos printed and delivered straight to your door.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/170366261_5335817289824991_3571854198255553031_n.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/170366261_5335817289824991_3571854198255553031_n.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatprintphotos",
-    siteRoute: "",
-    correspondingTaskNames: ["Print Photos"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePrint Photos From Home\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eAn estimated 92% of Americans have made at least one print in the last year, with 83% using online photo labs.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eUpload your photo, choose the preferred size and finish, and select your shipping method to have photos printed and delivered to you without leaving the convenience of your home.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "File Converter",
-    description:
-      "Convert any file, image, or video to a new format in 3 easy steps.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/newFileConverterIcon.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/newFileConverterIcon.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatfileconverter",
-    siteRoute: "",
-    correspondingTaskNames: ["File Converter"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFile Converter\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn the early 2000s, many companies took advantage of the multitude of file types available by upselling expensive file conversion software.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eConvert any file or image without the fear of having your data stored. Just upload the file you want to convert and choose which format you want to convert it to. Your newly converted file will be ready to download from your "My Disputes" page!\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Data Breach Detection",
     description: "Check if your data has been compromised in a data breach",
     cardImage:
@@ -3999,129 +4554,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "MP3 Audio Converter",
-    description:
-      "Convert any online video, stream, or audio clip into a downloadable MP3 file.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/audioConverter.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/audioConverter.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chataudioconverter",
-    siteRoute: "",
-    correspondingTaskNames: ["MP3 Converter"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eMP3 Audio Converter\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eConverting a video to mp3 doesn\'t just save space, but also improves audio quality.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eConvert any online video link to a downloadable MP3 file, so you can listen to it whenever you want and wherever you want.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Video Downloader",
-    description: "Download any online video as a MP4 file.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/downloadVideo.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/downloadVideo.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatvideoconverter",
-    siteRoute: "",
-    correspondingTaskNames: ["Video Downloader"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eVideo Downloader\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003e5 billion videos are watched around the world each day, with the majority of viewers between the ages of 18 and 49.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eDownload any video from YouTube, TikTok, Tumblr, etc. just by entering the link into DoNotPay. Your new MP4 file will be available to download in your "My Disputes" page.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Remove Background From Image",
-    description:
-      "Remove the background from an image and download a transparent version in 3 easy steps.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/removeBackground.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/removeBackground.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatremovebackground",
-    siteRoute: "",
-    correspondingTaskNames: ["Remove Background From Image"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eRemove Background From Image\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe average American takes 20.2 pictures per day.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eEasily remove the background from an image with one-click. DoNotPay will process the image, detect the target of the photo, and remove the background. Your new, transparent photo will be available to download from your "My Disputes" page. To protect your privacy, the download link will expire after 24 hours, and the file will be removed from our servers.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "File Compressor",
-    description: "Compress any file or image in seconds.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/bxtt5ysnnjgrfp3.png?Expires=1713049309466\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=hJnEeC9lELEo92AVXQ8sFTCmBqhBDtcal9I-3afFfrieX9jrtr7ES2dl7YB-6cL-19xiQFhd8Y7CbRMrG5zGvWReU7goTX~FzXFTx4FOJ71VxzkVTh1VWC2i1xvlmHZklJrKWwkTFVPKg-svcbtjwiw6FQylQoyobE6XeP41J53mMKlSkOyX5ayoihM0nrg3vM8g3dQpiLOTKbo9HIMYn3w-t8~ijLOL3ylbkRXlWLw-Aet14bInInp-vLf~ENFXRfhFUSeUDw6cJdeF55U~22yr5dtkaN~Z9uwHBGjP0vweIRth0FzHuF~9Fatn289cMVGd701Q3QhK62Ej3iJSzQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/izloddior6wtgr3.png?Expires=1713049313155\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ejR0sGbHW4sLH3UNfmAFJCWF8KJb-k2ZqGPDBDCeg3S7U30o-5EpFTIiDI2IcbqV0ULAJTVcq4P6IJ7PREbpjUGx5xZUZAkEPQMXku03hCO0YVNBaKqOU7~CVjier5PsetIP27dthpvCYOoOFPY4xMXjEpDid5HIa2~V77X4Q5422FW0WeUfOa6e6qpv9otOiy6jp85tOnEzMBR7L6LTM9rfTJAdZJOqhF8NVZMz1v5G0G-PiYdcUN4uslrmmUcEGOWUv8s650ko-8snyG6Vm5gfhgugs9VVwZe30F68Wxm6M3FJsoPtdSMaFm81ZLpwaB3P11y5rUfpbRXy1YkTOQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatcompressfile",
-    siteRoute: "",
-    correspondingTaskNames: ["File Compressor"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFile Compressor\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003ePhillip W. Katz dedicated the first computer compression software called Zip to the public domain in 1989.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eSafely compress your files without compromising quality, security, or time. Simply drag-and-drop or upload your PDF or image and DoNotPay will compress the file on your behalf. Your new file will be available to download from your "My Disputes" page.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Pet Custody Agreement",
-    description:
-      "Create your own pet custody agreement to ensure your pets are in good hands.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/petTrust.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/petTrust.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatpetcustody",
-    siteRoute: "",
-    correspondingTaskNames: ["Pet Custody Agreement"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePet Custody Agreement\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eA survey by the AAML showed an increase of 22% in pet custody hearings in court, with the majority of cases involving dogs (88%).\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eDividing custody of your pet(s)? Generate your own pet custody agreement in a few simple steps. We\'ll help you make an arrangement that works for you in terms of visitation schedules and covering insurance costs and other expenses.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Item Authenticator",
     description:
       "Get your items authenticated by professionals in a few simple steps.",
@@ -4144,31 +4576,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eItem Authenticator\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe market for counterfeit and pirated goods amasses over $1.7 trillion per year, which is more than drug sales or human trafficking.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWe\'ll transfer the photos and information to professional authenticators who specialize in examining your brand. Once they reach a verdict, we\'ll compile the information into an official Certificate of Authenticity that can be used to prove your item\'s authenticity status.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Change My Mailing Address",
-    description:
-      "Are you moving locations and need help changing your mailing address? You're in the right place.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/changeAddress.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/changeAddress.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatchangeaddress",
-    siteRoute: "",
-    correspondingTaskNames: ["Change My Mailing Address"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eChange My Mailing Address\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eThe average American moves 11.7 times in their lifetime, with 15.3 million American households moving each year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eDoNotPay is here to make your move easier. We\'ll file an address change with USPS on your behalf, so you don\'t have to deal with any of the paperwork. You can start forwarding mail to your new address as soon as 7 days!\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -4244,56 +4651,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eLower Mortgage Payments\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn December 2020, 5 million Americans weren\'t able to make their housing payments and 1.2 mortgagors believed they were at risk of eviction.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWe automate the process of requesting modified payments and temporary reductions by including this information in a formal request letter, backed by the best legal arguments like the Real Estate Settlement Procedures Act (Regulation X).\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "File a HOA Complaint",
-    description:
-      "Having issues with a neighbor or community maintenance? File a complaint now.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/HOAcomplaints.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/HOAcomplaints.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chathomeownersassociation",
-    siteRoute: "",
-    correspondingTaskNames: ["Homeowners Association Complaint"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFile a HOA Complaint\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eIn 2018 there were 347,000 complaints to the Home Owners Association, most frequently about loud music, landscaping, or pet waste.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWhether you want to report a problematic neighbor, want your HOA to do maintenance, or have any other complaint, DoNotPay will generate a formal complaint letter that you can use. Our letters are backed by state-specific laws that protect your rights as a homeowner.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Appeal a HOA Fine",
-    description:
-      "Did you get a fine from your HOA that you don't deserve? Appeal it now.",
-    cardImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/appealHOAFines.png",
-    iconImage:
-      "https://donotpay-assets.s3-us-west-2.amazonaws.com/appealHOAFines.png",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatappealhoafine",
-    siteRoute: "",
-    correspondingTaskNames: ["Appeal Homeowners Association Fine"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eAppeal a HOA Fine\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eBetween 2005 and 2015, HOA fees rose 32.4% across the US.\n\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eHOAs are supposed to benefit the community and homeowners, but sometimes it feels like they\'re out to get you with pesky little fines and fees. DoNotPay can generate a formal appeals letter for you. We\'ll outline your rights as a homeowner and make the case on your behalf, arguing that the alleged violation was either a mistake or unfair due to selective enforcement.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -4382,31 +4739,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eSolve My Crypto Issue Now\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eWhen Michael Pierre got locked out of his Coinbase account, which held $100,000 worth of digital coins, he immediately emailed Coinbase for help. Coinbase simply told him his account was hacked and there was nothing they could do. His coins would have been worth more than $400,000 today.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you\'re having issues transferring funds, accessing your crypto account, or are tired of poor customer service, DoNotPay can file a complaint to the exchange on your behalf. We\'ll generate a legal demand letter outlining your problem and give the exchange a two-week deadline to respond and address the issue.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Report Crypto Fraud to the SEC",
-    description:
-      "Have you experienced any suspicious or fraudulent crypto activity? Report it to the SEC and potentially get compensated.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/dkmckix61kwj92z.png?Expires=1728954514\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=SjkmyaTLH66-VYYKeI5KIIOQwzDW5le4OOrjBg1CKWdVJbo-NqQP~BX0BuM1J-isMYSGqN4kRL6OlKdJCmiw9f2iORslAhzjRK-VqYG~oCtA5T5zGIhv4-hpRBD6cC1yrW0eZdEDjqtQY-Ds7tjmKen3R7jOCombjPZZ9z06TAOU2TD~GPM1M~ETA~qQEqgh8kqweWX-YUaoCxAzWs3YheWDAG6jRuvRNCmfKbY765iLrj39dJQ54O~GQ8I5UfOxf6THRDM4C0ZWUh0o~F7qwXV3ZCIrF0PCSXQgGyRTXOz279E-v1ZxWDpXnBrRLqHG7TDrXbiZNNSXCzawby1Iqg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/r6gxsdno5sofzw9.png?Expires=1728954517\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=oRnCcNK3Q1QKEURuYVsemCZRASTcErjELXMzegrza2O3qSmdacQwcYgiCmLqyKhn~BxpukLXDs2vX3zGNnStrrL~78y6K38QcGUmuqTptl54sCHbUxUB-cQ7hZGP0bKuytDnaqK3DAPagQvT6Ub6oziVkFExVS8ynW1U6xu-a9GSGDLVTIlkjW9nr1UPi1mLIFuZCUWBkeZoyJ1UAT1VyVFmjH7~c567Bg2C8aFi4X21y4cASZ3c2fZCAw78bZ09U-kVy2bbmZwZBimd9ESzYBUbhvX98UZ3olyVQE5eIFM-9xhs2upAMskLhg59Tdn4bzdeQmHZOwZTWL8~6Y7NrQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatcryptocurrencyscams",
-    siteRoute: "",
-    correspondingTaskNames: ["Report Crypto and ICO Fraud"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eReport Crypto Fraud to the SEC\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eA 2018 research report found that a whopping 73% of crypto projects were scams, indicating that ~$1.3 billion was lost to fraud.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDon\'t let crypto scammers get away with fraud. DoNotPay is here to hold these scammers accountable by filing a SEC report on your behalf. If you choose to opt in as a whistleblower, you can even get compensated for providing helpful information.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -4517,61 +4849,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Unban My Account",
-    description:
-      "Was your account unfairly banned?  I can file a demand letter to appeal the suspension on your behalf!",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ksd7olo6g3wdvjd.png?Expires=1715637197\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GEjUygxl230k6SukQI5QVthZq3Zzg2O8EYGkeStS8a256rBwb8vLoytPLqOwVTt4Hphk7NJVqgptuASmui466TrqWI1Kh6DQnkImtBkR-Of4TnWq6qMX2boTOmACGRK4lTrp5gV3wUP4Ys-198Hce~6~rPVup96DExHQ3T6msE8DrQBLK7RxXxAHsXrGgcLLB5l-ncWvElhY6CbnYK~eG9NiLahKe-L9gqgDNBtn9EtWo~mcQLL0w8Y35xdAY1qPGBdM-dlegf3XnPxwN6fQVKBDhQRpCXuZU1a8wtMy4BWLlCTakje0h82Z8abtqVSdeTOpp3v-2wQ~Yk-u~E4cRQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/c1pxd9lf0fyqfag.png?Expires=1715637202\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=HqgM3pFUlea~sx26CLhlg8eCPPNPchFTBMoG8o9q~1B182sv3Ndn2BDaKgiNZBImqi4saRgcg3EPkJRH~a7Xxrw2pARvOWPJGJIm31G2Jtnq~1KNt7hEv6YvNtdxHJCYS095vNsO8LjjUW9SaX-2yCV4zwFm1~HMneok3Mrzkf2AfEq07KpwaQCpMk~W3fzfJV1uUalxFXiD~DVz0b9CwUBnm3Eq8XZ31azRz7dwJ~BkPHySv6ojSflc-rxI1BXHLQj9ZqQvjLcK801gfOPOSeASaYbz3isjOXUUNWEU-78A2e~vodJVDA5JZev1h-DXa6r8Xn2Fr9sLN4Ddk1O39w__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatbannedaccount",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Recover Banned Account",
-      "Appeal Suspended Account",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eUnban My Account\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eFacebook banned 1.3 billion accounts over three months between October and December 2020.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWas your account suspended for no reason or without explanation? We can help you appeal the ban and legally request an explanation.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Negotiate a Cost of Living Raise",
-    description: "Keep up with inflation by negotiating a pay raise now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/rzj4tlbdpxaiuvf.png?Expires=1729210966\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=N2KctSekLQHIGTPl8rtDm2d6hx-gVq95GvGxJAkp9fjP~siQQa~h8dInlp-5vOgaichgX~jEN-u9z9IHCA2-o4emzX3wIOy19KLzY9~~0mB1y645Ka56jPmgnzKXxJCEk4ZQANYYWUKRkUc6DV-Fle62MXZW~lGnIHGim288bXoUqHAKZsX-mmNWhGubRsYw9oze~LFQoFxPjOEYEcMXSef7UaAzs0gUHXVEX13~2Nk1aX7yRHWKtBhr6SzQOCpu7LeIKcbjeHzz9jlpUymzvhuKDvjHFMRVwFrToqFMRSDZUOs4LoouEFtnTu4rjZhkkGD~V3Wb~dH4bZ0~MGXkRg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/br1ipr40lvr2bor.png?Expires=1729210969\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=UdpzPzhoim7sQBpG2ERqD~u-2sfO8sX2jKhq7rR4e0roZhIm0w-PHPCs6dI122vRRBsqdft7apeHoHtRTEcpBJFiR5LALck4FPrsSIiflMAP~c4w5RIKEuGbhWUtXizwsEUMyHOG~gGctHm8KlwpHwywyy05ei2ODRVyy0CbrI9R6100J5NIL0nolhvZsgJb6JriJ3OFgRPEb3xNdFDpVen7o64o-v7VNlNi84UQZKyFbPgnjNETMB~XuAL70ystmPkDS8VdzflAzH8nPWivouTb0V~7doOmdrNKHlbu3H2espVjzZgdEkRjBR3RFGNpE~nGa7iQqD5k7g8KnpmtJA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatnegotiatepayraise",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Negotiate a Cost of Living Raise",
-      "Negotiate a Raise",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eNegotiate a Cost of Living Raise\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003eInflation tends to stable year over year in the U.S. economy, with the Consumer Price Index typically rising 2-4% per year.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eOur product takes into the account the national average CPI as well as the average year-over-year wage growth in your industry to make a convincing argument as to why you deserve a raise. Choose whether you would like us to email this request to your manager/supervisor on your behalf. If not, we\'ll generate the request as a PDF that you can deliver to them yourself.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Combat Inflation",
     description: "Fight inflation by negotiating your salary and more.",
     cardImage:
@@ -4592,34 +4869,6 @@ export const getProductCards = [
     subProducts: ["Negotiate a Cost of Living Raise", "Fight Rent Increases"],
     isHoverDescriptionActive: false,
     hoverDescription: "",
-    __typename: "ProductCard",
-  },
-  {
-    title: "Employee Reimbursements",
-    description:
-      "Did you pay for a business expense out of pocket? Get reimbursed now.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/n6dkwctl0vbhk6v.png?Expires=1729211050\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=sFUT7lgMEwZizydM3SC~lokSUlKFOYjhXIzhsNA7tbK~BCd0BZigvWz9Q5j~eLbxD5nOw-30ZFpRIFGpCqWWSDxm8oYuuf6EoJa~03EcM77KhA2jGjb-bHYdwftyDwyS0aCt1jkDGpyWFME9AqfnXDTa2gOIJzgzYYdg57xp5s86IHPh~4YXyb~XE0aOxJlykIwhmkCjVWUukcJamN5WajWJ4RbRMX8kGqGFf3s76HR-SL3BSu2hE1evT0Y9wOmn0JA-sW9BFAt3ldn8YQLyrPaQ1WKtmjoCwTx59sCGG0l3BIwoJekbvl7i2wQ7iOk~vlPoX~snX6f7JAaNnwUzAQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/q5hdl7ztuql7ne9.png?Expires=1729211053\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JEuDcUNGq0kRGwnNGDK96~S46rRP7DWFMc4MbjkzDbB2CenCKH1y8rPmQylRmARq0ghDCBwd8gXbNcyqA-~8EFg2P0fPIDgxiOqfZRJAlLV6EsJ2q8PvLWRGvSjQw85p6-RPzpuD88F93l7VCMedrFF0gpijeUfg5LOUpgY6DbazTJ2e3BJCvai3pzRTLKoLCgha197hIyJL4pJd71UwVcKBLLs~xmFkUfpyGjOxGjjKF7NKsEF3F92O6DYHhPidtRNI79hiSG6NMBqNYzhpfUT3rOcFA2LHwZFFI5ByoPYmZJVeHJzqhF72mTOs-SH2wuG6v2uXitJeP9Nhex7nBQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatreimbursements",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Employee Reimbursements",
-      "Email My Reimbursement Request",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eEmployee Reimbursements\u003c/h1\u003e\u003cblockquote\u003e\u003cdiv class="line" \u003e\u003c/div\u003e\u003cdiv class="icon"\u003e\u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\u003c/div\u003e\u003cdiv class="content"\u003e\u003ch1\u003eDid you know\u003c/h1\u003e\u003cp\u003e56% of employees working from home weren\'t allowed to bring resources from the office, and 33% had to then purchase equipment to help with remote work.\u003c/p\u003e\u003c/div\u003e\u003c/blockquote\u003e\u003cdiv\u003eWorking from home? We\'ll help you request reimbursements for mileage, work-from-home, meal, business trip, and transportation expenses while you\'re working from home!\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -5662,35 +5911,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Planning Permissions",
-    description:
-      "Let DoNotPay guide you through the process of getting a building permit, so you can start your home renovation project legally and safely.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/dooxvumml8ewuap.png?Expires=1729210269\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Qbr9AfoKD3MQJt2umeDzJbEWd0VzhaolL6XUK855MQEjDtqBKd570l57FI0sd5pk7FldzAurtH6jUHGjIeuNdZzbJl6X-RDORfkOZQIDlFYaeCqXQtjVj8KXC~-aQjZQebklPN-GWF5D01pAWkuC8c0eBH~fH4-Ow0XRTfmsKFbM4Iaz47gonlcZQDCr2wqGxM25xR8f8eVcwVGnlysXQ9cVjGOMIlyBm2S0pqJiqtEgOBztSNkMaTYEeSu8uLBCpe6wk9kHKE-TtVssjEiPSBmPZy85d9MnpG1gpr80sGfpqOCHxoV9TzALcgO1U3tj9k68VFhQbLdh368h4ipnvg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/7xuxa0p6bspah7c.png?Expires=1729210272\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=sIhfFmWyIIVoBvmvs~wCu8MyptX369Q-J8HmGBMRaIAHnyzW6dORlSgQ5IeLLrEMZ8ggJS-OMrEo6WIxQNSsBtSEDefy9ak8KHTd4btUvbqzc~E9qFMefTDotdQGd8JoZukF2XsKrSUT-JYU9uzsQDjz~lFZxfchFduf7KYiW2H5s2v-~G0EB35IK1tOpdf6AEcYKlue2hTW9B0RfFg-a8~9hY6xJk4jTtLnmoYsyfQUiVDBpdS-NJNpEeKr~g5YhlU8~DfSH~v-LeN7Uvhp3WZY~FdR9gD117AEcV~EOi2oQj~mCm~XbG3OsSNw-qkWEZpHgCsbpr5r0evwHOF2MA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatplanningpermissions",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Planning Permissions",
-      "Check Building Permit Requirements",
-      "Building Permission from HOA",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePlanning Permissions\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn some states, you need a building permit just to install a fence in your yard!  Where you install the fence also matters — fences above 6 ft. in your backyard require permits, while the threshold is 3.5 ft. for frontyard fences.\u003c/p\u003e\n  \u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eStarting your home renovation project can be extremely exciting, but applying for a building permit isn\'t always easy. DoNotPay will help guide you through the building permit process by checking if your project needs a building permit, contacting any HOAs you\'re a part of to request building permission, or generating detailed instructions on how to start and complete your building permit application process.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Privacy Shield Self-Certification",
     description:
       "Register today for the Privacy Shield Program to show your commitment to data privacy.",
@@ -5885,31 +6105,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Redeem Damaged Money",
-    description:
-      "Was your money accidentally ripped, soiled, or damaged? DoNotPay can help you get it replaced.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/veha53kwft9pl43.png?Expires=1728954136\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=HYp-k25b2olMslWwHUWBeOanJ~BjjVRGFHGuEKMGvoBZufXTK48ZEEhpv-u3SHuQ9twDqH9rF9FH3eXPlZ0LaG2WnFns47rhO7fAhp0~3fue02m4sf6SbRFn5aA9BBuC1~DGGcHIx98NK-t6OJFmzcaSGX3uJHZsfB~twCyGcN9mVcacEqQDshcvezzMmfGC-sMrZikrTiu8Agu1dkBOnnLkYDarQjis55RMXy~pCX6P9mpwtdiEcuT11nlZFBjEfTpp19VoUYpHXZYVoI1ffd~FLbMq-qsTsOtmKZudhytPwdtfrho3k1lA7XyNEtAuMPQJHiPy-JJhxeClgn5dxQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/gueg8way3zlq1vw.png?Expires=1728954138\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=K4yKBGpY~fqesrOuO1qcbE30NMtW1zqP6rGv0lwEudcN4b957PHBxXW7kFgB0GMBg~nXkNnyh~hmQdxiy-QbSAPxtsu9CUbV8d~ItE1-BvCDU5zCxyw8bH0Sqvn88pZyC476zxB5J4ukikjRSDMtJAI9UPtlIraXAXi5w9vOgQ9HlQKudTFlGa4JXy0jhh9qHX9hiL04awbPZpdiaq~82kPIHT1Lc5VfGp5rW0Zp7xRf~NnEDnzbf23JtBpja8~ygGQhA-KiFu9dtBUyVWGr1XmIjv2cUold-kzxRSathRm~uf7RoEokVsA2PAOMia8uFYIM6JNQKFEHbXzaNelteQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatredeemdamagedmoney",
-    siteRoute: "",
-    correspondingTaskNames: ["Redeem Damaged Money"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eRedeem Damaged Money\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe US Department of Treasury receives more than 22,000 requests each year for redeeming damaged currency (an estimated value of $35 million)!\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you have ripped, soiled, or damaged money, don’t toss it out just yet. If more than half of the bill is still present, you can get it replaced at your local bank. Otherwise, DoNotPay can help you fill out the claim form and request a damaged currency evaluation and replacement from the US Treasury.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Become a Whistleblower",
     description:
       "Report illicit and fraudulent activity now and receive monetary compensation from settlements.",
@@ -6022,118 +6217,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Birth Certificates",
-    description:
-      "Get certified copies of a birth certificate issued by the government for you or your loved one.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/acgdp2hu1l54a6o.png?Expires=1728949182\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=nNnF-HGb0q~WGyN-wPsgWSo3kwJUks5vHMbBhVxL6bG6jBKnYdzfsfGdC9HVzLTVxY61xXgdIPV75uPCxzY2czKIyC~Kho4qVM3cl9MnYQctk9BmQJsqFnu8p6ZHSi2R5q2RNKtPscjH9MLPks4lBas9V-0o9gRkUQWBU~lC4oY6OwsHxckkyysJ36-rRoOLtV1-n3m8MWjYbwh1Za9zn6on9Bv~O4G6yG7zBvdbMIzEHxIDROjN9bVCGYuzTikSMjnfwJxj5weEPoBPeAnf-mQR29LI9EOo8iqRmkkB34gZbUFgLOf~7r-5GTlGUkl7oNkgoIL3Q2ZJyikOWcROFw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/wgxruli96ufxl5i.png?Expires=1728949186\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=pIiSClv-anP1oXmJ~bg0GHpN5LmD7zQKMlbVvZXE1a~Bs4Rpi3HgFM~euQKEZPq4-rxGlTjLOAStIfzvsCCB5RLu3mrDkCwIxRZf3fJGj3vdjZGoPK1BoTeoHXrXYccHKL2YHdfSr4ongCrKfqAi-4SP9UtWgSSJakdIVKiyEqN6r44lFJ5Ru8pxV6lKiRnsjMesROvBDSVBq~sANmLpBDdpsBRoz-NsjfFhTpcuhD~0skCffiudrYjWAqBaoVc9hptE785OQ4ruwbnXOqVWnj4zJbLlbNUbav0f6TTH3-148ZI9GE5Hhxqjkl3DIl85hXqbgXW5cwgukbc2tsaq-g__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatbirthcertificate",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Birth Certificate Application",
-      "Mail My Birth Certificate Application",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eBirth Certificate Application\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eBirth certificates haven’t always been the standard. World War II actually pushed more Americans to adopt birth certificates because they had to prove their citizenship in order to be hired to work at defense-related plants.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eBirth certificates are important and useful documents to have because they are considered a valid form of identification and can be used in most legal settings. If you lost your birth certificate, or need extra copies, DoNotPay can help! We’ll first help you fill out the application form and then help you pay the fees by mailing a check.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Death Certificates",
-    description:
-      "Get certified copies of death certificates issued by the government straight from your laptop.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/78gn2a89psogs5z.png?Expires=1728948806\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=KkYkOquTh2Xp5bGuTXvuzWHOnpHPckpMWN8rxmVla9wtfEyqi-2BjQLHn96Py~MOQlDa351IB3DDGutYGIfVlwhHBlERq0SrF7wB3vS1ILyOMZ9Ezpo70h-FEV~dFg-Wduu2JoctbqxDmOmg5agGRTum7l0TCuO8w3S4dVr0Z3xuj3XdJdkjc7ihePmJJteldcZ3zg4rakwV3pWMoUrkNrqpWqfp4iAadNl12FyEuABJbONjf6hXbYLcbaFVsgQbwb4jxP44Z7YDwG8txhSyRZUpnPeOK3xxuT2GMC2xGvqrhzyUK5verE7WcwjA2HGfHKvmg1lA~uhTUpxYrGreyw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/azvlorm4afak69g.png?Expires=1728948808\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=dsNoQN3IWtCr6DPeIK8QHZBe~8TVDUISoCcbB7en7lqqkvgUjCAxo7Lp33s6QzZnn2IsTjAzTpmRnglt5uI7prxTl4Ck5ZG7XTY0NgOMox4maOEJzPstHyVw31Nt-vWa9Pmaux4aj2v7aaownqVwfKCgvCbF9OnxQ-nHWOhVeRvc32lCe2W0v13WnR0zHGUvRKljQH1B6iM~MZefeZxKoDZ2ot-BRcYmqCeuiNEeSZVE5mewQV7QE6MyzsjYyI1PHRGolz9DKDAWMVUwRMLzaVk7ZC2RkRm5YBIST~yLkW~65TEDA-n6S~EdzCV6P9kyDzhSlCrMrsf~7-sTPJYzbw__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatdeathcertificate",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Death Certificate Request",
-      "Mail My Death Certificate Request",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eDeath Certificates\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eDeath certificates are the only form of legal and state proof that someone died. They’re  used by the government to stop payments, pensions, and issue other benefits.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhile it’s not always easy to talk about, death certificates are extremely important because they’re the only legal way to prove that someone has died. Whether you need to close a loved one’s financial account or need access to state benefits, DoNotPay can help you access certified copies of a death certificate. We’ll first help you fill out the application form and then help you pay the fees by mailing a check.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Certificates of Marriage",
-    description: "Obtain certified copies of your marriage certificate today.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/kz3xgbng4e1yd2a.png?Expires=1728948793\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kwll0JeMYxHA5jUaZWLzFNV7J0vL~Y29ZTDMte2TED7002zCtcYIdHzUNglcc1A3Y5oH85ZF3CGaqdjgvdPazawpTwsiLpLdXFNEEpHRbveIZdRTd4a0JAgkQsQl3SMfNbSVMrPmMYYWBmZNUlcMCrR5Xz1jcpoe0HRA3URwGmsPAHJhR7u9nqZ95lv~SJF-pt7Mx9wrsl6ZJt9-W7Sso3Je0-kRzGmYf2x-qdgW12YBWjcyEvgjBdVj1ClMYFu-NS5gWUVL~QfxOpmjGfu~KP8h7x~d6Rt5Z08XpXBqXiWwK6PIR67tYFnHdSOOwBcFamw7IJq3qbLHkztOTH~nHA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/uncowthoidvhpuh.png?Expires=1728948796\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=PtNSByUTS1oVCQVqfbi7RJVpQN4is-1bpKPg1dYhMuUjatoenqgLpfy76B99ADDjVuslyBEB9ivwCKNh7NgtdApAFTZOcA1EmOIjPJom6-UvM9dwSwbkTpFVsw1pBPZvyagvyOVxyGY2Uxd3IjYuAoVc-1bDCe1fZ2EoKODciIVeUBfFoahPrxhOMAii7yMywwEsFOBS19KKFy4fTO-oIa90hiGgbAKzsqeQC08z0m6tiXihX3ACbDtDQa7DyF7uzfTk~wEmhLqfp5l~PHcSlTxovgS9p2qXG-MEgW~9EJi932s9CxZbYDLaOIGmVqhj-SQ7ohYxOj1a8hcV~77~pA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatmarriagecertificate",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Marriage Certificate Request",
-      "Mail My Marriage Certificate Request",
-      "Certificate of Marriage Request",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eCertificates of Marriage\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, Nevada had the highest marriage rate in the United States, with 25.9 marriages per 1,000 residents.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMarriage certificates are legal documents issued by the government that prove a marriage took place. They’re extremely useful if you want to legally change your last name, share health benefits, file joint taxes, and more. For these use cases, you need a certified copy from your state government. DoNotPay can help you get started with the request process today! \u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Certificates of Divorce",
-    description: "Obtain certified copies of your divorce certificate today.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/kz3xgbng4e1yd2a.png?Expires=1728948793\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=kwll0JeMYxHA5jUaZWLzFNV7J0vL~Y29ZTDMte2TED7002zCtcYIdHzUNglcc1A3Y5oH85ZF3CGaqdjgvdPazawpTwsiLpLdXFNEEpHRbveIZdRTd4a0JAgkQsQl3SMfNbSVMrPmMYYWBmZNUlcMCrR5Xz1jcpoe0HRA3URwGmsPAHJhR7u9nqZ95lv~SJF-pt7Mx9wrsl6ZJt9-W7Sso3Je0-kRzGmYf2x-qdgW12YBWjcyEvgjBdVj1ClMYFu-NS5gWUVL~QfxOpmjGfu~KP8h7x~d6Rt5Z08XpXBqXiWwK6PIR67tYFnHdSOOwBcFamw7IJq3qbLHkztOTH~nHA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/uncowthoidvhpuh.png?Expires=1728948796\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=PtNSByUTS1oVCQVqfbi7RJVpQN4is-1bpKPg1dYhMuUjatoenqgLpfy76B99ADDjVuslyBEB9ivwCKNh7NgtdApAFTZOcA1EmOIjPJom6-UvM9dwSwbkTpFVsw1pBPZvyagvyOVxyGY2Uxd3IjYuAoVc-1bDCe1fZ2EoKODciIVeUBfFoahPrxhOMAii7yMywwEsFOBS19KKFy4fTO-oIa90hiGgbAKzsqeQC08z0m6tiXihX3ACbDtDQa7DyF7uzfTk~wEmhLqfp5l~PHcSlTxovgS9p2qXG-MEgW~9EJi932s9CxZbYDLaOIGmVqhj-SQ7ohYxOj1a8hcV~77~pA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatmarriagecertificate",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Marriage Certificate Request",
-      "Mail My Marriage Certificate Request",
-      "Certificate of Marriage Request",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eCertificates of Marriage\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, Nevada had the highest marriage rate in the United States, with 25.9 marriages per 1,000 residents.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMarriage certificates are legal documents issued by the government that prove a marriage took place. They’re extremely useful if you want to legally change your last name, share health benefits, file joint taxes, and more. For these use cases, you need a certified copy from your state government. DoNotPay can help you get started with the request process today! \u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Check for Warrants",
     description:
       "Check if you or your loved ones have any outstanding police warrants.",
@@ -6181,31 +6264,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eOnline Bill Pay\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAmerican consumers spend approximately $2.91 trillion each year on recurring bills.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether it’s a mortgage, rent, insurance, or other utilities payment, most of us are responsible for paying monthly bills that we can’t avoid. Remembering to make these payments can be quite tedious, especially if you’re required to send in a check. You can set up Online Bill Pay using DoNotPay to send one-time and recurring checks, so you never have to worry about paying your bills again!\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Pet Licenses",
-    description:
-      "Register for a new pet license.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/1v5i44y198rozaf.png?Expires=1728948640\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=JsjFPhWda3lUSZATGLI26JHDzu4wJHoW9P4j5DKeq8NjATdLiozYKnV1E0qpOf9PdjKVcvVm7vqOrMI6M6hgVAGtgBaISL4WBCdfnXWuN4r5Qfon7pj20V5PcSZJrqojKKDL~v8YUYuSUFWHO1dhu1k68~bJBlkAHdUeuZFIwwPtnlWAyQHx5p2TmbnS8J7fYbezAzPUeL9I-N3gVmDqHWaJ-41rVIpYKpVO-eFWavOJsxqT6Segmn~2GaVyMrd8OQ95J9W-wY4a7nPWkdgqkSLgwgLhHremchqhZtCFG5ZvvEF54MrzupQgfYkd5HjZN~2GMp0IJDUilNYI-0okMA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ani9vyygdu65qx0.png?Expires=1728948642\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mq9rYFEZsujzbJP~IA1xoBWqb8VpzyJk0za9wgM6wqOGjLB1en3UZtp1l52GGUlwTgT6n2gDu02LLb7Pzue1FNXsYjf6QW2hDdNRIrvxTeiVhZpGGq7JSH10PivZPLKF79wPBFMouS4yGFoKNqHQmv-lKPjsdpbckPR7CigICzGTNU4XisMmnCw-fQ9Wv91dLy0nCdUDnuvLeMCUgGm6F-HokhlESsUAAkLsGgJ2qvssIeNf4FOvrvNHyZUPabr6Pbj~hAEWO7Esdg0F137V2aHTb1h9zQPh7G4HxJq88w0P4M0ZBuFSuHJD1T1JCQxlhuixqXpBwuF1HuovHZ2ZRQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatpetlicenses",
-    siteRoute: "",
-    correspondingTaskNames: ["Get My Pet License", "Check Pet License Fee"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePet Licenses\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003ePet licenses can be quite expensive and cost anywhere from $20 to $200 per year. Most states offer cheaper rates for spayed/neutered pets and senior/veteran owners.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003ePet licenses are not only legally required in most states, but also helpful to have in order to prove vaccinations and make it easier for people to find and return lost pets. The application process varies based on the county and state, but if you need help renewing or registering for a pet license, DoNotPay can help you do it online right from your laptop.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
@@ -6414,80 +6472,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "File Police Report",
-    description: "Were you victim to a crime? File a police report today.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/rjtucx8bvwjvpv0.png?Expires=1729458679\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=RB4J4zfe~VkSzOZ6MN6AFTT9Q4ivk3BcJ5~qz9DwFzX8NbYXpnghprHrems86VQ923OXEF1Dbxd5E4r1ejZ6FtkE36lijMrF6undBdzmnWr-nlCvTvx49fh9BfGvaGf1Y9OlLsfwRYrd4Ax1~u6l7g44dqNQ0A8AMv4~rP3N3rpaA0NYAjXUzEYtUVUYwcTXRAj5WVmbvg1uT8E8sCm~JGwq3F4OwhszX1AJS3vjHamezNg5RMuNFrPPFHDFeYGiicq30VJ8Tl1bWcmcVU6nl-kaEBHC5RrMLm8ILSsNir3PhCupoKW4lLMJtEuMzCTVOv~1d-9ikiVn6G0Ky1JKFw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/lwwdfacdg7drcag.png?Expires=1729458684\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=nTOJLQmA1sfY9DO~2AOtbpvUH0~plZZAzlAHiIpuvxeFEr1g7iO5Bwvw63eZxpsnAs1Yt7CZuJzaKMMNuhFyEgLqqCCay-2ky-QD3HX7dzv~bhldZ-DTL3zbr3rlCHBOPX3LepHFpN08Bn80DrGzDX6wlJcYEFcs-9lDj7vhwHI3AcJtPPPah2iO0YjHzm5csd5HPZ6DsnfB0bCw5Hh9ARPpQHb~tQn-cFIxkfSeYh-lKiBz3wQXe8T0q0rX5YlHATS1XGOPt2JB5Sxy7rvcKzQYn6cfV4B1rJqejOnXJpFZLiO3vXod0T-12WdD2fVl5ECvZgfdGHIo7r83PqOG~Q__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatpolicereport",
-    siteRoute: "",
-    correspondingTaskNames: ["File Police Report"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003ePolice Reports\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2020, there were 640,836 criminal offenses reported in the US.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eWhether you were a victim to identity theft, vandalism, vehicle burglary, or theft, you should file a report with your local police to get the incident on the records. DoNotPay can help you file the report with evidence, so you can do it straight from your laptop.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Firearm Registration",
-    description:
-      "Register your firearms to be in compliance with your state laws.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ptykiaw0dxy6kqf.png?Expires=1729987500\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GeN6ohVeqbiXpH5gNfymO5mZMBYR7JFr7ia5VsymSYbnsEVmSsTuKY~qs9MGmKT70FrwzzbY7vA-9bvBc3-E6ZVOaF6TzbwbmNNxRHI5WRdEfXLiu5k3j8IKcyoYUZEj-VeJzNz8QzmA10FAvvrViBugcphjhezw8KEZBxlExxaI9oI3gTpWnZ8l3quko3j7Dg3mwuJpocT9DTUfqqfXxwfJyisGx5USzrRH~yX-0i94yTbznhM8Va-5~CH0umhsRcMiHajB2fQlOpfC05aNi5GXNzk6T0FIUuusP~G1pUMtjCjnziYeZ2iOxbrCDhUDXXbDgQ0LUWixK6XhhVWllw__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/1jsij0u5jkhwiql.png?Expires=1729987504\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=F3Xx1M3EJ8Q42-yDL50K~-2UCeT4dYKTTR2NRzgwKaZ~nXY1q4bxu159xA1hZmZ~bgipYD9NZRpbVDUSCQOCmbDHjA1OxX1G-~R6v59BlrNTMklYV84KW7OiFPhpNL0s~W9aWotUhyrsFVXyFUB~9ScVVKYyyGYvYFzY-bU48Ha5v~Te2-GuFdi3iyNZY~8L2UCo1H3CwigbwP2dvQxBM4lpQY-LjP-9o1-468vQnHxcEK-7wO8b0Tc4fhrAtKba1uViuWnDMSJGZj~mx6IRVU6F0GR5PE0CNpsoUH~HQWBITbk84utysqAaxiL45D1Ujz~jNRbHVUtOn85KG8rozA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatgunregistration",
-    siteRoute: "",
-    correspondingTaskNames: ["Gun Registration"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFirearm Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eYou are legally required to register your firearm in California, New York, Hawaii, and the District of Columbia.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you own a firearm and either reside in or are planning to move to any of the states above, you have to get it registered to avoid legal penalties. DoNotPay can help you complete the forms you need and make sure you’re in compliance with the laws in your county and state.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Fishing License",
-    description:
-      "Get your official fishing license so you can start fishing today.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/r9lo3vwab5elpjf.png?Expires=1730077628\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=BWP9H0E~2M6AgHbCz5IoUsmhNLydML78N0Lw2tjr-WfHQ78UoYh2gqXD3y~02YYeongivdgyFB99UqiBQgOPjywqaNtLiSzKbMwciXbcTB~1rU5j8pqcootCj2QGjMhZ-ao4pJgj~2lLzA~dDWFuQQqtN4~rTyn1hM7J1z78ag6o-bo8Uc3~0SH9zaw4K6Kts2S8L38YYH4wV8Suo8ia-Gz3TFp9zSLMhxhecX5lulMPsibauk-9WK0kzd7q1-9FRbzb3PVGdBUEPY1OYy-Ils6p2LZekH6Y4otGBlK1WzTTLfO09r34sWEihFFXZOrgNp47GDEVrdbAy74v0pmTgg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/mmcjk1m2wajln2u.png?Expires=1730077633\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=GpStT2R2qWyXXfy1P8RY2Cr3ki6SAW6k1WsfDJkPpfYKIajUG6PfxgNT84MExUWyKoDtWZMeB8G12cxIHAtYnOxCB9OjL1pe3I3UwuU1wSeuO9hAcSYXn2HvSHPt81GZPeq3MtXeD14nI5MUhw3I9M5ngFprhDK170js8zsjqedopZaqt2flDP-mPk1jIR2Chg-b4ndoP-biM36fDFaWcKMb2wj2vJ3KAr1j5mUBLaMOmy-yuxPF6nDAI~X-9RUjm1O7Wcsxg2GhxFKpFobifAeH83HtgFw2Oy6qCPgaNQkU~R7vCca4GUIBmH7Pg6Yr0mk3~qqB-q4T1JrIJzDn6A__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatfishinglicenses",
-    siteRoute: "",
-    correspondingTaskNames: ["Fishing License"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eFishing License\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2021, there were approximately 29.24 million paid fishing license holders in the U.S\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you have plans to fish in your state or at a travel destination, you are legally required to have a fishing license. These licenses can be temporary or annual, and can also be specific to the type of water you want to fish in. If you need a license, but aren’t sure how to get one, DoNotPay can help. Use our product to avoid unnecessary appointments and forms and get your license delivered to you automatically.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Concert Ticket Scams",
     description:
       "Did you buy concert tickets that turned out to be a scam? Use DoNotPay to get the justice you deserve.",
@@ -6665,30 +6649,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Hunting Licenses",
-    description: "Get an official hunting license today.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/fiusutyipdliigf.png?Expires=1731793903\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=eERc4PLK9NtWyNMl7NP4HASjqywFqkWJd8NBqXl8tHuIVYIO5mQqcqFSfBG9Q5CQXINdUZnu7er9wuws3p7sd6mP0eE~wZticokYkF6k8aVVJ9LAtlvYwhWs4S~c~4i0U4VJcNUa65x4iz3y53G9wvFD1uYCh801pbCOTTAMDPE83-erehLjYD1ogyo8mcYCwkMm1LJR36pcIA5fZADKvQzlxz1OQ2a93ZBKQmIHDPZOBK05sJgP5vfjf1LbCcOGrQQ8kbBYRYk9bXRTMkKpgUU-PhnM5FpooHJtHnygEZ2-~40I0rWvAfpNnBQsTQfgalEiPcOyrL2XjMaDD3xuCg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/9llefykkbaxh7ta.png?Expires=1731793908\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=ZiiM0Dyy4cIoYI3xWmz3ZFoMWnHCKxikAKBRt9Iy2LPmZIW0g0Oowy8LtUQneVYTdyTNqLKzutyljC03-pKD2-HYOnfS~EldwZxENC4aUH3AyuiXs0lg9gXILkTZW49WLOWcUPrmrBreQcXLSYYnCvL81p2nWSDA7nA5d4Gs2ufV~qLqk4cU7gzofPCQHLldtGlv2~UtED~nwEFV18l2zeUlcbK8e9g5wtCeS7GcSSkSbPPNn-~7Z9CCRsrnl3L18c94xOZT4WlbkTeDWI5WmF0tikYWS4HlEk-IdaSfxr0CGbwtQQGbDjjc-z~8hJDpRaISL0dkzAmQJivUULBPfA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chathuntinglicense",
-    siteRoute: "",
-    correspondingTaskNames: ["Hunting License"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eHunting Licenses\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eAccording to the U.S. Fish And Wildlife Service, a total of 38,854,259 Hunting Licenses, Tags, Permits \u0026 Stamps were registered in 2020.\n\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eHunting licenses are legal requirements at the state level that not only help prevent illegal hunting and promote wildlife sustainability, but they also ensure that everyone gets the necessary training to hunt safely. DoNotPay can help you get your hunting license with minimal effort and save you a trip to your county office through our online process!\n\u003c/div\u003e\n',
-    __typename: "ProductCard",
-  },
-  {
     title: "Reward Points",
     description:
       "Sell your airline miles and hotel / credit card points for cash, or learn how to convert them to other benefits.",
@@ -6792,34 +6752,6 @@ export const getProductCards = [
     __typename: "ProductCard",
   },
   {
-    title: "Break My Lease",
-    description:
-      "Need to break your lease? See how you can do it legally with no fees.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/ykhq3px6pmzqzwn.png?Expires=1733507236\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=EtTmTxzxlUTLwyLJZS0DL5orw5LEvw05Sj58PrEoRcFJi9OWbZ-ukmghOh54cXSlDUBPyBtfVuPLIeSgsdQJzA9qTWZy2~6~2z4PukHwK9BCq1moYGku1cbb9M~rwIBtjqymc5FVySjsnvsonC8CYk83ZBx5glKUUDVqmoYqWRltcsdsJrvPSprx-UvOORHx9TacixAU7e9kQs0kSoWMLy~L9FwNa1jumsq6ZC-FRrmBcBLcdeDdYxc3exo5t9fFKxgjp62SE20yI5P7I~0qZhh~gdH12~MQ3MQdMyU3zQDzB3z99g2It8AtffdqoiYokkFTq~ReACmg48kS727Tbg__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/zm2gcfblg9vtgp0.png?Expires=1733507240\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=cmjT3eNvUPgcMS7Ssf0AqVTkjUtWJ4eqUeTxsZVjmHRCXPO6XU8xxWayjJpXW2jrTjiuHQmbuOQFLMUsBAWUIN8OcuSgaPuNtFwIqUl217SudoeboDuFrubLJq9HkMGl5zAIOE1NFrf3BaiXMHK2z5DG2eUnlL~s~dttkmLj9GQKEfIw0rdM7RlsViMWY0wrxobUnzAfnyMCLC~GBQ4Eu297yENdn3qNfgnRtvfzBQV~bdgBPiq2RvWIYEc0rvAzQbtgO00WJiysPBigu3f8haFFHDjkdFgRnssPKAxYuiczlo6mE4EIDt-Sn6rA6z1IowbmwKWvR-oa7emLUbKKKA__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatbreaklease",
-    siteRoute: "",
-    correspondingTaskNames: [
-      "Break My Lease",
-      "Servicemember Housing Lease Termination",
-    ],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eBreak My Lease\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn 2019, 49% of Americans under 30 years old rented their homes. \n\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eMost lease agreements impose penalties, sometimes up to the balance of the lease payments, for terminating the lease early. However, if you need to break your lease, there are many potential conditions of your lease and personal situations protected under state and federal law as reasons to break a lease. DoNotPay can write a letter to leverage the facts of your situation and send it to your landlord to minimize your fees when you break your lease.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
     title: "Fight and Waive Fees",
     description: "Fight hidden fees and get your money back.",
     cardImage:
@@ -6869,56 +6801,6 @@ export const getProductCards = [
     isHoverDescriptionActive: true,
     hoverDescription:
       '\u003ch1\u003eNegotiate My Salary\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eConsumer prices rose 6.8 percent year over year in November 2021, the largest 12-month increase since the period ending June 1982.\n\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eDid you receive a new job offer, but were hoping for a better salary? Or have you been working at your job and think it\'s time to request a raise? DoNotPay can help you negotiate better terms and benefits, so you’re getting the best compensation possible.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Cancel Voter Registration",
-    description:
-      "If you're moving to another state and want to cancel your voter registration, DoNotPay can help you do it in less than five minutes.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/f6nhyqdvgj16398.png?Expires=1734402753\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Dg1SfCrfjqtufII9H28N4u4kZdYg0A7hizQ6fRyMhxahEB35BheO87rKehtsBVglWE7TimmWITpZTZDI-K9k3mSPCXJA1BsEv246bIBDnB8ljxZ7eJdrDRNfeRBUgOMnKo79AgqVRI34d42--q7Bx9I7guIQJ6OEfyZCJ9PypXsSa~VWDMwyNbOoSRlQremKF38gFYRrajyYj-A0FjU-wlDN3j7WYH5Qnm04B8ZHDNO~DkkTkG28V5qav~bIXM1etzKfqwzGQYLpUpv3h3Anz7kcJ76qj5tYvWM2vjdtu8HGWO0WIHeKztcVF~Ru10~zbhqHam3I2JvaAcszeIIgTA__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/xrzzjjhe3gxibos.png?Expires=1734402758\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=Bj6z86doa4HmHp1th~yWC1a09OBrBdjeoETjuAiU4MMk4B8kOk0Y2OCl7bcQfj7kVyL5LAUz0H8TuEIx3Y5Hry1ISV6PCl787muDPROt0qBVxIK2VSBAA9WlCtrfav0LfHcEioa3M5eJlaIBVvYRvieLDhIz1FtyQlfiqGaB2Ooj9h8W2w~pqV88aPaGarHb3bVYtfuvLNRdRF1ZBXd6-rwwPBEt3NAUMBkW2sbyJDEu1zyTGafVRLMuZ99~YblLLx91rgcoNdovr-EGrvlByTxOKx-RaAG5WwnomW1mNbUQSqS3B9cem~t9NXYsIVuqCvsqNOklEQRJfJ8mCX9GxQ__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatcancelvoterregistration",
-    siteRoute: "",
-    correspondingTaskNames: ["Cancel Voter Registration"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eCancel Voter Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eThe 2020 presidential election had the highest voter turnout of the 21st century.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you\'re relocating to another state or no longer want to be registered to vote in your state, you must file an official voter registration cancellation request. DoNotPay can generate the cancellation request form on your behalf and make sure it gets mailed to the right department.\u003c/div\u003e',
-    __typename: "ProductCard",
-  },
-  {
-    title: "Voter Registration",
-    description:
-      "If you want to register to vote for the first time.",
-    cardImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/3me06zaoqutsglr.png?Expires=1734738685\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mgfltaxirrm2nH8~dJg-RP4FKTY5F4fZRAzxmlf7NERz3owGhVGTblV-JsEaOzCoYYdpvb6iJxVtI3qApJwyNiuBOREx~8lvjVza~J9KQnPO~8VWns4yjRclhjCP6r-srxGEmQnGeUULz-NF5XW9muwdrUokTzKzNZ3fOoNdVNvM2j0LIC8oFZQLEWed5PVRn-qMsJqCbqDLyVS9J4kNKnr3tLIYwc11PSuICboLX3L~D0Ud~nrxNtb0sntiVXDw4NNDPbfNFCAhAaFOWCeFPPVHvIEkC39aEm36H7FWcNyce3hwr0xiYUVXJkD8H1sVax4ri6OqQZAoi1pA~TjnXQ__",
-    iconImage:
-      "https://d2pp7hm7rdj612.cloudfront.net/rmqx3wjileygtck.png?Expires=1734738689\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=LRngLgusc8-DsEkGGWIMpucC4mU~l6x9~XdcsCn9GwNXVP6eJsiv4b3GRgudav3e4VFen2pa33oAGlHIbSl2ujZpjMs06VJCFTIHQyaiSF146vH~5Y1aj4~tpmLS88CQry7OzPm3Ddj14Qw3CmfqCcz2aMc-H3fjkxoUlwWw1aKwdMOlDq0eqp6h5RB9QvzqSbANIVR9imQ8VAmjU8ut6ijeNtd6Pw2EwtpcFiWzIgi1tBLOd2cbEOoJ7Y7vPfRxEV0J79ceSwuUEm0K9lzX4bfOXVUCFaC3RrS4Vr3Io2Z1vhmBB-WUmP39EKd~SYkYfUk3yMBeAZBlDjiAqa0U5w__",
-    isCategoryCard: false,
-    isCompanyCard: false,
-    chatTopic: "chatvoterregistration",
-    siteRoute: "",
-    correspondingTaskNames: ["Voter Registration", "Check Voter Registration"],
-    currentProductOfTheDay: false,
-    bannerHeader: "",
-    bannerDescription: "",
-    bannerRoute: "",
-    bannerImage: "",
-    bannerBackground: "",
-    subProducts: [],
-    isHoverDescriptionActive: true,
-    hoverDescription:
-      '\u003ch1\u003eVoter Registration\u003c/h1\u003e\n\u003cblockquote\u003e\n  \u003cdiv class="line" \u003e\u003c/div\u003e\n  \u003cdiv class="icon"\u003e\n    \u003cimg src="/static/icon/did-you-know.svg" alt="" /\u003e\n  \u003c/div\u003e\n  \u003cdiv class="content"\u003e\n    \u003ch1\u003eDid you know\u003c/h1\u003e\n    \u003cp\u003eIn many states, you can actually pre-register to vote starting at the age of 16 or 17 depending on your state, so that when you turn 18, you\'re automatically added to the voter roll.\u003c/p\u003e\n\u003c/div\u003e\n\u003c/blockquote\u003e\n\u003cdiv\u003eIf you want to register to vote for the first time, or need to update your information because you changed your name, address, or political party affiliation, DoNotPay can help. We’ll contact your state agency on your behalf and make sure your registration gets updated.\u003c/div\u003e',
     __typename: "ProductCard",
   },
   {
