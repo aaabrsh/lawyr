@@ -18,10 +18,10 @@ export default function Testimonials() {
           alt=""
         />
         <div className="container relative z-10 mx-auto px-4">
-          <h2 className="my-4 text-center text-[40px] lg:text-[120px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[90px]">
+          <h2 className="mt-4 text-center text-[40px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[90px] lg:text-[120px]">
             Users are saying
           </h2>
-          <p>(tens of thousands issues processed)</p>
+          <p className="mb-4 text-white">(tens of thousands cases processed)</p>
           <div className="-m-3 flex flex-wrap">
             <div className="w-full p-3 md:w-1/2 lg:w-1/3">
               <div className="rounded-4xl h-full rounded-md border	 bg-opacity-60 p-6">
@@ -195,7 +195,7 @@ export default function Testimonials() {
             </div>
           </div>
           {/* companies */}
-          <p className="mb-6 mt-7 text-sm font-semibold uppercase text-gray-500">
+          {/* <p className="mb-6 mt-7 text-sm font-semibold uppercase text-gray-500">
             Trusted and loved by 100+ tech first teams
           </p>
           <div className="-m-3 flex flex-wrap">
@@ -284,7 +284,7 @@ export default function Testimonials() {
                 <path d="M156.808 349.106c-20.416-6.656-40.11-16.358-58.556-28.838-34.719-23.508-64.153-56.189-85.121-94.523l-.985-1.819 1.001-1.804c21.277-38.3 50.864-71.048 85.548-94.691 18.503-12.622 38.183-22.401 58.497-29.094 21.635-7.126 44.029-10.733 66.567-10.733 22.93 0 45.576 3.592 67.346 10.68 20.447 6.648 40.177 16.412 58.614 28.997 34.528 23.562 63.797 56.376 84.64 94.881l.962 1.78-.962 1.788c-20.835 38.497-49.874 71.206-83.988 94.586-18.329 12.561-37.949 22.293-58.334 28.935-21.692 7.063-44.354 10.645-67.354 10.645h-.938a218.932 218.932 0 01-66.937-10.79M136.663 17.581c-26.646 11.272-50.568 27.402-71.128 47.954-20.544 20.544-36.689 44.475-47.955 71.121C5.912 164.236 0 193.536 0 223.751c0 30.203 5.912 59.503 17.58 87.088 11.266 26.638 27.411 50.568 47.955 71.121 20.56 20.551 44.482 36.669 71.128 47.942 27.581 11.664 56.881 17.576 87.096 17.576 30.207 0 59.502-5.912 87.079-17.576 26.654-11.273 50.577-27.392 71.129-47.942 20.544-20.553 36.677-44.483 47.946-71.121 11.661-27.585 17.572-56.885 17.572-87.088 0-30.215-5.911-59.515-17.572-87.095-11.27-26.646-27.402-50.577-47.946-71.121-20.552-20.552-44.475-36.682-71.129-47.954C283.261 5.912 253.966 0 223.759 0c-30.215 0-59.515 5.912-87.096 17.581" />
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

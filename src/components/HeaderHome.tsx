@@ -165,7 +165,7 @@ export default function Header() {
                         href={"/sales"}
                         className="ml-5 items-center rounded-md pt-1 align-middle text-white hover:bg-gray-700 hover:text-pink-500"
                       >
-                        Talk to sales
+                        Book a demo
                       </a>
                       {/* </Link> */}
                       {isLoadingUser ? (
@@ -251,7 +251,7 @@ export default function Header() {
                         <button
                           type="button"
                           onClick={openModal}
-                          className="ml-4 rounded-md bg-pink-400 px-4 py-1 text-white transition hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-rose-500 focus:ring-opacity-50"
+                          className="ml-4 rounded-md border border-pink-500 bg-transparent px-4 py-1 text-white transition hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-rose-500 focus:ring-opacity-50"
                         >
                           Log in
                         </button>
