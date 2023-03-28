@@ -6899,7 +6899,7 @@ export const getProductCards = [
   {
     title: "Voter Registration",
     description:
-      "If you want to register to vote for the first time, or need to update your information, DoNotPay can help.",
+      "If you want to register to vote for the first time.",
     cardImage:
       "https://d2pp7hm7rdj612.cloudfront.net/3me06zaoqutsglr.png?Expires=1734738685\u0026Key-Pair-Id=APKAJR6SCL5WRGAF7GAA\u0026Signature=mgfltaxirrm2nH8~dJg-RP4FKTY5F4fZRAzxmlf7NERz3owGhVGTblV-JsEaOzCoYYdpvb6iJxVtI3qApJwyNiuBOREx~8lvjVza~J9KQnPO~8VWns4yjRclhjCP6r-srxGEmQnGeUULz-NF5XW9muwdrUokTzKzNZ3fOoNdVNvM2j0LIC8oFZQLEWed5PVRn-qMsJqCbqDLyVS9J4kNKnr3tLIYwc11PSuICboLX3L~D0Ud~nrxNtb0sntiVXDw4NNDPbfNFCAhAaFOWCeFPPVHvIEkC39aEm36H7FWcNyce3hwr0xiYUVXJkD8H1sVax4ri6OqQZAoi1pA~TjnXQ__",
     iconImage:

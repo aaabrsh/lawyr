@@ -6658,7 +6658,7 @@
           "type": "text",
           "name": "Police Report Number (if applicable)",
           "label": "Police Report Number (if applicable)",
-          "required": true
+          "required": false
         }
       ],
       [
@@ -8788,5 +8788,3495 @@
         }
       ]
     ]
+  },
+  "Stock Drop Lawsuits": {
+    "prompt": "generate a letter to Join a class action in a Stock Drop lawsuit to get my money back using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Law Firm's Full Name",
+          "label": "Law Firm's Full Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Full Name",
+          "label": "Writer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Phone Number",
+          "label": "Writer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Email Address",
+          "label": "Writer's Email Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of Shares",
+          "label": "Number of Shares",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Purchase",
+          "label": "Date of Purchase",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Purchase Price",
+          "label": "Purchase Price",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the Company Being Sued",
+          "label": "Name of the Company Being Sued",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws govern the stock market and to be used as context for the letetr generation",
+          "label": "The state/country whose laws govern the stock market",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "File a SEC Complaint": {
+    "prompt": "generate a letter to File an SEC Complaint using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's Full Name",
+          "label": "Complainant's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's Phone Number",
+          "label": "Complainant's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's Email Address",
+          "label": "Complainant's Email Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's Street Address",
+          "label": "Complainant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's City",
+          "label": "Complainant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's State",
+          "label": "Complainant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Complainant's Zip Code",
+          "label": "Complainant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the company/individual being complained about",
+          "label": "Name of the company/individual being complained about",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Street Address of the company/individual being complained about",
+          "label": "Street Address of the company/individual being complained about",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "City of the company/individual being complained about",
+          "label": "City of the company/individual being complained about",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "State of the company/individual being complained about",
+          "label": "State of the company/individual being complained about",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Zip Code of the company/individual being complained about",
+          "label": "Zip Code of the company/individual being complained about",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Submission",
+          "label": "Date of Submission",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Brief Description of the alleged securities violation",
+          "label": "Brief Description of the alleged securities violation",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the specific actions/behaviors that you believe are in violation of securities laws",
+          "label": "Description of the specific actions/behaviors that you believe are in violation of securities laws",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Negotiate a Cost of Living Raise": {
+    "prompt": "generate a letter to Negotiate a Cost of Living Raise using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Employer's Name",
+          "label": "Employer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's Street Address",
+          "label": "Employer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's City",
+          "label": "Employer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's State",
+          "label": "Employer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employer's Zip Code",
+          "label": "Employer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Employee's Name",
+          "label": "Employee's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Street Address",
+          "label": "Employee's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's City",
+          "label": "Employee's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's State",
+          "label": "Employee's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Employee's Zip Code",
+          "label": "Employee's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reasons for Cost of Living Raise",
+          "label": "Reasons for Cost of Living Raise",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Current Salary",
+          "label": "Current Salary",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Proposed Salary Increase",
+          "label": "Proposed Salary Increase",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Stock Purchase Agreement": {
+    "prompt": "generate a Stock Purchase Agreement document using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Street Address",
+          "label": "Seller's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's City",
+          "label": "Seller's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's State",
+          "label": "Seller's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Zip Code",
+          "label": "Seller's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Full Name",
+          "label": "Buyer's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Street Address",
+          "label": "Buyer's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's City",
+          "label": "Buyer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's State",
+          "label": "Buyer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Buyer's Zip Code",
+          "label": "Buyer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Date of Agreement",
+          "label": "Date of Agreement",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "number",
+          "name": "Number of Shares",
+          "label": "Number of Shares",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Price per Share",
+          "label": "Price per Share",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Total Price",
+          "label": "Price per Share",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the stocks being sold",
+          "label": "Description of the stocks being sold",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Closing Date",
+          "label": "Closing Date",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Closing Location",
+          "label": "Closing Location",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Report Crypto Fraud to the SEC": {
+    "prompt": "generate a letter to Report Crypto Fraud to the SEC using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Full Name",
+          "label": "Seller's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Street Address",
+          "label": "Seller's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's City",
+          "label": "Seller's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's State",
+          "label": "Seller's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Seller's Zip Code",
+          "label": "Seller's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the company/individual involved in the suspected fraud",
+          "label": "Name of the company/individual involved in the suspected fraud",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Street Address of the company/individual involved in the suspected fraud",
+          "label": "Street Address of the company/individual involved in the suspected fraud",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "City of the company/individual involved in the suspected fraud",
+          "label": "City of the company/individual involved in the suspected fraud",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "State of the company/individual involved in the suspected fraud",
+          "label": "State of the company/individual involved in the suspected fraud",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Zip Code of the company/individual involved in the suspected fraud",
+          "label": "Zip Code of the company/individual involved in the suspected fraud",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the Suspected Fraudulent Activity",
+          "label": "Description of the Suspected Fraudulent Activity",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Evidence Supporting the Suspected Fraud",
+          "label": "Evidence Supporting the Suspected Fraud",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the fraudulent activity",
+          "label": "The state/country whose laws will govern the fraudulent activity",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Claim My Property Insurance": {
+    "prompt": "generate a letter to Claim My Property Insurance using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Name",
+          "label": "Insurance Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Street Address",
+          "label": "Insurance Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's City",
+          "label": "Insurance Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's State",
+          "label": "Insurance Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Zip Code",
+          "label": "Insurance Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Name",
+          "label": "Insured's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Email",
+          "label": "Insured's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Phone Number",
+          "label": "Insured's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Street Address",
+          "label": "Insured's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's City",
+          "label": "Insured's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's State",
+          "label": "Insured's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Zip Code",
+          "label": "Insured's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Policy Number",
+          "label": "Policy Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the damaged property",
+          "label": "Description of the damaged property",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Damage",
+          "label": "Date of Damage",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Cause of Damage",
+          "label": "Cause of Damage",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Estimated cost of Damage",
+          "label": "Estimated cost of Damage",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the insurance",
+          "label": "The state/country whose laws will govern the insurance",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal Denied Medical Insurance Claims": {
+    "prompt": "generate a letter Appeal Denied Medical Insurance Claim using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Name",
+          "label": "Insurance Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Street Address",
+          "label": "Insurance Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's City",
+          "label": "Insurance Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's State",
+          "label": "Insurance Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Zip Code",
+          "label": "Insurance Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Name",
+          "label": "Insured's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Email",
+          "label": "Insured's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Phone Number",
+          "label": "Insured's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Street Address",
+          "label": "Insured's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's City",
+          "label": "Insured's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's State",
+          "label": "Insured's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Zip Code",
+          "label": "Insured's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Policy Number",
+          "label": "Insurance Policy Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Initial Claim Submission",
+          "label": "Date of Initial Claim Submission",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Medical condition for which treatment was received",
+          "label": "Medical condition for which treatment was received",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date when Medical Service was Received",
+          "label": "Date when Medical Service was Received",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Total amount of medical expenses",
+          "label": "Total amount of medical expenses",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "List of Medical Expenses with Individual Costs",
+          "label": "List of Medical Expenses with Individual Costs",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Explanation of why the claim was denied",
+          "label": "Explanation of why the claim was denied",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Explain why you believe the claim was wrongfully denied",
+          "label": "Explain why you believe the claim was wrongfully denied",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the insurance",
+          "label": "The state/country whose laws will govern the insurance",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal a Denied Property Insurance Claim": {
+    "prompt": "generate a letter to Appeal a Denied Property Insurance Claim using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Name",
+          "label": "Insurance Company's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Street Address",
+          "label": "Insurance Company's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's City",
+          "label": "Insurance Company's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's State",
+          "label": "Insurance Company's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Company's Zip Code",
+          "label": "Insurance Company's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Name",
+          "label": "Insured's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Email",
+          "label": "Insured's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Phone Number",
+          "label": "Insured's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Street Address",
+          "label": "Insured's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's City",
+          "label": "Insured's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's State",
+          "label": "Insured's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insured's Zip Code",
+          "label": "Insured's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Insurance Policy Number",
+          "label": "Insurance Policy Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Claim Number",
+          "label": "Claim Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Initial Claim Submission",
+          "label": "Date of Initial Claim Submission",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the property damage/loss being claimed",
+          "label": "Description of the property damage/loss being claimed",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Explanation of why the claim was denied",
+          "label": "Explanation of why the claim was denied",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Explanation of why you believe the claim was wrongfully denied",
+          "label": "Explanation of why you believe the claim was wrongfully denied",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the insurance",
+          "label": "The state/country whose laws will govern the insurance",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Contact Your Government Representative": {
+    "prompt": "generate a letter to Contact Your Government Representative using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Government Representative's Name",
+          "label": "Government Representative's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Government Representative's Street Address",
+          "label": "Government Representative's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Government Representative's City",
+          "label": "Government Representative's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Government Representative's State",
+          "label": "Government Representative's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Government Representative's Zip Code",
+          "label": "Government Representative's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Email",
+          "label": "Writer's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Phone Number",
+          "label": "Writer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the issue or topic",
+          "label": "Description of the issue or topic",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Relevant details to help the government representative understand the situation",
+          "label": "Relevant details to help the government representative understand the situation",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Hunting Licenses": {
+    "prompt": "generate a letter to request a hunting license using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the Department Issuing the License",
+          "label": "Name of the Department Issuing the License",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Street Address of the Department Issuing the License",
+          "label": "Street Address of the Department Issuing the License",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "City of the Department Issuing the License",
+          "label": "City of the Department Issuing the License",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "State of the Department Issuing the License",
+          "label": "State of the Department Issuing the License",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Zip Code of the Department Issuing the License",
+          "label": "Zip Code of the Department Issuing the License",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Full Name",
+          "label": "Requester's Full Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Phone Number",
+          "label": "Requester's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Email",
+          "label": "Requester's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Street Address",
+          "label": "Requester's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's City",
+          "label": "Requester's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's State",
+          "label": "Requester's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Zip Code",
+          "label": "Requester's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Hunting License Type",
+          "label": "Hunting License Type",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Hunting Unit",
+          "label": "Hunting Unit",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Season Dates",
+          "label": "Season Dates",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Fee Amount",
+          "label": "Fee Amount",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Voter Registration": {
+    "prompt": "generate a letter to register to vote in the given country/state using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's Name",
+          "label": "Applicants's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's Phone Number",
+          "label": "Applicants's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's Email Address",
+          "label": "Applicants's Email Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's Street Address",
+          "label": "Applicants's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's City",
+          "label": "Applicants's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's State",
+          "label": "Applicants's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Applicants's Zip Code",
+          "label": "Applicants's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Name",
+          "label": "Election Office's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Street Address",
+          "label": "Election Office's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's City",
+          "label": "Election Office's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's State",
+          "label": "Election Office's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Zip Code",
+          "label": "Election Office's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of the Election you wish to vote in",
+          "label": "Date of the Election you wish to vote in",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Driver's License/State ID Card Number",
+          "label": "Driver's License/State ID Card Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Social Security Number (if required)",
+          "label": "Social Security Number (if required)",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Cancel Voter Registration": {
+    "prompt": "generate a letter to Cancel Voter Registration in the given country/state using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Name",
+          "label": "Requester's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Phone Number",
+          "label": "Requester's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Email Address",
+          "label": "Requester's Email Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Street Address",
+          "label": "Requester's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's City",
+          "label": "Requester's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's State",
+          "label": "Requester's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Zip Code",
+          "label": "Requester's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Name",
+          "label": "Election Office's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Street Address",
+          "label": "Election Office's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's City",
+          "label": "Election Office's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's State",
+          "label": "Election Office's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Election Office's Zip Code",
+          "label": "Election Office's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Birth",
+          "label": "Date of Birth",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for Cancellation",
+          "label": "Reason for Cancellation",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Cancellation request",
+          "label": "Date of cancellation request",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Voter Registration Number (if applicable)",
+          "label": "Voter Registration Number (if applicable)",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal for More Financial Aid": {
+    "prompt": "generate a letter to Appeal for More Financial Aid using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Name",
+          "label": "Requester's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Phone Number",
+          "label": "Requester's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Email Address",
+          "label": "Requester's Email Address",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Street Address",
+          "label": "Requester's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's City",
+          "label": "Requester's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's State",
+          "label": "Requester's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Requester's Zip Code",
+          "label": "Requester's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Financial Aid Office's Name",
+          "label": "Financial Aid Office's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "University's Name",
+          "label": "University's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "University's Street Address",
+          "label": "University's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "University's City",
+          "label": "University's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "University's State",
+          "label": "University's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "University's Zip Code",
+          "label": "University's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Academic Year",
+          "label": "Academic Year",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reasons for the appeal",
+          "label": "Reasons for the appeal",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Any additional information that might help the appeal",
+          "label": "Any additional information that might help your appeal, such as scholarships, academic performance, or extracurricular activities (if any)",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Lower Property Taxes": {
+    "prompt": "generate a letter to Lower Property Taxes considering the laws of the given country/state and using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tax Authority/Department's Name",
+          "label": "Tax Authority/Department's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tax Authority/Department's Street Address",
+          "label": "Tax Authority/Department's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tax Authority/Department's City",
+          "label": "Tax Authority/Department's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tax Authority/Department's State",
+          "label": "Tax Authority/Department's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Tax Authority/Department's Zip Code",
+          "label": "Tax Authority/Department's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Name",
+          "label": "Sender's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Street Address",
+          "label": "Sender's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's City",
+          "label": "Sender's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's State",
+          "label": "Sender's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Sender's Zip Code",
+          "label": "Sender's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Property's Street Address",
+          "label": "Property's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Property's City",
+          "label": "Property's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Property's State",
+          "label": "Property's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Property's Zip Code",
+          "label": "Property's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Assessed Value of Property",
+          "label": "Assessed Value of Property",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for requesting a review of assessed value and a reduction in property taxes",
+          "label": "Reason for requesting a review of assessed value and a reduction in property taxes",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any research or evidence to support the request",
+          "label": "Any research or evidence to support the request",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any concerns about the accuracy of the assessment (if any)",
+          "label": "Any concerns about the accuracy of the assessment (if any)",
+          "required": false
+        },
+        {
+          "tag": "textarea",
+          "name": "Any financial difficulties caused by the current property taxes (if any)",
+          "label": "Any financial difficulties caused by the current property taxes (if any)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose tax laws apply",
+          "label": "The state/country whose tax laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Take Down My Personal Information": {
+    "prompt": "generate a letter to request a Take Down of My Personal Information using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Name",
+          "label": "Recepient's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Street Address",
+          "label": "Recepient's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's City",
+          "label": "Recepient's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's State",
+          "label": "Recepient's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recepient's Zip Code",
+          "label": "Recepient's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The source of the information",
+          "label": "The source of the information (e.g. website, database, etc.)",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "The specific personal information you want to be removed",
+          "label": "The specific personal information you want to be removed",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The reason for requesting the removal",
+          "label": "The reason for requesting the removal",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal Parking Ticket": {
+    "prompt": "generate a letter to Appeal a Parking Ticket using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Name",
+          "label": "Appellant's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Street Address",
+          "label": "Appellant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's City",
+          "label": "Appellant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's State",
+          "label": "Appellant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Zip Code",
+          "label": "Appellant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Authority's Name",
+          "label": "Authority's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Authority's Street Address",
+          "label": "Authority's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Authority's City",
+          "label": "Authority's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Authority's State",
+          "label": "Authority's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Authority's Zip Code",
+          "label": "Authority's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for Ticket",
+          "label": "Reason for Ticket",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Reason for Contesting the Ticket",
+          "label": "Reason for Contesting the Ticket",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Any Evidence that support the appeal (if any)",
+          "label": "Any Evidence that support the appeal (if any)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal Speeding Ticket": {
+    "prompt": "generate a letter to Appeal a Speeding Ticket using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Name",
+          "label": "Appellant's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Street Address",
+          "label": "Appellant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's City",
+          "label": "Appellant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's State",
+          "label": "Appellant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Zip Code",
+          "label": "Appellant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Name",
+          "label": "Court's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Street Address",
+          "label": "Court's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's City",
+          "label": "Court's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's State",
+          "label": "Court's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Zip Code",
+          "label": "Court's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Speeding Violation",
+          "label": "Date of Speeding Violation",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Location of Speeding Violation",
+          "label": "Location of Speeding Violation",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Citation Number of Speeding Ticket",
+          "label": "Citation Number of Speeding Ticket",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Speed the driver was drving in",
+          "label": "Speed the driver was drving in",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Speed Limit the driver was driving in during the violation",
+          "label": "Speed Limit the driver was driving in during the violation",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Brand/Manufacturer of the vehicle",
+          "label": "Brand/Manufacturer of the vehicle",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Model of the vehicle",
+          "label": "Model of the vehicle",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "License Plate of the vehicle",
+          "label": "License Plate of the vehicle",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for Contesting the Ticket",
+          "label": "Reason for Contesting the Ticket",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Any Evidence that support the appeal (if any)",
+          "label": "Any Evidence that support the appeal (if any)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal Red Light Ticket": {
+    "prompt": "generate a letter to Appeal a Red Light Ticket using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Name",
+          "label": "Appellant's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Street Address",
+          "label": "Appellant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's City",
+          "label": "Appellant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's State",
+          "label": "Appellant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Zip Code",
+          "label": "Appellant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Name",
+          "label": "Court's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Street Address",
+          "label": "Court's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's City",
+          "label": "Court's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's State",
+          "label": "Court's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Court's Zip Code",
+          "label": "Court's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Violation",
+          "label": "Date of Violation",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Location/Intersection of Violation",
+          "label": "Location/Intersection of Violation",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Explanation of why the was in error",
+          "label": "Explanation of why the was in error",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal Toll Booth Ticket": {
+    "prompt": "generate a letter to Appeal Toll Booth Ticket using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Name",
+          "label": "Appellant's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Street Address",
+          "label": "Appellant's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's City",
+          "label": "Appellant's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's State",
+          "label": "Appellant's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Appellant's Zip Code",
+          "label": "Appellant's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Toll Booth Authority's Name",
+          "label": "Toll Booth Authority's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Toll Booth Authority's Street Address",
+          "label": "Toll Booth Authority's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Toll Booth Authority's City",
+          "label": "Toll Booth Authority's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Toll Booth Authority's State",
+          "label": "Toll Booth Authority's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Toll Booth Authority's Zip Code",
+          "label": "Toll Booth Authority's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Ticket",
+          "label": "Date of Ticket",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Toll Booth",
+          "label": "Name of Toll Booth",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for the appeal",
+          "label": "Reason for the appeal",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Explanation of why the ticket has been a mistake",
+          "label": "Explanation of why the ticket has been a mistake",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Evidence to support the claim",
+          "label": "Evidence to support the claim (if any)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Child Travel Consent Form": {
+    "prompt": "generate a Child Travel Consent Form using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Name",
+          "label": "Parent/Guardian's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Child's Name",
+          "label": "Child's Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Destination of Travel",
+          "label": "Destination of Travel",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Accompanying Adult",
+          "label": "Name of Accompanying Adult",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Travel",
+          "label": "Date of Travel",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Airline Name",
+          "label": "Airline Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Flight Number",
+          "label": "Flight Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Departure Time",
+          "label": "Departure Time",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Arrival Time",
+          "label": "Arrival Time",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of the place where the child will be staying",
+          "label": "Name of the place where the child will be staying",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Street Address of the place where the child will be staying",
+          "label": "Street Address of the place where the child will be staying",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "City of the place where the child will be staying",
+          "label": "City of the place where the child will be staying",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "State of the place where the child will be staying",
+          "label": "State of the place where the child will be staying",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Zip Code of the place where the child will be staying",
+          "label": "Zip Code of the place where the child will be staying",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 1's Name",
+          "label": "Emergency Contact 1's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 1's Email",
+          "label": "Emergency Contact 1's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 1's Phone",
+          "label": "Emergency Contact 1's Phone",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 2's Name",
+          "label": "Emergency Contact 2's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 2's Email",
+          "label": "Emergency Contact 2's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Emergency Contact 2's Phone",
+          "label": "Emergency Contact 2's Phone",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Anonymous HR Complaint": {
+    "prompt": "generate a letter to file an Anonymous HR Complaint using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Name",
+          "label": "Company/Organization's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Street Address",
+          "label": "Company/Organization's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's City",
+          "label": "Company/Organization's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's State",
+          "label": "Company/Organization's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Zip Code",
+          "label": "Company/Organization's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HR Department Person's Name",
+          "label": "HR Department Person's Name",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the incident or behavior that is the subject of the complaint",
+          "label": "Description of the incident or behavior that is the subject of the complaint",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date when the Incident/Behavior that is subject of the complaint happened",
+          "label": "Date when the Incident/Behavior that is subject of the complaint happened",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Location where the Incident/Behavior that is subject of the complaint happened",
+          "label": "Location where the Incident/Behavior that is subject of the complaint happened",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "A statement of how the behavior or incident violates company policies or local laws",
+          "label": "A statement of how the behavior or incident violates company policies or local laws",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "The reason for requesting anonymity",
+          "label": "The reason for requesting anonymity",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Name(s) of person(s) involved in the incident",
+          "label": "Name(s) of person(s) involved in the incident (if known)",
+          "required": false
+        },
+        {
+          "tag": "textarea",
+          "name": "Name(s) of any witnesses",
+          "label": "Name(s) of any witnesses (if any)",
+          "required": false
+        },
+        {
+          "tag": "textarea",
+          "name": "Any documentation or evidence to support the complaint",
+          "label": "Any documentation or evidence to support the complaint (if any)",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "Plagiarism Monitor": {
+    "prompt": "generate a letter to fight Plagiarism to an online content using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's Name",
+          "label": "Content Owner's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's Phone Number",
+          "label": "Content Owner's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's Email",
+          "label": "Content Owner's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's Street Address",
+          "label": "Content Owner's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's City",
+          "label": "Content Owner's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's State",
+          "label": "Content Owner's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Content Owner's Zip Code",
+          "label": "Content Owner's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Plagiarizer's Name",
+          "label": "Plagiarizer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Plagiarizer's Street Address",
+          "label": "Plagiarizer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Plagiarizer's City",
+          "label": "Plagiarizer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Plagiarizer's State",
+          "label": "Plagiarizer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Plagiarizer's Zip Code",
+          "label": "Plagiarizer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Title of Original Work",
+          "label": "Title of Original Work",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "URL of Original Work",
+          "label": "URL of Original Work",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Title of Content in Question",
+          "label": "Title of Content in Question",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "URL of Content in Question",
+          "label": "URL of Content in Question",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Deadline for Corrective Action",
+          "label": "Deadline for Corrective Action",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Pet Custody Agreement": {
+    "prompt": "generate a Pet Custody Agreement document using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Owner's Name",
+          "label": "Owner's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Owner's Street Address",
+          "label": "Owner's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Owner's City",
+          "label": "Owner's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Owner's State",
+          "label": "Owner's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Owner's Zip Code",
+          "label": "Owner's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Co-Owner's Name",
+          "label": "Co-Owner's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Co-Owner's Street Address",
+          "label": "Co-Owner's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Co-Owner's City",
+          "label": "Co-Owner's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Co-Owner's State",
+          "label": "Co-Owner's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Co-Owner's Zip Code",
+          "label": "Co-Owner's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Pet's Name",
+          "label": "Pet's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Breed of Pet",
+          "label": "Breed of Pet",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Color of Pet",
+          "label": "Color of Pet",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Age of Pet",
+          "label": "Age of Pet",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Gender of Pet",
+          "label": "Gender of Pet",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Microchip Number of Pet",
+          "label": "Microchip Number of Pet",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Veterinarian Name",
+          "label": "Veterinarian Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Veterinarian Phone Number",
+          "label": "Veterinarian Phone Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The person responsible for pet-related expenses",
+          "label": "Who will be responsible for pet-related expenses",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Visitation Arrangements",
+          "label": "Visitation Arrangements (if applicable)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "The state/country whose laws will govern the agreement",
+          "label": "The state/country whose laws will govern the agreement",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Unban My Account": {
+    "prompt": "generate a letter to Unban My Account using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Platforms's Name",
+          "label": "Company/Platforms's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Platforms's Street Address",
+          "label": "Company/Platforms's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Platforms's City",
+          "label": "Company/Platforms's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Platforms's State",
+          "label": "Company/Platforms's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Platforms's Zip Code",
+          "label": "Company/Platforms's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Account Name/Number",
+          "label": "Account Name/Number",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Ban",
+          "label": "Date of Ban",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Duration of usage of the platform",
+          "label": "Duration of usage of the platform",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason given for ban",
+          "label": "Reason given for ban",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any relevant information or explanation for the ban",
+          "label": "Any relevant information or explanation for the ban",
+          "required": false
+        }
+      ]
+    ]
+  },
+  "File a HOA Complaint": {
+    "prompt": "generate a letter File a HOA Complaint using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA Member/President's Name",
+          "label": "HOA Member/President's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Name",
+          "label": "HOA's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Street Address",
+          "label": "HOA's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's City",
+          "label": "HOA's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's State",
+          "label": "HOA's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Zip Code",
+          "label": "HOA's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the Issue",
+          "label": "Description of the Issue",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Negative Consequence of the Issue",
+          "label": "Negative Consequence of the Issue",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Appeal a HOA Fine": {
+    "prompt": "generate a letter to Appeal an HOA Fine using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA Member/President's Name",
+          "label": "HOA Member/President's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Name",
+          "label": "HOA's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Street Address",
+          "label": "HOA's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's City",
+          "label": "HOA's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's State",
+          "label": "HOA's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "HOA's Zip Code",
+          "label": "HOA's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Fine",
+          "label": "Date of Fine",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for fine",
+          "label": "Reason for fine",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Reason for appealing the fine",
+          "label": "Reason for appealing the fine",
+          "required": true
+        }
+      ]
+    ]
+  },
+  "Fight Job Discrimination": {
+    "prompt": "generate a Fight Job Discrimination letter using the following information: ",
+    "questions": []
+  },
+  "Americans with Disabilities Act": {
+    "prompt": "generate a Americans with Disabilities Act letter using the following information: ",
+    "questions": []
+  },
+  "Notice of Intent to Homeschool": {
+    "prompt": "generate a Notice of Intent to Homeschool letter using the following information: ",
+    "questions": []
+  },
+  "File a Complaint": {
+    "prompt": "generate a File a Complaint letter using the following information: ",
+    "questions": []
   }
 }
