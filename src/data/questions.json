@@ -12264,19 +12264,587 @@
     ]
   },
   "Fight Job Discrimination": {
-    "prompt": "generate a Fight Job Discrimination letter using the following information: ",
-    "questions": []
+    "prompt": "generate a letter to report a Job Discrimination using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Phone Number",
+          "label": "Writer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Email",
+          "label": "Writer's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Name",
+          "label": "Company/Organization's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Street Address",
+          "label": "Company/Organization's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's City",
+          "label": "Company/Organization's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's State",
+          "label": "Company/Organization's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Zip Code",
+          "label": "Company/Organization's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Specific incidents of discrimination that you have experienced",
+          "label": "Specific incidents of discrimination that you have experienced",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "The Basis for the discrimination",
+          "label": "The Basis for the discrimination (e.g. race, gender, age, disability, sexual orientation)",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
   },
   "Americans with Disabilities Act": {
-    "prompt": "generate a Americans with Disabilities Act letter using the following information: ",
-    "questions": []
+    "prompt": "generate a letter to file a complaint about discrimination on the basis of disability using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Phone Number",
+          "label": "Writer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Email",
+          "label": "Writer's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agency/Department's Name",
+          "label": "Agency/Department's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agency/Department's Street Address",
+          "label": "Agency/Department's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agency/Department's City",
+          "label": "Agency/Department's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agency/Department's State",
+          "label": "Agency/Department's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Agency/Department's Zip Code",
+          "label": "Agency/Department's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Name of Employer/Company/Organization",
+          "label": "Name of Employer/Company/Organization",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Department/Position the Writer was Employed in",
+          "label": "Department/Position the Writer was Employed in",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date when the incident of discrimination occurred",
+          "label": "Date when the incident of discrimination occurred",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Description of the discriminatory behavior or action that occurred, including the names of the individuals involved (if known)",
+          "label": "Description of the discriminatory behavior or action that occurred, including the names of the individuals involved (if known)",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Any witnesses or documentation that can support your claim of discrimination",
+          "label": "Any witnesses or evidence that can support your claim of discrimination (if any)",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Any steps you have taken to address the situation, including any previous complaints filed with the organization or employer",
+          "label": "Any steps you have taken to address the situation, including any previous complaints filed with the organization or employer",
+          "required": false
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
   },
   "Notice of Intent to Homeschool": {
-    "prompt": "generate a Notice of Intent to Homeschool letter using the following information: ",
-    "questions": []
+    "prompt": "generate a Notice of Intent to Homeschool document using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Name",
+          "label": "Parent/Guardian's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Phone Number",
+          "label": "Parent/Guardian's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Email",
+          "label": "Parent/Guardian's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Street Address",
+          "label": "Parent/Guardian's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's City",
+          "label": "Parent/Guardian's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's State",
+          "label": "Parent/Guardian's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Parent/Guardian's Zip Code",
+          "label": "Parent/Guardian's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School's Name",
+          "label": "School's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School's Street Address",
+          "label": "School's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School's City",
+          "label": "School's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School's State",
+          "label": "School's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School's Zip Code",
+          "label": "School's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Child's Name",
+          "label": "Child's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Child's Date of Birth",
+          "label": "Child's Date of Birth",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "School Year",
+          "label": "School Year",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "statement outlining the educational objectives and the teaching methods to be used",
+          "label": "statement outlining the educational objectives and the teaching methods to be used",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "List of Subjects to be Taught",
+          "label": "List of Subjects to be Taught",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Qualifications of the teacher",
+          "label": "Qualifications of the teacher",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Start Date of the School Year",
+          "label": "Start Date of the School Year",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "End Date of the School Year",
+          "label": "End Date of the School Year",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Method of tracking attendance",
+          "label": "Method of tracking attendance",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Description of the curriculum materials to be used",
+          "label": "Description of the curriculum materials to be used",
+          "required": true
+        },
+        {
+          "tag": "textarea",
+          "name": "Plan for annual assessments",
+          "label": "Plan for annual assessments",
+          "required": true
+        }
+      ]
+    ]
   },
   "File a Complaint": {
-    "prompt": "generate a File a Complaint letter using the following information: ",
-    "questions": []
+    "prompt": "generate a letter to File a Complaint using the following information: ",
+    "questions": [
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Name",
+          "label": "Writer's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Phone Number",
+          "label": "Writer's Phone Number",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Email",
+          "label": "Writer's Email",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Street Address",
+          "label": "Writer's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's City",
+          "label": "Writer's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's State",
+          "label": "Writer's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Writer's Zip Code",
+          "label": "Writer's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Name",
+          "label": "Company/Organization's Name",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Street Address",
+          "label": "Company/Organization's Street Address",
+          "required": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's City",
+          "label": "Company/Organization's City",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's State",
+          "label": "Company/Organization's State",
+          "required": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Company/Organization's Zip Code",
+          "label": "Company/Organization's Zip Code",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "type": "date",
+          "name": "Date of Letter",
+          "label": "Date of Letter",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "Details of the incident or issue, including dates, times, locations, and names of individuals involved",
+          "label": "Details of the incident or issue, including dates, times, locations, and names of individuals involved",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "textarea",
+          "name": "State the desired outcome or solution to the issue",
+          "label": "State the desired outcome or solution to the issue",
+          "required": true
+        }
+      ],
+      [
+        {
+          "tag": "input",
+          "name": "The state/country whose laws apply",
+          "label": "The state/country whose laws apply",
+          "required": true
+        }
+      ]
+    ]
   }
 }
