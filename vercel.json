@@ -1,4 +1,15 @@
 {
-  "redirects": [{ "source": "/api/chat", "destination": "/api/chat" }]
+  "devCommand": "uvicorn src/pages/api/chat/main:app --host 0.0.0.0 --port 8000",
+  "builds": [
+    {
+      "src": "api/chat/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/chat/(.*)",
+      "dest": "api/chat/main.py"
+    }
+  ]
 }
-
