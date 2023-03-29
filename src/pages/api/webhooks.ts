@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
 import {
-  upsertProductRecord,
   updateCustomerRecord,
 } from "../../utils/supabase-admin";
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
-import stripe from "../../utils/stripe";
 import { Readable } from "node:stream";
+
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Stripe requires the raw body to construct the event.
 export const config = {
@@ -55,10 +55,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     if (relevantEvents.has(event.type)) {
       try {
         switch (event.type) {
-          case "product.created":
-          case "product.updated":
-            await upsertProductRecord(event.data.object as Stripe.Product);
-            break;
           case "customer.subscription.created":
           case "customer.subscription.updated":
           case "customer.subscription.deleted":

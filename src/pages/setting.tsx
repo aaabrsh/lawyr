@@ -13,6 +13,7 @@ import { prisma } from "../server/db";
 import UserForm from "../components/Setting/UserForm";
 import Plans from "../components/Plans";
 import axios from "axios";
+import { fetchCustomerData } from "../utils/supabase-admin";
 
 export default function PlanSetting({ session, user, plans, customer }) {
   let initial_data = {
@@ -134,8 +135,8 @@ export async function getServerSideProps(context: any) {
 
     //get customer information
     let id = session?.user?.id;
-    let data = await fetch(`/api/customers/${id}`).then((res) => res.json());
-    customer = data?.customer;
+    let data = await fetchCustomerData(id)
+    customer = data?.customer ?? null;
   } catch (err) {
     console.log(err);
   }

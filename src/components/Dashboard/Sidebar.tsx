@@ -143,7 +143,7 @@ export default function Sidebar({ active, setActive }: any) {
       let data = await fetch(`/api/customers/${userId}`).then((res) =>
         res.json()
       );
-      setCurrentUser(data?.customer);
+      setCurrentUser(data?.customer ?? null);
     }
     fetchCustomer();
   }, []);
