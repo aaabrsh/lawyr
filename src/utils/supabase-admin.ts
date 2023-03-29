@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
 import { prisma } from "../server/db";
-import stripe from "./stripe";
+import initStripe from "stripe";
+
+const stripe = initStripe(process.env.STRIPE_SECRET_KEY);
 
 const upsertProductRecord = async (product: Stripe.Product) => {
   if (product.active) {
@@ -35,10 +37,9 @@ const updateCustomerRecord = async (subscription: any, cancel?: boolean) => {
   };
 
   try {
-    //get prduct using the product id from subscription
-    const product = await prisma.product.findUnique({
-      where: { id: subscription.plan.product },
-    });
+    //get product using the product name from subscription
+    const productId = subscription.plan.product;
+    const product = await stripe.products.retrieve(productId)
 
     const billingPlan = subscription.canceled_at ? null : product?.name;
 
@@ -83,4 +84,29 @@ const createOrRetrieveCustomer = async (userId: String) => {
   }
 };
 
-export { upsertProductRecord, createOrRetrieveCustomer, updateCustomerRecord };
+const fetchCustomerData = async (id: string) => {
+  const customer = await prisma.customer.findFirst({
+    where: {
+      userId: id,
+    },
+  });
+
+  if (!customer?.billingPlan) {
+    //if the customer doesn't have a billing plan(is not subscribed)
+    return null;
+  }
+
+  const stripe_customer: {} = await stripe.customers
+    .retrieve(customer?.stripe_customer_id ?? "")
+    .catch(() => ({}));
+
+  return ({
+    customer: {
+      ...customer,
+      email: stripe_customer?.email,
+      name: stripe_customer?.name,
+    },
+  });
+}
+
+export { upsertProductRecord, createOrRetrieveCustomer, updateCustomerRecord, fetchCustomerData };

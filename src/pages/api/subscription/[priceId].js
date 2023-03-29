@@ -5,31 +5,9 @@ import { createOrRetrieveCustomer } from "../../../utils/supabase-admin";
 
 const handler = async (req, res) => {
   if (req.method === "POST") {
-    // const { data: session } = useSession();
-    // const user = session?.user?.email;
-
-    // if (!user) {
-    //   return res.status(401).send("Unauthorized");
-    // }
-
-    //   const token = cookie.parse(req.headers.cookie)["sb:token"];
-
-    //   supabase.auth.session = () => ({
-    //     access_token: token,
-    //   });
-
-    //   const {
-    //     data: { stripe_customer },
-    //   } = await supabase
-    //     .from("profile")
-    //     .select("stripe_customer")
-    //     .eq("id", user.id)
-    //     .single();
-
     const stripe = initStripe(process.env.STRIPE_SECRET_KEY);
     const { priceId } = req.query;
     const { userId } = req.body;
-    console.log(priceId);
 
     const lineItems = [
       {
