@@ -124,7 +124,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col flex-wrap items-center pt-24 md:flex-row md:pt-36">
           {/*Left Col*/}
           <div className="flex w-full flex-col justify-center overflow-y-hidden lg:items-start xl:w-2/5">
-            <h1 className="my-4 text-center text-[40px] lg:text-[100px] font-bold leading-tight text-white opacity-75 md:text-left md:text-[80px]">
+            <h1 className="my-4 text-center text-[40px]  font-bold leading-tight text-white opacity-75 md:text-left md:text-[80px]">
               Get the legal help you need, when you need it.
             </h1>
             <p className="mb-8 text-center text-base leading-normal text-white md:text-left md:text-lg">
@@ -134,7 +134,7 @@ export default function Home() {
               support you every step of the way.
             </p>
             <div className="flex">
-              <button
+              {/* <button
                 className="mr-4 transform rounded bg-gradient-to-r from-purple-800 to-green-500 py-2 px-4 font-bold text-white transition duration-300 ease-in-out hover:scale-105 hover:from-pink-500 hover:to-green-500 focus:ring"
                 type="button"
                 onClick={openModal}
@@ -147,7 +147,30 @@ export default function Home() {
                 onClick={openLearnMoreModal}
               >
                 Learn More
-              </button>
+              </button> */}
+              <div
+                className="b mx-auto mr-2 flex h-16 w-64 animate-pulse items-center justify-center"
+                onClick={openModal}
+              >
+                <div className="i absolute h-16 w-64 transform cursor-pointer items-center overflow-hidden rounded-2xl border bg-transparent shadow-2xl transition duration-300 ease-out hover:scale-x-110 hover:scale-y-105"></div>
+                <a className="pointer-events-none z-10 text-center font-semibold text-gray-100">
+                  Get Started
+                </a>
+              </div>
+
+              <div
+                className="b relative mx-auto flex h-16 w-64 items-center justify-center"
+                onClick={openLearnMoreModal}
+              >
+                <div className="i absolute h-16 w-64 transform cursor-pointer items-center overflow-hidden rounded-xl border bg-transparent shadow-2xl transition duration-300 ease-out hover:scale-x-110 hover:scale-y-105"></div>
+                <a className="pointer-events-none z-10 text-center font-semibold text-gray-100">
+                  Learn More
+                </a>
+                <span className="absolute top-0 right-0 flex h-6 w-6 translate-x-2.5 -translate-y-2.5 transform">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75" />
+                  <span className="absolute inline-flex h-6 w-6 rounded-full bg-pink-500" />
+                </span>
+              </div>
             </div>
             {/* <form className="mb-4 w-full rounded-lg bg-gray-900 px-8 pt-6 pb-8 opacity-75 shadow-lg">
     <div className="mb-4">
