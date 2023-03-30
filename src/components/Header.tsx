@@ -254,12 +254,15 @@ export default function Header() {
                                         <Menu.Item>
                                           {href ? (
                                             //   <Link href={href}>
-                                            <a className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-500 hover:bg-gray-500 hover:text-pink-400 ">
+                                            <Link
+                                              href={href}
+                                              className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-500 hover:bg-gray-500 hover:text-pink-400 "
+                                            >
                                               <Icon className="h-5 w-5 shrink-0 " />
                                               <span className="  ">
                                                 {label}
                                               </span>
-                                            </a>
+                                            </Link>
                                           ) : (
                                             //   </Link>
                                             <button
