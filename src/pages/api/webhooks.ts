@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 //@ts-nocheck
-import {
-  updateCustomerRecord,
-} from "../../utils/supabase-admin";
+import { updateCustomerRecord } from "../../utils/supabase-admin";
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 import { Readable } from "node:stream";
@@ -45,7 +43,9 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
     let event: Stripe.Event;
 
     try {
-      if (!sig || !webhookSecret) return;
+      if (!sig || !webhookSecret) {
+        return res.status(400).send("Webhook handler failed");
+      }
       event = stripe.webhooks.constructEvent(buf, sig, webhookSecret);
     } catch (err: any) {
       console.log(`❌ Error message: ${err.message}`);
@@ -71,7 +71,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       }
     }
 
-    res.json({ received: true });
+    res.status(200).json({ received: true });
   } else {
     res.setHeader("Allow", "POST");
     res.status(405).end("Method Not Allowed");
