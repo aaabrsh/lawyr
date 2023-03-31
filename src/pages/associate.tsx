@@ -291,8 +291,7 @@ export default function Copilot({ plans }) {
     const protocol = window.location.protocol;
     // const apiUrl = `${protocol}//${domain}:8000/api/chat`;
 
-    const apiUrl =
-      "https://UnitedShyOperatingenvironment.zealsham.repl.co/api/chat";
+    const apiUrl = "https://https://lawyr.zealsham.repl.co/api/chat";
 
     let response = await fetch(apiUrl, requestOptions)
       .then((res) => res.json())
