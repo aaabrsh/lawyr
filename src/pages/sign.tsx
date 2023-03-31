@@ -393,10 +393,10 @@ export function Sign({ user }) {
     <>
       {/* <DndProvider backend={HTML5Backend}> */}
       <Head>
-        <title>Ailawyr Sign Document - Sign Legal Documents Online</title>
+        <title>legalmindz Sign Document - Sign Legal Documents Online</title>
         <meta
           name="description"
-          content="Ailawyr Sign Document allows you to sign legal documents online quickly and easily. Our AI-powered platform provides secure and efficient document signing and management."
+          content="legalmindz Sign Document allows you to sign legal documents online quickly and easily. Our AI-powered platform provides secure and efficient document signing and management."
         />
 
         {/*

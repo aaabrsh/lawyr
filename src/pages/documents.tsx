@@ -67,11 +67,11 @@ export default function Documents({ pdf_files }) {
     <>
       <Head>
         <title>
-          Ailawyr Documents - Manage All Your Legal Documents in One Place
+          legalmindz Documents - Manage All Your Legal Documents in One Place
         </title>
         <meta
           name="description"
-          content="Ailawyr Documents provides a centralized place to manage all your legal documents. Our AI-powered platform offers secure document storage, organization, and access."
+          content="legalmindz Documents provides a centralized place to manage all your legal documents. Our AI-powered platform offers secure document storage, organization, and access."
         />
 
         {/*
@@ -85,13 +85,11 @@ export default function Documents({ pdf_files }) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="sm:flex bg-[#fdfdff]">
+      <div className="bg-[#fdfdff] sm:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <div className="py-8 px-12">
             <h1 className="py-4 text-2xl font-medium text-zinc-800">
               Your Documents

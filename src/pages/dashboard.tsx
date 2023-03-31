@@ -43,12 +43,12 @@ export default function Welcome() {
     <>
       <Head>
         <title>
-          Ailawyr - AI-Based Lawyer Services for Consumers, Companies, and
+          legalmindz - AI-Based Lawyer Services for Consumers, Companies, and
           Lawyers
         </title>
         <meta
           name="description"
-          content=" Get quick and affordable legal assistance with Ailawyr's AI-powered platform. Our services are designed to help individuals, businesses, and legal professionals with hundreds of legal tasks."
+          content=" Get quick and affordable legal assistance with legalmindz's AI-powered platform. Our services are designed to help individuals, businesses, and legal professionals with hundreds of legal tasks."
         />
 
         {/*
@@ -62,13 +62,11 @@ export default function Welcome() {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="sm:flex bg-[#fdfdff]">
+      <div className="bg-[#fdfdff] sm:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
             {/* {files.length > 0 ? (
               <div className=" mt-40">

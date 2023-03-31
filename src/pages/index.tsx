@@ -54,12 +54,12 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Ailawyr - AI-Based Lawyer Services for Consumers, Companies, and
+          legalmindz - AI-Based Lawyer Services for Consumers, Companies, and
           Lawyers
         </title>
         <meta
           name="description"
-          content=" Get quick and affordable legal assistance with Ailawyr's AI-powered platform. Our services are designed to help individuals, businesses, and legal professionals with hundreds of legal tasks."
+          content=" Get quick and affordable legal assistance with legalmindz's AI-powered platform. Our services are designed to help individuals, businesses, and legal professionals with hundreds of legal tasks."
         />
 
         {/*

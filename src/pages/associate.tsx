@@ -325,12 +325,12 @@ export default function Copilot({ plans }) {
     <>
       <Head>
         <title>
-          Ailawyr Copilot - Upload, Analyze, and Get Answers on Your Legal
+          Legalmindz Associate - Upload, Analyze, and Get Answers on Your Legal
           Documents
         </title>
         <meta
           name="description"
-          content="Ailawyr Copilot allows you to upload legal documents, ask questions, and get answers. Our AI-powered platform can analyze legal language and provide explanations and sources."
+          content="legalmindz Copilot allows you to upload legal documents, ask questions, and get answers. Our AI-powered platform can analyze legal language and provide explanations and sources."
         />
 
         {/*

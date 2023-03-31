@@ -19,7 +19,7 @@ export default function Footer() {
 
       <div className="w-auto p-4">
         <p className="text-sm text-white font-medium">
-          Copyright © 2023 AIlawyr. All Rights Reserved
+          Copyright © 2023 legalmindz. All Rights Reserved
         </p><br />
         <div className="pb-20">
       <div className="flex flex-wrap -m-8">

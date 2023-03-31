@@ -77,11 +77,12 @@ export default function Plans({ plans }) {
     <>
       <Head>
         <title>
-          Ailawyr Legalase Simplifier - Simplify Legal Contracts and Documents
+          legalmindz Legalase Simplifier - Simplify Legal Contracts and
+          Documents
         </title>
         <meta
           name="description"
-          content="Ailawyr Legalase Simplifier can help you simplify legal contracts and documents. Our AI-powered platform can analyze complex legal language and provide plain-language summaries."
+          content="legalmindz Legalase Simplifier can help you simplify legal contracts and documents. Our AI-powered platform can analyze complex legal language and provide plain-language summaries."
         />
 
         {/*
@@ -95,13 +96,11 @@ export default function Plans({ plans }) {
         <meta property="og:url" content={globalMeta.canonicalUrl} />
       </Head>
       <Header />
-      <div className="sm:flex bg-[#fdfdff]">
+      <div className="bg-[#fdfdff] sm:flex">
         <div className=" flex-none ">
           <Sidebar active={active} setActive={setActive} />
         </div>
-        <div
-          className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}
-        >
+        <div className={active ? "flex-1 duration-1000 sm:block" : "flex-1"}>
           <div className="mx-auto max-w-2xl py-16 px-4 sm:py-12 sm:px-6 lg:max-w-7xl lg:px-8">
             {/* Chat start */}
             <>
@@ -218,17 +217,17 @@ export async function getServerSideProps(context) {
 
   const customer = await prisma.customer.findFirst({
     where: {
-      userId: session.user?.id
-    }
-  })
+      userId: session.user?.id,
+    },
+  });
 
-  if(!customer || !customer.billingPlan){
+  if (!customer || !customer.billingPlan) {
     return {
       redirect: {
         destination: "/setting",
-        permanent: false
-      }
-    }
+        permanent: false,
+      },
+    };
   }
 
   return {

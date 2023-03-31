@@ -146,10 +146,10 @@ export default function Chat({ pdf_files, chat }: any) {
   return (
     <>
       <Head>
-        <title>Ailawyr Chat - Your AI Assistant Lawyer</title>
+        <title>legalmindz Chat - Your AI Assistant Lawyer</title>
         <meta
           name="description"
-          content="Ailawyr Chat is your AI assistant lawyer, providing fast and efficient legal advice and support. Our AI-powered chatbot can assist with legal questions, document review, and more."
+          content="legalmindz Chat is your AI assistant lawyer, providing fast and efficient legal advice and support. Our AI-powered chatbot can assist with legal questions, document review, and more."
         />
 
         {/*

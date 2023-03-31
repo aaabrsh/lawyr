@@ -445,7 +445,7 @@ export default function Questions({ questions, prompt }) {
                           className="inline-flex justify-center rounded-md border border-cyan-900 bg-cyan-100 px-4 py-2 text-sm font-medium text-cyan-900 hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2"
                           onClick={handleOpenWithCopilot}
                         >
-                          Open With AIlawyr associate
+                          Open With Legalmindz associate
                         </button>
                       </>
                     )}

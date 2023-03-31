@@ -114,7 +114,8 @@ const LearnMoreModel = ({ show = false, onClose = () => null }) => {
 
               <div className="mx-2 mt-52 text-center">
                 <h1 className="xs:text-5xl text-4xl font-extrabold text-gray-100 md:text-6xl">
-                  <span className="text-white">How can Ailawyr</span> help you
+                  <span className="text-white">How can legalmindz</span> help
+                  you
                 </h1>
                 {/* <h2 className="xs:text-4xl text-3xl font-extrabold leading-tight text-gray-200 md:text-5xl">
             Get a <span className="text-white">Better</span> and{" "}
@@ -248,9 +249,9 @@ const LearnMoreModel = ({ show = false, onClose = () => null }) => {
                       Consumer protection
                     </h3>
                     <p className="mt-4 text-base text-gray-600 md:text-lg">
-                      aiLawyr will help you file complaints against businesses
-                      and other entities that may have violated consumer
-                      protection laws.
+                      Legalmindz will help you file complaints against
+                      businesses and other entities that may have violated
+                      consumer protection laws.
                     </p>
                   </div>
                   <div className="rounded-xl bg-blue-50 p-6 md:p-10">
@@ -300,8 +301,9 @@ const LearnMoreModel = ({ show = false, onClose = () => null }) => {
                       Family law
                     </h3>
                     <p className="mt-4 text-base text-gray-600 md:text-lg">
-                      AIlawyr can assist you with legal issues related to family
-                      law, such as divorce, child custody, and child support.
+                      Legalmindz can assist you with legal issues related to
+                      family law, such as divorce, child custody, and child
+                      support.
                     </p>
                   </div>
                   <div className="rounded-xl bg-blue-50 p-6 md:p-10">
@@ -325,7 +327,7 @@ const LearnMoreModel = ({ show = false, onClose = () => null }) => {
                       Intellectual property
                     </h3>
                     <p className="mt-4 text-base text-gray-600 md:text-lg">
-                      AIlawyr can assist you with legal issues related to
+                      legalmindz can assist you with legal issues related to
                       intellectual property, such as trademarks, copyrights, and
                       patents.
                     </p>

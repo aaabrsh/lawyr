@@ -78,7 +78,7 @@ export default function Home() {
         {/*Main*/}
         <div className="mx-2 mt-52 text-center">
           <h1 className="xs:text-5xl text-4xl font-extrabold text-gray-100 md:text-6xl">
-            <span className="text-white">AILawyr for</span> Companies
+            <span className="text-white">legalmindz for</span> Companies
           </h1>
           {/* <h2 className="xs:text-4xl text-3xl font-extrabold leading-tight text-gray-200 md:text-5xl">
             Get a <span className="text-white">Better</span> and{" "}

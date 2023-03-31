@@ -42,7 +42,7 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <p className="text-lg font-medium text-white">
-                      I was amazed at how quickly and efficiently Ailawyr was
+                      I was amazed at how quickly and efficiently Kegalmindz was
                       able to help me with my legal needs. The AI-powered
                       platform provided me with a comprehensive solution that
                       saved me both time and money.
@@ -70,7 +70,7 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <p className="text-lg font-medium text-white">
-                      Ailawyr has been a game-changer for my law firm. The
+                      legalmindz has been a game-changer for my law firm. The
                       AI-based technology has enabled us to provide more
                       efficient and effective legal services to our clients,
                       resulting in higher client satisfaction and retention
@@ -101,7 +101,7 @@ export default function Testimonials() {
                     <p className="text-lg font-medium text-white">
                       As a small business owner, I was overwhelmed with the
                       legal requirements involved in starting and running a
-                      company. Ailawyr provided me with the necessary legal
+                      company. Legalmindz provided me with the necessary legal
                       expertise and guidance, making the process seamless and
                       stress-free.
                     </p>
@@ -129,8 +129,8 @@ export default function Testimonials() {
                     </div>
                     <p className="text-lg font-medium text-white">
                       I was hesitant to use an AI-based lawyer service, but
-                      Ailawyr exceeded my expectations. The platform provided me
-                      with personalized legal advice and support, and I felt
+                      legalmindz exceeded my expectations. The platform provided
+                      me with personalized legal advice and support, and I felt
                       confident in the decisions I made with their guidance.
                     </p>
                   </div>
@@ -156,7 +156,7 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <p className="text-lg font-medium text-white">
-                      Ailawyr is a game-changer for the legal industry. The
+                      legalmindz is a game-changer for the legal industry. The
                       AI-powered platform has revolutionized the way legal
                       services are delivered, making them more accessible,
                       affordable, and efficient than ever before.
@@ -184,7 +184,7 @@ export default function Testimonials() {
                       </div>
                     </div>
                     <p className="text-lg font-medium text-white">
-                      Ive been using Ailawyr for all of my legal needs, and I
+                      Ive been using legalmindz for all of my legal needs, and I
                       couldnt be happier with the service. The AI-powered
                       technology is highly responsive and knowledgeable, and I
                       feel like I have a legal expert at my fingertips.
