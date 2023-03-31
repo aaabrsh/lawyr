@@ -58,7 +58,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
           case "customer.subscription.created":
           case "customer.subscription.updated":
           case "customer.subscription.deleted":
-            await updateCustomerRecord(event.data.object);
+            updateCustomerRecord(event.data.object);
             break;
           default:
             throw new Error("Unhandled relevant event!");
@@ -71,7 +71,7 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
       }
     }
 
-    res.json({ received: true });
+    res.status(200).json({ received: true });
   } else {
     res.setHeader("Allow", "POST");
     res.status(405).end("Method Not Allowed");
