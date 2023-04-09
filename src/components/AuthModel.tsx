@@ -194,7 +194,7 @@ const AuthModal = ({ show = false, onClose = () => null }) => {
                         <Image
                           // className="block lg:hidden h-8 w-auto"
                           src="/logo.png"
-                          alt="Sota models"
+                          alt="Legalmindz"
                           width="200"
                           height="50"
                         />
@@ -206,7 +206,9 @@ const AuthModal = ({ show = false, onClose = () => null }) => {
                     as="h3"
                     className="mt-6 text-center text-lg font-bold text-white sm:text-2xl"
                   >
-                    {showSignIn ? "Welcome back!" : "Create your account"}
+                    {showSignIn
+                      ? "Welcome back!"
+                      : "Create your account or login"}
                   </Dialog.Title>
 
                   {!showSignIn ? (
@@ -225,7 +227,7 @@ const AuthModal = ({ show = false, onClose = () => null }) => {
                     >
                       <FcGoogle />
                       <span>
-                        Sign
+                        {/* Sign */}
                         {/* {showSignIn ? "in" : "up"}  */}
                         Continue with Google
                       </span>

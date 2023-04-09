@@ -38,7 +38,7 @@ export const navigation = [
   { name: "For Businesses", href: "/forcompanies" },
   { name: "For Lawyers", href: "/forlawyers" },
   { name: "Blog", href: "/blog" },
-  { name: "Dashboards", href: "/dashboard" },
+  { name: "Dashboard", href: "/dashboard" },
   // { name: "Pricing", href: "/pricing" },
   // { name: "Resources", href: "/resources" },
 ];

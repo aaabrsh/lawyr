@@ -223,7 +223,7 @@ export default function Header() {
                               leaveFrom="opacity-100 scale-100"
                               leaveTo="opacity-0 scale-95"
                             >
-                              <Menu.Items className="absolute right-0 mt-1 w-72 origin-top-right divide-y divide-gray-700 overflow-hidden rounded-md bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                              <Menu.Items className="absolute right-0 mt-1 w-72 origin-top-right divide-y divide-gray-700 overflow-hidden rounded-md bg-gray-200 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                 <div className="mb-2 flex items-center space-x-2 py-4 px-4">
                                   <div className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full bg-gray-200">
                                     {user?.image ? (
@@ -233,12 +233,12 @@ export default function Header() {
                                         layout="fill"
                                       />
                                     ) : (
-                                      <UserIcon className="h-6 w-6 text-gray-400" />
+                                      <UserIcon className="h-6 w-6 text-gray-800" />
                                     )}
                                   </div>
-                                  <div className="flex flex-col truncate text-gray-400">
+                                  <div className="flex flex-col truncate text-gray-800">
                                     <span>{user?.name}</span>
-                                    <span className="text-sm text-gray-500">
+                                    <span className="text-sm text-gray-700">
                                       {user?.email}
                                     </span>
                                   </div>
@@ -256,7 +256,7 @@ export default function Header() {
                                             //   <Link href={href}>
                                             <Link
                                               href={href}
-                                              className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-500 hover:bg-gray-500 hover:text-pink-400 "
+                                              className="flex items-center space-x-2 rounded-md py-2 px-4 text-gray-700 hover:bg-gray-900 hover:text-white "
                                             >
                                               <Icon className="h-5 w-5 shrink-0 " />
                                               <span className="  ">
