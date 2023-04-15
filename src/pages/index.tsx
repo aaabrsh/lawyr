@@ -212,7 +212,7 @@ export default function Home() {
         onClose={closeLearnmMoreModal}
       />
       <NewsletterForm />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );
