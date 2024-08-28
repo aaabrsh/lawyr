@@ -39,7 +39,7 @@
     "react-hot-toast": "^2.4.0",
     "react-icons": "^4.7.1",
     "react-paginate": "^8.1.4",
-    "react-pdf": "^6.2.2",
+    "react-pdf": "^7.7.3",
     "react-signature-canvas": "^1.0.6",
     "stripe": "^11.8.0",
     "yup": "^0.32.11",
