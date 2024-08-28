@@ -43,7 +43,7 @@
     "react-signature-canvas": "^1.0.6",
     "stripe": "^11.8.0",
     "yup": "^0.32.11",
-    "zod": "^3.20.2",
+    "zod": "^3.22.3",
     "zustand": "^4.3.3"
   },
   "devDependencies": {
